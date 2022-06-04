@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResizableLib", "ResizableLib.vcproj", "{8CA8F768-D592-463D-AA35-272B0CCAFC0B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug Static = Debug Static
+		Release = Release
+		Release Static = Release Static
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Debug.ActiveCfg = Debug|Win32
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Debug.Build.0 = Debug|Win32
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Debug Static.ActiveCfg = Debug Static|Win32
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Debug Static.Build.0 = Debug Static|Win32
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Release.ActiveCfg = Release|Win32
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Release.Build.0 = Release|Win32
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Release Static.ActiveCfg = Release Static|Win32
+		{8CA8F768-D592-463D-AA35-272B0CCAFC0B}.Release Static.Build.0 = Release Static|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

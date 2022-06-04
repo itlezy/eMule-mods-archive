@@ -1,0 +1,9 @@
+#pragma once
+///////////////////////////////////////////////////////////////////////////////////////
+// 程序版本号定义
+#define VERSION_FIRST	1
+#define VERSION_SECOND	19
+#define _chSTR(x)		_T(#x)
+#define chSTR(x)		_chSTR(x)
+
+

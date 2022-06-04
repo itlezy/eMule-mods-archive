@@ -1,0 +1,387 @@
+
+eMule 0.50a ZZUL-TRA 2.6
+========================
+
+28.12.2011
+
+compiled with Visual Studio 2010 SP1
+
+Add: Advanced Transfer Window Layout [Stulle]
+Add: SysInfo [WiZaRd]
+Add: ClipStat [WiZaRd]
+Add: Global Hardlimit [Max/Stulle]
+Add: QuickStart [Xanatos]
+Add: Log friend activities [Mighty Knife] 
+Add: Vc10fix, remove feature pack code from VC10 binary [X-Mod]
+Add: Visual Studio 2010 Compatibility [Stulle] 
+
+Clean install recommended !!!
+
+
+
+
+eMule 0.50a ZZUL-TRA 2.5
+========================
+
+24.07.2011
+
+Add: Switchable Percent Progress Bar display
+Add: Own Nick and Custom-Modstring Check, prevent punishing by dlp (antileech.dll must be in config) 
+Changed: File Feedback
+
+
+
+eMule 0.50a ZZUL-TRA 2.4
+========================
+
+24.06.2011
+
+Add: Upload fileprio menu in downloadlist
+Add: Powershare menu in downloadlist
+Add: Advanced official preferences to options-extended [Official/MorphXT]
+Add: Chinese (P.R.C.) language dll (zh_CN.dll) [thx paldier]
+Add: Additional File Formats [gagar]
+Readd: UrlClient
+Remove: Remove MediaInfo 0.4 Support [dolphinx]
+Change: Blockratio % moved from status column to speed column
+Change: Code cleanings, minor fixes, tagging, optimizations
+Change: All strings can now be localized
+Fix: Auto Server Disconnet Time setting
+
+
+Clean install recommended !!! (or delete only preferences.ini because a error inside)
+
+
+
+
+eMule 0.50a ZZUL-TRA 2.3
+========================
+
+15.06.2011
+
+Fix: Broken ZZUL CheckForHighPrioClient (thx hooligan for testing)
+
+
+
+eMule 0.50a ZZUL-TRA 2.2
+========================
+
+13.06.2011
+
+Add: Limit Powershare by amount of data uploaded [Stulle]
+Add: Limit Powershare of complete source [SiRoB]
+Add: Limited ps files change color from red to orange
+Add: 1:3 Sessionratio from eMuleFuture v1.1 [WiZaRd]
+Add: If sessionratio applies, L (Limited) is shown next transferrate
+Add: If sessionratio L, the current download limit is shown on tooltip if you move mouse over transferrate
+Add: Show Compression in uploadlist [Tarod]
+Add: See on Queue in sharedfiles window [Xman]
+Add: On Queue at file feedback
+Add: iSOTN global on (hardcoded) [WiZaRd]
+Change: Moved ZZUL-TRA settings to Options-Extended,ZZUL-TRA Preferences group
+Change: Powershare settings to MorphXT style
+Change: Compression column hidden by default
+Change: Auto-update IPFilter.dat [Xman]
+Change: Thumbbar button (now connect/disconnect in one button)
+Remove: Check user hash [taz/DLP]
+
+
+
+eMule 0.50a ZZUL-TRA 2.1
+========================
+
+05.06.2011
+
+Add: Slotcontrol adapted from SharkX mod [taz]
+Add: Show blockratio in status column 
+Add: HideOS/SOTN [Slugfiller/Stulle]
+Add: Check user hash [taz/DLP]
+
+
+
+eMule 0.50a ZZUL-TRA 2.0
+========================
+
+29.05.2011
+
+Change: Changed Preview ready and Share visibility icons to overlayicon
+Change: Better code to display friend/friendslot colors
+Change: UI changes in searchwindow to get more space
+Change: Default URL's for ipfilter/nodes.dat/server.met updates
+Add: Lovelace Credit
+Add: Fix broken HTTP downloads [WiZaRd]
+Add: Remove client from DownloadClientsList on RemoveSource [WiZaRd] 
+Add: Optimize Process Kad client list [WiZaRd] 
+Add: Fix for setting buddy state on removing buddy [WiZaRd]  
+Add: Sort upload progress bars by percentage [Fafner/Xman]
+Add: Option to disable file status icons
+Add: Option to disable download color
+Remove: New menu bar
+Remove: Dynamic Block Requests 
+Remove: Blue Toolbar Icons (now in skin folder)
+Remove: SysInfo
+Remove: ClipStat
+Remove: Manual Client Management
+Remove: Global Hard Limit
+Remove: Log friend activities
+Remove: Quickstart
+Fix: Tooltip tray icon [WiZaRd] 
+Fix: Some minor fixes
+
+
+
+eMule 0.50a ZZUL-TRA 1.9
+========================
+
+21.12.10
+
+Add: SOTN optimization from SharkX v2.0B1 [taz]
+Add: Dynamic Block Requests [NetFinity]
+Add: Changed GHL slider to editbox
+Add: Missing prefs for IP2Country in Options-Extended
+Add: Auto update ip-to-country.csv on startup
+Add: Open file details in downloaded history with double klick
+Add: Bantime settable in prefernces.ini
+Add: Kad term cleanup [WiZaRd]
+Remove: Removed URL client [NetFinity]
+Remove: Slotcontrol
+Remove: Force upload slot
+Change: Mulelistctrl UI change m_crGlow to m_crEvenLine
+
+
+
+eMule 0.50a ZZUL-TRA 1.8
+========================
+
+01.12.10
+
+Add: Friendlinks [emulEspaa]
+Add: Session Download [Xanatos]
+Add: Manual Client Management [???/neomule]
+Add: UL Prio in downloadlist Slugfiller]
+Add: Import Parts [SR-13]
+Add: Relax on startup [WiZaRd] 
+Add: ShowIP in client details [kts]
+Add: Some fixes for SOTN [WiZaRd]
+Change: Some minor fixes
+Remove: CPU calm down
+Remove: Sourcecache column in downloadlist
+
+
+
+
+eMule 0.50a ZZUL-TRA 1.7
+========================
+
+25.11.10
+
+Add: Funny Nick (to enable in preferences.ini) [xrmb] 
+Add: Auto Shared Files Updater (to enable in preferences.ini) [Monke/Stulle/Wiz]
+Add: Show CPU/MEM usage (to enable in preferences.ini) [$ick$/Max/Stulle] 
+Add: Log friend activities [Mighty Knife]
+Add: IP Filter Update [Yun.SF3/Stulle]
+Add: Clip Stat [WiZaRd]
+Add: Reduced CPU usage [NetFinity]
+Add: CPU calm down [WiZaRd]
+Add: Save CPU [WiZaRd]
+Add: Show Own Credits in Client details [VQB]
+Add: Show IP number in clientlist [CB Mod]
+Add: Show Usernick/Runtime in title (to enable in preferences.ini)
+
+
+
+
+eMule 0.50a ZZUL-TRA 1.6
+========================
+
+15.11.10
+
+Add: Invisible Mode [TPT/MoNKi]
+Add: New menu bar now switchable in preferences.ini NewMenu=0 or 1
+Change: Force upload slot client is excluded from drop blocking clients
+Fix: Force upload slot client was not automatic disabled
+
+
+
+
+eMule 0.50a ZZUL-TRA 1.5
+========================
+
+11.11.10
+
+Add: Splash Extended lite [Xman/dolphinx]
+Add: Compression Choosing [Xman]
+Add: SaveFU [WiZaRd]
+Add: Auto Server Disconnect (time adjustable in preferences.ini/default 20min.)
+Add: QuickStart [Xanatos]
+Add: Force Upload Slot (only with slotfocus) [KTS]
+Add: Auto Restart If Necessary [Xanatos]
+Add: New Toolbar Icons (switchable to default in Options-Gerneral)
+Add: Color and modversion to file feedback
+Add: New menu bar [dolphinx]
+Add: File Status Icons (adjustable in view menu) 
+Change: Preferences window modeless [Xanatos]
+Change: SOTN bar color from yellow to white
+Change: Preview menu
+Change: Remove Debug Log [dolphinx]
+Remove: First time wizard
+Remove: Connection wizard
+Remove: Menu icons
+Remove: Copy html stats
+Remove: PeerCache [dolphinx]
+
+
+
+
+eMule 0.50a ZZUL-TRA 1.4
+========================
+
+05.11.10
+
+Add: ClientAnalyzer [WiZaRd]
+Remove: CreditSystemType (Fine CS) [CB Mod]
+Add: Powershare to Shared dir tree
+Change: Made some lines in Client detail dialog copyable
+Add: Compat Client Stats [Stulle]
+Add: ModID Stats [Slugfiller]
+Add: Auto Drop Immunity (5 min.) [Stulle]
+Add: Show IP Filter Hits [dolphinx]
+Add: Drop blocking clients [Stulle]
+Add: Slot control
+Add: Global Hard Limit [MaxUpload/Stulle]
+Add: Friendslot Addon icon [SiRoB]
+Add: Intelligent SOTN per file (eMuleFuture 1.0 Public Beta2) [WiZaRd] 
+Add: ICS [enkeyDEV/WiZaRd]
+Add: AntiHideOS [netfinity/WiZaRd]
+Add: Don't draw hidden Rect [SiRoB]
+Remove: UploadDiskreaderThread
+Add: Auto Variable Compression [Xman/NetF]
+Fix: Broken versionscheck link in logbox
+Change: Display current uploading chunk [SiRoB]
+Add: SharedView Ed2kType [Avi3k]
+Remove: Chunk dots
+Add: File Feedback [WiZaRd]
+Add: Advanced official preferences to preferences.ini [leuk_he]
+Add: Sourcecache [Xman/Spike2]
+Add: Switchable file color in options-display (no/text/back colors)
+Change: [ZZUL-TRA] section in prefernces.ini
+
+>> Please delete your old preferences.ini in config folder to have no trouble with old preferences.ini settings! <<
+
+
+
+
+eMule 0.50a ZZUL-TRA 1.3
+========================
+
+29.10.10
+
+Add: Show part count in shared parts bar if show more controls enabled
+Add: Show spread part count in spreadbar if show more controls enabled
+Add: Make part count sortable
+Fix: Missing code in Average Queue Ranking
+Add: Show MinQR in download speed column if show more controls enabled
+Change: Replaced some zz code with official
+Fix: Some minor bugs
+Add: IntelliFlush (always enabled) [WiZaRd]
+Change: File Buffer Size increased a bit to 7,5 MB max. because of IntelliFlush [Spike2]
+Add: Powershare to statistic and tree [SiRoB/pP]
+Add: Spreadbar [Slugfiller]
+Add: Double click uncomplete files in SharedFile window display FileDetail [SiRoB]
+Add: Client percentage (morph/Xman)
+Add: Emulate other [???/WiZaRd/Torni/Spike2]
+Remove: Country name column in lists (you can see name in client details)
+Add: A4AF counter, ahead of user nickname [sivka]
+Add: Overlay icon for share visibility
+Change: Icon ClientCompatible to ClientDefault (now "green cross" is only show for ClientCompatible)
+Add: Winsock2 Support [eWombat/eMulefuture]
+Add: ReAsk Sources after IP Change [Maella/Stulle]
+Add: ReqFiles [itsonlyme/David Xanatos]
+Add: Enhanced Client Recognization [Spike2/TK4]
+
+
+
+eMule 0.50a ZZUL-TRA 1.2
+========================
+
+24.10.10
+
+
+Add: Check already downloaded files [MoNKi/Xman]
+Add: Downloaded History [MoNKi/Xman]
+Add: Don't Refresh item if not needed [SiRoB]
+Add: Remote queue status in uploadlist [Yun.SF3]
+Add: ColoredClientstate [Morph/JvA]
+Add: QRdiff [itsonlyme/Peace/JvA]
+Add: IP2Country [EastShare/MorphXT/Xman]
+Add: Draw date and time with defaultcolor [SiRoB]
+Add: See all sources [Xman]
+Add: Save/Load Sources [enkeyDEV/Spike2] 	
+Add: SourceDropSystem [Sivka/JvA]
+Add: Average Queue Ranking [Xman]
+Add: show # of dropped sources [Stulle]
+Add: Show Hash Progress [O2/Xtreme]
+Add: Set Server.met URL [pP]
+Add: NodeDatUpdate [pP]
+Add: Friendnote [CB Mod]
+Add: OldStyle StatisticsWindow [TK4]
+Add: ChatLog [CB Mod]
+Add: Open Log Folder from tools button menu
+
+
+
+
+eMule 0.50a ZZUL-TRA 1.1
+========================
+
+22.10.10
+
+Based on eMule 0.49c ZZUL 20090222_2320 [zz]
+
+Change: Upgrated from 0.49c ZZUL to 0.50a and added full ZZUL code to ZZUL-TRA
+Add: CreditSystemType (Fine CS) [CB Mod]
+Add: Friend Management [CB Mod]
+Add: PaybackFirst [AndCycle/SiRoB/Stulle/JvA]
+Add: SuperiorClientHandling [Stulle/JvA]
+Add: SafePrefsettings [???/NeoMule/JvA]
+Add: Friend/Friendslot/PaybackFirst colors
+Add: Show Total UP/DOWN [eF-Mod/JvA]
+Fix: Sort Powershare in sharedfileswnd [MorphXT]
+
+
+
+eMule 0.50a ZZUL-TRA 1.0
+========================
+
+20.10.10
+
+Add: Easy ModVersion [WiZaRd]
+Add: Show ModVersion [WiZaRd]
+Add: Same ModVersion Detection [WiZaRd]
+Add: Speed Graph Window [dolphinx]
+Add: GDI Plus UI [dolphinx]
+Change: Default User-Nick
+
+
+===============================================================================
+
+
+Official eMule 0.50a client with parts of ZZ upload/slotfocus and powershare !
+
+14.10.2010
+
+Beta ? Basis for other mods ? don't know. maybe only a experiment ;-)
+
+Removed: Many unused codes
+Add: Slotfocus switchable (default enabled)
+Add: Color for downloading files, partfiles and powershare
+Add: "open incoming dir" to toolbar [WiZaRd]
+Add: "open incoming dir" to Win7 thumbbuttons list [WiZaRd]
+Change: Replaced XMessageBox with version of X-Mod [dolphinx]
+Change: icons, gui
+
+No bad features inside !
+
+compiled with vs2003sp1 and newest libs
+
+Have fun...

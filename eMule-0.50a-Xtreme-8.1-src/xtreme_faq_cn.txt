@@ -1,0 +1,62 @@
+Xtreme FAQ
+
+Q: Xtreme是如何处理AICHHash记录的？
+A: 在默认情况下，当Xtreme启动时，非共享文件的AICHHash记录会被清除掉。
+   有3个选项可以改变这个默认动作。
+   第一个选项是"Remember unused AICHHashs"。当它启用时，Xtreme不会清除非共享文件的AICHHash记录。
+   第二个选项是"Split Known2_64.met"。当它启用时，Xtreme会清除known2_64.met中的非共享文件的AICHHash记录，但是会把这些记录储存在另外一个文件之中。
+   第三个选项是"PartiallyPurgeOldKnownFiles"。它只能从perference.ini中修改，默认启用。当它启用时，Xtreme不会清除非共享文件的AICHHash记录，除非那个记录实在是太老了。注意，这个选项对MD4Hash记录也有影响。
+
+Q: 我看到Xtreme 8.0之中有一个新功能，它能分割knwon2_64.met。在什么情况下启用这个功能才是正确的呢？
+A: 如果你选择保存暂时不需要的AICHHash，这些Hash都会保存在known2_64.met中。在这情况下，knwon2_64.met会越变越大，即使你当前只共享了很少量的文件。
+   我们都知道known2_64.met太大时会影响eMule的效率。这个功能可以把暂时用不到的Hash转移到另外一个文件之中，让known2_64.met尽量小。
+   当然，这个功能也可以合并两个known2_64.met文件，并且把其中重复的Hash清理掉。
+
+Q: AICHHash缓存是什么？它适合我吗？
+A: AICHHash缓存是Xtreme 8.0新增的一个功能。
+   当eMule添加新的共享文件时，AICHHash会立即写入known2_64.met中。如果你的known2_64.met比较大时，这个特性会极大地增加磁盘读写。
+   这个功能会让eMule暂时缓存这些Hash，当缓存放满之后再一次性写入known2_64.met中。
+   它可以减少Hash大量文件时的磁盘读写，特别是你拥有一个很大的known2_64.met的时候。
+
+Q: 我的配置文件都在哪里？
+A: 请阅读以下网址：
+   http://www.emule-project.net/home/perl/help.cgi?l=1&rm=show_topic&topic_id=1259
+   对于新手，我提供一个更好的方法。如果你的电脑只有你一个人在使用的话，在 扩展设置->本地多用户共享 选项中，选择"在程序目录下保存配置和下载"。
+   设置完成后，你的配置文件都会保存在 eMule.exe 所在的目录下。
+
+Q: 什么是"干净安装"? 在什么情况下我应该使用"干净安装"?
+A: 在 Xtreme 中, "干净安装"表示删除配置文件 -- perference.ini。请放心，这不会伤害到你的信用和积分。
+   在其他 MOD 中，"干净安装"可能要求你删除配置文件目录中的大部分文件，请注意，这些文件除外: Adresses.dat, Category.ini, Clients.met, Cryptkey.dat, Emfriends.met, Ipfilter.dat, Ip2Country.dat, Known.met, Known2_64.met, Preference.dat, Server.met, Sharedir.dat, Statistics.ini。
+   当你从其他 MOD 转为 Xtreme 或者 Xtreme的主版本号改变(例如从 7.X 升级为 8.X)，你最好使用"干净安装"。
+
+Q: perference.ini是什么?
+A: perference.ini是你的配置文件，它保存在你的选项设置、窗口位置等等信息。但是Userhash、身份验证信息和统计信息保存在其他文件里面。
+
+Q: 当我切换到搜索窗口/进行搜索时，Xtreme崩溃了，我应该怎么办？
+A: 在配置文件目录中删除 StoredSearch.met。
+
+Q: 我怎么启用 24K发送缓存 这个选项？
+A: 编辑你的 perference.ini，从里面找到一行"sendbuffersize=###"，(如果没找到就自己添加上)，把值修改为24000。
+   Xtreme的所有隐藏选项都可以使用类似的方法开启。
+
+Q: 我怎么连接到KAD?
+A: 如果你已经连接到某个服务器或者其他用户，你只需要在KAD窗口按下"连接"按钮，Xtreme 会自动连接到KAD。
+   如果你尚未连接，并且没有配置文件目录中没有 nodes.dat，在KAD窗口按下"引导程序"按钮，Xtreme 会使用你的浏览器打开一个网站，你可以从那个网站上找到 nodes.dat 文件，将其添加到 Xtreme 中。
+
+Q: 我怎样才能扩大文件缓存?
+A: 你不能，2M的文件缓存已经足够了。当然，如果你坚持这么做的话，自行修改 perference.ini.
+
+Q: 我的服务器列表里面才有几个服务器，我应该怎么办?
+A: 别担心，安全的服务器并不多，使用KAD吧。
+
+Q: 我想移动一些共享文件，应该怎么做才能避免重复Hash这些文件？
+A: 如果 Xtreme 还在运行，并且目标文件夹也是共享文件夹，移动文件后刷新共享文件即可。
+   如果 Xtreme 还在运行，但是目标文件夹不是共享文件夹，移动文件后将目标文件夹加入共享。
+   如果 Xtreme 不在运行，请确认选项"保留未使用的AICH-Hashes"已启用，移动文件后将目标文件夹加入共享。
+
+Q: 我能用 Xtreme 共享数千个文件吗？
+A: 当然没问题，但是你要注意，Xtreme仅为数百个共享文件进行优化，共享文件过多会导致GUI相应较慢。
+   而且最好不要在连接到服务器或者KAD的时候Hashing数千个文件，Hashing完成了再连接。
+
+Q: 我是新手，我不知道这些选项有什么用，我应该怎么办？
+A: 别担心，Xtreme 的默认设置在绝大部分情况下都可以工作得很好。你也可以在 http://www.chnp2p.com/forumdisplay.php?fid=6 得到一些支持。

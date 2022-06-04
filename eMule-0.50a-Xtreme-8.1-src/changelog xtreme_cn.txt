@@ -1,0 +1,159 @@
+Xtreme 8.1
+----------------
+
+主要功能:
+
+- 使用Maella带宽控制系统，准确计算额外开销
+- 使用NAFC系统，更适合ADSL用户使用
+- 使用Xtreme下载管理系统，来源处理更加智能
+- 使用Xtreme积分系统
+- 支持Powerrelease和动态隐藏文件块，文件发布更迅速
+- 支持IP2C数据库，显示国家旗帜
+- 支持DLP，使得吸血鬼无所遁形
+- 数以百计的代码改进
+
+这个版本使用VS2008 SP1和Windows 7 SDK编译，不再支持XP SP2以下系统
+
+
+Xtreme 8.1
+- 改进: 根据 Morph 的代码更新 Flush Thread 和 Read Block From File Thread (Morph/Sirob)
+- 改进: 支持根据完成进度进行排序 (Fafner/Xman)
+- 改进: 可以对 aMule 的modstring进行排序 (Stulle)
+- 改进: 优化 KAD 用户列表处理 (WiZaRd)
+- 修正: 显示注释时可能导致的崩溃 (WiZaRd)
+- 修正: 移除buddy时修改buddy的状态 (WiZaRd)
+- 修正: 不要发布未完成的小文件 (WiZaRd)
+- 修正: 移除来源后, 从客户列表中移除对应的用户 (WiZaRd)
+- 修正: 从 SourceForge 下载时可能出现的HTTP错误 (WiZaRd)
+- 修正: 收藏集文件双重扩展名的问题 (leuk_he)
+- 修正: 将我们能连接上的用户视为HighID (Enig123)
+- 修正: 不再重新连接到被禁止的客户 (Enig123)
+- 修正: 带宽管理器中潜在的除0错误 (Stulle)
+- 修正: AICHHashset写入缓存在退出时的问题 (DolphinX)
+- Stulle 代码中更多的小修正和小改进
+- 移除: 在http下载时发送特别的user agent (已无用) (Xman)
+- 改变: antiLeech.dll现在保存在config目录中 (Stulle)
+        antiLeech.dll.new也一样，当然也可以像以前一样更新DLP
+- 添加: 可以设置图表中网络适配器的曲线的颜色 (Stulle)
+- 添加: 在文件选项卡中添加分离Known2_64.met的选项 (zz_fly)
+
+更新翻译: German [Stulle]; Chinese (P.R.C.) [zz_fly];
+Chinese (Taiwan) [AndCycle]; French [jamjam]; Spanish [Rajil/mself563];
+Italian [xilolee/EvolutionCrazy]; Turkish (partially) [omeringen]
+
+
+
+Xtreme 8.0
+- codebase 更新至 0.50a (感谢 Stulle)
+- MediaInfo.dll 更新至 0.7.33.0
+- DLP 更新至 v42 (感谢**Riso64bit**, chengr28和其他热心人)
+- 更新国家旗帜DLL, 支持更多国家 (tomchen1989)
+- 为VS2008添加ATL Server代码 (Stulle)
+- 添加Fincan社区用户检测 (WiZaRd)
+- 支持从系统中获取MTU (netfinity)
+- 添加双UPNP库支持(只在代码中) (zz_fly)
+- 添加AICHHashset缓存算法, 减少Hashing文件时的磁盘读写 (zz_fly)
+- 将未共享文件的Hashset单独存放到其他文件中, 减少Known2_64.met的大小 (zz_fly)
+- 保存来源功能现在可以保存URL来源了 (DolphinX)
+- 改进: 根据官方对Hash的修改更新Safe Hash的代码 (Stulle)
+- 改进: 根据Morph的代码更新Flush Thread和Read Block From File Thread的代码 (Morph/Sirob)
+- 改进: 优化了CUInt128的部分算法 (netfinity)
+- 改进: clients.met文件的备份和自动恢复 (Enig123)
+- 改进: 去除下载队列中不必要的排序过程 (Enig123)
+- 改进: 优化下载队列平衡 (Enig123)
+- 改进: 不要在Webserver/CML/MM中重置连接设置 (Stulle)
+- 改进: 不会因为下载失败而丢弃URL源 (DolphinX)
+- 修正: 自动压缩包预览现在会跳过过大的压缩包 (zz_fly)
+- 修正: 最小化到系统栏后可能出现的问题 (Enig123)
+- 修正: 在Vista下欢迎界面的UI问题 (WiZaRd)
+- 修正: 不要发送重叠的数据请求 (emuleplus)
+- 修正: 用户名包含"%s"可能会导致崩溃的问题 (DolphinX)
+- 修正: 不必要的共享文件刷新 (DolphinX)
+- 移除: Xman的磁盘访问线程同步系统, 详细信息可以查看emule.h
+- 移除: MediaInfo 0.4 以下版本的支持
+
+更新翻译: Italian(DarkForge.it), Chinese(zz_fly), Turkish(erdem444)
+
+
+
+
+Xtreme 7.2
+- codebase 更新至 0.49c
+- DLP 更新至 v37 (感谢**Riso64bit**)
+- MediaInfo.dll 更新至 0.7.12.0
+- 使用官方的 UPnP 模块
+- 默认的用户目录模式改为在程序目录下
+- 更新各个列表的实现 (感谢 DolphinX, Stulle)
+- 在下载历史列表中加入 Ctrl+C 和 Del 键支持 (Stulle)
+  下载历史列表可以向共享文件列表一样，用 Ctrl+C 复制 ED2K 链接，用 Del 删除记录。
+- 可在 KAD 联系人列表中显示国家旗帜 (eMuleFuture)
+  默认: 不显示，你需要在 prefercence.ini 中加入 "ShowCountryFlagInKad=1" 启用此功能。
+- 在服务器列表中可显示具有动态 IP 的服务器地址 (DolphinX)
+- 改进: 减少了客户积分的内存占用 (DolphinX, Enig123)
+- 改进: Xman 的客户积分列表处理 (Enig123)
+- 改进: .part.met 文件的备份和自动恢复 (Enig123)
+- 改进: 传输时不压缩 .mkv, .mp4 和 .7z 文件
+- 改进: 清理掉正式版本中不必要的调试代码
+- 修正: 传输中来源的处理发生意外而导致的崩溃 (Enig123)
+- 修正: 上传队列和下载队列处理中可能产生的溢出错误
+- 修正: 关闭 Xtreme 时可能出现的崩溃 (MorphXT)
+- 修正: 分类指定的错误 (Avi3k)
+- 修正: 服务器连接失败时可能产生的内存泄露 (DolphinX)
+- 修正: 关闭 Xtreme 时还在 Hash 文件的情况下可能导致的一个小错误 (WiZaRd)
+- 修正: 好友处理时出现的一个小错误 (WiZaRd)
+- 修正: 源自 DolphinX 的部分代码的修正和改进
+- 修正: 上传中客户的处理发生意外而可能导致的崩溃 (感谢 Enig123) 
+        这个修正从正式版中移除，需要进一步的测试。
+- 恢复: Xman 的 Socket 关闭算法
+        虽然这个算法需要占用更多的内存(10~20MB)，但是对部分用户来说它是必要的。
+
+
+
+Xtreme 7.1 
+* 这个版本部分基于Stulle的源码
+- 更新 DLP v36 （感谢 WiZaRd）
+- 更新 MediaInfo.dll 0.7.8.0
+- 更新土耳其语语言文件 (erdem444)
+- 更新意大利语语言文件 (DarkForge.it)
+- 加入皮肤 紫色圣诞节（只包含工具条）（感谢Xtreme测试小组，Yangge）
+- 加入快速完成, 丢弃阻塞的来源 (netfinity)
+- 加入好友链接模块 (MorphXT) 并且修复一处内存泄漏错误 （dolphin87）
+- 加入H.264和3vid的FourCC代码检测 (X-Ray)
+- 加入推送小文件 (sivka)
+- 加入从现有文件中导入文件块 (roversr13/MorphXT)
+- 当eMule正在分配磁盘空间时，暂时禁用预分配磁盘空间功能 （dolphin87）
+- 修正官方在UserHash初始化上的一系列问题 （Enig123）
+- 修正UserHash碰撞的问题 （DreaMule）
+- 修正损坏的BarShaderInfo (fafner)
+- 修正英语表达 (ginger)
+- 修正Socket关闭时可能出现的一个错误 (netfinity)
+- 修正官方在切换语言时可能出现的错误 (X-Ray)
+- 改进: 当下载完成或取消时释放不再使用的内存 (Enig123)
+- 改进: 减少了上传带宽控制过程的CPU占用
+- 改进: 使得来源添加行为成为进程间安全的 (Enig123)
+- 改进: 使用素数来初始化客户积分列表, 提高效率
+- 让用户详细信息中的用户名和国家信息随着对话框的扩大而扩大
+- 支持24k发送缓存
+  你需要在 prefercence.ini 中加入 "sendbuffersize=24000" 启用此选项
+
+
+Xtreme 7.0
+* 这个版本的修改者是 zz_fly
+- codebase更新至0.49b
+- DLP更新至v33，并合并XRAY DLP v4的检测代码
+- 更新UPnP模块
+- 更新简体中文语言文件
+- 调整了一些设定
+- 在我的信息窗口中显示UPnP状态
+- 当IP改变时重新绑定UPnP
+- 增加国内各类吸血鬼的检测
+- 当节点列表的URL无效时，打开默认的节点列表网站
+- 预留的上传通道不能用于未完成文件上
+  你可以发布任何文件，但是只有已完成文件才能使用预留的上传通道
+- 增加UPnP路由器探测的次数
+- 修正一个可能导致重复Hash文件的问题
+- 修正一个可能导致死锁的错误
+- 去除Fix Connection Collision (不再需要)
+- 去除一些不必要的代码
+- 去除一些可能导致较高内存占用的代码
+

@@ -1,0 +1,62 @@
+Xtreme FAQ
+
+Q: How does Xtreme manage the AICHHashSets?
+A: By default, when Xtreme starts, the hashsets of unshared files will be purged from known2_64.met.
+   There are three options can change this action.
+   The first option is Remember unused AICHHashs. When this option enabled, Xtreme will not purge the hashsets of unshared files.
+   The second option is Split Known2_64.met. This is new feature in Xtreme 8.0. When this option enabled, Xtreme will purge the hashsets of unshared files from known2_64.met, but save them in another file.
+   The third option is PartiallyPurgeOldKnownFiles. This option can only modified via perference.ini, enable by default. When this option enabled, Xtreme will not purge the hashsets of unshared files unless it is too old. This option can influence MD4HashSets too.
+
+Q: I see a new feature in Xtreme 8.0. It can split known2_64.met. Why I need to do so?
+A: If you want to remember un-used AICHHashsets, these hashsets will save in knwon2_64.met. In this case, knwon2_64.met will become bigger and bigger, even you are sharing only a little file.  
+   We all known that a too large known2_64.met is not efficient. This feature move those un-used AICHHashsets to another file. Let knwon2_64.met in a essential size.
+   This feature can merge 2 known2_64.met and remove the duplicate entries too.
+
+Q: What is AICHHashset write buffer? Is it useful for me?
+A: AICHHashset write buffer is a new feature in Xtreme 8.0. 
+   When eMule add a new sharedfiles, the AICHHashset will write to known2_64.met immediately. If your have a big known2_64.met, it will greatly increase the diskio.
+   This feature make eMule buffered those AICHHashsets, did not write them to known2_64.met until buffer full.
+   It can reduce diskio while hashing tons of files, especially when you have a big known2_64.met. Of course, it will increase the risk of lost AICHHashsets. It is the common disadvantages of buffer systems.
+
+Q: Where is my CONFIG(or other) directory?
+A: See this URL below, and find the CONFIG directory in your PC.
+   http://www.emule-project.net/home/perl/help.cgi?l=1&rm=show_topic&topic_id=1259
+   For the newbies, if you are the only user on your PC, I suggest you change the user dir mode to "Store config and downloads in the program directory".
+   In this case, the config directory will be stored in the same directory where eMule.exe is located. 
+
+Q: What the meanings of "CLEAN INSTALL"? When I should use "CLEAN INSTALL"?
+A: In Xtreme, CLEAN INSTALL mean delete the perference.ini in the CONFIG directory. This action will not harm to your credits.
+   In other mods, "CLEAN INSTALL" may means delete all files in the CONFIG directory, except these: Adresses.dat, Category.ini, Clients.met, Cryptkey.dat, Emfriends.met, Ipfilter.dat, Ip2Country.dat, Known.met, Known2_64.met, Preference.dat, Server.met, Sharedir.dat, Statistics.ini.
+   When you change your mod or the major version of Xtreme changed(eg. from 7.X to 8.X), you'd better use CLEAN INSTALL to avoid some errors.
+
+Q: What is perference.ini?
+A: perference.ini is your config file located in your CONFIG directory. It stores the options, windows positions and some miscs. Userhash, certification and statistics are not in it.
+
+Q: Xtreme crash when I switch to search window or start a search. What should I do?
+A: Delete StoredSearch.met in your CONFIG directory.
+
+Q: How can I enable 24k send buffer?
+A: Edit your Perference.ini in your CONFIG directory. Find a line Starts with "sendbuffersize=", (If not, add this line), edit the value.
+   All hidden option can be enable in similar method. For example, show country flag in KAD windows.
+
+Q: How can I connect to KAD?
+A: If you have connectted to server and/or another client, you just press "connect" button in KAD window, Xtreme will connect to KAD automaticly.
+   If you have not connectted, you can press bootstrap button in KAD window. Xtreme will open website with your browser. You can find nodes.dat in that website, add it into Xtreme.
+
+Q: How can I enlarge file buffer size?
+A: No, 2M file buffer is enough. If you insist to do so, edit this value via perference.ini.
+
+Q: There are only a few server in server-list. What should I do?
+A: Don't worry. There are only a few valid server in the world. Use KAD instead of server.
+
+Q: I want to move some shared files to another directory. How can i prevent rehash those files?
+A: If Xtreme runs, and dest. directory is a shared directory, move your files in windows explorer(or sth else), then refresh your shared files in shared files window.
+   If Xtreme runs, but dest. directory is not a shared directory, move your files in windows explorer(or sth else), then shared the dest. directory.
+   If Xtreme not runs, please ensure the option "remember unused AICH-Hashes" is enable, move your files in windows explorer(or sth else), then start Xtreme, shared the dest. directory.
+
+Q: Does Xtreme can share thousands of shared files?
+A: Sure, it can. But you must remember, the program is optimized for only hundreds of shared files. The GUI response is slower when shared thousands of files.
+   And you'd better not connect to server/kad while hashing thousands of files. Connect to server/kad when hashing is done.
+
+Q: I am a newbie. I don't know what these options means? What can I do?
+A: Don't worry. The default setting can work well in most situation. You can find some support in http://forum.emule-project.net/index.php?showforum=97.

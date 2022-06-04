@@ -1,0 +1,31 @@
+UltiMatiX v5.0
+Build:	Aug 31 2016
+---
+Nach Langer Zeit ohne was zu tun...,habe ich mir gedacht ich mache was um den eSel am Leben zu halten!
+nun neue funktionen & verbesserungen
+
++Server auto disconnect
++Add Community to Friend class
++Show IP Filter Hits
++Filefeedback with UpSpeed (DE)
++New Clients colors
++Leecher Anticomm/mod greyed out
++Evenline
++Variable compression
++Vorläufige  splash/banner (filmeboard)
++Und kleinigkeiten die ich schon vergessen habe (sind einige Jahre vergangen).
+
+Im eMule verzeichniss Ordner Erstellen "emule_alt" (bsp.) die vorhandene "eMule.exe" da hineinkopieren-
+-(als sicherung...,sollte die neue nicht gefallen)
+Die neue "eMule.exe" im Programmverzeichniss überschreiben/ersetzen und weiter sharen!
+
+P.S.
+1. Ihr habt sicher seine eigene update Methoden um Daten Verlust zu vermeiden.
+2. Weiter Posten ist erlaubt/erwünscht jedoch nur als Original ed2k Link
+und nicht durch irgendwelche Hoster,  der Muli Schaft das  auch selbst 
+schließlich wurde er da für endwickelt.
+3.Und am schluß der ed2k link
+
+
+
+

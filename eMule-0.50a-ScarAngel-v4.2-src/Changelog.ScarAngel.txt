@@ -1,0 +1,755 @@
+CHANGELOG FOR EMULE ScarAngel MOD
+
+
+eMule v0.50a ScarAngel v4.2:
+------------------------
+- 22.06.2011 -
+-------------------------------------------------------------------------------
+based on eMule 0.50a Xtreme 8.1 compiled with vs2010 SP1
+
+Changed: Pause UBT when moving down slots in upload [Stulle] - Stulle
+Changed: Schedule blocking clients for removal [Stulle] - Stulle
+Changed: Schedule clients for moving down [Stulle] - Stulle
+Changed: Show ModID in systray dialog sidebar [Stulle] - Stulle
+Changed: Display ratio activation in WebInterface [Stulle] - Stulle
+
+Fixed: Potential NULL-pointer bugs in Upload Bandwidth Throttler [Stulle] - Stulle
+
+Note: The schedule changes will delay removal of blocking or moving down clients so the action will
+	be done when going through the uploading sockets the next time to avoid exceptions due to
+	changes in the upload list done by another thread while going through the sockets.
+
+
+eMule v0.50a ScarAngel v4.1:
+------------------------
+- 01.06.2011 -
+-------------------------------------------------------------------------------
+based on eMule 0.50a Xtreme 8.1 compiled with vs2010 SP1
+
+Added: Some more icons in DownloadListCtrl context menu [SiRoB] - Stulle
+Added: "No to all" option for backup nagging dialog in Backup window [Stulle] - Stulle
+Added: Downloading Chunk Detail Display (idea for usage in DlClients by JvA) [SiRoB] - Stulle
+Added: Uploading Chunk Detail Display [SiRoB/Fafner] - Stulle
+Added: Display remaining upload time (estimation!) [Stulle] - Stulle
+Added: Option to optimize mod GUI addons & more feature optimization for NT Service [Stulle] - Stulle
+	+ CPU/MEM information, TBH: MiniMule, Toolbar Speedmeter, Show queue count/progress bar
+Added: requpfile optimization [SiRoB] - Stulle
+
+Changed: Download icons in SearchListCtrl context menu [SiRoB] - Stulle
+Changed: Backup dialog strings can now be localized [Stulle] - Stulle
+Changed: Show Client UL and DL in Transferred column of DownloadListCtrl [SiRoB] - Stulle
+Changed: Show all clients that are not banned in On Queue list of WebInterface [Stulle] - Stulle
+Changed: Display if a client has credits in On Queue list of WebInterface [Stulle] - Stulle
+Changed: Hide file names in Multi WebInterface if file shared in unaccessable cat [Stulle] - Stulle
+Changed: Do not allow downloading of files with hidden file name in WebInterface [Stulle] - Stulle
+Changed: Clipboard ed2k link file watch now queues into category selection [leuk_he] - Stulle
+Changed: Displayed ed2k link list in category selection can be scrolled through [Stulle] - Stulle
+Changed: Allow incoming folder of default cat to be customized [Stulle] - Stulle
+Changed: Show cat name for scheduler cat actions [Stulle] - Stulle
+Changed: Cat related scheduler items are added with -1 (All) value [Stulle]
+Changed: Open Incoming Folder Fix for incoming folders of categories [CommanderGER] - Stulle
+Changed: Rewrote the code determining if a NTService optimization should be done [Stulle] - Stulle
+Changed: Add superior clients after last superior client in upload [Stulle] - Stulle
+	+ Until now superior clients were added in first position, regardlessly
+Changed: Move Superior clients down in upload when they hit a chunk border [Stulle] - Stulle
+Changed: Do not display PowerShare or Fair Play for bad clients [Stulle] - Stulle
+Changed: Scale both upload and download to max in speed graph of TBH MiniMule [Stulle] - Stulle
+Changed: Display if client is superior in WebInterface and sort accordingly [Stulle] - Stulle
+Changed: Optimized code that checks if sup clients are on queue [Stulle] - Stulle
+Changed: Stop searching for sup clients on queue if one was found [Stulle] - Stulle
+	+ concerns: Keep Sup clients in up if there is no other sup client in queue
+Changed: Take sup state into account when retrieving queue rank of enqueued clients [Stulle] - Stulle
+
+Fixed: On setting new Friendslots via WebInterface old Friendslots were not removed [Stulle] - Stulle
+Fixed: Potential NULL-pointer around TBH: MiniMule in TrayDialog [Stulle] - Stulle
+Fixed: MiniMule did not open when minimizing to tray with Static Tray activated [Stulle] - Stulle
+Fixed: SOTN could be activated for partfiles when enabled in preferences [Stulle] - Stulle
+Fixed: FairPlay was displayed for partfiles in Upload List [Stulle] - Stulle
+Fixed: WebServer progress text did not work when file completed [Stulle] - Stulle
+
+Note: Following languages updated: German [Stulle]; Chinese (P.R.C.) [zz_fly];
+	Chinese (Taiwan) [AndCycle]; French [jamjam]; Spanish [Rajil/mself563];
+	Italian [xilolee/EvolutionCrazy]; Turkish (partially) [omeringen]
+
+
+eMule v0.50a ScarAngel v4.0:
+------------------------
+- 11.03.2011 -
+-------------------------------------------------------------------------------
+based on eMule 0.50a Xtreme 8.0 compiled with vs2010 SP1
+Merged to eMule v0.50a [Stulle]
+Updated with code from zz_fly's Xtreme
+
+Added: Possibility to directly add incoming of removed cat to shared folders [Stulle] - Stulle
+Added: Queue progress bar in Webserver (not in Light) [unknown/Stulle] - Stulle
+Added: File Percentage in title of progress images in WebServer [unknown/Stulle] - Stulle
+Added: More advanced official settings [Stulle] - Stulle
+
+Changed: Reworked coloring of windows (fixes some tab controls on Vista/7) [Stulle] - Stulle
+Changed: Grouping of advanced official settings [Stulle] - Stulle
+Changed: Refined dislpaying reasons for download limits in StatusBar [Stulle] - Stulle
+Changed: Auto join Morph IRC help channel [Stulle] - Stulle
+Changed: Improved picking correct download limit [Stulle] - Stulle
+	+ Might be a little more restrictive but is is also cleaner
+
+Fixed: Reboot in webserver invoked shutdown instead of reboot [Stulle] - Stulle
+Fixed: TxtEditor option in Advanced Preferences [Stulle] - Stulle
+Fixed: Setting HOS was cancled when setting remained unchanged for one file [Stulle] - Stulle
+Fixed: Minor display bug around default for PowerShare limit [Stulle] - Stulle
+Fixed: AutoUpdateIP2Country differed on loading and saving preferences [jerryBG] - Stulle
+Fixed: Localization of ScarAngel Settings was incomplete [Stulle] - Stulle
+Fixed: Bad graph label display when Source Graph was disabled [Stulle] - Stulle
+Fixed: Crashfix for reloading share via ASFU under certain circumstances [WiZaRd] - Stulle
+Fixed: Current window was not entirely redrawn on changing window color [Stulle] - Stulle
+Fixed: DLP version number was not updated on manual update in settings [Stulle] - Stulle
+
+Removed: New official Ask-On-Exit Dlg in favor of ScarAngel one (NTService) [Stulle] - Stulle
+
+Note: Following languages updated: German [Stulle]; Chinese (P.R.C.) [zz_fly];
+	Chinese (Taiwan) [AndCycle]; French [jamjam]; Spanish [Rajil/mself563];
+	Italian [xilolee/EvolutionCrazy]; Turkish (partially) [omeringen]
+Note: Added existing Czech ScarAngel translations to Czech translation file
+
+
+eMule v0.49c ScarAngel v3.3:
+------------------------
+- 03.12.2009 -
+-------------------------------------------------------------------------------
+based on eMule 0.49c Xtreme 7.2 compiled with vs2008 SP1
+
+Added: Date File Name Log (enabled by default) [AndCycle] - Stulle
+Added: Ionix advanced (multiuser) webserver [iOniX/Aireoreion/wizard/leuk_he/Stulle] - Stulle
+Added: Multiuser WebInterface (WI) Cookie settings [Aireoreion] - Stulle
+	+ added code missing in MorphXT so it works
+Added: New failed login handling for WI [MorphXT/leuk_he/dreamwalker/Stulle] - Stulle
+Added: Failed login screen for WebInterface [SiRoB/CommanderGer/Stulle] - Stulle
+	+ Also for multiuser WI
+Added: Tabbed WebInterface settings panel [Stulle] - Stulle
+	+ For multiuser settings
+Added: Extra logging to notify of missing webserver files [leuk_he] - Stulle
+Added: PowerShare support for WebInterface [Stulle] - Stulle
+	+ fixed missing tick in menu and improper table display from StulleMule
+Added: Rebind UPnP mappings (UDP, TCP and Webserver for now) like official [Stulle] - Stulle
+Added: Run eMule as NT Service [leuk_he/Stulle] - Stulle
+	+ localized logging, cleaned up code
+Added: Adjustable NT Service Strings [Stulle] - Stulle
+Added: Extended Prompt on Exit dialog [leuk_he] - Stulle
+Added: Friendslot support for WebInterface [Stulle] - Stulle
+Added: Installer for eMule ScarAngel [leuk_he/Stulle] - Stulle
+	+ translations taken from eMule Morph so credits to the respective creators
+
+Changed: Disable FollowTheMajority per file when file is renamed manually [AndCycle] - Stulle
+Changed: Disable ASFU if too many folders are shared [Stulle] - Stulle
+	+ fixes related crashes; increases ASFU version number to 3.5
+Changed: Only display cat selection dialog if there is more than one cat [Stulle] - Stulle
+
+Fixed: Sorting priority descending failed for powershared files [Stulle] - Stulle
+Fixed: UPnP setting in First Runtime Wizard [leuk_he] - Stulle
+Fixed: Port settings in First Runtime Wizard for Random Ports feature [leuk_he] - Stulle
+Fixed: Missing checkmark for PS limited by amount context menu [Stulle] - Stulle
+Fixed: (Official) Malfunctioning search results in eMule Light template [Stulle] - Stulle
+Fixed: Show last tab in ScarAngel prefs panel on reopening prefs dialog [Stulle] - Stulle
+Fixed: Show friend menu in Friendlist of Webinterface [Stulle] - Stulle
+Fixed: Design settings font colors overridden in UploadListCtrl [Stulle] - Stulle
+Fixed: Personalize Feedback could not be turned off [Stulle] - Stulle
+
+Note: Following languages updated/added: German [Stulle]; French [Heaven]; 
+Chinese (P.R.C.) [jason_jiang]; Italian [Idro182]; Turkish [omeringen]; 
+Spanish [guijarrelson]; Chinese (Taiwan) [alisa/DargonD]
+
+Ionix advanced (multiuser) webserver:
++ You must select the multi user template to enable the multi user settings.
++ Changed user privileges (see below)
++ Added option to restrict user from downloading files via webserver.
++ Multiuser is enabled/disabled automatically on changing template.
+
+Ionix advanced (multiuser) webserver user privileges:
++ Guest: Viewing information from webinterface
++ Operator: Adding/Removing downloads and according to other settings
++ Admin: Like Operator plus privilege to close eMule
++ Hi-Admin: Like Admin plus privilege to shutdown/reboot windows
+
+Run as NT Service:
++ No need to login into windows
++ Keeps running after logging out/ switching users
++ New command line options:
+	- "emule -install"   --> install as a service
+	- "emule -uninstall" --> uninstall as a service
++ Make sure all settings are correct before installing as a service
++ Links are passed to webservice
++ Option to set level of optimization (Full may cause errors!)
++ See Preferences->Web Server->NTservice tab
+
+
+eMule v0.49c ScarAngel v3.2:
+------------------------
+- 17.09.2009 -
+-------------------------------------------------------------------------------
+based on eMule 0.49c Xtreme 7.2 compiled with vs2005 SP1
+Merged to eMule v0.49c [Stulle]
+Updated with code from zz_fly's Xtreme
+
+Added: Static Tray Icon [MorphXT] - MyTh88
+Added: (Design Settings) Shareable file style for SharedFilesCtrl [Stulle] - Stulle
+Added: Feedback personalization [Stulle] - Stulle
+Added: Advanced option to disable/enable MediaDet usage for media files [Stulle] - Stulle
+Added: Display friendslot in UploadListCtrl (Status colum) [Stulle] - Stulle
+Added: More media info related hidden options [Stulle] - Stulle
+
+Changed: Updated ASFU to v3.4 to work with single shared files [Stulle] - Stulle
+Changed: Updated Design Settings for new code (also improves implementation) [Stulle] - Stulle
+Changed: Always wait 5 sec after sending save req before saving file settings [Stulle] - Stulle
+Changed: Write FileSettings.ini sequentially (faster) [Stulle] - Stulle
+Changed: Global SysInfo RAM stats will support usage of more than 4GB [Stulle] - Stulle
+Changed: Min small files push size to 1 kB [Stulle] - Stulle
+Changed: Small files push size slider kB based (makes keyboard input usable) [Stulle] - Stulle
+Changed: (Design Settings) Allow to use multiple font styles (B/U/I) at once [Stulle] - Stulle
+Changed: (Design Settings) Changed version to v3 for above change [Stulle] - Stulle
+	+ import of v2 is done automatically on startup
+Changed: Localize ScarAngel string in Preferences panel list [Stulle] - Stulle
+Changed: Updated Enhanced Client Recognition to v2 (minor change) [Spike2/WiZaRd] - Stulle
+
+Fixed: Save known or FileSettings threads were not terminated properly [Stulle] - Stulle
+Fixed: Some glitches around Timer for ReAsk File Sources [Stulle] - Stulle
+Fixed: Changing the small files push size reset changes in the Tree options [Stulle] - Stulle
+Fixed: Some glitches around enabling/disabling the Speedbars in the toolbar [Stulle] - Stulle
+Fixed: Don't reset Connection Settings for Webserver/CML/MM [Stulle] - Stulle
+
+Removed: Color Upload Feedback [MyTh88]- MyTh88
+
+Feedback personalization:
++ integrated into Design Settings
++ allows you to change font style and color of the feedback
++ Label style will be applied to the whole feedback block
++ Default style will be applied if color is default and no font style is set
+
+
+eMule v0.49b ScarAngel v3.1:
+------------------------
+- 13.10.2008 -
+-------------------------------------------------------------------------------
+based on eMule 0.49b Xtreme 7.0 compiled with vs2005 SP1
+Merged to eMule v0.49b [Stulle]
+
+Added: IP Filter White list [Stulle] - Stulle
+Added: TK4 CreditSystem [BlueSonicBoy] - Stulle
+Added: ZZUL CreditSystem [ZZ] - Stulle
+Added: Modified FineCS [CiccioBastardo/Stulle] - Stulle
+Added: Advanced Transfer Window Layout [Stulle] - Stulle
+Added: Completed in Tray [Stulle] - Stulle
+Added: Threaded File Settings Saving [Stulle] - Stulle
+	+ keeps the GUI responsive while saving
+Added: Threaded Known Files Saving [Stulle] - Stulle
+	+ keeps the GUI responsive while saving
+Added: On Upload Queue in Copy Feedback feature [MyTh88] - MyTh88
+Added: New IPFilter (Maintained by Ozzy) [Stulle] - Stulle
+	+ uses DynDNS to check version, mirrored at SourceForge, unrar.dll required!
+Added: Show (un-)loading status of IPFilter [Stulle] - Stulle
+Added: Sum up transferred stats on getting Feedback for multiple files [Stulle] - Stulle
+Added: Color Upload Feedback [MyTh88]- MyTh88
+
+Changed: Improved resizing of cats tab in SearchResultWnd [Stulle] - Stulle
+Changed: Using official code for proper background of Icons with text [Officials] - Stulle
+Changed: Cleaned up Static IP Filter code [Stulle] - Stulle
+	+ only ipfilter.dat layout allowed!
+Changed: Toolbar icons [Tango/schluepfer] - Stulle
+Changed: Waiting Queue icon [Microsoft] - Stulle
+Changed: Known Clients icon [Aha-Soft] - Stulle
+Changed: Upload and Download icon [Studiomx] - Stulle
+Changed: Downloading Files icon [Fast Icon] - Stulle
+Changed: Increased font size for Sub Heading text in context menu [Stulle] - Stulle
+Changed: Use proper English in some places ;) [ginger] - Stulle
+Changed: Reworked the Feedback code a bit [Stulle] - Stulle
+Changed: Enable List requested files only when needed [Stulle] - Stulle
+Changed: Only identified and not available SUI clients can be superior [Stulle] - Stulle
+Changed: Make code VS 2005 and VS 2008 ready [MorphXT] - Stulle
+Changed: Some more changes for Advanced Options [MorphXT] - Stulle
+
+Fixed: InputBox for ResumeOrder [Stulle/fafner] - Stulle
+Fixed: Crash when checking if sup client should not be kicked from UL [Stulle] - Stulle
+Fixed: Improper use of FindBestClientInQueue when checking for sup client [Stulle] - Stulle
+Fixed: No max time for clients that should be prevented [Stulle] - Stulle
+Fixed: Not working chars for context menus [Stulle] - Stulle
+Fixed: Scheduled DLP Update not working [Stulle] - Stulle
+Fixed: Memleak FiX in SysInfo [WiZaRd] - Stulle
+Fixed: Corrupted BarShaderInfo [fafner] - Stulle
+Fixed: Corrupted SpreadBarInfo [fafner] - Stulle
+
+Removed: Second CryptTCPPaddingLength option from Advanced Options [Stulle] - Stulle
+Removed: Last renmants of the Xtreme version check [Stulle] - Stulle
+Removed: Drop Win95 support (for VS2008 compatibility) [MorphXT] - Stulle
+
+IP Filter White List:
++ IPs on this list will not be banned
++ use ipfilter_white.dat to add IPs to the White List
+
+Advanced Transfer Window Layout:
++ Any two lists can be viewed at the same time
++ Downloading file list can only be viewed in the upper part
++ If list shown in the upper half is already in the lower half the lower
+list changes to next list
++ To disable/ enable press the split button/ item
+
+
+eMule v0.49a ScarAngel v3.0:
+------------------------
+- 06.07.2008 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a Xtreme 6.1 compiled with vs2003 SP1
+Merged to eMule v0.49a [Stulle]
+
+- Xtreme's heir -
+
+Added: Auto download priority [tommy_gun/iONiX] - MyTh
+Added: MenuXP Sub Heading [fafner] - MyTh
+
+Changed: Context menu Sidebars show mod version [Stulle] - MyTh
+Changed: Context menu title shown as sub heading [Stulle] - MyTh
+Changed: Localize Source Graph group box [Stulle/thx pennyliu123] - Stulle
+Changed: Localize Push Small Files label above slider [Stulle/thx pennyliu123] - Stulle
+Changed: Localize TBH: MM group item [Stulle/thx pennyliu123] - Stulle
+Changed: Localize "12h" string for Release Bonus [Stulle/thx pennyliu123] - Stulle
+Changed: Updated UPnP implementation, UPnP lib and PThread lib [leuk_he] - Stulle
+Changed: Updated IP2Country implementation [MorphXT] - Stulle
+Changed: Updated libping to 1.28 (which is same source as 1.27) [leuk_he] - Stulle
+Changed: Updated CxImage to 6.00 (we use the rather complete lib) [Stulle] - Stulle
+Changed: No increased reask time for Mephisto clients [Stulle] - Stulle
+Changed: No Pay back First for non-SUI clients if client ident failed [Stulle] - Stulle
+Changed: Only draw credits overlay icon for mods [Stulle] - Stulle
+Changed: Creation of TBH: MiniMule (won't show up on startup now) [Stulle] - Stulle
+Changed: Display warning in Design Panel for all Windows > XP [Stulle] - Stulle
+Changed: Made Compat clients stats code prettier [WiZaRd] - Stulle
+Changed: Ban clients with reduced score immediatly on setting changed [Stulle] - Stulle
+Changed: Keep Sup clients in up if there is no other sup client in queue [Stulle] - Stulle
+
+Fixed: Do not restrict download if no upload possible [Stulle] - Stulle
+	+ missed merging the proper version of this code on releasing
+Fixed: Anti-Uploader-Ban case 2 and 3 (horribly old...) [Stulle] - Stulle
+
+Removed: Redundant File Settings code (old) [Stulle] - Stulle
+Removed: Safe KAD code and thelike (for now) [Stulle] - Stulle
+Removed: Xtreme version check (not working for now) [Stulle] - Stulle
+
+
+eMule v0.48a ScarAngel v2.5:
+------------------------
+- 28.12.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a Xtreme 6.1 compiled with vs2003 SP1
+
+Added: Links for Server list and nodes file [Stulle] - Stulle
+Added: High resolution speedmeter on toolbar [eFMod/Stulle] - Myth88
+
+Changed: Do not restrict download if no upload possible [Stulle] - Stulle
+
+Fixed: Resume mode combobox in Categorie dialog [Stulle] - Stulle
+Fixed: Auto Update IP2Country on startup [Stulle] - Stulle
+Fixed: Do not reserve 1/3 of your uploadlimit (finally!) [Stulle] - Stulle
+Fixed: URL input for updates [Stulle] - Stulle
+Fixed: Design Settings (backgrounds and windows were broken) [Stulle] - Stulle
+
+
+eMule v0.48a ScarAngel v2.4:
+------------------------
+- 14.10.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a Xtreme 6.1 compiled with vs2003 SP1
+
+Changed: Override max upload session time for PBF clients [Stulle] - Stulle
+Changed: Override max upload session time for friends [Stulle] - Stulle
+Changed: Keep friends in upload like PBF clients [Stulle] - Stulle
+Changed: Do not reserve 1/3 if ratio is max 1:2 [Stulle] - Stulle
+Changed: Only give back waitingtime if transferred < 9MB [Stulle] - Stulle
+Changed: Do not give back waitingtime if it would be more than the old [Stulle] - Stulle
+Changed: Only give back waitingtime if transfer completed [Stulle] - Stulle
+Changed: Only give back waitingtime if SUQWT or FullChunk enabled [Stulle] - Stulle
+Changed: Friends with friend slot always get superior status [Stulle] - Stulle
+Changed: Updated Mod Icons [Stulle] - Stulle
+
+Fixed: Possible buffer overun in Enforce Ratio code [Stulle] - Stulle
+Fixed: Do not reserve 1/3 of your uploadlimit for emule [Stulle] - Stulle
+Fixed: Missed to enable Auto IPfilter update by default [Stulle] - Stulle
+
+
+eMule v0.48a ScarAngel v2.3:
+------------------------
+- 17.09.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a Xtreme 6.1 compiled with vs2003 SP1
+
+Added: Advanced Options [Official/leuk_he] - Stulle
+Added: handling of one-time-events for Scheduler [Mighty Knife] - Stulle
+Added: Weekly IPFilter update [leuk_he] - Stulle
+Added: IP2Country update [MorphXT] - Stulle
+Added: One click update for antiLeech.dll [Stulle] - Stulle
+Added: Auto update antiLeech.dll [Stulle] - Stulle
+Added: Display data difference on PBF in UploadList [Stulle] - Stulle
+
+Changed: ASFU: Moved EndCall [Stulle] - Stulle
+Changed: AFSU: Reset when en-/disabled [Stulle] - Stulle
+Changed: Update IPFilter on every startup if enabled [Stulle] - Stulle
+Changed: antiLeech.dll, ip-to-country.csv & ipfilter.dat not in BIN pack [Stulle] - Stulle
+	+ files will be updated/ downloaded on startup by default
+Changed: Auto update IPFilter migrated to Update tab [Stulle] - Stulle
+Changed: Enforce Ratio will start when configured ratio-0.1 reached [Stulle] - Stulle
+	+ Examples: 1:1 -> 1:0.9 ; 1:3 -> 1:2.9 ; 1:5 -> 1:4.9 ; ...
+Changed: Enforce 1:1 ratio when configured enforce ratio exceeded [Stulle] - Stulle
+Changed: Increased max slotspeed by 25% [Stulle] - Stulle
+	+ WARNING: If upload is less stable decrease slotspeed and/or enable OpenMoreSlots!
+Changed: Increased maximum possible slot speed to 19 (by 26.6666%) {Stulle] - Stulle
+Changed: Decrease MinSlots value and minmum by one if UL-health >= 75% [Stulle] - Stulle
+Changed: Decrease MaxSlots value by one if slotspeed > 4kbps [Stulle] - Stulle
+Changed: MuleListCtrl context menu (column context) in XP Style [Stulle] - Stulle
+Changed: Icon for share folder commands in context menu [Official] - Stulle
+
+Fixed: Loading of Cat version (fix default cat settings) [Stulle] - Stulle
+
+
+eMule v0.48a ScarAngel v2.2:
+------------------------
+- 08.09.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a Xtreme 6.1 compiled with vs2003 SP1
+
+Changed: Recode of the file settings [Stulle]
+
+Fixed: Crashfix in Upload list (FairPlay code) [Stulle] - Stulle
+Fixed: Odd word invention "constantinously" to "constantly" [LorenzC]- Stulle
+Fixed: Some more mem leaks [fafner] - Stulle
+
+File Settings:
++ all .sivka files will be deleted
++ all settings will be stored in the FileSettings.ini
++ supports all current settings by StulleMule and ScarAngel
++ settings are saved on taking over SivkaFileSettings and on closing eMule
+
+
+eMule v0.48a ScarAngel v2.1:
+------------------------
+- 13.08.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a Xtreme 6.1 compiled with vs2003 SP1
+
+Added: Do not reserve 1/3 of your uploadlimit for emule [Stulle] - Stulle
+Added: Disable accepting only clients who asked within last 30min [Stulle] - Stulle
+	+ Xtreme only grants upload to clients that asked within the last 30min
+Added: Follow The Majority [AndCycle/Stulle] - Stulle
+Added: Fair Play [AndCycle/Stulle] - Stulle
+Added: Alwasy maximize slot speed [Stulle] - Stulle
+Added: Timer for ReAsk File Sources [Stulle/ idea from sivka] - Stulle
+	+ Due to Spread Reasks the actual ReAsk time is: [SetTime]+{-3...0.5 minutes}
+
+Changed: check mark superior to icon (MenuXP) [fafner] - Stulle
+Changed: Quickstart for KAD-only connection [Stulle] - Stulle
+Changed: No FunnyNick for bad guys [Stulle] - Stulle
+Changed: Max enforced ratio to 1:10 [Stulle] - Stulle
+
+Fixed: Saving of Cat version (save default Cat viewfilters) [Stulle] - Stulle
+Fixed: GDI-Leaks around the context menus [Stulle] - Stulle
+
+Do not reserve 1/3 of your uploadlimit for emule:
++ Only active if you upload more than download in this session.
++ Reserves only a minimum of 2 kB/s for eMule.
+
+
+eMule v0.48a ScarAngel v2.0:
+------------------------
+- 13.06.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a Xtreme 6.0 compiled with vs2003 SP1
+
+Added: Anti fragmenting [netfinity] - Stulle
+Added: KAD vista fix [godlaugh2007] - Stulle
+Added: Safe KAD [netfinity] - Stulle
+Added: KAD speed optimizations [netfinity] - Stulle
+Added: Display reason for zero score [Stulle] - Stulle
+Added: Automatic shared files updater [MoNKi] - Stulle
+Added: Emulate others [WiZaRd/Spike/shadow2004] - Stulle
+Added: Anti Uploader Ban (0 = disabled) [Stulle]
+Added: Recognize MlDonkey XS Answer [Spike2/ideas by Wiz] - Stulle
+Added: Spread Credits Slot [Stulle] - Stulle
+Added: Pay Back First [AndCycle/SiRoB/Stulle] - Stulle
+
+Removed: WebCache [WC team/MorphXT] - Stulle/Max
+
+Anti Uploader Ban - Stulle
++ Case 1 - UL >= Limit:
+	- clients who uploaded more but the limit don't get banned
++ Case 2 - UL-DL >= Limit
+	- clients with a difference between up- and download which is higher but the
+	  limit won't get banned until the difference reaches the limit
++ Case 3 - UL-DL >= Limit
+	- clients with a difference between up- and download which is higher but the
+	  limit won't get banned until the difference reaches 0 (if session ends before
+	  0 is reached the client will have to reach the limit again in the next session
+	  to have ban-prevention
+
+Spread Credits Slot - Stulle
++ every X slots a slot is given to a client that never uploaded to us, downloaded from us,
+	receives no small file push, is no leecher and does not request a PS file
++ Full Chunk Transfer has to be enabled!
+
+Spread Credits Slot debugging:
++ @ Spr N = usual Spread Credits Slot (0 up/ 0 down)
++ @ Spr O = got a SCS but was removed early
+
+
+eMule v0.47c ScarAngel v1.9:
+------------------------
+- 25.03.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c Xtreme 5.4.2 compiled with vs2003 SP1
+
+Added: More icons in context menus [various] - Stulle
+Added: Improved ICS-Firewall support [MoNKi] - Max
+Added: Invisible Mode [TPT/MoNKi/SiRoB] - Stulle
+Added: UPnP support [MoNKi/leuk_he] - leuk_he
+Added: Random Ports [MoNKi] - Stulle
+Added: Select window background color [MaxUpload] - Max
+Added: Simple cleanup [MorphXT] - Stulle
+	remark: This is not in the Xtremes implementation, stick to older versions
+Added: Support page in preferences [Stulle] - Stulle
+Added: Default value for background colors [Stulle] - Stulle
+Added: Design settings save version number (now v2) [Stulle] - Stulle
+
+Changed: Superior clients inserted at first position in UL [Stulle] - Stulle
+Changed: Various things around XP-Style menus [Stulle] - Stulle
+Changed: Reworked "give waiting time back"-code for SUQWT [Stulle] - Stulle
+Changed: Rewrote Design settings (one enum per master item) [Stulle] - Stulle
+Changed: List backgrounds unrelated to items in list (instant change) [Stulle] - Stulle
+
+Updated: Webcache [MorphXT] - Stulle
+
+Fixed: Columns with wrong background in DlClients and QueueList [Stulle] - Stulle
+Fixed: Webcache information drawn in wrong column [Stulle] - Stulle
+Fixed: Sometimes client's credits are not updated though they should [Stulle] - Stulle
+Fixed: ScarAngel horizontally truncated in Splash [Stulle] - Stulle
+
+Removed: Unnecessary log line on Design settings changed [Stulle] - Stulle
+Removed: UPnP support [Xtreme] - Stulle
+Removed: Unused code of TBH: MiniMule implementation [Stulle] - Stulle
+
+
+eMule v0.47c ScarAngel v1.8:
+------------------------
+- 04.01.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c Xtreme 5.4 compiled with vs2003 SP1
+
+Added: XP-Style menus [Xanatos/ eMule-web.de staff] - Stulle
+Added: Design Settings [eWombat/Stulle] - Stulle
+Added: Static IP Filter [Stulle] - Stulle
+	remark: save "ipfilter_static.dat" in config dir
+Added: Limit PS by amount of data uploaded [Stulle] - Stulle
+Added: Enhanced Client Recognition [Spike]
+Added: Compat Client Stats [Stulle] - Stulle
+Added: Enforce Ratio [Stulle] - Stulle
+
+Changed: Tabs in ScarAngel preferences dialog can be translated [Stulle] - Stulle
+
+Fixed: Reset Spread Bars command [Stulle] - Stulle
+Fixed: second categories column in DownloadList removed [Stulle] - Stulle
+
+Removed: always one release slot [Xman] - Stulle
+	+ use PowerShare instead
+
+Design Settings:
++ Only enabled styles will be applied
++ Styles sorted by importance in triggering (default excluded)
++ Combining two styles is impossible
+
+Enforce Ratio:
++ Download will be limited when 80% of the max ratio is reached
++ Example: Ratio = 1:1 --> Limit when 1:0.8 to download = upload*1
++ Display details on ratio activation
+
+
+eMule v0.47c ScarAngel v1.7:
+------------------------
+- 30.10.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c Xtreme 5.3.1 compiled with vs2003 SP1
+
+Added: Release Bonus (12h or up to 16 days) (not for partfiles) [sivka]
+Added: Release Score assurance [Stulle]
+
+Fixed: Crash on renaming/ deleting shared file [Stulle] - Stulle
+
+Release Score assurance:
++ clients requesting complete files with release priority will not get
+	a score lower than the default unless they are Reduce Score clients
+
+
+eMule v0.47c ScarAngel v1.6:
+------------------------
+- 27.10.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c Xtreme 5.3.1 compiled with vs2003 SP1
+
+Added: Spread bars [Slugfiller/MorphXT] - Stulle
+Added: HideOS & SOTN [Slugfiller/MorphXT] - Stulle
+	+ for complete files only!
+Added: Anti Anti HideOS & SOTN [SiRoB] - Stulle
+Added: See chunk that we hide [SiRoB] - Stulle
+Added: Rare file ratio column in SharedList [Stulle] - Stulle
+Added: Superior Client Handling [Stulle] - Stulle
+Added: PowerShare [ZZ/MorphXT] - Stulle
+Added: Draw PS file requesting clients red [Stulle] - Stulle
+
+Changed: Show Client Percentage optional [Stulle] - Stulle
+
+Fixed: WebCache working with obfuscation [MorphXT] - Stulle
+
+Removed: Spread bars (old version) [SlugFiller] - Stulle
+Removed: Dynamic Hide OS [SlugFiller/Xman] - Stulle
+
+PowerShare:
+ + PowerShare only works on complete files
+ + Clients requesting PowerShare will get pushed to top of the queue
+
+
+eMule v0.47c ScarAngel v1.5:
+------------------------
+- 28.09.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c Xtreme 5.3 compiled with vs2003 SP1
+
+Changed: Replaced CPU usage reader code [ejor] - Stulle
+Changed: System Info settings resetted to default [Stulle] - Stulle
+Changed: System Info updated every second instead of 2.5 seconds [Stulle] - Stulle
+
+
+eMule v0.47a ScarAngel v1.4:
+------------------------
+- 09.09.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a Xtreme 5.2.2 compiled with vs2003 and Netfinity's fix
+
+Fixed: Null-pointer crash in SCC (removed check due to some reason... wtf!) [Stulle] - Stulle
+
+
+eMule v0.47a ScarAngel v1.3:
+------------------------
+- 09.09.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a Xtreme 5.2.2 compiled with vs2003 and Netfinity's fix
+
+Added: Adjust compress level [Stulle] - Stulle
+	+ You may reduce the compression default value or switch off with this
+Added: Smart Category Control (SCC) [khaos/SiRoB/Stulle] - Stulle
+
+Fixed: Rare ratio column [Stulle] - Stulle
+Fixed: SysInfo Memleak [WiZaRd] - Stulle
+Fixed: SysInfo wasn't destroyed (pointed out by JvA) [Stulle] - Stulle
+Fixed: Changelog dates! =D - Stulle
+
+
+eMule v0.47a ScarAngel v1.2:
+------------------------
+- 19.07.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a Xtreme 5.2.1 compiled with vs2003 and Netfinity's fix
+
+Added: Show Client Percentage [Commander/MorphXT] - Mondgott
+Added: Tabbed Preferences [TPT] - Stulle
+Added: TBH: Backup [TBH/EastShare/MorphXT] - Stulle
+Added: TBH: MiniMule [TBH/Stulle] - Max
+Added: Copy feedback feature [MorphXT] - Stulle
+Added: Source Counts Are Cached derivated from Khaos [SiRoB] - Stulle
+Added: MassRename [Dragon] - Stulle
+Added: Startupsound [Commander] - Mav744
+
+Changed: Enable/ Disable Sysinfo (complete and global) [Stulle/iONiX] - Stulle
+Changed: added flag to return US Text for CastToXBytes [SiRoB] - Stulle
+
+Updated: Webcache [SiRoB] - Stulle
+
+Fixed: Xman Credit System [Stulle] - Stulle
+Fixed: About dialog [Stulle] - Stulle
+
+Removed: Copy UL-Feedback feature [IcEcRacKer] - Stulle
+
+
+eMule v0.47a ScarAngel v1.1:
+------------------------
+- 21.04.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a Xtreme 5.1 compiled with vs2003 and Netfinity's fix
+
+Note: We need new alpha/ beta tester. If you are interested please contact me
+	Requirements: speaking English/ German; good eMule knowledge; time!
+
+Added: Quickstart [TPT] - Max
+
+Updated: WebCache [SiRoB] - Stulle
+
+Changed: Trayicon (red/yellow/green square indicating connection) [Stulle] - Stulle
+Changed: last reask and next reask updated to match latest xtreme code [Max] - Max
+Changed: #emule-deutschland default irc help channel [Max] - Max
+
+Fixed: (minor) Forgot to count Xtreme's manual drops for the dropped src column [Stulle] - Stulle
+Fixed: (minor) Forgot to add UpdateDisplayedInfo(true) after new manual drops [Stulle] - Stulle
+
+
+eMule v0.47a ScarAngel v1.0:
+------------------------
+- 02.04.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a Xtreme 5.0.1 compiled with vs2003 and Netfinity's fix
+
+Added: Status color [EastShare] - Max
+Added: Last asked time & next asked time in prio column [EastShare/Xman/Max] - Max
+Added: WebCache [WC team/MorphXT] - Stulle/Max
+Added: Active Connection Control [Obelix/Max]
+Added: display CPU/MEM usage in transferwnd [$ick$/Stulle] - Max
+Added: Relax on Startup [WiZaRd] - Max
+Added: ScarAngel Preferences Window [Stulle] - Stulle
+Added: Global Hardlimit [Stulle/many ideas by Max] - Stulle
+Added: Push-small-files (boost can be configured manually) [Sivka/Stulle] - Stulle
+Added: Push-rare-files [Tarod/ eF-Mod] - Stulle
+Added: Different CreditSystems [EastShare/ MoprhXT/ Stulle] - Stulle
+	+ lovelace, Pawcio, Ratio, EastShare, Sivka, S.W.A.T., Xman, official
+	+ The CreditSystem is always enabled
+Added: Save Upload Queue Waiting Time (SUQWT) [Moonlight/ EastShare/ MorphXT] - Stulle
+Added: Show source on title [Stulle] - Stulle
+Added: Show emule´s infos in your MSN7 (or above) message field v2 [MOnKi/ikabot/Stulle] - Stulle
+Added: Show global HL [Stulle] - Stulle
+Added: Draw friends blue [Stulle] - Stulle
+Added: Show HL per file constantaniously [Stulle] - Stulle
+Added: Show global HL [Stulle] - Stulle
+Added: Sivka File Settings [Sivka/Stulle] - Stulle
+Added: Customized source dropping [Sivka/Stulle] - Stulle
+Added: show # of dropped sources per file in DownloadList [Stulle] - Stulle
+Added: Several Mod Icons [Stulle] - Stulle
+	+ note: supports ScarAngel, StulleMule, MAXmod, Xtreme, Morph,
+		EastShare, iONiX, Cyrex2001, NextEMF, Neo Mule
+Added: Preferences Banner [TPT/ MorphXT/emule-web.de team] - Stulle
+Added: Advanced manual dropping [Stulle] - Stulle
+Added: Fake HighID check [netfinity] - Stulle
+Added: FunnyNick [SiRoB/Stulle] - Stulle
+Added: Client queue progress bar [Commander] - Stulle
+Added: ScarAngel Version Check [Official/MorphXT/Stulle] - Stulle 
+
+Changed: ModID [Maella] management replaced with ModID [itsonlyme/SiRoB] - Stulle
+Changed: Startup Banner, Program Icon [emule-web.de team] - Stulle
+
+Sivka File Settings:
+ + You can customize time between src drops, enable/ disable src dropping and min src for dropping
+ + You can enable/ disable Global HL for a file
+ + Custom hardlimit moved to Sivka File Settings dialog
+
+customized source dropping:
+ + uses settings from Sivka File Settings
+ + uses seperate timer for Low2LowIP, NNS, FQ, HQR
+ + if not optional most dropping code is still Xtreme (not time...)
+
+advanced manual dropping:
+ + Low2LowIP
+ + unknown, error and banned
+ + high queue rating sources (Xman method)
+ + high queue rating sources (Sivka method)
+ + CleanUp => NNS, FQS, unknown, error and banned
+
+CPU/ Memory usage display in TransferWnd:
++ Display order: "CPU : CPU usage of eMule (CPU usage of the whole system)"
+	"Mem : Memory usage of eMule (currently used physical Mem/ RAM of System)"

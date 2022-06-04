@@ -1,0 +1,43 @@
+﻿Xtreme FAQ
+F: Wo ist mein Einstellungsordner (und andere Ordner)?
+A: Siehe den unten stehenden Link, und finde den Einstellungsordner auf deinem Computer.
+Einstellungsordner finden
+Für die Anfänger, wenn du der einzige Benutzer an deinem Computer bist, empfehle ich dir den Benutzerordnermodus auf "Speicher die Konfiguration und Downloads im eMule Programmverzeichnis" zu stellen.
+In diesem Fall wird der Einstellungsordner im selben Ordner angelegt, wo auch die eMule.exe ist.
+
+F: Was bedeutet "CLEAN INSTALL"? Wann sollte ich einen "CLEAN INSTALL" machen?
+A: Im Xtreme, CLEAN INSTALL die preferences.ini aus dem Einstellungsordner löschen. Dies wird nicht die Credits beschädigen.
+Bei anderen Mods, "CLEAN INSTALL" heisst alle Dateien aus dem Einstellungsordner löschen, ausser diese: Adresses.dat, Category.ini, Clients.met, Cryptkey.dat, Emfriends.met, Ipfilter.dat, Ip2Country.dat, Known.met, Known2_64.met, Preference.dat, Server.met, Sharedir.dat, Statistics.ini.
+Wenn du Mod wechselst, oder Hauptversion des Xtreme wechselst (zb. von 7.X zu 8.X), solltest du besser einen CLEAN INSTALL machen, um Fehler zu vermeiden.
+
+F: Was ist perference.ini?
+A: perference.ini ist deine Konfigurationsdatei in deinem Einstellungsordner. Sie speichert Einstellungen, Fensterpositionen und erweiterte Einstellungen. Userhash, Zertifizierung(credits), Kategorie und Statistiken sind nicht darin gespeichert.
+
+F: Xtreme crasht wenn ich zum Suchfenster wechsel oder eine Suche starte. Was soll ich machen?
+A: Lösche die StoredSearch.met in deinem Einstellungsordner.
+
+F: Wie kann ich 24k send buffer aktivieren?
+A: Bearbeite deine Perference.ini in deinem Einstellungsordner. Finde die Zeile die mit "sendbuffersize=" beginnt, (falls sie nicht existiert, erstelle sie), und ändere den Wert.
+Alle versteckten Einstellungen können so ähnlich gemacht werden. Zum Beispiel, anzeigen von Länderflaggen im KAD Fenster.
+
+F: Wie kann ich zu KAD verbinden?
+A: Wenn du zu einem Server und/oder anderem Client verbunden bist, drücke einfach auf den "verbinden" button im KAD Fenster, Xtreme wird sich automatisch zu KAD verbinden.
+Wenn du nicht verbunden bist, kannst du Bootstrap im KAD Fenster drücken. Xtreme wird in deinem Browser eine Seite öffnen. Auf der Seite kannst du eine Node.dat finden, und zum Xtreme hinzufügen.
+
+F: Wie kann ich die Dateipuffer grösse verändern?
+A: Nein, 2M Dateipuffer ist genug. Wenn du darauf bestehst, ändere diesen Wert per bearbeiten der perference.ini.
+
+F: Es sind nur wenige Server in der Serverliste. Was soll ich machen?
+A: Keine Angst. Es gibt nur wenige gute Server in der Welt. Benutze KAD anstatt von Servern.
+
+F: Ich will manche freigegebene Dateien in einen anderen Ordner verschieben. Wie kann ich das rehashen der Dateien verhindern?
+A: Wenn Xtreme läuft, und der Zielordner freigegeben ist, verschiebe deine Dateien mit Windows Explorer (oder etwas anderem), und aktualisiere deine freigegebenen Dateien mit dem Aktualisiere-Button im Fenster für freigegebene Dateien.
+Wenn Xtreme läuft, aber der Zielordner nicht freigegeben ist, verschiebe deine Dateien mit Windows Explorer (oder etwas anderem), dann gebe den Zielordner frei.
+Wenn Xtreme nicht läuft, bitte stell sicher, das die Option "Erinnere unbenutzte AICH-Hashes" aktiviert ist, verschiebe deine Dateien mit Windows Explorer (oder etwas anderem), dann starte Xtreme, und gebe den Zielordner frei.
+
+F: Kann Xtreme mehrere tausend Dateien freigeben/sharen?
+A: Sicher, kann er. Aber du musst dich daran erinnern, das das Programm dafür optimiert ist, mehrere hundert Dateien zu sharen. Die Grafikoberfläche (GUI) wird träger reagieren, wenn tausende Dateien freigegeben sind.
+Und es ist besser nicht zu KAD/Server zu verbinden während du tausende Dateien hashst. Verbinde zu KAD/Server wenn das Hashen beendet ist.
+
+F: Ich bin ein Anfänger. Ich weiss nicht was diese Einstellungen bewirken? Was kann ich machen?
+A: Keine Angst. Die Standardeinstellungen sollten in den meisten Fällen passen. Du findest auch hier Hilfe!

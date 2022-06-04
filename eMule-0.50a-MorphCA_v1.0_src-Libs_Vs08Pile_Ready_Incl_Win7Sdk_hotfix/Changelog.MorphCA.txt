@@ -1,0 +1,14 @@
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.0
+--------------------------------------
+
+13-05-2010
+
+Based on eMule 0.50a MorphXT 12.0 / Update to eMule 0.50a [Stulle]
+
+Add: ClientAnalyzer [WiZaRd]
+Add: OldStyle StatisticsWindow [TK4]
+Change: GUI, Optionspages and some icons
+Remove: many code i don't need to have a litewight version ;)
+
+official mod without any bad features

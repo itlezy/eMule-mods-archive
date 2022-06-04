@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cximage90", "cximage90.vcproj", "{8FEC2660-7F95-4C2E-8747-36176E1FCF82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		debug90|Win32 = debug90|Win32
+		Release P4-AthlonXP|Win32 = Release P4-AthlonXP|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Debug|Win32.Build.0 = Debug|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.debug90|Win32.ActiveCfg = debug90|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.debug90|Win32.Build.0 = debug90|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release P4-AthlonXP|Win32.ActiveCfg = Release P4-AthlonXP|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release P4-AthlonXP|Win32.Build.0 = Release P4-AthlonXP|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release|Win32.ActiveCfg = Release|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

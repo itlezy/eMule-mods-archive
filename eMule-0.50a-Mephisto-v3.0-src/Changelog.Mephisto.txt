@@ -1,0 +1,137 @@
+CHANGELOG FOR EMULE Mephisto MOD
+
+
+eMule v0.50a Mephisto v3.0:
+------------------------
+- 10.04.2011 -
+-------------------------------------------------------------------------------
+based on eMule 0.50a ScarAngel 4.0 compiled with vs2010 SP1
+
+Added: Dynamic Socket Buffering [SiRoB]
+Added: Send Array Packet (may reduce upload perturbation, only used for UL, yet) [SiRoB]
+Added: Display remaining upload time (estimation!) [Stulle]
+
+Changed: Use minfragsize to calculate best amount to send to full slots [Stulle]
+Changed: Min buffer threshold for CreateNextBlockRequest based on slot speed [SiRoB]
+Changed: Allow buffering more than one additional block in CreateNextBlockRequest [Stulle]
+Changed: (Xtreme) Check if upload should be ended frequently called twice [Stulle]
+Changed: Increased thresholds for dropping blocking sockets [Stulle]
+
+Fixed: Min UL speed to prevent slot from being dropped was improperly calculated [Stulle]
+
+Removed: Now redundant doublesendsize feature from Xtreme [Stulle]
+
+
+eMule v0.49c Mephisto v2.2:
+------------------------
+- 06.10.2009 -
+-------------------------------------------------------------------------------
+based on eMule 0.49c ScarAngel 3.2 compiled with vs2005 SP1
+
+
+eMule v0.49b Mephisto v2.1:
+------------------------
+- 13.10.2008 -
+-------------------------------------------------------------------------------
+based on eMule 0.49b ScarAngel 3.1 compiled with vs2005 SP1
+
+Changed: Veto new only slot if trickles are transfering [Stulle]
+
+
+eMule v0.49a Mephisto v2.0:
+------------------------
+- 06.07.2008 -
+-------------------------------------------------------------------------------
+based on eMule 0.49a ScarAngel 3.0 compiled with vs2003 SP1
+
+- Xtreme's evil heir -
+
+Added: Drop blocking clients [Stulle]
+
+Changed: Updated libs like the ScarAngel [Stulle]
+Changed: Use 0x03 for saving Friendslots to friends.met [ZZ]
+Changed: Keep Sup clients in up if there is no other sup client in queue [Stulle]
+	+ Works a little different, Sup clients are pushed down in upload
+Changed: Min Slot number to two (uses "MinSlotsNew" now) [Stulle]
+
+Fixed: Trickle threshold calculation [Stulle]
+
+Remove blocking clients:
++ Upload health has to be 100%
++ Client has to be Full
++ Min Upload to prevent from kick is one tenth of the upload speed or 1 kbyte/s
++ Client has to be receiving for more than 5 minutes
++ Avg block ratio has to be >= 80% or >= 90% in last 20 sec
+
+
+eMule v0.48a Mephisto v1.1:
+------------------------
+- 28.12.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a ScarAngel 2.5 compiled with vs2003 SP1
+
+Added: Transfer Multiple Chunks [Stulle]
+Added: Adjust maximum upload time (1h-4h; default = 2h) [Stulle]
+Added: Upload Tweak settings (be very careful! see documentation!) [Stulle]
+Added: Veto new slot if one trickle is present [Stulle]
+Added: Add new Slot if new slot is reacting too slow [Stulle]
+
+Changed: Limitation kicks in when 1:2.9 reached instead of 1:3 [Stulle]
+	+ it worked but it was rather rough...
+Changed: Allow PBF for Non-SUI only if state is NotAvailable [Stulle]
+Changed: Accept new clients every 5 seconds instead of 10 [Stulle]
+Changed: Accept new client when closing client uploads more than 1 KByte/s [Stulle]
+Changed: Move PBF client down when he finished a chunk [Stulle]
+Changed: Include Full/Trickle handling in slot opening process [Stulle]
+	+ does not effect bandwith spreading but represents it
+Changed: Change between Full and Trickle only after a configured time [Stulle]
+Changed: Move finishing clients down in upload [Stulle]
+Changed: Calculation for the maximum to give [Stulle]
+
+Fixed: New slot if no trickle (set wrong variable) [Stulle]
+
+Transfer Multiple Chunks:
++ Mode 1: Do not transfer multiple Chunks (like disable the old function)
++ Mode 2: Xtreme Full Chunk (the old version of full chunk transfer)
++ Mode 3: Finish X chunks: Helps the other clients to finish x chunks (max X*PARTSIZE)
+				+ min 3 MB; max 9.28MB*x
++ Mode 4: Upload X Chunks: Transfers X*PARTSZIZE at the max
+
+
+eMule v0.48a Mephisto v1.0:
+------------------------
+- 18.10.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a ScarAngel 2.4 compiled with vs2003 SP1
+
+NOTE: This is the new official branch of the ScarAngel mod with slotfocus.
+NOTE: All preferences will be stored in the [ScarAngel] settings group.
+
+Added: Slotfocus (always enabled) [Stulle]
+Added: full/trickle for GUI purpose [Stulle]
+	+ F for full, T for trickle in speed column
+Added: Display if last UploadBandwithThrottler reached bandwith [Stulle]
+	+ R for reached, NR for not reached in TransferWnd Splitter
+Added: Mephisto version check [Official/MorphXT/Stulle]
+Added: Mephisto GFX [eMule-web.de staff]
+Added: Multiple friendslots [ZZ]
+	+ 1:3 ratio (friends excluded) will be enforced
+Added: Option to configure slot opening due to missing trickle (0=off) [Stulle]
+	+ You better leave this option!
+Added: Links for Server list and nodes file [Stulle]
+Added: Diabolic Easteregg [Stulle]
+	+ Hell, I really wanted to do that for a long time now! XD
+
+Changed: Superior clients are added after the last superior in UL list [Stulle]
+Changed: Resort uploads if PowerShare or friendslot changed [ZZ/MorphXT]
+Changed: Replaced ScarAngel references with Mephisto [Stulle]
+Changed: Startup Sound [Stulle]
+Changed: Status column sorted by slot number [Stulle]
+
+Fixed: Resume mode combobox in Categorie dialog (ScarAngel) [Stulle]
+Fixed: Auto Update IP2Country on startup (ScarAngel) [Stulle]
+
+Removed: Several Xtreme upload settings [Xman]
+Removed: Xtreme full/trickle upload handling [Xman]
+Removed: Always Maximize Slotspeed (redundant) [Stulle]
+Removed: ScarAngel version check [Official/MorphXT/Stulle]

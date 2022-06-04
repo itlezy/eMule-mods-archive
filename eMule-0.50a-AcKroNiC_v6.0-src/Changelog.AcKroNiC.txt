@@ -1,0 +1,44 @@
+﻿AcKroNiC v6.0 Based on MorphXT v12.5
+
+
+replace "skin" to AcKroNiC
+adjust credits thread
+change 1'st time wizard [taz] : most values are now loaded from preferences
+fix store obfuscated server connection on 1'st time wizard [taz] : value never stored
+fix ICS preview priority [taz] : piority values were reversed
+change ICS enabled for preview as well [taz]
+change NewDefaultNick [WiZaRd] : follow mod name
+add regional connection wizard [Mulo Da Soma/taz] : localization
+change regional connection wizard : use Israel for he_IL locale & Italy for all other
+fix (???) fully utilize upload bandwidth on empty queue [taz] : was blocked on max (per class) client datarate
+fix @CServerWnd::ReattachAnchors Repaint Splitter - ReattachAnchors [moloko+]
+add more mods icons [taz] : Icons taken from ModIconDLL
+change mandatory : transfer full chunks, SUI, protect (don't remove) static servers
+change disable queue size setting when InfiniteQueue [WiZaRd/SLUGFILLER] : infinitequeue option moved from Morph optins to extended
+remove ipfilter servers [leuk_he] : treated via ASF
+add ASF - AcKroNiC Servers Filter [taz/Mulo da Soma/EneTec/Spike2]
+add AcK filters [Aenarion/Xanatos] : family and trash filters
+add Low-id notifier [chamblard]
+add Completed in Tray [Stulle]
+add More info about corrupted .met/.part file [Aenarion]
+add Open Incoming from tray [taz]
+change selectable compilation (AcK/Is_CA.h) CA/Morph anti leecher [taz]
+add CA [WiZaRd] + adjustments (compilation related, funny nick, adjust CAntiLeechData::Check4ModThief to -modname-, etc.) [taz]
+fix CUPnP_IGDControlPoint : don't rely in module pointer which is "0"ed on constructor [taz]
+add Variable corrupted blocks ban threshold [Spike2]
+add Inform Clients after IP Change [Stulle]
+add PowerShare stats [taz/pP] : collector code rearranged (mainly shift from Prefs to Stats), stats rewritten
+change New Version Check : adjust check logic (ntohl) + links/notes to AcK
+change default active log pane to log (from server message)
+change splash to follow previous AcKroNiC style
+add Emulate other [???/WiZaRd/Torni/Spike2]
+add Enhanced Client Recognition [Spike2] + stats [Stulle]
+add Nice Hash [Xman]
+add Quick start [TPT]
+change Quick start [taz] : non stored back values (using connection setting)
+add minRQR [WiZaRd]
+add Don't remove dead servers on 0 retries [???]
+add drop sources [Stulle]
+change show # of dropped sources : shift m_ShowDroppedSrc to CDownloadQueue::RemoveSourceAndDontAsk
+fix show # of dropped sources : count only dropped
+add don't drop complete sources [taz] : simplified version due to the change of show # of dropped sources

@@ -1,0 +1,309 @@
+eMule 0.50a -LPE-
+=======================
+
+Build 04.06.2012 [morph4u]
+
+Added: Show system icons in downloadlist switchable
+Added: Upload Permission
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 21.04.2012 [morph4u]
+
+Added: Manual reask in download client list
+Added: Remove client from upload
+Added: Better support for WINE Gnome/KDE desktops [netfinity]
+Added: Quickstart [Xanatos]
+Update: miniupnpc 1.6.20120420
+
+Changed: Modname from "eMule 0.50a lightweight" to "eMule 0.50a -LPE-" 
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 15.04.2012 [morph4u]
+
+Added: Part Traffic bar [Slugfiller]
+ReAdded: Download client staus bar
+ReAdded: Upload client status bar
+ReAdded: Total Up/Down color
+Changed: Some columns in lists
+Changed: Some shell menu code for x64 build
+Fixed: Missing filter in downloaded history window
+Updated ip-to-country.csv from http://upd.emule-security.org/ip-to-country.csv.zip
+
+
+Clean install recommended
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 04.04.2012 [morph4u]
+
+Added: Shell menu in shared files list
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 17.03.2012 [morph4u]
+
+Removed: Custom control for status bar
+Changed: Some code for status bar and tray icon
+Fixed: Some minor fixes
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+Build 10.03.2012 [morph4u]
+
+Changed: Smoother status icons
+Changed: Cleaner code in uploadlist for download status
+Added: Info text for assign eMule to eD2K links in options-general
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+Build 01.03.2012 [morph4u]
+
+Changed: Again progress and status column separated
+Changed: Health display color
+ReAdded: Connection state string
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 28.02.2012 [morph4u]
+
+Added: Health (availability) display for downloading files
+Removed: Search related files
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 24.02.2012 [morph4u]
+
+Fixed: Missing status icon if "stop before complete file" is set in options
+Added: More language dll to bin packages
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 18.02.2012 [morph4u]
+
+Added: Progress bar status color
+Added: Preview icon
+Added: Automatic restart if necessary [David Xanatos]
+Changed: Some minor fixes and cleanings
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 13.02.2012 [morph4u]
+
+Added: Kad nodes(contact) counter to status bar
+Added: Manual update Kad nodes.dat with doubleclick on contact counter in status bar
+Added: Confirm manual update of server.met and nodes.dat
+Note: server.met and nodes.dat update url are modifiable in prefernces.ini
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 11.02.2012 [morph4u]
+
+Added: Update Kad nodes at firststart
+Added: Auto Kad Firewall Recheck [WiZaRd]
+Changed: Kad auto enabled (eD2K optional)
+Changed: Some parts in serverwindow
+Changed: Progress bar
+Changed: Manual servers update moved to context menu
+Removed: Manual kad firewall recheck button
+Removed: Kad contact histogram
+
+code from X-Mod 1.6.1.2 [dolphinx]
+(
+Fixed:
+fix >4GB file rehash issue (ahaha)
+fix UI has no response when the alloc thread starts and make file corrupted (ahaha)
+initialize sfmt in CPartFileConvert::run
+
+Changed:
+replace some CFileFind with _taccess
+QueuedThread can remove tasks to avoid potential crashes
+UTF-8 support for IP2Country and Ini
+)
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 03.02.2012 [morph4u]
+
+Added: Klick on connection state icon open connection options
+Removed: Share status bar
+Removed: Download client staus bar
+Removed: Upload client status bar
+Removed: Total Up/Down color
+Changed: Queuecount label
+
+Clean install recommended
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+Build 29.01.2012 [morph4u]
+
+Added: Tooltip for status icon
+(re)Added: Copy statistics
+Added: Switch to show global buffer usage in info bar
+Changed: Some cleanings and minor fixes
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+Build 28.01.2012 [morph4u]
+
+Added: Country flags to download/uploadlist (to disable delete ip2c files in config folder)
+Changed: Status icons
+Changed: Up/Down display array
+Removed: Username in list and options
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+Build 24.01.2012 [morph4u]
+
+Added: Pay Back First to statistics
+Changed Pay Back First
+Changed: Some icons
+Fixed: AICH Hashset error color in downloadlist
+Fixed: Hashset available label in filedetailinfo, was to small for some languages
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 12.01.2012 [morph4u]
+
+Added: Menu to enable/disable new Progress Bar
+Changed: Some code optimizations
+Changed: UPX compress setting to show eMule icon correct
+
+Note: one user reported a problem about not correct updated progress bar on a notebook (win7/x64)
+      i don't have this problem at me. please give feedback:  
+
+www.facebook.com/pages/morph4u-eMule-Mods/206147386091495
+
+www.specialmods.eu
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+Build 10.01.2012 [morph4u]
+
+Added: Pay Back First [AndCycle/SiRoB/Stulle]
+Added: Pay Back First for incomplete files [morph4u]
+Added: OverlayIcon for PBF clients [morph4u]
+Added: Superior Client Handling [Stulle]
+Added: Keep Sup clients in up if there is no other sup client in queue [Stulle]
+Added: Progress bar in downloadlist [morph4u]
+Changed: Download color in progress bar [morph4u]
+Removed: MinQR in speed column
+Removed: Menu to disable file status icons
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+Build 06.01.2012 [morph4u]
+
+compiled with Visual Studio 2010 SP1 and compressed with upx308w
+
+based on eMule0.50a Lite 1.6.0.0 [dolphinx]
+Upgrade to X-Mod 1.6.1.1 [dolphinx] codebase from 2011-09-18
+Add: Intelligent SOTN [WiZaRd] 
+
+code from X-Mod 1.6.1.1 [dolphinx]
+(
+Fixed:
+
+"Preview" button's text is not shown in Direct Download Dialog
+wrong data type in CAICHRecoveryHashSet::UntrustedHashReceived AddDebugLogLine (dontsueme)
+crash caused by strcpy_s in CAsyncSocketEx
+wrong DebugLog in MiniUPnP
+CServerSocket::ProcessPacket m_bneedpublicIP
+CSourceData copy constructor
+an float exception in the Lovelace credit system
+IsValidSearchResultClientIPPort bug (gureedo)
+crash when remove a file in historylistctrl
+SetMaxUpload bug
+remove the file from single sharedfile list when removing a shared file
+skip the last chunck AICH hash if its size <= EMBLOCKSIZE when it is corrupted [Import Parts] & [IPR] - [Improved Part Recovery]
+delay AICH request when failed [Import Parts] & [IPR] - [Improved Part Recovery]
+
+Changed:
+
+replace some API with crt version
+CIni use '\n' instead of "\r\n"
+remove feature pack code from VC10 binary
+improve UPnP implementation
+replace crt rand with sfmt
+change some memfiles' initial size
+change flush buffer block size
+replace MFC thread with modified Poco thread
+simplified queued disc-access for read/flushing-threads
+source save ignore lowIDs
+update libs to latest version
+
+Added:
+
+an UPnPImpl implementation of ACAT UPnP
+)
+
+code from Xtreme 8.1
+(
+- improved: Sort progress bars by percentage (Fafner/Xman)
+- fixed: Fix broken HTTP downloads from SourceForge (WiZaRd)
+- fixed: Client is always highid if we are connecting to them (Enig123)
+- fixed: don't reconnect to banned clients (Enig123)
+- fixed: Potential devision by zero in UploadBandwidthThrottler (Stulle)
+- more minor fixes and improves from Stulle's merge
+- add: Ability to translate "Network Adapter" and "eMule control + data" for graphs (Stulle)
+)
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+"Bad" changes in this version ;)
+
+- no Version check
+- shutdown eMule or PC on downloads complete
+- no limit for ul/dl ratio
+
+like morph4u on facebook: www.facebook.com/pages/morph4u-eMule-Mods/206147386091495

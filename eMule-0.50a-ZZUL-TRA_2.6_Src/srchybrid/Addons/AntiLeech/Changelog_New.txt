@@ -1,0 +1,87 @@
+Changelog v2.1:
+
+Changelog FiNaL: 
+Removed unnecessary user limitation that prevented downloading files in the default cat alphabetically
+MetaDataDlg is now added on-the-fly when you change the ext controls pref setting
+Fixed localization bug in shared files window
+Fixed official bugs in indexed.cpp
+
+Changelog Beta1: 
+Update to eMule v0.50a
+Changed max upload from SESSIONMAXTRANS to PARTSIZE
+
+Changelog v2.0:
+
+Changelog FiNaL:
+Compiled with the latest lib sources (from v0.50) and Win7 SDK
+Added some sample code for necessary >v0.50 changes
+
+Changelog Beta15:
+Eased the restrictions for clients to be considered "empty" to reduce memory usage
+
+Changelog Beta14:
+Separate function for modfaker checks (and cleaning which was missing up to now)
+
+Changelog Beta13:
+Additional cleanup and polishing
+
+Changelog Beta12:
+Some cleanup and fixes
+Remaining up is now updated if you (de-)assign a friendslot which should also fix "neverending" upload slots for friends
+Added additional security checks for source exchange and AICH requests
+
+Changelog Beta11 (Pre-Final):
+Due to a fix I made, you could not send messages to friends that were not already connected
+Added additional modthief checks (parts taken from Xtreme DLP by zz_fly)
+
+Changelog Beta10:
+Removed option to en-/disable secure identification - this should always be used and I never understood why that option is there at all!
+Added new temporary CA data list to ensure that we attach the CA data to the correct client
+Fixed too high fast reask counter
+Cleaned up the code a bit :)
+
+Changelog Beta9:
+Added various small fixes (Proper log colours, Don't answer OP_HELLO of banned clients, and others...)
+Added ECR stat fixes by Stulle
+
+Changelog Beta8:
+Added "Enhanced Client Recognition" (Spike2) and adapted CA source to use the clients' reasktimes instead of the default one
+ReaskTime of clients is now adjusted to the clients' reasktimes
+
+Changelog Beta7:
+Added even more optimizations, also cleaned up the CA code a bit and further implemented the UL/DL session stuff 
+Added an additional check/fix against possible file fakers (which also prevents that we add sources to the deadsource list of a wrong file)
+
+Changelog Beta6:
+Added a workaround for the official "bug" around "IsSourceRequestAllowed"
+Added some fixes that are necessary for the modstring feature to work correctly
+Added some fixes (Stulles WebServer FiX, SetStyle FiX for searchlistctrl, Friends FiX)
+Added "no needed requeue" [SlugFiller]
+Added bad ul/dl session handling as discussed on eMF:
+ * 3 CONSECUTIVE failed ul sessions will result in us allowing uploads ONLY if we are already connected
+ * 3..5 CONSECUTIVE failed dl sessions will result in a score reduce of 1 chunk per dl session
+ * 6 CONSECUTIVE failed dl sessions will result in a (2-way!) BAN
+
+Changelog Beta5:
+Fixed missing ModFaker entry in stats [reported by SS1900]
+Fixed exception in ProcessSourceRequest [reported by jerryBG]
+Move some CA functions to CA member functions, also cleaned up some codeparts
+
+Changelog Beta4:
+Fixed a possible bug in new ProcessSourceRequest function, also cleaned it up
+Modthieves won't get the Tombstone icon, now [requested by jerryBG]
+
+Changelog Beta3:
+We don't ask servers for their serverlist if we do not actually need it (WiZaRd)
+Added a basic workaround for the following issue: there are some clients out there that punish nickchanges and a 
+CA client might run into trouble during chat sessions (that is: getting banned/punished due to the antinickthief feature)  [reported by jerryBG]
+
+Changelog Beta2:
+Clientanalyzer now includes "ModFaker" detection (zz_fly - thanks to taz for the diff and the suggestion)
+"Misc GPLEvilDoer" checks are now included to punish the AJ default nick/mod users (WiZaRd)
+
+Changelog Beta1:
+Tombstone is now based upon eMule v0.49c including all important updates/fixes that version offers
+This version includes the ClientAnalyzer 1.5, VQB fullchunk system and modstring support ONLY - NOTHING MORE!
+That's the perfect version to check out or to base your mod upon if you want to use the CA.
+

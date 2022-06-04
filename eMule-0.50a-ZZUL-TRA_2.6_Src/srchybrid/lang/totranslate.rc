@@ -1,0 +1,360 @@
+
+ 
+
+////////////////////// ZZUL-TRA ////////////////////////////////////////
+STRINGTABLE 
+BEGIN
+    IDS_CS_NONE             "Do not reward uploaders"
+    IDS_CS_OFFI             "Lovelace"
+    IDS_CS_ANALYZER         "ClientAnalyzer rewarding/punishing"
+    IDS_ANTILEECH_LABEL     "AntiLeech-Info:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNFILES_NONE      "You are not downloading anything from this user."
+    IDS_DOWNFILES_COUNT     "This user is a source for %i file(s)."
+    IDS_REQUESTED_FILES     "Requested"
+    IDS_UPFILES_NONE        "The user isn't downloading anything from you."
+    IDS_UPFILES_COUNT       "You are a source for %i file(s)."
+    IDS_LOG_ANALYZER_EVENTS "Log ClientAnalyzer actions"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SW_REMOVEALLBANNEDCLIENTS "Remove All Banned Clients"
+    IDS_RESTARTEMULEONCHANGE 
+                            "You've changed settings which will only take effect by restarting eMule! Do you want to restart now?"
+    IDS_MNUFILE             "File"
+    IDS_MNUVIEW             "View"
+    IDS_MNUNET              "Network"
+    IDS_INVMODE             "Invisible Mode"
+    IDS_INVMODE_MODKEY      "Modifier Keys"
+    IDS_INVMODE_VKEY        "Key"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CREATE_FEEDBACK     "Copy file feedback"
+    IDS_SOURCECACHE         "Sourcecache"
+    IDS_SOURCECACHEAMOUNT   "Cached"
+    IDS_UPLOADENDSSOON      "Upload ends soon"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPSLOTNUMBER        "Slot"
+    IDS_UPLOAD_PREEMPTED    "Pre-empted by higher prio upload"
+    IDS_UPLOAD_TOO_MANY_SLOTS "Too many slots"
+    IDS_PR_SHORT_LOW        "[Lo]"
+    IDS_PR_SHORT_HIGH       "[Hi]"
+    IDS_OK                  "OK"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAX_DL              "DL Speed Scope Full Height"
+    IDS_MAX_UP              "UL Speed Scope Full Height"
+    IDS_MAX_ST              "Connection Scope Full Height"
+    IDS_HIDE_SCOPES         "Hide Scopes"
+    IDS_REST_SCOPES         "Restore Scopes"
+    IDS_STATS_MNU_OSR       "Reset Scope Spacing"
+    IDS_OPENLOG             "Open Log Folder"
+    IDS_POWERSHARESTAT      "Powershare"
+    IDS_UPPOWERSHARE        "Total upload via Powershare:"
+    IDS_COMPLETEPOWERSHARE  "Upload on complete files:"
+    IDS_INCOMPLETEPOWERSHARE "Upload on incomplete files:"
+    IDS_SPREAD_RESET        "Reset Spreadbar(s)"
+    IDS_SLS                 "SLS"
+    IDS_TOTALUPDOWN         "Up / Down"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNBOLD            "Show downloads bold"
+    IDS_PRF_GUI_FUNNYNICK_CHK "Random Nick instead http:// [N]"
+    IDS_IPNUMBER            "IP Number"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IGNORE              "&Ignore"
+    IDS_RETRY               "&Retry"
+    IDS_CONTINUE            "&Continue"
+    IDS_DONOTTELLAGAIN      "Don't tell me again"
+    IDS_DONOTSHOWAGAIN      "Don't show again"
+    IDS_YESTOALL            "Y&es to All"
+    IDS_NOTOALL             "N&o to All"
+    IDS_TRYAGAIN            "&Try Again"
+    IDS_IGNOREALL           "I&gnore All"
+    IDS_SKIP                "&Skip"
+    IDS_SKIPALL             "S&kip All"
+    IDS_ABORT               "Abort?"
+    IDS_TOGGLESPEEDGRAPH    "Show SpeedGraph"
+    IDS_SF_UPLOADED_PARTS   "Spreadbar (UL part history)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PAYBACKFIRST        "Payback First"
+    IDS_PAYBACKFIRSTLIMIT   "Amount before triggering (Default 10MB)"
+    IDS_CHUNK               "Chunk Detail"
+    IDS_COUNTRY             "Country"
+    IDS_SHOW_DROPPED_SRC    "Drop"
+    IDS_AVGQR               "AvgQR"
+    IDS_HIDESTATSTREE       "Hide Statistics Tree"
+    IDS_RESTSTATSTREE       "Restore Statistics Tree"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UP_SPEED_PER_CLIENT "Upload speed per client:"
+    IDS_AUTOUPDATEIPFILTER  "Auto-update IPFilter.dat"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNHISTORY         "Downloaded history"
+    IDS_DOWNHISTORY_CHECK1  "eMule has found a file already downloaded with the same file ID:\n"
+    IDS_DOWNHISTORY_CHECK2  "eMule has found %i files already downloaded with the same file name (%s):\n"
+    IDS_DOWNHISTORY_CHECK3  "Do you want to download the file anyway?"
+    IDS_DOWNHISTORY_CHECK4  "eMule has found a file already cancelled with the same file ID:\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNHISTORY_REMOVE  "Remove from history"
+    IDS_DOWNHISTORY_REMOVE_QUESTION 
+                            "Do you really want to remove ""%s"" from downloaded history?"
+    IDS_DOWNHISTORY_REMOVE_QUESTION_MULTIPLE 
+                            "Do you really want to remove selected files from downloaded history?"
+    IDS_DOWNHISTORY_SHARED  "Shared"
+    IDS_DOWNHISTORY_CLEAR   "Clear downloaded history"
+    IDS_DOWNHISTORY_SHOWSHARED "Show shared files"
+    IDS_DOWNHISTORY_CLEAR_QUESTION 
+                            "Are you sure you want to clear download history?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IP2COUNTRY_DWNFILE  "Downloading IP2Country file"
+    IDS_LOG_ERRDWN          "Error downloading %s"
+    IDS_IP2COUNTRY_ERROR1   "error line number : %i"
+    IDS_IP2COUNTRY_ERROR2   "possible error line in"
+    IDS_IP2COUNTRY_ERROR3   "Failed to load in"
+    IDS_IP2COUNTRY_ERROR4   "CountryFlag Disabled, failed to load"
+    IDS_IP2COUNTRY_ERROR5   "Invalid resID %u - maybe you need to upgrade your flag icon Dll?"
+    IDS_IP2COUNTRY_ERROR6   "IP to Country file download failed"
+    IDS_IP2COUNTRY_ERROR7   "Failed to extract IP to Country file from downloaded IP to Country ZIP file ""%s""."
+    IDS_IP2COUNTRY_ERROR8   "Downloaded IP to Country file ""%s"" is a ZIP file with unexpected content."
+    IDS_IP2COUNTRY_FILELOAD "IP2Countryfile has been unloaded"
+    IDS_IP2COUNTRY_FLAGLOAD "Country Flags have been loaded"
+    IDS_IP2COUNTRY_FLAGUNLD "Country Flags have been unloaded"
+    IDS_IP2COUNTRY_INFO     "Parsed lines:%u  Found IPCountry ranges:%u  Duplicate:%u  Merged:%u"
+    IDS_IP2COUNTRY_LOADED   "IP2Country loaded"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPORTING           "Importing"
+    IDS_IMPORT_PARTS        "Import parts"
+    IDS_IMPORTPARTS_ABORT   "Are you sure you want abort the part import/export process?"
+    IDS_IMPORTPARTS_ABORTED "Part import/export process was aborted by user."
+    IDS_IMPORTPARTS_BLOCKS  "Do you want to import blocks out of incomplete parts from file %s into incomplete parts of the download?\nIf yes, the whole chunk will be marked as corrupted and AICH will try to recovery it. If this fails, all already downloaded datas in these parts will get lost."
+    IDS_IMPORTPARTS_ERR_ALREADYCOMPLETE 
+                            "Import aborted: You can't import parts to a complete file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPORTPARTS_ERR_CANTOPENFILE "Import aborted: Couldn't open %s."
+    IDS_IMPORTPARTS_ERR_FILE 
+                            "Import aborted: File exception %s occured while importing part %i from %s to %s!"
+    IDS_IMPORTPARTS_ERR_FILETOOSMALL "Import aborted: File to small."
+    IDS_IMPORTPARTS_ERR_HASHSETINCOMPLETE 
+                            "Import aborted: Incomplete hashset for %s (%i hashes for %i parts)."
+    IDS_IMPORTPARTS_ERR_NULL 
+                            "Import aborted: Trying to import into null file!"
+    IDS_IMPORTPARTS_FOUND   "Part %i: found as %i."
+    IDS_IMPORTPARTS_IMPORTFINISH 
+                            "Import to %s finished: %i parts imported; %i incomplete parts imported; %i parts skipped."
+    IDS_IMPORTPARTS_IMPORTSTART "Importing %u parts to %s."
+    IDS_IMPORTPARTS_INCOMPLETE 
+                            "Do you want to import incomplete parts from file %s into empty parts of the download?\nif yes, the whole chunk will be marked as corrupted and AICH will try to recovery it."
+    IDS_IMPORTPARTS_NOT_FOUND "Part %i: not found!"
+    IDS_IMPORTPARTS_PARTIMPORTEDBAD "Part %i: Imported for ICH handling."
+    IDS_IMPORTPARTS_PARTIMPORTEDGOOD "Part %i: imported."
+    IDS_IMPORTPARTS_PARTSKIPPEDALREADYCOMPLETE 
+                            "Part %i: Skipped, already complete."
+    IDS_IMPORTPARTS_PARTSKIPPEDDONTMATCH 
+                            "Part %i: skipped, doesn't match with the partially completed part."
+    IDS_PARTS               "Parts"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_ALREADY_FRIEND "User ""%s"" is already in your friend list"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PS_AMOUNT_LIMIT     "Limit by data amount"
+    IDS_PS_AMOUNT_LIMIT_LABEL "Limit by data amount (max. 10000%)"
+    IDS_PS_AMOUNT_LIMIT_WRONG "Invalid value entered."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_POWERSHARE_LIMITED  "Limited"
+    IDS_POWERSHARE_LIMIT    "Limit of complete source"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_POWERSHARE_ON       "On"
+    IDS_POWERSHARE_OFF      "Off"
+    IDS_POWERSHARE_PREFIX   "PS"
+    IDS_POWERSHARE          "Powershare"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASFU_DELAY          "ASFU: Detected a file in completing status, delaying reload..."
+    IDS_ASFU_RELOAD         "Detected change on shared folders. Reloading shared files..."
+    IDS_ASFU_RELOADING      "ASFU: Reloading..."
+    IDS_ASFU_RELOADTIME     "ASFU: Detected change on shared folders, reload of shared files in %d seconds..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IP2COUNTRY_2LETTERS "Show 2 letters"
+    IDS_IP2COUNTRY_3LETTERS "Show 3 letters"
+    IDS_IP2COUNTRY_FULLCAPTION "Show full caption"
+    IDS_IP2COUNTRY_SHOWFLAGS "Show flags"
+    IDS_IP2COUNTRY          "IP2Country"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UP_SLOTS            "Max Upload slots:"
+    IDS_SLOTFOCUS           "Slotfocus"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_KAD_SEARCH_KEYWORD_INVALID_EMF 
+                            "\n\nDo you want strip off the invalid characters and use ""%s"" as search expression?\nClick ""No"" if the new term doesn't make sense or if you want to manually edit it!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNLOADS_BOLD				"Show Active Downloads Bold"
+    IDS_RUNTIME_NICK          "Show Runtime/Usernick On Title"
+    IDS_DOWNLOAD_COLOR				"Show Download Color"
+	  IDS_STATUS_ICONS				  "Show File Status Icons"
+	  IDS_SESSION_DOWNLOAD			"Show Session Download"
+  	IDS_DIRECTORY_WATCHER			"Directory Watcher"
+  	IDS_AUTO_DROP					    "Auto Drop System"
+	  IDS_FUNNY_NICK				  	"Funny Nick"
+	  IDS_DISCONNECT_TIME				"Server Auto Disconnect Time (min.)"
+	  IDS_COMPRESS              "Compress"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MINIMULEAUTOCLOSE   "MiniMuleAutoClose"
+    IDS_MINIMULETRANSPARENCY "MiniMuleTransparency"
+    IDS_CREATECRASHDUMP     "CreateCrashDump"
+    IDS_IGNOREINSTANCES     "IgnoreInstances"
+    IDS_MEDIAINFO_MEDIAINFODLLPATH "MediaInfo_MediaInfoDllPath"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADVANCEDPREFS       "Advanced Preferences"
+    IDS_TRUSTEVERYHASH      "aichTrustEveryHash(current session)"
+    IDS_INSPECTALLFILETYPES "InspectAllFileTypes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAXLOGBUFF          "MaxLogBuff"
+    IDS_MAXCHATHISTORY      "MaxChatHistory"
+    IDS_PREVIEWSMALLBLOCKS  "PreviewSmallBlocks"
+    IDS_RESTORELASTMAINWNDDLG "RestoreLastMainWndDlg"
+    IDS_RESTORELASTLOGPANE  "RestoreLastLogPane"
+    IDS_PREVIEWCOPIEDARCHIVES "PreviewCopiedArchives"
+    IDS_STRAIGHTWINDOWSTYLES "StraightWindowStyles"
+    IDS_LOGFILEFORMAT       "LogFileFormat"
+    IDS_RTLWINDOWSLAYOUT    "RTLWindowsLayout"
+    IDS_PREVIEWONICONDBLCLK "PreviewOnIconDblClk"
+    IDS_INTERNETSECURITYZONE "InternetSecurityZone"
+    IDS_TXTEDITOR           "TxtEditor"
+    IDS_SERVERUDPPORT       "ServerUDPPort"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAXMSGSESSIONS      "maxmsgsessions(Chat sessions)"
+    IDS_PREFERRESTRICTEDOVERUSER "PreferRestrictedOverUser"
+    IDS_WEBFILEUPLOADSIZELIMITMB "WebFileUploadSizeLimitMB(default 5,0=all)"
+    IDS_HIGHRESTIMER        "HighresTimer"
+    IDS_ALLOWEDIPS          "AllowedIPs webserver (seperated by ;)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REMOVEFILESTOBIN    "RemoveFilesToBin"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USEUSERSORTEDSERVERLIST "UserSortedServerList"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEBUGSEARCHDETAILLEVEL "DebugSearchDetailLevel"
+    IDS_CRYPTTCPPADDINGLENGTH "CryptTCPPaddingLength=[1-254]"
+    IDS_X_ADJUSTNTFSDAYLIGHTFILETIME "Adjust NTFS daylight file time"
+    IDS_X_DATETIMEFORMAT    "Date&Time format"
+    IDS_X_DATETIMEFORMAT4LOG "Date&Time format for log"
+    IDS_X_LOGERROR          "Log error color"
+    IDS_X_ICH               "Intelligent Corruption Handing (ICH)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_X_DONTCOMPRESSAVI   "Don't compress avi"
+    IDS_X_SHOWCOPYED2KLINK  "Show 'copy ed2k link' command"
+    IDS_X_ICON_FLASH_ON_NEW_MESSAGE "Flash tray icon on new message"
+    IDS_X_SHOWVERTICALHOURMARKERS "Stats- Show vertical hour markers"
+    IDS_X_LOGWARNING        "Log warning color"
+    IDS_X_LOGSUCCESS        "Log success color"
+    IDS_X_REBARTOOLBAR      "disable some Toolbar options"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_X_FILE_BUFFER_TIME_LIMIT "File Buffer Time Limit (in sec)"
+    IDS_X_DATETIMEFORMAT4LIST "Date&Time format for lists"
+    IDS_X_REARRANGEKADSEARCH "Rearrange KAD search keywords"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATEQUEUE         "Don't update Queue list in real time"
+    IDS_REPAINTGRAPHS       "Don't recreate statistic graphs on resize"
+    IDS_PW_BEEP             "Beep on errors"
+    IDS_MSGONLYSEC          "Accept messages from valid clients only"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTRAPREVIEWWITHMENU "Display Preview With menu in root context menu"
+    IDS_SHOWUPDOWNICONINTASKBAR "Use overlay to indicate up/down in taskbar"
+    IDS_KEEPUNAVAILABLEFIXEDSHAREDDIRS 
+                            "Keep unavailable directories on fixed drives"
+    IDS_FORCESPEEDSTOKB     "Display all speed values in KB/s"
+END
+

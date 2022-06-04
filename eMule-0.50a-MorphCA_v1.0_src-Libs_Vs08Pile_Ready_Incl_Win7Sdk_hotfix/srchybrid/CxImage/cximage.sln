@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CxImage", "cximage.vcproj", "{8FEC2660-7F95-4C2E-8747-36176E1FCF82}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Release P4-AthlonXP = Release P4-AthlonXP
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Debug.ActiveCfg = Debug|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Debug.Build.0 = Debug|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release.ActiveCfg = Release|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release.Build.0 = Release|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release P4-AthlonXP.ActiveCfg = Release P4-AthlonXP|Win32
+		{8FEC2660-7F95-4C2E-8747-36176E1FCF82}.Release P4-AthlonXP.Build.0 = Release P4-AthlonXP|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

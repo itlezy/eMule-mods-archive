@@ -1,0 +1,83 @@
+// Lited MFC default resources by YumeYao for eMule
+
+// This is a part of the Microsoft Foundation Classes C++ library.
+// Copyright (C) Microsoft Corporation
+// All rights reserved.
+//
+// This source code is only intended as a supplement to the
+// Microsoft Foundation Classes Reference and related
+// electronic documentation provided with the library.
+// See these sources for detailed information regarding the
+// Microsoft Foundation Classes product.
+
+#ifndef __AFXRES_RC__
+#define __AFXRES_RC__
+
+#ifndef __AFXRES_H__
+	#include <afxres.h>
+#endif
+
+#ifndef _AFXDLL
+
+/////////////////////////////////////////////////////////////////////////////
+// Default resource description for MFC applications
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+// Strings
+
+STRINGTABLE DISCARDABLE
+BEGIN
+
+	AFX_IDS_MEMORY_EXCEPTION,       "Out of memory."
+	AFX_IDS_NOT_SUPPORTED_EXCEPTION,"An unsupported operation was attempted."
+	AFX_IDS_RESOURCE_EXCEPTION,     "A required resource was unavailable."
+	AFX_IDS_USER_EXCEPTION,         "An unknown error has occurred."
+	AFX_IDS_INVALID_ARG_EXCEPTION	"An invalid argument was encountered."
+
+	AFX_IDP_FAILED_TO_LAUNCH_HELP,  "Failed to launch help."
+	AFX_IDP_INTERNAL_FAILURE,       "Internal application error."
+	AFX_IDP_COMMAND_FAILURE,        "Command failed."
+	AFX_IDP_FAILED_MEMORY_ALLOC     "Insufficient memory to perform operation."
+	AFX_IDP_GET_NOT_SUPPORTED,      "Unable to read write-only property."
+	AFX_IDP_SET_NOT_SUPPORTED,      "Unable to write read-only property."
+	AFX_IDP_UNREG_DONE,               "System registry entries have been removed and the INI file (if any) was deleted."
+	AFX_IDP_UNREG_FAILURE,            "Not all of the system registry entries (or INI file) were removed."
+	AFX_IDP_DLL_LOAD_FAILED,        "This program requires the file %s, which was not found on this system."
+	AFX_IDP_DLL_BAD_VERSION,        "This program is linked to the missing export %s in the file %s. This machine may have an incompatible version of %s."
+
+	// Parsing error prompts
+	AFX_IDP_PARSE_INT,              "Please enter an integer."
+	AFX_IDP_PARSE_REAL,             "Please enter a number."
+	AFX_IDP_PARSE_INT_RANGE,        "Please enter an integer between %1 and %2."
+	AFX_IDP_PARSE_REAL_RANGE,       "Please enter a number between %1 and %2."
+	AFX_IDP_PARSE_STRING_SIZE,      "Please enter no more than %1 characters."
+	AFX_IDP_PARSE_RADIO_BUTTON,     "Please select a button."
+	AFX_IDP_PARSE_BYTE,             "Please enter an integer between 0 and 255."
+	AFX_IDP_PARSE_UINT,             "Please enter a positive integer."
+	AFX_IDP_PARSE_DATETIME,         "Please enter a date and/or time."
+	AFX_IDP_PARSE_CURRENCY,         "Please enter a currency."
+	AFX_IDP_PARSE_GUID,             "Please enter a GUID."
+	AFX_IDP_PARSE_TIME,             "Please enter a time."
+	AFX_IDP_PARSE_DATE,             "Please enter a date."
+
+
+	AFX_IDP_NO_ERROR_AVAILABLE      "No error message is available."
+
+	AFX_IDP_ARCH_NONE               "No error occurred."
+	AFX_IDP_ARCH_GENERIC                "An unknown error occurred while accessing %1."
+	AFX_IDP_ARCH_READONLY           "An attempt was made to write to the reading %1."
+	AFX_IDP_ARCH_ENDOFFILE          "An attempt was made to access %1 past its end."
+	AFX_IDP_ARCH_WRITEONLY          "An attempt was made to read from the writing %1."
+	AFX_IDP_ARCH_BADINDEX           "%1 has a bad format."
+	AFX_IDP_ARCH_BADCLASS           "%1 contained an unexpected object."
+	AFX_IDP_ARCH_BADSCHEMA          "%1 contains an incorrect schema."
+
+END
+
+/////////////////////////////////////////////////////////////////////////////
+
+#endif //!_AFXDLL
+#endif //!__AFXRES_RC__
+
+/////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,1071 @@
+// morph 7.6
+
+STRINGTABLE 
+BEGIN
+    IDS_CRASHRPT_DONE       "Crash Report wurde erstellt."
+    IDS_CRASHRPT_AV         "Crash Reporter ist verfügbar und läuft."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SR13_IMPORTPARTS_ERR_ALREADYCOMPLETE 
+                            "Import abgebrochen: Datei bereits vollständig."
+    IDS_SR13_IMPORTPARTS_ERR_HASHSETINCOMPLETE 
+                            "Import abgebrochen: Hash nicht vollständig %s (%i Hashes für %i Teile)."
+    IDS_SR13_IMPORTPARTS_ERR_CANTOPENFILE 
+                            "Import abgebrochen: konnte %s nicht öffnen."
+    IDS_SR13_IMPORTPARTS_IMPORTSTART 
+                            "Importiere %i Teile (von 0 bis %i) nach %s."
+    IDS_SR13_IMPORTPARTS_PARTSKIPPEDALREADYCOMPLETE 
+                            "Teil %i: übersprungen, bereits vollständig."
+    IDS_SR13_IMPORTPARTS_PARTIMPORTEDGOOD "Teil %i: importiert."
+    IDS_SR13_IMPORTPARTS_PARTIMPORTEDBAD 
+                            "Teil %i: importiert für ICH handling."
+    IDS_SR13_IMPORTPARTS_PARTSKIPPEDDONTMATCH 
+                            "Teil %i: übersprungen, stimmt nicht überein mit teilweise vollständigem Block"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SR13_IMPORTPARTS_BADPARTSREHASH 
+                            "%i fehlerhafte Teile  importiert üor A/ICH. Neuer Hash wird erstellt."
+    IDS_SR13_IMPORTPARTS_ERR_FILETOOSMALL 
+                            "Datei ist kleiner als die minimale Wiederherstellungsblockgröße für AICH - es ist nutzlos diese Daten zu importieren."
+    IDS_SR13_IMPORTPARTS_IMPORTFINISH 
+                            "Import beendet. %i Teile wurden nach %s importiert."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PW_WEBCACHE         "WebCache"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WrongPortforWebcache 
+                            "Webcache Download deaktiviert: Bitter einen der Ports   21, 70,  80, 210, 443, 563 oder zwischen 1025 und 65535 verwenden wenn Webcache funktionieren soll."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RESET               "Reset"
+    IDS_SPREADBAR           "Verteilungsbalken"
+    IDS_SPREADBAR_DEFAULT_CHECKBOX 
+                            "Verteilungsbalken standardmäßig aktivieren"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ONLY_DOWNLOAD_COMPLETE_FILES 
+                            "Prüfe Verfügbarkeit der Datei vor Download-Start"
+    IDS_DL_FORCE            "Erzwinge Download"
+    IDS_SAVE_UPLOAD_QUEUE_WAIT_TIME 
+                            "Speichern der Wartezeit in der Warteliste (SUQWT)"
+    IDS_DATEFILENAMELOG     "Schreibe Datum in den Namen der Log-Datei"
+    IDS_ECFEF               "Gleiche Chance für jede Datei"
+    IDS_ALL_TIME            "Gesamt-Zeit"
+    IDS_COPYFEEDBACK        "Kopiere Rückmeldung in Zwischenablage (de)"
+    IDS_ANTILEECHERLOG      "Anti-Leechermods: Client %s benutzt den Mod %s : wird gebannt, wegen Benutzung eines Leecher-Mods"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNLOAD_IN_RED     "Ladende Dateien in roter Schrift anzeigen"
+    IDS_UPSLOTNUMBER        "Slot Nr."
+    IDS_STATS_LEECHERCLIENTS "Leecher: %u"
+    IDS_WARNINGMORPH        "Warnung: Ändere diese Einstellungen nicht, es sei denn Du \nweißt , was du tust. eMule läuft auch gut, ohne irgendwelche dieser Einstellungen \nzu verändern!"
+    IDS_DM                  "Download-Management"
+    IDS_SCC                 "Intelligente Kategorie-Steuerung (SCC)"
+    IDS_SAC                 "Intelligente A4AF-Steuerung (SAC)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_POWERSHARE_ACTIVATED "Aktiviert"
+    IDS_POWERSHARE_DISABLED "Deaktiviert"
+    IDS_POWERSHARE_ON_LABEL "An"
+    IDS_POWERSHARE_OFF_LABEL "Aus"
+    IDS_POWERSHARE_COLUMN_LABEL "Powershare"
+    IDS_POWERSHARE_PREFIX   "PS"
+    IDS_POWERSHARE          "Powershare"
+    IDS_SF_UPLOADED_PARTS   "Verteilungsbalken (UL Teile Historie)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CRASHRPT_NOTAV      "Crash Reporter nicht gefunden im emule Verzeichnis. Wenn du uns helfen willst unsere Mod zu debuggen, lade bitte die CrashRpt.dll"
+    IDS_UPLOAD_COMPLETED    "Beende"
+    IDS_UPLOAD_PREEMPTED    "Früh geleert für Upload höherer Priorität"
+    IDS_UPLOAD_TOO_MANY_SLOTS "Zuviele Slots"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SF_TURN_PART        "Datei UL (Teil)"
+    IDS_SF_TURN_SIMPLE      "Datei UL (einfach)"
+    IDS_SF_FULLUPLOAD       "Datei UL (voll)"
+    IDS_UM                  "Upload-Management"
+    IDS_ANTI_LEECHER        "Aktiviere Anti-Leecher Funktionen"
+    IDS_PROGRESS_PERCENT    "Zeige Prozent in Fortschrittsbalken"
+    IDS_DOWNLOAD_IN_BOLD    "Ladende Dateien  in fetter Schrift anzeigen"
+    IDS_CAT_RESUMENEXT      "nächste fortsetzen"
+    IDS_CAT_PAUSELAST       "zuletzt pausiert"
+    IDS_CAT_STOPLAST        "zuletzt gestoppt"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_POWERSHARE_DENIED_LABEL "nicht erlaubt"
+    IDS_POWERSHARE_ADVISED_LABEL "empfohlen"
+    IDS_POWERSHARE_AUTHORIZED_LABEL "Authorisiert"
+    IDS_POWERSHARE_ACTIVATED_LABEL "Aktiviert"
+    IDS_POWERSHARE_DISABLED_LABEL "Deaktiviert"
+    IDS_POWERSHARE_AUTO_LABEL "Auto"
+    IDS_POWERSHARE_AUTO     "Auto"
+    IDS_DYNUPLOAD           "Dynamic Upload"
+    IDS_HIDEOVERSHARES      "Overshares vor Verbergen der Chunks (0 = Deaktiviert)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAT_MINIMUM         "Minimum"
+    IDS_CAT_MAXIMUM         "Maximum"
+    IDS_CAT_DLGHELP         "Die Check-Boxen zeigen an, ob die Kriterien verwendet werden sollten wenn man eine Kategorie für neue Dateien auswählt."
+    IDS_CAT_FILTERS         "Kategorien Filter"
+    IDS_CAT_RS              "Restliche Größe (MB)"
+    IDS_CAT_FS              "    Dateigröße (MB)"
+    IDS_CAT_RT              "Restzeit (M)"
+    IDS_CAT_SC              "alle Quellen"
+    IDS_CAT_ASC             "verfügbare Quellen"
+    IDS_CAT_THISCAT         "Diese Kategorie"
+    IDS_CAT_SUSPENDFILTERS  "Ansicht-Filter aus"
+    IDS_CAT_FROMCATSINFO    "Es müssen alle Dateien dieser Kategorie erst einer anderen Kategorie zugewiesen werden, bevor sie gelöscht werden kann."
+    IDS_CAT_FROMCATSCAP     "Dateien nicht zugewiesen"
+    IDS_CAT_ADVA4AF         "Erweitertes A4AF"
+    IDS_CAT_FILTERSACTIVE   "Filter aktiv"
+    IDS_CAT_FILTERSSUSP     "Filter inaktiv"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BOTH                "Beide"
+    IDS_REALTIME            "Echtzeit"
+    IDS_ANTI_CREDITHACK     "aktiviere  Anti-Credit-Hack Funktion"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAT_SETORDER        "setze gleichmässige Prioriät"
+    IDS_CAT_ORDER           "Bitte eine Zahl größer oder gleich Null eingeben. Kleinere Werte werden zuerst fortgesetzt."
+    IDS_CAT_PAUSEDSHOWN     " | Pausierte anzeigen"
+    IDS_CAT_PAUSEDHIDDEN    " | Pausierte verstecken"
+    IDS_CAT_COLCATEGORY     "Kategorie"
+    IDS_CAT_COLORDER        "LP"
+    IDS_CAT_MNUAUTOINC      "Automatische Erhöhung ausgewählt"
+    IDS_CAT_MNUSTEPTHRU     "Schritt für jedes Angewählte"
+    IDS_CAT_MNUALLSAME      "alle auf selben Wert einstellen"
+    IDS_CAT_EXPAUTOINC      "Eingabe einer positiven Zahl"
+    IDS_CAT_EXPSTEPTHRU     "Eingabe einer positiven Zahl, kleinere Werte werden zuerst fortgesetzt.\nFile:"
+    IDS_CAT_EXPALLSAME      "Eingabe einer positiven Zahl, wird auf alle vorgewählten Dateien angewendet:"
+    IDS_CAT_ABORTSTEPTHRU   "Willst Du den Abschnitt für gleichmäßige Priorität abbrechen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABORT               "Abbruch?"
+    IDS_MINUPLOAD_SHORT     "Min.Up"
+    IDS_SUC                 "Smart Upload Control (SUC)"
+    IDS_SUC_ENABLED         "Aktivieren"
+    IDS_MINUPLOAD           "Mindest-Upload (KB)"
+    IDS_SUC_HIGH            "High Pass (Standard %i)"
+    IDS_SUC_LOW             "Low Pass (Standard %i)"
+    IDS_SUC_PITCH           "Pitch (Standard %i)"
+    IDS_SUC_DRIFT           "Drift (Standard %i)"
+    IDS_SHOWSECUREDCONNECTION "Anzeige sicherer Clients Verbindungen"
+    IDS_SUC_LOG             "Anzeige der SUC-Aktivitäten im Debug Log"
+    IDS_A4AF_SHOWDEBUG      "Anzeige der A4AF-Aktivitäten im Debug Log"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAT_SHOWPAUSED      "pausierte Dateien anzeigen"
+    IDS_CAT_HIDEPAUSED      "pausierte Dateien verbergen"
+    IDS_CAT_SELDLGTXT       "Auswahl der Kategorie von der Liste oder Eingabe eines Namen für ein neue Kategorie:"
+    IDS_CAT_SELDLGCAP       "Kategorien-Auswahl"
+    IDS_CAT_SHOWCATNAME     "Vollen Kategorie-Namen im Karteireiter anzeigen"
+    IDS_CAT_SHOWSELCATDLG   "Zeige 'Kategorien-Auswahl-Dialog' an"
+    IDS_CAT_USEACTIVE       "Neue Downloads der gerade angezeigten Kategorie zuordnen"
+    IDS_CAT_AUTORESUMEORD   "Wert automatisch erhöhen und eine gleichmäßige Priorität zuweisen"
+    IDS_CAT_SMALLFILEDLPUSH "Kleine Dateien (< 150 KB) zuerst laden"
+    IDS_A4AF_SMARTSWAP      "intelligente A4AF Steuerung"
+    IDS_A4AF_BALANCE        "gleichmäßige Quellenvergabe"
+    IDS_A4AF_STACK          "gestapelte Quellenvergabe"
+    IDS_A4AF_DISABLED       "Deaktiviert"
+    IDS_A4AF_ADVMODE        "Erweiterte A4AF-Verarbeitung"
+    IDS_CAT_STARTFILESONADD "Starte # Dateien,  wenn sie zu einer neuen Kategorie hinzugefügt werden"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAT_AUTOCAT         "Erweiterte Filtermaske (Separator: | )"
+    IDS_CAT_USEAUTOCAT      "Neue Downloads werden mit Ansichtsfilter den Kategorien hinzugefügt"
+    IDS_SLS_USESLS          "Speichern und Laden der Quellen aktivieren"
+    IDS_CAT_MERGE           "zusammenführen der Kategorien"
+    IDS_CAT_GROUP           "Gruppe"
+    IDS_CAT_RESUMEFILEONLYINSAMECAT 
+                            "Fortsetzen der angehaltenen Downloads nur in derselben Kategorie"
+    IDS_A4AF_FORCEALL       "Alle erhältlichen A4AF"
+    IDS_A4AF_FLAGS          "erweiterte A4AF flags"
+    IDS_A4AF_ONFLAG         "Behalte Clients als A4AF"
+    IDS_A4AF_OFFFLAG        "Behalte Clients als Quellen"
+    IDS_INVERT              "Invertiere"
+    IDS_COMPRESSIONGAIN     "Komprimierung"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HIGHPROCESS         "eMule mit hoher Prozesspriorität"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATEIPFILTER      "Update"
+    IDS_UPDATEIPFILTERONSTART "Aktualisiere IPFilter bei Programmstart"
+    IDS_UPDATEIPFILTERERROR "Fehler beim Aktualisieren der IPFilter.dat"
+    IDS_HTTP_IPFILTERCAPTION "Aktualisierung IPFilter.dat"
+    IDS_IPFILTER_PERCENTAGE "Aktualisiere IPFilter.dat: %1% of %2 komplett"
+    IDS_REMTIMEAVRREAL      "Restzeitanzeige"
+    IDS_UPL_DL              "Upload/Download"
+    IDS_LISTREQUESTED       "Liste der nachgefragten Dateien"
+    IDS_LISTREQDL           "Liste der Download Dateien:"
+    IDS_LISTREQUL           "Liste der Upload Dateien:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RECONNECTONLOWID    "Verbindungsversuche bei LowID"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LISTREQNODL         "Dieser Benutzer ist nicht in der Download Liste!!"
+    IDS_LISTREQNOUL         "Dieser Benutzer ist nicht in der Warteliste!!"
+    IDS_LEECHERDETREM       "Leecher endeckt und von der Upload Warteliste entfernt."
+    IDS_LEECHERPUTBACK      "Leecher wird in der Warteliste zurück gestellt."
+    IDS_TRIEDDLOTHERFILE    "%s: Start der Upload Session verweigert. Client hat versucht eine andere Datei zu laden als die in der Warteliste eingetragene. FileID: (erwartet=%s, gefragt=%s)"
+    IDS_CLIENTPUTBACK       "Client wird zurück in die Warteliste gestellt mit korrekter Wartezeit."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMPLETESOURCES     "Komplette Quellen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FEEDBACK_TRANSFERRED "Übertragen: %s (%s)"
+    IDS_FEEDBACK_REQUESTED  "Angefragt: %i (%i)"
+    IDS_FEEDBACK_ACCEPTED   "Akzeptierte Anfragen: %i (%i)"
+    IDS_FEEDBACK_FROM       "Feedback von %s zu [%s]"
+    IDS_FEEDBACK_FILENAME   "Dateiname: %s"
+    IDS_FEEDBACK_FILETYPE   "Datei Typ: %s"
+    IDS_FEEDBACK_FILESIZE   "Größe: %i MB"
+    IDS_FEEDBACK_DOWNLOADED "Downloaded: %i MB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FEEDBACK_TOTAL      "Alle Quellen: %i"
+    IDS_FEEDBACK_AVAILABLE  "Verfügbare Quellen: %i"
+    IDS_FEEDBACK_NONEEDPART "Quellen ohne benötigte Teile: %i"
+    IDS_FEEDBACK_COMPLETE   "geschätzte vollständige Quellen: %i"
+    IDS_COPYFEEDBACK_US     "Kopiere Rückmeldung in Zwischenablage (en)"
+    IDS_UPDATEFAKES         "Update"
+    IDS_FAKECHECKUPERROR    "Fehler beim Aktualisieren der FakeCheck-Liste"
+    IDS_HTTP_FAKECHECKCAPTION "Aktualisierung der Fake-Liste"
+    IDS_UPDATEFAKECHECKONSTART "Aktualisiere Fake-Liste bei Programmstart"
+    IDS_FAKELIST_PERCENTAGE "Aktualisierung der Fake-Liste: %1% von %2 komplett"
+    IDS_CHECKFAKE           "Fake-Check"
+    IDS_REMAININGSIZE       "Restgröße"
+    IDS_RELOADSHARE         "Neuladen der Share-Dateien"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USS                 "Upload Speed Sense (USS)"
+    IDS_USS_ENABLED         "Aktivieren"
+    IDS_USS_LOG             "Aktivitäten in Debug-Log protokollieren"
+    IDS_USS_PINGTOLERANCE   "Ping Toleranz (in %%) (Standard %i)"
+    IDS_USS_GOINGUPDIVIDER  "Erhöhungs-Geschw (Standard %i)"
+    IDS_USS_GOINGDOWNDIVIDER "Absenk-Geschw. (Standard %i)"
+    IDS_USS_NUMBEROFPINGS   "Pings für Durchschnitt (Standard %i)"
+    IDS_USSFINDLASTCOMMON   "USS: Starte Traceroutes zum Finden des letzten Common Host."
+    IDS_USSFOUNDLASTCOMMON  "USS: Letzter gefundener Common Host. Letzter Common Host: %s @ TTL: %i Ping zum Host: %s"
+    IDS_USSSTARTLOWPING     "USS: Finde Startwert für den niedrigsten Ping..."
+    IDS_USSCOLLECTINGHOSTS  "USS: Versuch Nr.%i. Gesammelte Hosts..."
+    IDS_USSENOUGHHOSTS      "USS:Genügend zu erreichende Hosts. Liste der Hosts die getraceroutet werden:"
+    IDS_USSHOSTLISTING      "USS: Host Nr.%i: %s"
+    IDS_USSLOWESTPING       "USS: Niedrigster Ping: %i ms"
+    IDS_USSREADY            "USS: Vorbereitungen beendet. Starten der Upload-Steuerung."
+    IDS_USSCANTPING         "USS: Fehlgeschlagener Ping Nr.%i zum Host! (TTL: %i IP: %s Fehler: %i). warte 1 Sek., bevor wiederholt wird. Fehlermeldung folgt."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USSCANTPINGREMOVE   "USS: Fehler beim pingen zu einem Host! (TTL: %i IP: %s Fehler: %i). Lösche den Host und starte die Host Sammelung neu. Fehlermeldung folgt."
+    IDS_USSHOSTTOOCLOSE     "USS: Host war zu nah! (TTL: %i IP: %s Status: %i). Lösche den Host und starte die Host Sammelung neu."
+    IDS_USSHOSTTTL          "USS: Host bei TTL %i: %s"
+    IDS_USSPINGFAILED       "USS: Ping #%i fehlgeschlagen. Grund folgt."
+    IDS_USSNEWTRACEROUTE    "USS: Die Netzwerkumgebung wurde verändert TTL: %i Erwartet IP: %s Erhaltene IP: %s Werde neu tracerouten."
+    IDS_USSPINGNUMCONTINUE  "USS: Ping Nr.%i erfolgreich. Fortsetzen."
+    IDS_USSNEWLOWEST        "USS: Neuer niedrigster Ping: %i ms. Alter: %i ms"
+    IDS_USSPINGFAILDIS      "USS: Zuviel fehlgeschlagene Pings. USS wird abgeschaltet."
+    IDS_USSPINGERPINGREPLY  "USS: Rückmeldung vom %s: Bytes=%d Zeit=%ldms TTL=%i"
+    IDS_USSPINGERWSASFAI    "Pinger: WSAStartup() fehlgeschlagen, Fehler: %d\n"
+    IDS_USSPINGERLOADLIB    "Pinger: LoadLibrary() fehlgeschlagen: ICMP.DLL nicht gefunden!"
+    IDS_USSPINGERGPAFAIL    "Pinger: GetProcAddr() fehlgeschlagen, bei mindestens einer Funktion."
+    IDS_USSPINGERICFFAIL    "Pinger: IcmpCreateFile() fehlgeschlagen, Fehler: "
+    IDS_USSPINGERICMPENDERR "Pinger: Icmp-Verarbeitung wird beendet , Fehler: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPSTOPPEDLEECHER    "Start der Upload Session verweigert. Client scheint ein Leecher zu sein."
+    IDS_IPSTOPPEDOTHFILE    "Start der Upload Session verweigert. Client hat versucht eine andere Datei zu laden als die in der Warteliste eingetragene."
+    IDS_NEWMSGFROM          "Neue Nachricht von '%s' (IP:%s)"
+    IDS_FILTEREDFROM        "Gefilterte Nachricht von '%s' (IP:%s)"
+    IDS_ERRORPROCESSING     "Fehler beim Verarbeiten des Paketes."
+    IDS_RECEIVEDSRCEXREQ    "RCV:Quellenanfrage User '%s' Datei '%s'"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DWLSESSIONENDED     "Download session beendet. User: %s Grund: %s"
+    IDS_BANHASHCHANGED      "Client: %s (%s), Banngrund: Userhash gewechselt"
+    IDS_BANHASHCHANGEDT     "Client: %s (%s), Banngrund: Userhash gewechselt (gefunden in Client-Liste)"
+    IDS_BANHASHINVALID      "Client: %s (%s), Banngrund: Userhash ungültig"
+    IDS_LOWIDRETRYING       "LowID -- Neu verbinden (%i Versuche übrig)"
+    IDS_IPFILTEREDSRV       "IP gefiltert: Quelle IP=%s (%s) empfangen vom Server"
+    IDS_IPIGNOREDSRV        "Ignoriere Quelle (IP=%s) erhalten vom Server"
+    IDS_IPFILTEREDSE        "IP gefiltert: Quelle IP=%s (%s) erhalten über Quellentausch"
+    IDS_IPIGNOREDSE         "Ignoriere Quelle (IP=%s) erhalten über Quellentausch"
+    IDS_SERVERFILTERED      "IP gefiltert: Server mit IP=%s (%s)"
+    IDS_SERVERIGNORED       "Ignoriere Server mit IP=%s"
+    IDS_URL_FOR_UPDATING    "URL für Update"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SWITCHSUC           "Schalte Dynamisches Upload System auf SUC um"
+    IDS_SWITCHDYNUP         "Schalte Dynamisches Upload System auf USS um"
+    IDS_AUTODYNUPSWITCHING  "Dynamisches Upload-System: automatische Umschaltung"
+    IDS_MAXCONNECTIONSSWITCHBORDER "Umschaltgrenze (aktive Verbindungen)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SELECTIVESHARE      "Selektives Chunk-Sharing"
+    IDS_SCHED_BACKUP        "Backup CONFIG-Ordner"
+    IDS_SCHED_UPDATE_IPCONFIG "Update IPFILTER.DAT"
+    IDS_SCHED_UPDATE_FAKES  "Update FAKES.DAT"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BACKUP              "Backup"
+    IDS_USS_MAXPING         "Max ping Wert (ms) (Standard %i)"
+    IDS_PAYBACKFIRST        "zuerst zurückgeben"
+    IDS_USS_USEMAXPING      "Benutze max. Ping"
+    IDS_CREDIT_SYSTEM       "Credit System"
+    IDS_OFFICIAL_CREDIT     "Official Credit"
+    IDS_LOVELACE_CREDIT     "lovelace Credit"
+    IDS_RATIO_CREDIT        "Ratio Credit"
+    IDS_EASTSHARE_CREDIT    "EastShare Credit"
+    IDS_PREFER_SHARE_ALL    "Bevorzuge Server die kompletten Share indexieren"
+    IDS_MET_FILE_CONTROL    "known.met Datei Kontrolle (VORSICHT beim Ändern !!)"
+    IDS_EXPIRED_KNOWN       "Tage, nach denen bekannte Datei vergessen wird (0 = Standard)"
+    IDS_DELETEFILE          "Datei Löschen"
+    IDS_PAWCIO_CREDIT       "Pawcio Credits"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HIDEOS              "Hide Over Share"
+    IDS_SHAREONLYTHENEED    "Share nur das Benötigte"
+    IDS_SFM                 "Shared File Management"
+    IDS_IP2COUNTRY          "IP2Country"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADVANCED            "Erweitert"
+    IDS_URL_FOR_UPDATING_IP2COUNTRY_VERFILE "Versionsdatei-URL für Update"
+    IDC_URL_FOR_UPDATING_IP2COUNTRY "URL für Update"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COUNTRYNAME_SHORT   "Anzeige 2 Buchstaben"
+    IDS_COUNTRYNAME_MID     "Anzeige 3 Buchstaben"
+    IDS_COUNTRYNAME_LONG    "Vollständiger Ländername"
+    IDS_COUNTRYNAME_SHOWFLAG "Flagge anzeigen"
+    IDS_REMOVEALLFRIENDSLOT "Alle Friendslots entfernen"
+    IDS_INFINITEQUEUE       "Unbegrenzte Warteschlange"
+    IDS_PAYBACKFIRSTLIMIT   "Übertragung vor Auslösen (Standard 10MB)"
+    IDS_ENABLE_CHUNKDOTS    "Chunks mit Punkten anzeigen"
+    IDS_COMMUNITY           "Community"
+    IDS_COMMUNITYTAG        "Community Tags (getrennt  durch '|')"
+    IDS_INVISIBLEMODE       "Unsichtbar-Modus"
+    IDS_ICS_USEICS          "Benutze intelligente Chunk-Auswahl (ICS)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUXPORTS            "Aux Ports"
+    IDS_SOLIDGRAPH          "Ausgefüllter Graph"
+    IDS_POWERSHARE_LIMITED  "Limitiert"
+    IDS_POWERSHARE_LIMIT    "Limit der kompletten Quellen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BACKUP_FILEFRAME    "Dateiarten für Backup"
+    IDS_BACKUP_SELECTALL    "Alle"
+    IDS_BACKUP_AUTOFRAME    "Auto Backup"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BACKUP_AUTOBACKUP   "Backup beim Beenden"
+    IDS_BACKUP_NOTE         "   "
+    IDS_BACKUP_BACKUPNOW    "Sofortbackup"
+    IDS_BACKUP_MESSAGE      "Hinweis: Im Emule-Programmverzeichnis wird ein Ordner ""Backup"" zum Speichern einer Sicherheitskopie angelegt."
+    IDS_BACKUP_AUTOBACKUP2  "Doppel-Backup"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MORPH_RFHA          "Datei-Hashing-Aktivität protokollieren"
+    IDS_MORPH_RAIF          "Aktivitäten in Freundesliste protokollieren"
+    IDS_MORPH_KSSERV        "Feste Server nicht während der Laufzeit entfernen"
+    IDS_MORPH_LOG           "Morph Log"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WEBSERVER_LINK      "Link: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COUNTRY             "Land"
+    IDS_MISSING_STARTUPSOUND 
+                            "Fehlende startupsound.wav! Hinweis: Datei 'startupsound.wav' muß im 'config' Verzeichnis sein."
+    IDS_PW_STARTUPSOUND     "Startsound abspielen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLIENTPERCENTAGE    "Zeige Fortschritt (in Prozent) der Gegenseite an"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VISITMVERSIONCHECK  "\n\nSoll die MorphXT WWW-Seite aufgerufen werden?"
+    IDS_MVERSIONCHECK       "&Versionscheck (Morph)"
+    IDS_NONEWMVERVERSION    "Es ist keine neuere eMule Morph Version verfügbar."
+    IDS_NEWMVERSIONAVL      "Eine neuere Version von eMule Morph ist verfügbar. Besuche die Projekt-Homepage um mehr Informationen zu erhalten."
+    IDS_NEWMVERSIONAVLPOPUP "Eine neuere Version von eMule Morph ist verfügbar. Klicke hier um mehr über die neue Version zu erfahren!"
+    IDS_CTRLKEY             "CTRL"
+    IDS_ALTKEY              "ALT"
+    IDS_SHIFTKEY            "SHIFT"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INVMODE_GROUP       "Unsichtbar-Modus"
+    IDS_INVMODE             "MorphXT Unsichtbar machen"
+    IDS_INVMODE_HOTKEY      "Hotkey für's Zurückholen auswählen"
+    IDS_INVMODE_MODKEY      "Umschalt-Tasten:"
+    IDS_INVMODE_VKEY        "Taste:"
+    IDS_DATARATEAVERAGETIME "Durchschnittsdatenrate Zeit (Standard 30s)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LAST_ASKED          "Zulezt gefragt"
+    IDS_DOWNL_TIME          "Download Zeit"
+    IDS_KNOWN_SINCE         "Bekannt seit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FEEDNEW             "Neu..."
+    IDS_FEEDEDIT            "Edit..."
+    IDS_FEEDDELETE          "Lösche"
+    IDS_FEEDDELETEALL       "Lösche alle"
+    IDS_FEEDBUTTON          "News feeds >"
+    IDS_ADDNEWSFEED         "News-Feeds hinzufügen"
+    IDS_EDITNEWSFEED        "News-Feeds editieren:"
+    IDS_FEEDURL             "URL für diese Feed-Quelle eingeben:"
+    IDS_FEEDNAME            "Name für diesen Feed(optional):"
+    IDS_FEED                "News"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MASSRENAME1         "Dateinamen Maske (Änderungen werden bei allen Dateinamen übernommen):"
+    IDS_FILENAMELEFT        "Dateinamen links"
+    IDS_FILENAMERIGHT       "Dateinamen rechts"
+    IDS_RESETFILENAMES      "&Reset"
+    IDS_SIMPLECLEANUP       "&Assistent"
+    IDS_INSERTTEXTCOLUMN    "&Text aus Zwischenablage einfügen:"
+    IDS_MASSRENAME2         "Original Dateinamen:"
+    IDS_MASSRENAME3         "Neue Dateinamen:"
+    IDS_NOTENOUGHFILENAMES  "Nicht genügend Dateinamen in der Liste neuer Dateinamen. Umbenennen nicht möglich."
+    IDS_IDENTICALFILENAMES  "Zwei oder mehr Dateinamen im selben Verzeichnis sind nicht erlaubt (Line %d).Umbenennen nicht möglich."
+    IDS_MR                  "Mehrfach-Umbenennung"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHECKDOTTOSPACE     "Konvertiere ""."" zu "" """
+    IDS_CHECKUNDERLINETOSPACE "Konvertiere ""_"" zu "" """
+    IDS_CHECKCONVERTAPOSTROPHES 
+                            "Konvertiere falsches Apostroph ""´"", ""`""zu Standard Apostroph "" ' """
+    IDS_CHECKCONVERTHEX     "Konvertiere Hex-Zahlen ""%xx"" zu Buchstaben"
+    IDS_CHECKSEARCHANDREPLACE "Suchen und ersetzen:"
+    IDS_SC_SEARCHFOR        "Suche nach:"
+    IDS_SC_REPLACEBY        "Ersetze mit:"
+    IDS_CHECKCASESENSITIVE  "Groß/klein beachten"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHECKCHARACTERREPLACE "Ersetze Buchstaben:"
+    IDS_REPLACECHAR         "Ersetze"
+    IDS_REPLACECHARBY       "mit"
+    IDS_SC_ADD              "&Hinzufügen"
+    IDS_SC_EDIT             "&Edit"
+    IDS_SC_DELETE           "&Löschen"
+    IDS_SEARCHFORCHAR       "Suche nach"
+    IDS_REPLACEBYCHAR       "Ersetze mit"
+    IDS_SC_HEADLINE         "Dateinamen bereinigen"
+    IDS_BANNER              "Seitenbanner anzeigen"
+    IDS_DOWNLOADALLFEEDS    "Alle aktualisieren"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CRC32_CALCULATE     "Berechnen"
+    IDS_CRC32_RECALCULATE   "Neuberechnen"
+    IDS_CRC32               "CRC32"
+    IDS_CRC32_TAG           "Release-Tag dem Dateinamen Hinzufügen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CRC32_ABORT         "Berechnung abbrechen"
+    IDS_DONTREMOVESPARETRICKLESLOT "Reserve-Trickleslots nicht entfernen"
+    IDS_MINDATARATEFRIEND   "Globale Transferrate (Standard 0 KB/s=unlimitiert, 1...3kB/s = keine zzRatio)"
+    IDS_MINDATARATEPOWERSHARE "Globale Transferrate (Standard 0 KB/s=unlimitiert)"
+    IDS_MAXCLIENTDATARATEFRIEND "Pro Client (Standard 0 KB/s=fokussiert)"
+    IDS_MAXCLIENTDATARATEPOWERSHARE "Pro Client (Standard 0 KB/s=fokussiert)"
+    IDS_MAXCLIENTDATARATE   "Pro Client Transfer (Standard 0 KB/s=fokussiert)"
+    IDS_DISPLAYFUNNYNICK    "Aktiviere FunnyNick"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPNP        		"Universal Plug & Play (UPnP)"
+    IDS_UPNP_INIT   		"UPnP: Initialisiere auf %s:%d, suche Gerät..."
+    IDS_UPNP_FAILEDINIT		"UPnP: Fehlschag bei UPnP Initialisierung auf Port %d [%s]"
+    IDS_UPNP_PUBLICIP		"UPnP: Deine IP ist eine öffentliche Internet IP, UPnP wird abgeschaltet"
+    IDS_UPNP_FAILEDREGISTER	"UPnP: Fehlschlag beim registrieren von Kontrollpunkt [%s]"
+    IDS_UPNP_ADDQUEUED		"UPnP: Aktion ""AddPortMapping"" in Warteschleife bis Gerät gefunden ist [%s]"
+    IDS_UPNP_NEWDEVICE		"UPnP: Neues kompatibles Gerät gefunden: %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPNP_DEVICEREMOVED	"UPnP: Gerät entfernt: %s"
+    IDS_UPNP_PORTINUSE		"UPnP: Konnte kein 'mapping:' hinzufügen ""%s"". Der Port %d ist schon von einer anderen Anwendung 'mapped' (""%s"" on %s:%d). [%s]"
+    IDS_UPNP_ALREADYUPDATED "UPnP: Das Port 'mapping' ""%s"" benötigt kein Update. [%s]"
+    IDS_UPNP_STATIC			"Statisch"
+    IDS_UPNP_DYNAMIC		"Dynamisch"
+    IDS_UPNP_PORTUPDATED	"UPnP: Port 'mapping' wurde geupdated ""%s"" (%s). [%s]"
+    IDS_UPNP_PORTADDED		"UPnP: Port 'mapping' hinzugefügt ""%s"" (%s). [%s]"
+    IDS_UPNP_ADDFAILED		"UPnP: Konnte Port 'mapping' nicht hinzufügen ""%s"" [%s] [%s]"
+    IDS_UPNP_DELETEFAILED	"UPnP: Konnte Port 'mapping' nicht löschen ""%s"". [%s] [%s]"
+    IDS_UPNP_PORTDELETED	"UPnP: Port 'mapping' wurde gelöscht ""%s"". [%s]"
+    IDS_UPNP_LOGEVENTS		"Log UPnP Ereignisse"
+    IDS_UPNP_ENABLE		"UPnP einschalten"
+    IDS_UPNP_ENABLEWEB		"UPnP für Webinterface Port einschalten"
+    IDS_RANDOMPORTS         "Zufalls-Ports"
+    IDS_MINPORT             "Min Port"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAXPORT             "Max Port"
+    IDS_RANDOMPORTSRESETTIME "Zufalls-Ports sichere erneute Startzeit (in Sekunden)"
+    IDS_ICFSUPPORT          "Windows Internet Connection Firewall (ICF) support aktivieren"
+    IDS_ICFSUPPORTFIRST     "eMule hat Windows Internet Connection Firewall (ICF) auf dem System gefunden,\n\rsoll eMule sie automatisch konfigurierent? (Empfohlen!)"
+    IDS_ICF                 "Windows Internet Connection Firewall (ICF)"
+    IDS_ICF_SERVERUDP       "Regel für ""Server UDP"" Port hinzufügen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WAPSRV              "Wap Interface"
+    IDS_PW_WAP              "Wap Interface"
+    IDS_WAP_ADMINLOGIN      "Wap Interface: Admin-Login"
+    IDS_WAP_GUESTLOGIN      "Wap Interface: Gast-Login"
+    IDS_WAP_SESSIONEND      "Wap Interface: Logout"
+    IDS_WAP_CONTROL         "Wap Steuerung"
+    IDS_WAP_BADLOGINATTEMPT "Wap Interface: Fehlgeschlagener Loginversuch"
+    IDS_WAP_ON              "An"
+    IDS_WAP_OFF             "Aus"
+    IDS_WAP_SENDIMAGES      "Sende Bilder"
+    IDS_WAP_SENDGRAPHS      "Sende Graphen"
+    IDS_WAP_SENDPROGRESSBARS "Sende Fortschrittsbalken"
+    IDS_WAP_SENDBWIMAGES    "Immer Schwarzweiß-Bilder senden"
+    IDS_WAP_GRAPHSWIDTH     "Graphenbreite"
+    IDS_WAP_GRAPHSHEIGHT    "Graphenhöhe"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WAP_FILLEDGRAPHS    "Ausgefüllter Graph"
+    IDS_WAP_LOGSSIZE        "Log Größe"
+    IDS_WAP_ITEMSPERPAGE    "Items pro Seite"
+    IDS_WAP_HOME            "Home"
+    IDS_WAP_BACK            "Zurück"
+    IDS_WAP_NEXT            "vor >"
+    IDS_WAP_PREV            "< Rück"
+    IDS_WAP_BASICDATA       "Basis Daten"
+    IDS_WAP_REFRESH         "Seite aktualisieren"
+    IDS_WAP_SORTBY          "Sortiere nach"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHECK_DYNDNS_ENABLED "DynDNS aktivieren"
+    IDS_STATIC_DYNDNS_USERNAME "Username"
+    IDS_STATIC_DYNDNS_PASSWORD "Passwort"
+    IDS_STATIC_DYNDNS_HOSTNAME "DynDNS Hostname"
+    IDS_BUTTON_DYNDNS_UPDATE "Update"
+    IDS_BUTTON_DYNDNS_RESET "Reset"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUTOUPIP2COUNTRY    "Aktualisiere Ip-to-country.csv bei Programmstart"
+    IDS_UPDATEIPCURL        "Update"
+    IDS_CLIENTQUEUEPROGRESSBAR 
+                            "Zeige Fortschrittsbalken der Client-Warteliste an"
+    IDS_WEBCACHE_NOSUPPORT  "nicht unterstützt"
+    IDS_STATS_SUCCESSFULLWC "Erfolgreiche WC-DL/WC-Anforderungen:"
+    IDS_STATS_FAILEDWC      "Fehlgeschlagene WC-DL/WC-Anforderungen:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USER_ALREADY_FRIEND "User ""%s"" ist bereits in der Freundesliste"
+    IDS_GETFRIENDED2KLINK   "Kopiere Friend-Link in Zwischenablage"
+    IDS_GETHTMLFRIENDED2KLINK "Kopiere Friend-Link in Zwischenablage (HTML)"
+    IDS_ERR_FAILEDDOWNLOADEMFRIENDS 
+                            "Download der Frien-Liste von %s fehlgeschlagen"
+    IDS_GETMYFRIENDED2KLINK "Kopiere Friend-Link in Zwischenablage"
+    IDS_GETMYHTMLFRIENDED2KLINK "Kopiere Friend-Link in Zwischenablage (HTML)"
+    IDS_FRIENDLINKMENUTITLE "FriendLinks"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FOLDERICONS         "Incoming / Temp Ordner-Icons anzeigen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNLOADEMFRIENDSMET "Downloade emfriends.met"
+    IDS_EMFRIENDSMETURL     "Bitte URL der emfriends.met eingeben:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LD_ADDPHPBB         "füge phpBB URL-Tags hinzu"
+    IDS_POWERSHARE_INTERPRIO "Aktiviere PS-Prioritätsabstufungen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DL_ULDL             "Download/Upload"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WEBCACHE_ISP        "ISP-Proxyserver-Einstellungen"
+    IDS_WC_PORT             "Port:"
+    IDS_WC_ADDRESS          "Addresse:"
+    IDS_WC_CONTROLS         "Webcache Einstellungen"
+    IDS_WC_ENABLE           "Webcache-Downloads aktivieren"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WC_WRONGPORT        "Webcache Download deaktiviert: Nur Transfers über die Ports 21, 70, 80, 210, 443, 563 und im Bereich von 1025 bis 65535 werden gecached. Bitte einen dieser Ports einstellen, um Webcache nutzen zu können."
+    IDS_WC_AUTO             "Webcache automatisch erkennen"
+    IDS_WC_NRBLOCKS         "Zu ladende Blocks bis zum Proxy-Reconnect (Nur bei Verbindungsabbrüchen)"
+    IDS_WC_BLOCK            "180k-Blocks"
+    IDS_WC_TIMEOUT          "Extralange Timeouts für Webcache Verbindungen."
+    IDS_WC_LOCAL            "Dieser WC cachet nicht innerhalb desselben ISPs"
+    IDS_WC_SUBMIT_EMAIL     "Diese Einstellungen per E-Mail einsenden"
+    IDS_WC_LINK             "Link: "
+    IDS_WC_PERSISTENT       "Persistente Verbindungen für Proxy Downloads"
+    IDS_WC_ADVANCED         "detaillierte Einstellungen"
+    IDS_WC_TEST             "Webcache-Konfiguration testen. Kann bis 30 Sek. dauern."
+    IDS_WC_HIDE_ADV         "einfache Einstellungen"
+    IDS_WC_SUBMIT_WEB       "Diese Informationen per Webform einsenden"
+    IDS_WC_SOURCES          "Webcache Quellen"
+    IDS_WC_UPDATESETTING    "Update Webcache Einstellungen automatisch"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOG_WCEVENTS        "WebCache-Ereignisse protokollieren"
+    IDS_LOG_IACH            "IACH-Ereignisse protokollieren"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPORTPARTS         "Dateiteile importieren..."
+    IDS_INITIATEREHASH      "Neuen Hash erstellen..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GRAPHOPTIONS        "Graph optionen"
+    IDS_CRC_CALCULATED      "berechnete CRC32"
+    IDS_CRC_CHECKOK         "CRC32-Prüfung ok"
+    IDS_CRC_FORCEADDING     "CRC32-Tag an Dateinamen anhängen auch wenn schon eines existiert"
+    IDS_CRC_FORCEUPPERCASE  "Wenn Dateiname schon CRC32-Tag enthält, in Großbuchstaben ändern"
+    IDS_CRC_DONTADDCRC      "CRC32/Suffix nicht hinzufügen, nur Präfix als statischen Text."
+    IDS_CRC_PREFIX          "Präfix vor CRC32-Prüfsumme:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CRC_SUFFIX          "Suffix nach CRC32-Prüfsumme:"
+    IDS_COUNTWCSESSIONSTATS "zähle WC-Sessions zu Session-Stats"
+    IDS_WEBCACHE_NOPROXY    "kein Proxy gesetzt"
+    IDS_CD_WCSUCCFAIL       "Erfolgreich/Angefordert:"
+    IDS_CD_WCTRUSTSENDER    "Verifizierter OHCB-Sender:"
+    IDS_WCDOWNL             "ohne Funktion"
+    IDS_WC_REQ_SUCC         "WC Erf./Angef.:"
+    IDS_WC_DOWNLOADED       "WC-Download:"
+    IDS_CRC32_TITLE         "CRC32 zum Dateinamen"
+    IDS_LOG_IPFILTER_LOADED "Geladene IP-Filter von ""%s"" in %ums"
+    IDS_LOG_IPFILTER_INFO   "Gelesene Zeilen:%u  gefundene IP-Bereiche:%u  Doppelt:%u  Hinzugefügt:%u"
+    IDS_IPFILTER_SAVERR     "IP-Filter speichern fehlgeschlagen in Datei ""%s"" - %hs"
+    IDS_IPFILTER_NOTAVAIL   "Nicht verfügbar"
+    IDS_LOG_ERRDWN          "Downloadfehler %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DOWNFAKECHECKFILE   "Downloade Fake Check file"
+    IDS_FC_LOADED           "%i Fake Check Referenz geladen"
+    IDS_LOG_FC_LOADED       "Fake Check geladen von ""%s"" in %ums"
+    IDS_LOG_FC_INFO         "Fake Referenz gefunden:%u  Doppelt:%u  Hinzugefügt:%u"
+    IDS_LOG_FC_ERR1         "Konnte Fake Check Datei nicht aus ZIP-Datei lesen ""%s""."
+    IDS_LOG_FC_ERR2         "Geladene Fake Check Datei ""%s"" ist eine ZIP-Datei mit unerwartetem Inhalt."
+    IDS_MASSRENAME_TITLE    "Mehrfach-Umbenennung"
+    IDS_LOG_CRC32_WRN1      "Achtung: Eine Datei für die eine CRC32-Checksumme berechnet werden sollte, ist nicht mehr im Share. Berechnung Abgebrochen."
+    IDS_LOG_CRC32_WRN2      "Achtung: Datei '%s' ist nicht mehr im Share. CRC32-Berechnung abgebrochen."
+    IDS_LOG_CRC32_WRN3      "Achtung: Kann Datei '%s' nicht zur CRC32-Berechnung öffnen. Übergehe Datei."
+    IDS_LOG_CRC32_SKIP1     "CRC32-Berechnung von Datei '%s' übergangen - bereits berechnet."
+    IDS_LOG_CRC32_SKIP2     "Kann CRC32-Prüfsumme von Datei '%s' nicht berechnen; Datei noch nicht vollständig."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOG_CRC32_CALC      "Berechne CRC32 von Datei '%s'..."
+    IDS_LOG_CRC32_ADORT     "CRC32-Berechnung abgebrochen."
+    IDS_LOG_CRC32_COMPLETED "CRC-Berechnung von Datei '%s' beendet. CRC-Prüfsumme: %s"
+    IDS_IP2COUNTRY_MSG1     "IP2Country nutzt die IP-to-Country Datenbank von WebHosting."
+    IDS_IP2COUNTRY_MSG2     "Info (http://www.webhosting.info), verfügbar bei http://ip-to-country.webhosting.info."
+    IDS_IP2COUNTRY_LOADED   "IP2Country geladen"
+    IDS_IP2COUNTRY_UNLOADED "IP2Country entladen"
+    IDS_IP2COUNTRY_ERROR1   "Fehler in Zeile: %i"
+    IDS_IP2COUNTRY_ERROR3   "Fehler beim laden"
+    IDS_IP2COUNTRY_ERROR4   "CountryFlag deaktiviert, laden fehlgeschlagen"
+    IDS_IP2COUNTRY_ERROR5   "Fehlerhafte resID, die flags.DLL sollte vielleicht aktualisiert werden."
+    IDS_IP2COUNTRY_ERROR6   "IP to Country-Datei Download fehlgeschlagen"
+    IDS_IP2COUNTRY_ERROR7   "Konnte IP to Country Datei nicht aus der geladenen IP to Country ZIP Datei extrahieren""%s""."
+    IDS_IP2COUNTRY_ERROR8   "geladene IP to Country Datei ""%s"" ist eine ZIP-Datei mit unerwartetem Inhalt."
+    IDS_IP2COUNTRY_LOADED2  "IP2Country geladen von ""%s"" in %ums"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UP_LOWID2           "%i LowID"
+    IDS_UP_LOWID_AWAITED    "%i **** Warte auf Reconnect %s"
+    IDS_IP2COUNTRY_NALONG   "Nicht verfügbar"
+    IDS_IP2COUNTRY_NASHORT  "N/V"
+    IDS_SOURCE_LOADER_SAVER "SLS"
+    IDS_NEWFRIEND           "Neuer Freund:"
+    IDS_REMOVEDFRIEND       "gelöschter Freund:"
+    IDS_FRIENDNAME_CHANGED1 "Freund hat Namen geändert: '%s'->'%s', ip %i.%i.%i.%i:%i, Hash %s"
+    IDS_FRIENDNAME_CHANGED2 "Freund hat Namen geändert: '%s'->'%s', Hash %s"
+    IDS_FAILEDTOLOAD        "Laden fehlgeschlagen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IP2COUNTRY_INFO     "gelesene Linien:%u  gefundene IPCountry bereiche:%u  Doppelt:%u  Hinzugefügt:%u"
+    IDS_IP2COUNTRY_FLAGLOAD "Länderflaggen wurden geladen"
+    IDS_IP2COUNTRY_FILELOAD "IP2Countryfile wurde entladen"
+    IDS_IP2COUNTRY_FLAGUNLD "Länderflaggen wurden entladen"
+    IDS_IP2COUNTRY_DWNFILE  "Downloade IP2Country Datei"
+    IDS_IP2COUNTRY_UPUNLOAD "IP2Country.csv entladen wegen laufendem Update"
+    IDS_IP2COUNTRY_UPLOAD   "IP2Country.csv geladen nach erfolgreichem Update"
+    IDS_HASHING_COMPLETED   "Hashen der Datei '%s' beendet."
+    IDS_HASHING_COMPLETED2  "Hashen von neuen Dateien beendet."
+    IDS_HASHING_NEWFILE     "Neue Datei: '%s'"
+    IDS_SUQWT_LOAD          "Lade %s"
+    IDS_VERBOSE_TITLE       "Ausführlich"
+    IDS_UP_LOWID            "%s LowID"
+    IDS_UP_LOWID_DELAYED    "%s LowID delayed %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SCHED_BACKUP_LOG    "Zeitgesteuertes Backup gestartet"
+    IDS_SCHED_UPDATE_IPCONFIG_LOG 
+                            "Zeitgesteuertes IPFILTER.DAT-Update gestartet"
+    IDS_SCHED_UPDATE_FAKES_LOG "Zeitgesteuertes FAKES.DAT-Update gestartet"
+    IDS_SCHED_UPDATE_WARNING 
+                            "Bitte die Zeitgesteuerten Updates nicht zu häufig festlegen, um Traffic zu sparen!\r\nEinmal pro Woche sollte reichen!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ZZRATIO             "zzRatio"
+    IDS_ZZRATIO_ENABLED     "ist aktiv"
+    IDS_ZZRATIO_DISABLED    "ist nicht aktiv"
+    IDS_ZZRATIO_CHECK1      "1/3 Ratio erreicht"
+    IDS_ZZRATIO_CHECK2      "PowerSharing unvollständige Datei"
+    IDS_ZZRATIO_CHECK3      "Nutze Freund-Uploadplatz und Globale Transferrate>3KB/s"
+    IDS_ZZRATIO_CHECK4      "Upload Limit unter 10KB/s"
+    IDS_ZZRATIO_CHECK5      "Durchschnittliche Upload unter 10KB/s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OK                  "OK"
+    IDS_IGNORE              "&Ignore"
+    IDS_RETRY               "&Retry"
+    IDS_HELP                "&Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTINUE            "&Continue"
+    IDS_DONOTASKAGAIN       "Don't ask me again"
+    IDS_DONOTTELLAGAIN      "Don't tell me again"
+    IDS_DONOTSHOWAGAIN      "Don't show again"
+    IDS_YESTOALL            "Y&es to All"
+    IDS_NOTOALL             "N&o to All"
+    IDS_TRYAGAIN            "&Try Again"
+    IDS_REPORT              "Re&port"
+    IDS_IGNOREALL           "I&gnore All"
+    IDS_SKIP                "&Skip"
+    IDS_SKIPALL             "S&kip All"
+END
+
+/*
+STRINGTABLE 
+BEGIN
+    IDS_DOWNHISTORY         "Download Geschichte"
+//    IDS_DOWNHISTORY_CHECK1  "eMule hat eine Datei gefunden, die schon mit der selben Datei ID heruntergeladen wurde:\n"
+    IDS_DOWNHISTORY_CHECK2  "eMule hat %i Datein gefunden, die schon mit dem selben Dateinamen heruntergeladen wurde (%s):\n"
+    IDS_DOWNHISTORY_CHECK3  "Möchtest du die Datei trotzdem laden?"
+    IDS_DOWNHISTORY_CHECK4  "eMule hat eine Datei gefunden, die schon mit der selben Datei ID abgebrochen wurde:\n"
+    IDS_DOWNHISTORY_REMOVE  "Aus der Geschichte löschen"
+    IDS_DOWNHISTORY_REMOVE_QUESTION 
+                            "Möchtest du wirklich ""%s"" aus der Download Geschichte löschen?"
+    IDS_DOWNHISTORY_REMOVE_QUESTION_MULTIPLE 
+                            "Möchtest du wirklich die ausgewählten Datein aus der Download Geschichte löschen?"
+    IDS_DOWNHISTORY_SHARED  "Freigegeben"
+    IDS_DOWNHISTORY_CLEAR   "Reset Download Geschichte"
+    IDS_DOWNHISTORY_SHOWSHARED "Zeige freigegebene Datein"
+    IDS_DOWNHISTORY_ACTIONS "Aktionen"
+    IDS_DOWNHISTORY_CLEAR_QUESTION 
+  END
+                        "Bist du sicher, dass du die Download Geschichte löschen willst?"
+
+					
+STRINGTABLE 
+BEGIN
+    IDS_EASTSHARE           "EastShare"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FINECS              "Fine Credit System (Schwelle: 4 chunks)"
+    IDS_PRIOLOWER          "Niedriger"
+    IDS_PRIOAUTOLOWER       "Auto [Nr]"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PUSH                "Push Einstellungen"
+// ==> push small files [sivka] - Stulle
+    IDS_PUSH_SMALL          "Pushe kleine Datein"
+    IDS_PUSH_SMALL_BOOST    "Pushe kleine Datein Faktor"
+// <== push small files [sivka] - Stulle
+// ==> push rare file - Stulle
+    IDS_PUSH_RARE           "Pushe seltene Datein"
+    IDS_RARE                "Selten"
+// <== push rare file - Stulle
+// ==> Show sources on title - Stulle
+    IDS_SHOWSRCONTITLE      "Zeige Quellen im Titel"
+    IDS_SHOWSRCSTRING       "Quellen:"
+// <== Show sources on title - Stulle
+    IDS_SHOWOVERHEADONTITLE "Zeige Overhead im Titel"// show overhead on title - Stulle
+// ==> ZZ Ratio Activation Changes - Stulle
+    IDS_ZZRATIO_CHECK5_NEW  "Durchschnittlicher UL < 10KB/s und UL Limit < 12"
+    IDS_ZZRATIO_CHECK6      "zzRatio aktiviert bis Session endet"
+    IDS_ZZRATIO_CHECK8      "Durchschnittlicher UL < 8KB/s"
+// <== ZZ Ratio Activation Changes - Stulle
+    IDS_AVG_QUEUE           "Durchschn. Warteplatz" // Average Queue Ranking [Xman] - Stulle
+// ==> Sivka-Ban [cyrex2001] - Stulle
+    IDS_SIVKA_ASK_COUNTER   "Anzahl für Nachfragen, vor Bann [5-15]"
+    IDS_SIVKA_ASK_LOG       "Logge gebannte clients"
+    IDS_SIVKA_ASK_TIME      "Durchschnittliche Nachfragezeit, vor Bann [5-10 min.]"
+    IDS_SIVKA_BAN_CONTROL   "Sivka-Bann Kontrolle"
+    IDS_SIVKA_BAN           "Schalte Sivka-Bann Kontrolle ein"
+// <== Sivka-Ban [cyrex2001] - Stulle
+// ==> ban systems optional - Stulle
+    IDS_BAD_NICK_BAN        "Böse Nick ban einschalten"
+    IDS_ANTI_MOD_FAKER      "Anti-Mod-Fälscher einschalten"
+    IDS_ANTI_NICK_THIEF     "Anti-Nick-Dieb einschalten"
+    IDS_BAD_MOD_STRING      "Böse Mod String ban einschalten"
+    IDS_GHOST_MOD           "Geister Mod ban einschalten"
+    IDS_EMPTY_NICK          "Leerer Nick ban einschalten"
+    IDS_FAKE_EMULE          "Gefälschter eMule ban einschalten"
+    IDS_ANTI_LEECHER_GROUP  "Anti-leechers Kontrolle"
+    IDS_HIDDEN_STR          "Versteckter Modstring ban einschalten"
+    IDS_LEECHER_NAME        "Leecher Namen ban einschalten"
+    IDS_COMMUNITY_CHECK     "Community Check einschalten"
+// <== ban systems optional - Stulle
+    IDS_USS_INITIAL_TTL     "Anfangs-TTL" // [MoNKi: -USS initial TTL-] - Stulle
+    IDS_PW_RETRIES_NEW      "Fehlversuchen (0=ausgeschaltet)" // Disable delete dead Servers - Stulle
+    IDS_CON_TWEAKS          "Verbindungs Tweaks"
+    IDS_RSAIC               "Frage Quellen nach IP-Wechsel ab" // Xman -Reask sources after IP change- v2 - Stulle
+    IDS_REASK_FILE_SRC      "Erneute Abfragezeit für Datei Quellen [29-55 Min.]" // Timer for ReAsk File Sources - Stulle
+// ==> new credit system - Stulle
+	IDS_SIVKA_CREDIT        "Sivka Credit"
+	IDS_SWAT_CREDIT         "S.W.A.T. Credit"
+// <== new credit system - Stulle
+// ==> Quick start [TPT] - Stulle
+    IDS_QUICK_START_GROUP   "Schnellstart"
+    IDS_QUICK_START         "Schalte Schnellstart ein"
+    IDS_QUICK_START_MAX_TIME "Zeit für Schnellstart [8-18 Min.]"
+    IDS_QUICK_START_MAX_CONN_PER_FIVE "Max. Verb./5sec"
+    IDS_QUICK_START_MAX_CONN "Max. Verb."
+    IDS_QUICK_START_AFTER_IP_CHANGE "Schalte Schnellstart nach IP-Wechsel ein"
+	IDS_QUICK_START_MAX_CONN_PER_FIVE_BACK "Zurück zu Max. Verb./5sec"
+    IDS_QUICK_START_MAX_CONN_BACK "Zurück zu Max. Verb."
+// <== Quick start [TPT] - Stulle
+// ==> FunnyNick Tag - Stulle
+    IDS_FN_TAG              "FunnyNick Tag"
+    IDS_NO_TAG              "Kein Tag"
+    IDS_SHORT_TAG           "[FN]"
+    IDS_FULL_TAG            "[FunnyNick]"
+    IDS_CUSTOM_TAG          "Eigenen Tag"
+    IDS_SET_CUSTOM_TAG      "Setze eigenen Tag"
+    IDS_FN_TAG_AT_END       "Zeige Tag am Ende"
+// <== FunnyNick Tag - Stulle
+// ==> Pay Back First for insecure clients - Stulle
+    IDS_PAYBACKFIRST2       "zuerst zurückgebenfür clients ohne SUI"
+    IDS_PAYBACKFIRSTLIMIT2  "Übertragung vor Auslösen (Standard 50MB)"
+// <== Pay Back First for insecure clients - Stulle
+    IDS_CLIENT_BAN_TIME     "Zeit die ein client gebannt bleibt in h" // adjust ClientBanTime - Stulle
+// ==> drop sources - Stulle
+    IDS_NNS_TIMERLABEL      "AutoNNS Timer 0...60 Sek"
+    IDS_REMOVENNSLIMITLABEL "Starte droping NNS > X%"
+    IDS_FQS_TIMERLABEL      "AutoFQS Timer 0...60 Sek"
+    IDS_REMOVEFQSLIMITLABEL "Starte droping FullQS > X%"
+    IDS_HQRS_TIMERLABEL     "AutoHQRS Timer 0...60 Sek"
+    IDS_REMOVEQRSLABEL      "Maximal erlaubte QR <= X"
+    IDS_REMOVEQRSLIMITLABEL "Starte droping HighQRS > X%"
+    IDS_AUTO_NNS            "Automatisches drop NNS einschalten"
+    IDS_AUTO_FQS            "Automatisches drop FullQS einschalten"
+    IDS_AUTO_QRS            "Automatisches auto drop HighQS einschalten"
+    IDS_SIVKAFILESETTINGS   "Sivka - Datei(n) Einstellungen"
+    IDS_HARDLIMIT_LABEL     "Hard Limit (0=Nutze standart)"
+    IDS_DROP_DEFAULTS       "Drop Standard Einstellungen"
+// <== drop sources - Stulle
+    IDS_SHOW_GLOBAL_HL      "Zeige globales Hardlimit" // show global HL - Stulle
+    IDS_STATS_DROPPEDSOURCES "Gedroppte Quellen: %u" // # of dropped sources in session - Stulle
+    IDS_SHOW_DROPPED_SRC    "Gedroppte Quellen" // show # of dropped sources - Stulle
+    IDS_PS_FILES_RED        "Hinterlege PS Datein rot" // draw PS files red - Stulle
+    IDS_FRIENDS_BLUE        "Hinterlege Freunde blau" // draw friends blue - Stulle
+    // ==> TBH: minimule - Stulle
+    IDS_MM_SHOW             "Nutze TBH Mini-Mule stattdessem"
+    IDS_MM_LIVES            "Halte Mini-Mule aktuell"
+    IDS_MM_UPDATE_TIME      "Mini-Mule Update Zeit (in Sek.)"
+    IDS_MM_TRANS            "Mini-Mule Transparenz (1-255)"
+    IDS_MM_ACTDL            "Aktive Downloads: %i"
+    IDS_MM_DATA             "Up: %s | Down: %s"
+    IDS_MM_UPDOWN           "Up: %s(%.1f) | Down: %s(%.1f)"
+    IDS_MM_COMPL            "Zeige Datein die in der Laufzeit beendet wurden"
+    IDS_MM_RATIO            "UL:DL :"
+    IDS_MM_OPEN             "Öffne Mini-Mule wenn eMule in den Tray minimiert wird"
+    // <== TBH: minimule - Stulle
+    IDS_SHOWINMSN7          "Zeige eMule Status in MSN7 (or above) Nachrichten Feld" //Show in MSN7 [TPT] - Stulle
+    // ==> Anti Uploader Ban - Stulle
+    IDS_UNBAN_UPLOADER      "Limit für Bann-Schutz in MB [0=ausgeschaltet]"
+    IDS_ANTI_CASE_1         "UL >= Limit"
+    IDS_ANTI_CASE_2         "UL-DL >= Limit"
+    IDS_ANTI_CASE_3         "UL-DL >= Limit till 1:1"
+    // <== Anti Uploader Ban - Stulle
+    // ==> Spread Credits Slot - Stulle
+    IDS_SPREAD_CREDITS_SLOT "Verbreite Credits Slot"
+    IDS_SPREAD_CREDITS_SLOT_COUNTER "Verbreite Credits Slot alle X Slots"
+    // <== Spread Credits Slot - Stulle
+    // ==> Source Graph - Stulle
+    IDS_SRCGRAPH            "Zeichne Quellen Graph"
+    IDS_STATIC_STATSHL      "Min/ Max Hard Limit Wert für Graph:"
+    IDS_SP_SRCGRAPH         "Quellen Graph"
+    // <== Source Graph - Stulle
+    IDS_SHOW_FILE_HL_CONST   "Zeige HL pro Datei kontinuierlich" // show HL per file constantaniously - Stulle
+    IDS_FD_AVGDL             "Durchschn. DL Geschw.:" // Average download speed - Stulle
+    // ==> BMI calculator - Stulle
+    IDS_BMI_WND              "BMI Rechner"
+    IDS_BMI_HEAD             "Gib Werte entweder in pound/inch oder Kilogramm/Meter ein"
+    IDS_BMI_WEIGHT_LABEL     "Gewicht (Nutze . statt ,)"
+    IDS_BMI_HEIGHT_LABEL     "Größe (Nutze . statt ,)"
+    IDS_BMI_ENGLISH          "Ergebnis (lb/in)"
+    IDS_BMI_METRIC           "Ergebnis (kg/m)"
+    IDS_BMI_RESULT_LABEL     "Dein BMI ist:"
+    IDS_BMI_RESULT           "Kein Ergebnis"
+    IDS_BMI_RESULT1          "Du bist untergewichtig"
+    IDS_BMI_RESULT2          "Du bist normal gewichtig"
+    IDS_BMI_RESULT3          "Du bist übergewichtig"
+    IDS_BMI_RESULT4          "Du bist fettleibig"
+    // <== BMI calculator - Stulle
+    // ==> Slot Limit - Stulle
+    IDS_SLOT_LIMIT_GROUP     "Slot Limitation"
+    IDS_SLOT_LIMIT_NONE      "Keine Limitierung"
+    IDS_SLOT_LIMIT_THREE     "Durschn.-UL/3kbps"
+    IDS_SLOT_LIMIT_NUM_B     "Limitierung auf x slots"
+    IDS_SLOT_LIMIT_NUM       "Max # von Slots (60-256)"
+    // <== Slot Limit - Stulle
+    IDS_TRAY_COMPLETE        "Zeige komplette Downloads im Tray" // Completed in Tray - Stulle
+    IDS_ANTI_XS_EXPLOITER    "Anti-XS-Ausnutzer einschalten" // Anti-XS-Exploit [Xman] - Stulle
+    IDS_SPAM_BAN             "Spam Bann einschalten" // Spam Ban [Xman] - Stulle
+END
+	*/

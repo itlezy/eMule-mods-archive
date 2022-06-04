@@ -1,0 +1,117 @@
+[IMG]http://img3.imageshack.us/img3/603/ultmatixv50.jpg[/IMG]
+[IMG]http://img148.imageshack.us/img148/8650/dlmenu.jpg[/IMG]
+------
+eMule v0.50a [UltiMatix v5.0]
+Based on [SaintAngel]
+------
+Engo3K changes for eMule v0.50a [UltiMatix v5.0]
+------
+Build:	Dec 04 2012
+Update to MorphXT v12.7
+------
+Build:	Jun 17 2012
++ATWL - Advanced Transfer Window Layout
++Fine Credit System
+------
+Build:	May  6 2012
++High Speed Upload Timer[Start 500 KB/s]
++Manual Client Management
++RequestedFilesDialog with Client Mangement
++BlockRatio change to UpSpeed
+------
+Build:	Jan 11 2010
++Check already downloaded files
++Active Permission
+-Saintangel removed all fixes from old magic angel
+------
+Build:	Dec 18 2010
++Drop sources + dropIcons + auto drop immunity
++Sivka File Settings>(adjustable per file)
++UNBAN detected leecher - DownloadList/ClientList/QueueList
++Ask Clients For New XS Sources
++Ask Server For New Sources
++add don't drop complete sources [taz] : simplified version due to the change of show # of dropped sources
++change show # of dropped sources : shift m_ShowDroppedSrc to CDownloadQueue::RemoveSourceAndDontAsk
++fix show # of dropped sources : count only dropped
++fix CUPnP_IGDControlPoint : don't rely in module pointer which is "0"ed on constructor [taz]
++fix ICS preview priority [taz] : piority values were reversed
+------
+Build:	Dec  4 2010
++Updated to MorphXT v12.5
++PowerShare for WebInterface
++High resulution speedmeter on toolbar
++Limit PS by amount of data uploaded (% of file size)
++server.met url (ServerWind.)
+-server ads
++Automatic shared files updater
++NodesDatUpdateUrl
++Don't Ban community/Friends
++UpPrios Whith-PS in DL-List
++PBF 1MB-Start<(adjustable) for Part&Finished Files
++Bold for Friend & Unlimitedslot
++CommColor orange
++Newest MediaInfo.dll from [MorphCA]
++eMule Skin from "Cloudas" (Skin profile eMule) to bin package from [MorphCA]
++HDD Protect - Increased max File Buffer Size to 40 MB with steps of 500 KB
++HDD Protect - Slidebar on "extended settings" to select Buffer Time Limit (1-30 mins)
++Save Last Request - SharedFilesWindow
++Share Permission -Hide/Comm/Friend/All
++Many icons
++Push Part Files [2-20] (0=Block!)
++Push Finished Files [2-20] (0=Block!)
++Average Queue Ranking
++Show Session Download
++Fixed Release Boost + for partfiles (not Release Bonus [X-Ray])
++Color red for PowerShare Files up/queuelist
++FileReaskTime for NNS & Unknown Src. to [20-58] mins
++See onuploadqueue/feedback
++Max client upload time [5-360] mins
++Multi chunk transfer
++remove block ratio (BR:) clients
++Total UpDown column with pos./neg. colors - green/red
++Unlimited Slot
++Clear Banlist
++AntiQRFull [1=off-0.01 Max] + 0 Score + No PS + UpKick 
++AntiCommunity [1=off-0.01 Max] + 0 Score + No PS + UpKick
++AntiMod [1=off-0.01 Max] + 0 Score + No PS + UpKick
++Punish for Non SUI Clients [0 Score/*0.1/*0.2/off] - Argos
++Friend Boost [2-500]
++Community Boost [2-500]
++Custom Prioritys
++Client-BAN All List
++Client Ban-Time [0-24h]
++Color for LowID/Friend/PowerShare/PBF/Community/Unlimited Slot
++Reask single Clients in Transfer Windows
++Push to Upload from downloadClientList & queuelist
++Drop Client in Transfer Windows (to another File)
++Whois-Client Provider Info all Lists
++GeoIP-IP Location Finder-Karte all Lists
++MSS Settings [=MTU-40]
++Slot Limiter [2-255]
++Kick All Upload Slots
++Kick single Upload Slot
++Clients Share Visiblity (Pink)
++Upload nur an eMule Clients
++Adjustable Modname
++Client Details copyable for better add to anticomm/mod
++UBT for client Datarate
++Don't remove spare trickle slot in UploadList
+to disable Slotfocus Use Client datarate (KB/s) & d'rst-slot off
+-PowerShare restrictions for partfile
+-Friends restrictions (zzRatio 3KB/s to ->0KB/s = Unlimited)
+-Remove some Release Nick/Mods (AntiLeech+MagicAntileech.dll)
+------
+Changelog for eMule v0.50a [SaintAngel v1.2.1/1.1]
+Based on MorphXT
+------
+Add: Show KAD flags&IP [X-Ray]
+Added: Shared file extension filter(don't share them)[dolphinx/changed by angvil]
+Added: Show runtime&nick on title [MorphCA]
+Added: Some mod icons
+Changed:  change user-agent to 'Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20100722 Firefox/3.6.8'
+Removed:Some codes
+Added: Release Bonus [X-Ray]
+Added: Show CPU&RAM useage [StulleMule/Katana]
+Added: Show User IP
+Changed:  Some small changed
+------

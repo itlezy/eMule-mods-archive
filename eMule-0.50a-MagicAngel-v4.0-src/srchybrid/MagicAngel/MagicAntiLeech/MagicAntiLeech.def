@@ -1,0 +1,15 @@
+; MagicAntiLeech.def : Deklariert die Modulparameter für die DLL.
+
+LIBRARY      "MagicAntiLeech"
+
+EXPORTS
+    TestFunc			@1
+    GetMagicDLPVersion		@2
+    DLPCheckModstring_Hard		@3
+    DLPCheckModstring_Soft		@4
+    DLPCheckUsername_Hard		@5
+    DLPCheckUsername_Soft		@6
+    DLPCheckModstring_GPL		@7 ; // => GPL Breaker Detection - sFrQlXeRt
+    DLPCheckUsername_GPL		@8 ; // => GPL Breaker Detection - sFrQlXeRt
+    DLPCheckModstring_Bad		@9 ; // => Bad MOd Detection - sFrQlXeRt
+    ; Explizite Exporte können hier eingefügt werden

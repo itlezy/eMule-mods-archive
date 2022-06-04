@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Dutch (Netherlands)", "nl_NL.vcproj", "{A989B752-28A2-44E7-8C19-F49C7ECD61DC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Dynamic = Dynamic
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A989B752-28A2-44E7-8C19-F49C7ECD61DC}.Dynamic.ActiveCfg = Dynamic|Win32
+		{A989B752-28A2-44E7-8C19-F49C7ECD61DC}.Dynamic.Build.0 = Dynamic|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

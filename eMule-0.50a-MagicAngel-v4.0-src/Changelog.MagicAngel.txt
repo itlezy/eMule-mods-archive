@@ -1,0 +1,366 @@
+--------------------------------------------
+Changelog for eMule v.50a [Magic Angel v4.0]
+--------------------------------------------
+compiled with VS2005(with SP1 & updates) & Windows SDK 7.0
+
+13.2.2001 >>>>>> 4.0 QuickPatch 1
+FIXED: Fixed the Upload/Download List background issue again with "clean" method. [YumeYao]
+FIXED: Some adjustments on controls are made in option dialog for consistency and tidiness. [YumeYao]
+REMOVED: Disarded netfinity's patches upon BarShader.cpp [YumeYao]
+
+12.2.2011 >>>>>> 4.0
+
+TODO: There is still much to be done because many features borrowed in Magic Angel have been updated.
+      However this version is released for a quick start and they'll be added in following versions
+MERGED: Merged to emule 0.50a (MorphXT 12.6). [YumeYao]
+ADDED: Auto-complete list for Nodes.dat from URL. [YumeYao]
+      (when the text box is focused, press "Down Arrow" Key to get the list)
+ADDED: H.264 and 3vid FourCC Codes to the MediaInfo Detection [X-Ray]
+ADDED: Changed Network Info(right-bottom on Servers page) Layout. [YumeYao]
+       Always Show Client info(Nickname, TCP & UDP Port), User hash string still needs "show full" option.
+       WebServer and WapServer won't show if they are not enabled.
+IMPROVED: Changed Preview option on file context menu display logic. [YumeYao]
+          If Preview Available -- Always show "Preview" on root menu if only one player specified
+                               -- Otherwise "preview" and "preview with" depends on "Display Preview With menu in root context menu" option,
+                                  they will be in root menu or preview sub-menu together
+          If Not Available -- If "Show more controls" on  -- Same as before except that "Downloading needed parts for previewing" always show
+                              If "Show more controls" off -- display "Downloading needed parts for previewing" on root menu with "preview" removed(was grayed before).
+CHANGED: "Download parts needed for preview first" Display in Context Menu. [YumeYao]
+         It will show as checked and disabled(grayed) if the global option is checked.
+CHANGED: AntiLeech.dll update check link to SDC. [YumeYao]
+         (https://specialdlp.svn.sourceforge.net/svnroot/specialdlp/tags/x86/all-verycd/antiLeech.dll.new) [YumeYao]
+IMPROVED: Make Source Reask Log able to be translated. [YumeYao]
+          Added Resource String IDS_REASK_ALL_SOURCES_DELAYED
+ADDED: Simplified Chinese Language updated. [YumeYao]
+REMOVED: Removed Option Dialog Banner(I don't like it =v=) [YumeYao]
+FIXED: Fix the issue that background color between "Obtained Parts" and "Chunk Detail" in uploading list window is non-transparent(Filled with the background of the progress bars). [YumeYao]
+      (Quick and dirty way, better to find the cause and fix against it.)
+
+--------------------------------------------
+Changelog for eMule v.49c [Magic Angel v3.8]
+--------------------------------------------
+
+25.4.2009 >>>>>>
+
+MERGED: to MorphXT v11.3 thx to Stulle & Morph Team
+REMOVED: open a default website when nodesurl is invalid[ZZ00fly]
+
+26.4.2009 >>>>>>
+
+ADDED: Don't accept too short filters - unfair![WiZaRd]
+ADDED: First Start Maximized[WiZaRd]
+ADDED: Faster Upload Timer[WiZaRd]
+IMPROVED: SafeTagSending[WiZaRd]
+IMPROVED: Moved some Functions inline[netfinity]
+IMPROVED: Some Optimations and Fixes[WiZaRd]
+IMPROVED: Code (CPU load)[Maella]
+IMPROVED: Optimized speedBarShader[netfinity]
+IMPROVED: FillSolidRect[Xray]
+IMPROVED: banncheck[sivka]
+IMPROVED: quick fix/possible crashfix[XMan]
+IMPROVED: Save converting dwIP from uint32 to a CStringT to ASCII then back to uint32[bluesonicboy]
+
+2.5.2009 >>>>>>
+
+IMPROVED: save some cycles with an empty Queue[pP]
+IMPROVED: Optimations ,Fixes[WiZaRd/Xman/JvA]
+
+
+--------------------------------------------
+Changelog for eMule v.49b [Magic Angel v3.7]
+--------------------------------------------
+
+CHANGED: AntiModThief to old code
+CHANGED: Removed some entries from MagicAntiLeech (entries are in DLP too)
+FIXED: Vagaa Detection - forgotten to change some code during merging was commented out in source
+FIXED: Leecher Icon in downloading Clients Lists
+
+--------------------------------------------
+Changelog for eMule v.49b [Magic Angel v3.6]
+--------------------------------------------
+compiled with VS2005 SP1
+
+CHANGED: some Lines of Versionchecks for VS2005[gomez82]
+CHANGED: AntiModThief in Argos now uses WiZaRds AntiModthiefCode from ClientAnalyzer
+FIXED: ClearMessageField[TuxMan]
+FIXED: ReAskSourcesAfterIpChange: if we receive a LowID we do a recheck[XMan]
+ADDED: open a default website when nodesurl is invalid[ZZ00fly]
+ADDED: More Creditsystems(SIVKA/XTREME/SWAT/TK4/ZZUL) and some Code changes in Clientcredits[Stulle]
+
+--------------------------------------------
+Changelog for eMule v.49b [Magic Angel v3.5]
+--------------------------------------------
+
+MERGED: to MorphXT v11.1 [gomez82]
+UPDATE: DLP from Xtreme7 [XMan/Stulle/ZZ00fly]
+
+
+
+--------------------------------------------
+Changelog for eMule v.48a [Magic Angel v3.1]
+--------------------------------------------
+- 05 july 2007
+MERGED: to MorphXT v10.1 [evcz]
+ADDED: *LOGGING-ONLY* - Secure Source Exchange (beta) - Detects clients sending source response with invalid ips [sFrQlXeRt]
+FIXED: Crash with Secure Source Exchange in 3.1beta1 when adding an ed2k link with IP [evcz]
+ADDED: [EMULATE]Emulate Community Nick Addon (*only clients not punished are emulated*) [evcz]
+FIXED: Load from preferences MA and MA+ creditsystem correctly [evcz]
+FIXED: Link in server window pointing to Magic Angel homepage [evcz]
+FIXED: Leecher Icon overlay [evcz]
+ADDED: AJ-community-detection by userhash, code from xtreme 6.1 (GPL breaker punishmet used) [evcz]
+
+	
+
+--------------------------------------------
+Changelog for eMule v.48a [Magic Angel v3.0]
+--------------------------------------------
+- 9 jun 2007
+based on MorphXT v10.0
+
+MERGED: to MorphXT v10.0 [sFrQlXeRt]
+ADDED: Recognize MlDonkey XS Answer (Spike2/ideas by Wiz) [sFrQlXeRt]
+CHANGED: use redirecting download links for all Magic Angel versionchecks [evcz]
+CHANGED: some minor code changes on Magic Angel and Magic Angel+ Creditsystem [sFrQlXeRt]
+CHANGED: Clients always have at least 1MB uploaded to us for the division-modifier calculation of Magic Angel Creditsystems
+CHANGED: Magic Angel Creditsystems Score calculation for linear calculation of eMule v0.48a [sFrQlXeRt]
+CHANGED: show more infos within the tooltip in UploadList [evcz]
+FIXED: Magic Angel Creditsystems with Anti Upload Protection [sFrQlXeRt]
+FIXED: Magic Angel+ Creditsystem bonus factor calculation [sFrQlXeRt]
+FIXED: Magic Angel Creditsystems modifier calculation if we uploaded to a client but he didn't upload to us [sFrQlXeRt]
+FIXED: SUQWT bug setting wrong waiting time for clients after restart of v2.3 [sFrQlXeRt]
+FIXED: aligned client detail window better [evcz]
+FIXED: missing Magic Angel icon in Queuelist for the last few versions [sFrQlXeRt]
+FIXED: one DLP update link still went to Xtreme Homepage and not directly do SourceForge [sFrQlXeRt]
+FIXED: Leecher Icon couldn't be shown for eDonkey-Hybrid or MLDonkey Clients in some lists (e.g. as Agressive Clients) [sFrQlXeRt]
+FIXED: Morph not saving Obfuscated Sources didn't work [sFrQlXeRt]
+FIXED: displaying fairplay string in Queulist [evcz]
+FIXED: Color Known Clients List too preference wasn't loaded [sFrQlXeRt]
+REMOVED: all remaining code parts of Multiple Instances (they caused a bug on startig a 2nd instance) [sFrQlXeRt]
+UPDATED: Emulate other clients (Spike2) [sFrQlXeRt]
+UPDATED: Enhanced Client Recognition (Spike2) [sFrQlXeRt]
+UPDATED: German language file to be compatible with eMule v0.48a [sFrQlXeRt]
+
+
+--------------------------------------------
+Changelog for eMule v.47c [Magic Angel v2.3]
+--------------------------------------------
+- 13 apr 2007
+
+ADDED: Reask Sources after IP Change v4 (Xman) [sFrQlXeRt]
+ADDED: Reconnect Kad on IP Change (Xman) [sFrQlXeRt]
+ADDED: File Faker Detection (DavidXanatos) [sFrQlXeRt]
+ADDED: set Punishment for XS-Exploiter (and not just don't answer them like before) [sFrQlXeRt]
+ADDED: Use own text to inform Leechers (if empty default text will be used) [evcz/sFrQlXeRt]
+ADDED: Intelligent Filebuffer Flushing (WiZaRd) [sFrQlXeRt]
+ADDED: Color Known Clients list too to Colored Upload [sFrQlXeRt]
+ADDED: Show Filenames and Search-Keyword of Kad searches in Kad search list [sFrQlXeRt]
+CHANGED: Filebuffer flush size min 512KB, max 40MB [sFrQlXeRt]
+CHANGED: increased Filebuffer flush size slider tic frequence to 1 tic every MB and range to 512KB [sFrQlXeRt/evcz]
+CHANGED: improved colored upload code and added color brown for the download state no needed parts [sFrQlXeRt]
+CHANGED: only enable anti-leecher features that can be used (depending on if/wich leecher detection file is loaded) [sFrQlXeRt]
+CHANGED: Nick Thief and Mod Thief detection now  works also if no leecher detection file is loaded [sFrQlXeRt]
+CHANGED: Download URLs: now all links go directly to the download page on SourceForge [evcz]
+CHANGED: show more info about leecher hello and info tags in Morph Log [sFrQlXeRt]
+CHANGED: minor changes on adjustable file buffer flush time code [sFrQlXeRt]
+CHANGED: Magic Angel Other Settings tree group icon [sFrQlXeRt]
+FIXED: bug with SUQWT and extended credit-table-arrangement (thanks to Stulle for the note) [sFrQlXeRt]
+FIXED: Emulate Others eDonkey and MLDonkey didn't work [sFrQlXeRt]
+FIXED: XS-Exploiter Detection didn't work [sFrQlXeRt]
+FIXED: minor bug of v2.2 that a soft leecher couldn't be identified as a hard leecher anymore [sFrQlXeRt]
+FIXED: Color Queuelist was coloring knwon clients list in v2.2 [sFrQlXeRt]
+FIXED: Magic Angel Toolbar Icons were missing in v2.2 [sFrQlXeRt]
+FIXED: showing Magic Angel Mod icon for Mod Thief Leechers [sFrQlXeRt]
+FIXED: all eMule Morph compiler errors [sFrQlXeRt]
+FIXED: eMule Morph bug showing wrong tab icon on switich tabs in Webserver preferences [sFrQlXeRt]
+FIXED: eMule Morph bug opening wrong tab on re-opening Webserver preferences [sFrQlXeRt]
+REMOVED: Community detection preferences (they had no use because this leecher was detected with Bad Hello detection) [sFrQlXeRt]
+REMOVED remaining codes of old Reask Sources after IP Change v2 (we have v4 now) [sFrQlXeRt]
+UPDATED: German language file with new Magic Angel preferences [sFrQlXeRt]
+
+
+--------------------------------------------
+Changelog for eMule v.47c [Magic Angel v2.2]
+--------------------------------------------
+-9 apr 2007
+based on MorphXT v9.6
+>> this version comes from evcz not from the original modder sFrQlXeRt <<
+
+MERGED: to MorphXT 9.6
+CHANGED: CS order as in MorphXT [evcz]
+FIXED: Anti Upload Protection default credit value based on the CS in use  [evcz]
+FIXED: Anti Upload Protection when the other client have not yet uploaded to us [evcz]
+REMOVED: Multiple Instances [evcz]
+ADDED: HDD protect [evcz]
+ADDED: Adjustable Buffer Time Limit [evcz]
+CHANGED: DLP code from Xtreme v5.4.2 [evcz]
+ADDED: Applejuice to GPL breakers into MagicAntiLeech.dll (now V3) [evcz]
+ADDED: Wikinger to GPL breakers into MagicAntiLeech.dll (now V3) [evcz]
+
+
+--------------------------------------------
+Changelog for eMule v.47c [Magic Angel v2.1]
+--------------------------------------------
+-4 nov 2006
+based on MprhXT v9.2
+
+FIXED: Multi User Webinterface Tab
+
+
+--------------------------------------------
+Changelog for eMule v.47c [Magic Angel v2.0]
+--------------------------------------------
+- 22 oct 2006
+based on MorphXT v9.1
+
+ADDED:	Push small/rare files and file by ratio [sivka/codes from NeoMule]
+ADDED:	enable/disable Powershare for Leechers
+CHANGED: Release Boost works only for complete files
+CHANGED: DLP code to Xtreme v5.3
+CHANGED: Anti Ghost Mod bans also unkown tag in info packet
+CHANGED: Show Size of extra bytes
+CHANGED: Also detect extra bytes in info packet
+CHANGED: Colored Upload: now you can decide if Morph UL-Slot colors should be used too
+CHANGED: all MB-values in Angel Argos preferences window are now KB-values
+CHANGED: Quickstart on IP Change can now only set enabled when QuickStart is enabled
+CHANGED: FileBuffer Size to max 20MB
+FIXED:	bug with Anti Uplaoder Ban
+FIXED:	display bug with max anti upload protection limit
+FIXED:	displaying of Webcache Icon in Download List
+FIXED:	some bugs with "Inform Leechers"
+FIXED:	bug with Quickstart time calculation
+UPDATED: German lang.dll
+
+
+--------------------------------------------
+Changelog for eMule v.47a [Magic Angel v1.5]
+--------------------------------------------
+based on MorphXT v8.13
+
+ADDED:	Anti Uploader Ban works now also for "Punish Donkeys"-Clients
+CHANGED: Anti Upload Protection values: min 1.0MB, max 2.8MB, default 1.8MB
+CHANGED: AntiUploaderBan: unban for Angel Argos Leechers
+CHANGED: some other small changes on Magic Angel and Angel Argos
+FIXED:	Bug with Reask Time (only occured when Spread Reask was disabled)
+FIXED:	Bug in Enhanced Client Recognization (with eMule Plus v1.2)
+FIXED:	The new DLP log entries were printed in Morph and Verbose log
+FIXED:	Bug in server-reconnect when reask sources after IP change was enabled
+FIXED:	some DLP Versioncheck messages
+UPDATED: German lang.dll
+
+
+--------------------------------------------
+Changelog for eMule v.47a [Magic Angel v1.4]
+--------------------------------------------
+based on MorphXT v8.10
+
+ADDED: 	Angel Argos works now with the complete Dynamic Leecher Protection (DLP) 
+       	of Xtreme v5.2 and with the antiLeech.dll file [Xman]
+       	Modified some DLP detections with codes from ScarAngel 
+ADDED: 	Magic Angel version check [Official/Morph/Stulle]
+ADDED: 	MagicAntiLeech.dll file (includes GPL Breakers and some more Leechers)
+ADDED: 	version check for antiLeech.dll and MagicAntiLeech.dll [Xman]
+ADDED: 	Magic Angel+ Creditsystem. Based on Magic Angel Creditsystem. Clients get
+       	a small boost to their credit modifier, when they uploaded us more, than we
+       	uploaded to them (the boost depends on the difference of upload minus download).
+ADDED:	Extened credit-table-arragement [Xman]
+ADDED: 	Enhanced Client Recognization [Spike2]
+ADDED: 	show Leecher and Punishment in Client Details 
+ADDED: 	inform Leechers via Usernick (feature can als be turned of in Angel Argos settings,
+	if you don't want to let the leechers know, that they are identified)
+ADDED: 	show Queuerank in Client Details [Xman]
+ADDED:	Anti Uploader Ban [Stulle] 
+ADDED:	Reask Sources after IP change v2 [Xman/Maella/Stulle]
+ADDED:	Set file reask Time manual (changed to 29-57 minutes) [Stulle]
+ADDED:	Spread Reask (added button to enable/disable) [Maella/Stulle]
+ADDED:	Quickstart from NeoMule (modified a bit) [DavidXanatos]
+ADDED:	FunnyNick Tag [Stulle/Aireoreion]
+ADDED:	Ratio Creditsystem [RT Mod]
+ADDED:	Anti Upload Protection: you can set a certain amount after clients get credits [idea of netfinity]
+ADDED:	Colored Upload: color your upload depending on remote Queuerank [Aireoreion] 
+	or color Friend and Powershare Slots [idea of Stulle]
+ADDED:	Find best sources [Xman]
+CHANGED: Slot Limiter is now exactly like the Morph Slot Limiter
+CHANGED: some things in Angel Argos preferences window 
+CHANGED: some things in debug log and Morph log
+CHANGED: Magic Angel Creditsystem (and Magic Angel+ CS). Clients get credits for Upload >= 1.65MB
+FIXED:	bug in Angel Argos, that Magic Angel sometimes stopped searching for sources
+REMOVED: complete Morph Anti-Leecher code (we use DLP instead)
+REMOVED: Quickstart from Magic Angel v1.31
+UPDATED: German lang.dll
+
+
+---------------------------------------------
+Changelog for eMule v.47a [Magic Angel v1.31]
+---------------------------------------------
+FIXED: Bug in Spam Detection of v1.3 [sFrQlXeRt]
+
+
+--------------------------------------------
+Changelog for eMule v.47a [Magic Angel v1.3]
+--------------------------------------------
+MERGED: to MorphXT v8.5 [sFrQlXeRt]
+ADDED: Release Boost [sFrQlXeRt]
+ADDED: Wrong hello order Detection (Xman) [sFrQlXeRt]
+CHANGED: Morph Slot Limiter to original one from Stulle [sFrQlXeRt]
+CHANGED: Don't print messages from Morph log in Verbose log [sFrQlXeRt]
+UPDATED: Angel Argos (some small detections of Xman) [sFrQlXeRt]
+UPDATED: German lang.dll [sFrQlXeRt]
+
+
+--------------------------------------------
+Changelog for eMule v.47a [Magic Angel v1.2]
+--------------------------------------------
+MERGED: to MorphXT v8.4 [sFrQlXeRt]
+CHANGED: some Angel Argos detection lists [sFrQlXeRt]
+FIXED: forgot to change some toolbar icons in v1.1 [sFrQlXeRt]
+
+
+--------------------------------------------
+Changelog for eMule v.47a [Magic Angel v1.1]
+--------------------------------------------
+based on MorphXT v8.3
+
+ADDED: eMCrypt Detection (Xman) [sFrQlXeRt]
+ADDED: Anti-XS-Exploit (Xman/idea by WiZaRd) to Agressive client Detection [sFrQlXeRt]
+ADDED: Source Cache: Find more sources with less overhead (Xman) [sFrQlXeRt]
+CHANGED: Donkey Punishment: Clients now don't get a reduced score, because they aren't
+         eMule Clients. They get a reduced score if they haven't got SUI [sFrQlXeRt]
+FIXED: Bug in manual unban for Angel Argos leechers [sFrQlXeRt]
+UPDATED: German lang.dll [sFrQlXeRt]
+
+
+--------------------------------------------
+Changelog for eMule v.47a [Magic Angel v1.0]
+--------------------------------------------
+based on MorphXT v8.2
+
+ADDED  : - Angel Argos Anti-Leecher system (inspired by "Argos system" from Neo Mule,
+           some icons from Neo Mule by David Xanatos) 
+         - partitioned leechers to many categories 
+         - select different punishment/ban for each category  [sFrQlXeRt]
+ADDED  : Don't ban friends [sFrQlXeRt]
+ADDED  : AntiNickThief v2.3 (WiZaRd/Stulle) [sFrQlXeRt]
+ADDED  : Dynamic Leecher Protection (Xman) [sFrQlXeRt]
+ADDED  : Username ban [sFrQlXeRt]
+ADDED  : Spam detection (Xman) [sFrQlXeRt]
+ADDED  : Agressive client Detection (orginal: sivka-ban by Cyrex2001) [sFrQlXeRt] 
+ADDED  : Donkey Punishment [sFrQlXeRt] 
+ADDED  : Magic Angel credit system. Based on official credit. Modifier min 0,1 and max 50.
+         Clients only get credits for upload >= 2MB. Set Magic Angel Credit to default. [sFrQlXeRt]
+ADDED  : Quickstart (TPT) [sFrQlXeRt]
+ADDED  : partitioned preferences window in two groups (ePlus/some old Morph Versions) [sFrQlXeRt]
+ADDED  : Magic Angel preferences window [sFrQlXeRt]
+ADDED  : Emulate: MLDonkey, eDonkey, eDonkeyHybrid, Shareaza v2, Lphant  (WiZaRd/Spike/shadow2004) [sFrQlXeRt]
+ADDED  : Limit Upload Slots to Average Upload/3kbps (with a control box to turn it of, 
+         if you want to use original Morph Upload System) (Stulle) [sFrQlXeRt]
+ADDED  : Magic Angel Client Icon [sFrQlXeRt]
+ADDED  : Leecher Icon [sFrQlXeRt]
+ADDED  : Magic Angel side banner (from eMule ZX) and splash screen [sFrQlXeRt]
+CHANGED: manual unban for Angel Argos leechers [sFrQlXeRt]
+CHANGED: Morph Version Check [sFrQlXeRt]
+CHANDED: some toolbar icons (icons from older Morph Versions) [sFrQlXeRt]
+UPDATED: Leecher Modstring/Username list [sFrQlXeRt]
+UPDATED: SNAFU (Xman) [sFrQlXeRt]
+UPDATED: German lang.dll [sFrQlXeRt]
+REMOVED: Some Morph Anti-Leecher code (use Angel Argos instead of it) [sFrQlXeRt]
+REMOVED: Official eMule GPL Breaker detecion (use Angel Argos instead of it) [sFrQlXeRt]

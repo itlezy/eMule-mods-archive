@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Czech", "cz_CZ_vc90.vcproj", "{0C42D310-84EB-462F-944B-7166C0D071E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - German (Germany)", "de_DE_vc90.vcproj", "{8104E8D8-7343-4BE7-8955-80A1F2D26EC1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Spanish (Castilian)", "es_ES_T_vc90.vcproj", "{B0DAEE35-FD0F-4FAF-A7C1-3D52103B3E81}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - French (France)", "fr_FR_vc90.vcproj", "{A7E4E792-AA76-4977-A725-1C428AADE381}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Italian (Italy)", "it_IT_vc90.vcproj", "{FEF2FD72-388B-42F6-B5DA-B9A663ACF557}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Turkish", "tr_TR_vc90.vcproj", "{EFE9605D-BF5C-4339-9A5A-32184D4BD03C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Chinese (P.R.C.)", "zh_CN_vc90.vcproj", "{BFCEE1BE-5DC9-4CDF-B55E-6DEDFC4FF782}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Chinese (Taiwan)", "zh_TW_vc90.vcproj", "{DB748474-ADA6-4AEB-8694-F02088D88AD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dynamic|Win32 = Dynamic|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C42D310-84EB-462F-944B-7166C0D071E9}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{0C42D310-84EB-462F-944B-7166C0D071E9}.Dynamic|Win32.Build.0 = Dynamic|Win32
+		{8104E8D8-7343-4BE7-8955-80A1F2D26EC1}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{8104E8D8-7343-4BE7-8955-80A1F2D26EC1}.Dynamic|Win32.Build.0 = Dynamic|Win32
+		{B0DAEE35-FD0F-4FAF-A7C1-3D52103B3E81}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{B0DAEE35-FD0F-4FAF-A7C1-3D52103B3E81}.Dynamic|Win32.Build.0 = Dynamic|Win32
+		{A7E4E792-AA76-4977-A725-1C428AADE381}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{A7E4E792-AA76-4977-A725-1C428AADE381}.Dynamic|Win32.Build.0 = Dynamic|Win32
+		{FEF2FD72-388B-42F6-B5DA-B9A663ACF557}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{FEF2FD72-388B-42F6-B5DA-B9A663ACF557}.Dynamic|Win32.Build.0 = Dynamic|Win32
+		{EFE9605D-BF5C-4339-9A5A-32184D4BD03C}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{EFE9605D-BF5C-4339-9A5A-32184D4BD03C}.Dynamic|Win32.Build.0 = Dynamic|Win32
+		{BFCEE1BE-5DC9-4CDF-B55E-6DEDFC4FF782}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{BFCEE1BE-5DC9-4CDF-B55E-6DEDFC4FF782}.Dynamic|Win32.Build.0 = Dynamic|Win32
+		{DB748474-ADA6-4AEB-8694-F02088D88AD7}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{DB748474-ADA6-4AEB-8694-F02088D88AD7}.Dynamic|Win32.Build.0 = Dynamic|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+EndGlobal

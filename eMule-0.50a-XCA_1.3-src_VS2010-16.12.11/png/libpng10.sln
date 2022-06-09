@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "libpng.vcxproj", "{0008960E-E0DD-41A6-8265-00B31DDB4C21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		ReleaseNoSSE|Win32 = ReleaseNoSSE|Win32
+		ReleaseNoSSE|x64 = ReleaseNoSSE|x64
+		SharedDebug|Win32 = SharedDebug|Win32
+		SharedDebug|x64 = SharedDebug|x64
+		SharedRelease|Win32 = SharedRelease|Win32
+		SharedRelease|x64 = SharedRelease|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Debug|Win32.Build.0 = Debug|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Debug|x64.ActiveCfg = Debug|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Debug|x64.Build.0 = Debug|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Release|Win32.ActiveCfg = Release|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Release|Win32.Build.0 = Release|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Release|x64.ActiveCfg = Release|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.Release|x64.Build.0 = Release|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.ReleaseNoSSE|Win32.ActiveCfg = ReleaseNoSSE|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.ReleaseNoSSE|Win32.Build.0 = ReleaseNoSSE|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.ReleaseNoSSE|x64.ActiveCfg = ReleaseNoSSE|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.ReleaseNoSSE|x64.Build.0 = ReleaseNoSSE|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedDebug|Win32.ActiveCfg = SharedDebug|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedDebug|Win32.Build.0 = SharedDebug|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedDebug|x64.ActiveCfg = SharedDebug|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedDebug|x64.Build.0 = SharedDebug|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedRelease|Win32.ActiveCfg = SharedRelease|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedRelease|Win32.Build.0 = SharedRelease|Win32
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedRelease|x64.ActiveCfg = SharedRelease|x64
+		{0008960E-E0DD-41A6-8265-00B31DDB4C21}.SharedRelease|x64.Build.0 = SharedRelease|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

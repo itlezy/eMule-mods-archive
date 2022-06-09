@@ -1,0 +1,629 @@
+0.50a X-Mod 1.6.1.1
+----------------
+Fixed:
+"Preview" button's text is not shown in Direct Download Dialog
+wrong data type in CAICHRecoveryHashSet::UntrustedHashReceived AddDebugLogLine (dontsueme)
+crash caused by strcpy_s in CAsyncSocketEx
+wrong DebugLog in MiniUPnP
+TransferWnd splitter issue
+CServerSocket::ProcessPacket m_bneedpublicIP
+CSourceData copy constructor
+an float exception in the Lovelace credit system
+IsValidSearchResultClientIPPort bug (gureedo)
+crash when remove a file in historylistctrl
+SetMaxUpload bug
+remove the file from single sharedfile list when removing a shared file
+skip the last chunck AICH hash if its size <= EMBLOCKSIZE when it is corrupted [Import Parts] & [IPR] - [Improved Part Recovery]
+delay AICH request when failed [Import Parts] & [IPR] - [Improved Part Recovery]
+
+Removed:
+old UPnP code
+Shareaza's WinServ UPnPImpl
+fix minimize to tray issue
+
+Changed:
+replace some API with crt version
+CIni use '\n' instead of "\r\n"
+remove feature pack code from VC10 binary
+improve UPnP implementation
+replace crt rand with sfmt
+change some memfiles' initial size
+change flush buffer block size
+replace MFC thread with modified Poco thread
+simplified queued disc-access for read/flushing-threads
+source save ignore lowIDs
+DLP check non case-sensitive strings in lower case
+update Integrated DLP to v44
+update libs to latest version
+
+Added:
+an UPnPImpl implementation of ACAT UPnP
+
+code from Xtreme 8.1
+(
+- improved: Sort progress bars by percentage (Fafner/Xman)
+- improved: Also include modstring when sorting by software for aMule (Stulle)
+- fixed: Fix broken HTTP downloads from SourceForge (WiZaRd)
+- fixed: Client is always highid if we are connecting to them (Enig123)
+- fixed: don't reconnect to banned clients (Enig123)
+- fixed: Potential devision by zero in UploadBandwidthThrottler (Stulle)
+- more minor fixes and improves from Stulle's merge
+- add: Ability to translate "Network Adapter" and "eMule control + data" for graphs (Stulle)
+- add: Own color option for Network Adapter graph line (Stulle)
+)
+
+0.50a X-Mod 1.6.0.0
+----------------
+- updated to 0.50a codebase
+Fixed:
+recode eMulePlusIniClass and fix bugs related
+crash when drag a file in download list
+rare crash when disconnect a client whose KadState is FWCHECK while kad is closed
+ignored files was checked in sharedfilelist [QOH] - [QueryOnHashing]
+some web interface bugs
+memleak when a file is hashing done after closing eMule and AICHHashset write buffer is enabled [BF] - [Bug Fix]
+
+Removed:
+X-Ray :: AICHSecurity AICHHashRequested check
+fix Statistics issues in old X-Mod
+send buffer option
+High Speed Upload Timer
+libs console error output
+
+Changed:
+replace hton*, ntoh* with _byteswap_*
+ShowRequestedFiles dialog show info icon morph4u
+replace the rest of CAsyncSocket with CAsyncSocketEx [SUDPS] - [CAsyncSocketEx UDP Support]
+improve GetFilePrioAsNumber (WiZaRd)
+combine connect and disconnect thumb buttons into one
+rename CMemDC to CMemoryDC for VC 10 compile
+get aich value in json [JFS] - [JSON Format Search]
+auto change sockets' send and receve buffer [DSRB] - [Dynamic Send and Receive Buffer]
+localize tab title in shared files window
+don't block HTTP sources via DeadSourceList (Avi-3k)
+do not show some message box on start up if eMule start with system
+use some auto close XMessageBox instead of AfxMessageBox
+move CheckSlotSpeed into SetMaxUpload, now slot speed will be changed if Max Upload is changed (once375ml)
+replace CAtlList with (unordered_)set in AICHSyncThread and Fincan Hash Detection
+save Fincan community hash met file and check last update time
+improve userhash check in Integrated DLP
+Only resolve hostnames for downloads if partfile found [WiZaRd] (Stulle)
+some translations in zh_CN
+update Integrated DLP to v42
+
+Added:
+CAsyncSocketEx UDP Support [SUDPS] - [CAsyncSocketEx UDP Support]
+speedgraph window customize configuration [SGW] - [SpeedGraphWnd]
+VC 10 project files
+CHttpDownloadDlg send If-Modified-Since and check status code 304
+zh_TW language dll
+
+code from Tombstone v2.1
+(
+Removed unnecessary user limitation that prevented downloading files in the default cat alphabetically 
+Fixed localization bug in shared files window
+MetaDataDlg is now added on-the-fly when you change the ext controls pref setting 
+)
+
+code from Xtreme 8.0
+(
+- add: Some more countries to country flags feature (tomchen1989)
+- add: Fincan community hash detection (WiZaRd)
+- add: retrieve MTU from system (netfinity)
+- add: AICHHashset write buffer, reduce diskio while hashing (zz_fly)
+- improved: Made SafeHash ready for new AICH based file identifier (like official) (Stulle)
+- fixed: minimize to systray issue issue (Enig123)
+- fixed: don't transmit for nested/overlapping data requests (emuleplus)
+)
+
+miniupnp
+(
+code fix to support win2000 Win2000 support
+)
+
+0.49c X-Mod 1.5.3.7
+----------------
+Fixed:
+crash when opening minimule (BG7BLV)
+crash when merging ip2country (**Riso64Bit**, BG7BLV)
+known client list download status column sort issue (**Riso64Bit**)
+
+0.49c X-Mod 1.5.3.6
+----------------
+Fixed:
+start up error if "show splash screen" is not check under vista (shenjunqiu)
+always show splash screen on close (morph4u)
+some issues in download history (**Riso64Bit**)
+always create old incoming directory [BF] - [Bug Fix] do not create cat0 Incoming now
+do complete DLP check for reduce score client
+some possible memory leaks in ArchiveRecovery.cpp (gureedo)
+fixes in CUpDownClient::SendPreviewAnswer and CMMServer::PreviewFinished (WiZaRd)
+infinite loop may occoured while flush dowanload buffer [GB] - [Global Buffer]
+Fix In Cfiledetaildialoginfo::refreshdata (ducho)
+fix in DLPv39 (zz_fly)
+crash may occour if delete a file while it is in checkboxs-enabled sharedfile list (morph4u)
+
+Removed:
+disable AsyncSocketEx IPv6 code ENABLE_IPV6
+
+Changed:
+change compile options to make exe smaller (morph4u)
+sort country by name (**Riso64Bit**)
+add OpenMP to load IPFilter faster (currently disabled) _OPENMP
+readd meter icon
+recode strtoul to load IPFilter and IP2Country faster
+use more 64 bit interger in x64
+recode members of CUInt128
+recode some parts of FileVerify [FV] - [FileVerify]
+replace float with interger in UploadBandwidthThrottler...
+compatible with STLport _STLP_WIN32
+replace std::map with boost::unordered_map HAVE_BOOST
+m_mapKnownFilesByAICH's and m_mapCancelledFiles's init hash table issues in KnownFileList
+replace MFC's collection classes with ATL's
+replace MFC's RTTI with typeid
+add icon for file type filter menu
+improve sort in webserver
+move some outside ini option to CPreferences
+don't save LowID and Leecher sources if we have lots of sources [ISS] - [Improved Source Save]
+don't send Leecher sources when source exchange [DUL] - [Don't Upload to Leecher]
+
+Added:
+add search related menu item in sharedfile list and history list
+option to replace ATL and MFC's hash map with unordered_map REPLACE_ATLMAP REPLACE_MFCMAP
+
+ResizableLib
+(
+use ATL's collection classes
+)
+
+0.49c X-Mod 1.5.2.5
+----------------
+Fixed:
+code fix to support win2000 Win2000 support
+remove some unnecessary notifications
+Don't reset Connection Settings for Webserver/CML/MM [Stulle] - Stulle
+Nodes.dat Overwritten Accidentally (Nissenice)
+a bug in GetInt and WriteInt of CIni
+changes to fix wines' DrawText DT_CALCRECT bug in COScopeCtrl
+KadContactListCtrl ip column sort bug
+
+Removed:
+X-Ray :: AICHSecurity in SHAHashSet
+
+Changed:
+remove some unnecessary dynamic dll loading
+recode Resume Download and improve coruppted parts recovery [IP] - [Import Parts] [IPR] - [Improved Part Recovery]
+improve DeleteItem and Update in CDownloadListCtrl [CI] - [Code Improvement]
+improve statisticsDlg client part
+
+Added:
+recognize easymule2 SO_EASYMULE2
+
+miniupnp
+(
+fixed a upnp mapping bug
+)
+
+0.49c X-Mod 1.5.2.4
+----------------
+Fixed:
+clean up banned client
+most fixes from OfFixed 1.0
+mem leak in kademlia\Search.cpp (WiZaRd)
+crash when AddLeecherLog [BF] - [Bug Fix]
+a bug in Integerated DLP
+
+Changed:
+use 8pt Font Size
+semi-transparent floating speedgraph window [GPUI] - [GDI Plus UI]
+client ico
+recode some part of BarShader and Mulelist [CI] - [Code Improvement] BarShader
+use global buffer size limit and something like Inteli-Flush [GB] - [Global Buffer]
+Don't request coruppted part before recovery
+
+Added:
+catch the invalid parameter exception
+JSON Format Search and VeryCD.com search (jsonparse from JSON.org)[JFS] - [JSON Format Search]
+MediaInfo inform function (from ScarAngel) Advanced Options [Official/MorphXT] - Stulle
+
+id3lib
+(
+remove write part
+)
+
+CxImage
+(
+only keep the functions eMule used
+)
+
+0.49c X-Mod 1.5.2.3
+----------------
+Fixed:
+a miner fix in Preferences (morph4u)
+bugs in Save URL Source [SUS] - [Save URL Source] & [ISS] - [Improved Source Save]
+localize dialogs "OK" "Apply" "Cancel" button [AL] - [Additional Localize]
+a miner fix in CompareDirectories [BF] - [Bug Fix]
+miner fixes in CemuleDlg::OnWebGUIInteraction [BF] - [Bug Fix]
+
+Removed:
+meter icon [SGW] - [SpeedGraphWnd]
+AvgQr [UIC] - [UIChange]
+chunck choose method menu & Order chunck choose method
+old web templates support
+_PfnLoadUnicows
+
+Changed:
+Web Interface support AJAX [AEWI] - [AJAX Enabled Web Interface]
+Web Server support "HTTP/1.1 304" and gzipped file request [AEWI] - [AJAX Enabled Web Interface]
+Statistics HTML features [AEWI] - [AJAX Enabled Web Interface]
+use 9pt Font Size [UIC] - [UIChange] Large Font Size
+compress DLP to prevent from changing the binary [CDLP] - [Compressed DLP]
+modified check in preference pages [CI] - [Code Improvement] Apply if modified
+less downloadtimout for leecher [DUL] - [Don't Upload to Leecher]
+no upload can only be enabled when use integerated DLP [DUL] - [Don't Upload to Leecher]
+change RefuseUpload implementation [RU] - [RefuseUpload]
+reduce file buffer size limitation
+Update Integrated DLP to v39
+improve old features
+
+Added:
+support NTFS filesystem features [FSFS] - [FileSystemFeaturesSupport]
+floating speedgraph window [SGW] - [SpeedGraphWnd]
+option DontCheckDLPVer(Don't Check DLP Version) [DLPI] - [DLP Integerated]
+Random Port On Startup [RPOS] - [RandomPortOnStartup]
+
+code from X-Ray 1.7
+(
+Optimizations - No Need to Refresh a stopped File
+NiceMove
+eMulePlusIniClass
+NewHTTPProgressbar
+AICHSecurity
+FiXeS :: Bugfix :: bscabral
+FiXeS :: Obfuscation-Bugfix :: WiZaRd
+FiXeS :: Bugfix :: WiZaRd cmdline
+ReconnectToKadAfterConnectionError
+Optimizations -  Don't Refresh item if not needed
+SearchCatch
+Different reasktime(FastReaskforMLDonkey,...)
+)
+
+0.49c X-Mod 1.5.1
+----------------
+Fixed:
+minor fixes in kademlia\Indexed.cpp (WiZaRd)
+upload : download ratio is very large in some situation [BF] - [Bug Fix]
+
+Removed:
+Anti-Random Modstring [ARM] - [Anti-Random Modstring]
+MediaInfo 0.4 support [RMIS] - [Remove MediaInfo 0.4 Support]
+Shareaza's md4 and sha implementation
+
+Changed:
+improve source save and allow save LowID source [ISS] - [Improved Source Save]
+minor improve in BarShader [CI] - [Code Improvement]
+use crypto++'s md5 implementation [CI] - [Code Improvement] use crypto++'s md5 implementation
+use crypto++'s md4 implementation(netfinity) Use cryptlib for all platforms
+compiled with official UPnP
+improve the feature download from leechers while no upload [DUL] - [Don't Upload to Leecher]
+don't Failed-Download-Ban http sources
+improve old features
+
+Added:
+Save http sources [SUS] - [Save URL Source]
+
+code from NetF WARP 0.3a.13 BETA
+(
+Rearranged for alignment reasons
+Moved this inline for speed!
+Credits Reset Exploit Prevention
+To reduce task switching on multicore CPU's
+Changed to types for better portability between different CPU targets
+Use cryptlib for non X86 platforms
+Latest CAsyncSocketEx(Version 1.3)
+)
+
+crypto++
+(
+update to 5.6.1 SVN 469
+use 5.5.2 implementation of Rijndael for x64(5.6.x implementation will crash emule)
+remove not used crypto algorithm code
+)
+
+0.49c X-Mod 1.5.0
+----------------
+Fixed:
+issue in DoSwap
+Statistics issues in old X-Mod
+Often reload sharedfiles when file not found
+Scroll bar context menu issues of mulelist [BF] - [Bug Fix]
+Wrong Folder Icon in directory tree ctrl [BF] - [Bug Fix]
+memleak when serverconnection fail [BF] - [Bug Fix]
+Small Bug in Zipfile.cpp (WiZaRd)
+
+Changed:
+Improved ClientCreditsList and ACAT optimization
+Improved CDownloadListCtrl::AddSource
+skip downloading source when A4AF to other
+Don't remember AICH when it is not referenced by knownfile
+Improved Add and Remove UPNP
+Don't force to share files in Incoming or Cat Incoming when it is not known [QOH] - [QueryOnHashing] Exclude files
+Update Integrated DLP to v37
+vectors call reserve() first, and replace clear() with std::vector<T>().swap()
+Only exclude file if it was not single shared (Stulle)
+
+Added:
+Remember Transfer Cat Tab [RCI] - [Remember Catalog ID]
+Anti-Random Modstring [ARM] - [Anti-Random Modstring]
+official UPnP lib condtional compilation
+
+code from Xtreme 7.1
+(
+- change: change default user dir mode to ApplicationDir
+- add: support Ctrl+C and Delete handling in downloaded history list (Stulle)
+       Copy ed2k links into clipboard using Ctrl+C and Delete files on hitting the del key.
+- fixed: fix crash in downloading sources handling (Enig123)
+- fixed: fix possible overflow in processing of upload queue and download queue
+- fixed: fix crash at shutdown (MorphXT)
+- fixed: minor issue in case of shutdown while still hashing (WiZaRd)
+- fixed: minor issue with friends handling (WiZaRd)
+- restore: Xman's improved socket closing
+           Althought it use more memory(10~20MB), but it is necessary to some kind of user.
+)
+
+0.49b X-Mod 1.4.6
+----------------
+Fixed:
+Localize "OK" "Temporary" "Countries" in chinese
+check partfile status after createpartfile in PartFileConvert.cpp [BF] - [Bug Fix]
+get rid of display issues like X:\\001.part [BF] - [Bug Fix]
+urldecode Clients' Filename [UIC] - [UIChange] m_strClientFilename urldecode
+
+Removed:
+Option menu in system menu [UIC] - [UIChange] remove SysOptions
+Banned column in queuelist
+
+Added:
+Index Temporary Filter and use binary search to insert and delete [ITF] - [Index Temporary Filter]
+DLP V36 Integerated [DLPI] - [DLP Integerated]
+Don't Upload to Leecher and ban leecher menu in upload queue clientlist [DUL] - [Don't Upload to Leecher]
+Auto Save Nodes.dat [AC] - [ActionChange] Auto Save Nodes
+View emulecollection menu
+Preview Links in Direct Download Dialog [PL] - [Preview Links]
+support long country name like "Country[Location]" in IP2Country [IP2L] - [IP2Location]
+country column in downloadlist and clientlist
+don't load ipfilters' description, will save much memory [NIPFD] - [No IPFilter Description]
+
+Changed:
+recover X version check
+change modstring: X-Mod to make it same with Mod name
+show Direct Download Dialog when there's ed2k file link in clipboard [UIC] - [UIChange] allow change cat
+show server's dyn ip and country flag [UIC] - [UIChange] show Dynip,[CI] - [Code Improvement] show Dynip country
+improve servers' ipfilter [CI] - [Code Improvement],[BF] - [Bug Fix]
+change auto-complete button in cat dialog
+change default cat 0's Title [UIC] - [UIChange] change cat0 Title
+show content after it loaded in Network dialog [UIC] - [UIChange] show after content load
+improve the client part of the statistic tree and fix a bug
+Import lots of code fixes found and proofed by Enig123
+show upload speed in trayicon
+improve old features
+
+0.49b Mexter 1.4.5
+----------------
+Fixed:
+Remove Useless Localize [RUL] - [Remove Useless Localize]
+
+Removed:
+X version check
+[LBM]
+Debug Log code [RDL] - [Remove Debug Log]
+compatible code in preference.cpp
+Lite [FV]
+Ord option in Xtreme Page
+
+Added:
+Additional Localize [AL] - [Additional Localize]
+shared file extension filter(don't share them) [DSE] - [DontShareExt]
+prompt before a file is gong to be hashed [QOH] - [QueryOnHashing]
+Resume Download, TrustHash [IP] - [Import Parts]
+Paste Links menu in cat menu
+faster end game: drop stalled downloads (netfinity) [DSC] - [Drop Slow Client]
+
+Changed:
+make client progress more accuracy
+Speed Up Loading ipfilter,don't sort if it was sorted [SUL] - [SpeedUpLoading]
+Speed Up Loading ip2country,don't sort if it was sorted,use std::map [SUL] - [SpeedUpLoading]
+don't create skin folder if not need
+create logs folder if need [BF] - [Bug Fix] create log dir before log taz-me
+no context menu for SDI_ALL and SDI_DIRECTORY [UIC] - [UIChange] no context menu for SDI_ALL and SDI_DIRECTORY WiZaRd
+ip2country code from CN Mod Enig123::Reduce GDI handles
+P2PThreat [BF] - [Bug Fix]
+
+code from Xtreme 7.1
+(
+- fixed: official bug around userhash initialization (Enig123)
+- improved: make source add action thread safe (Enig123)
+- fixed: Special case when socket is closing but data still in buffer (netfinity)
+- fixed: avoid userhash collision (DreaMule)
+- add: Friend Links (MorphXT) and fixed a memleak
+- improved: free unused memory when a download is completed/cancelled (Enig123)
+- improved: optimized Upload Bandwidth Throttler
+- improved: use a prime table to initiate ClientCreditsList
+- change: let nick name and location controls resize together with the source detail dialog
+- change: support 24k send buffer
+)
+
+
+0.49b Mexter 1.4.4
+----------------
+Fixed:
+show ? after change one cat's filter setting
+don't show server count after change language
+disable preallocate while eMule allocating [BF] - [Bug Fix]
+
+Removed:
+Xtreme version check
+Don't Draw Hidden Rect
+
+Added:
+file type filter for search list [FI] - [FilterItem]
+X version check
+64bit version compilation
+
+Changed:
+use non Unicode way to read ip2country,speed up loading
+improve effect when change list in Transfer dialog
+try create cat incomming folder if not exist rather than use default incomming one after complete [ActionChange]
+prefer autocat's temp folder [ActionChange]
+change version number and modstring: Mexter
+Speed Up Loading ipfilter
+Show IP Filter Hits [SFH] - [Show IP Filter Hits]
+Show More Splash Info [MSI] - [More Splash Info]
+change DLP default preference to ban
+Don't Draw Hidden Column [DDHC] - [Don't Draw Hidden Column]
+always show cachebar, don't show cachebar if show more controls not checked [CB] - [CacheBar]
+html features in statistic dialog
+
+code from Xtreme 7.0
+(
+- updated UPnP (thanks CN_Mod Team and ACAT)
+- add: show UPnP status in network info dialog (idea from ScarAngel)
+- add: rebind UPnP on IP-change (idea from X-RAY)
+-- add: safehash: installation dir unsharing (MorphXT)
+- change: UPnP Internal Search: send more request
+- remove: Fix Connection Collision (no more needed in .49b codebase)
+)
+code from ScarAngel 3.1
+(
+TK4 CreditSystem
+ZZUL CreditSystem
+Threaded Known Files Saving
+)
+code from X-Ray 1.6
+(
+MoreFourCCCodes
+Optimizations
+)
+
+0.49a X 0.1.3
+----------------
+Added:
+home page link
+option ReadOnly(make Preference ReadOnly) [ROP] - [ReadOnlyPreference]
+
+Changed:
+show supported language [UIC] - [UIChange]
+show average download speed
+
+code from ScarAngel 3.0
+(
+Recognize MlDonkey XS Answer
+relax on startup
+Source Counts Are Cached derivated from Khaos
+)
+code from X-Ray 1.5
+(
+FiXeS
+IP2Country (for KAD)
+Optimizations
+)
+code from Xtreme 7.0
+(
+- fixed: stop rehashing of files with foreign language name (Borschtsch)
+- fixed: avoid deadlock when disable network adapter
+- add: Fake Shareaza detection
+)
+
+0.49a X 0.1.2
+----------------
+- updated to 0.49a codebase
+Fixed:
+Memleak in Crypto++ typeid(T).name() may cause Memleak
+massrename Modeless dialog may crash eMule [BF] - [Bug Fix]
+
+Added:
+show LBM status [LBM] - [LastBlockMonitor]
+Temp folder settings for cat and CollectionView [TD] - [TempDir]
+chunck choose method menu [CC] - [ChunckChoose]
+Flush Buffer menu [FB] - [FlushBuffer]
+drop 0 KB client [C0SC] - [Clear 0 Speed Client]
+file extension filter(upload without compress) [DCE] - [DontCompressExt]
+File Verify, Fileformat.csv [FV] - [FileVerify]
+
+Changed:
+auto change Search wnd's cat tab(follow the transfer wnd's)[UIC] - [UIChange]
+Paste Links will add file in current cat [ActionChange]
+show head compeletion percent [HP] - [HeaderPercent]
+dynamic change file buffer size limitation [FBS] - [FileBufferSize]
+improve Order chunck choose method [Ord] - [Order]
+recover tray menu(dialog)
+TreeOptionCtrl display style [UIC] - [UIChange]
+recognize ip:port when add server
+code from 0.49b [MNC] - [eMuleNewCode]
+
+code from Neo4.5
+(
+Multi Temp Directories in ppgDirectory MTD - [MultiTempDirectories],
+Modeless Dialogs MLD - [ModelesDialogs],
+sharefileswnd toolbar AKF - [AllKnownFiles]
+Stop after file completion POFC - [PauseOnFileComplete]
+Quick Start QS - [QuickStart]
+)
+code from ScarAngel 3.0
+(
+CreditSystems
+Enhanced Client Recognition
+Invisible Mode
+)
+
+0.48a Xtreme 6.1
+----------------
+Fixed:
+Wrong cat tab position if last selected list is not download list
+
+Added:
+64bit compile compatibility(zlib from internet, md4 sha from Shareaza 2.3.1.0)
+show cache bar in progress [CB] - [CacheBar]
+use 64bit time [64T] - [64BitTime] & [E64T] - [Enable64BitTime]
+Order chunck choose method [Ord] - [Order]
+auto set high priority, clear slow client when near compeletion and even restart it if necessary [LBM] - [LastBlockMonitor]
+don't accept upload if download speed is higher than an exact value(only for auto priority file) [RU] - [RefuseUpload]
+Time limitation option for flush buffer[TL] - [TimeLimits]
+historylist text filter [FI] - [FilterItem]
+
+Changed:
+change CastItoXByte to show X.X KB [UIC] - [UIChange]
+show KAD distance in hex [UIC] - [UIChange]
+show file size in Byte in ArchivePreview dialog [UIC] - [UIChange]
+show progress in X.XX% [UIC] - [UIChange]
+lower default process priority to Normal
+increase file buffer size limitation
+aloow all file types to download preview part [ActionChange]
+
+Fileformat.csv format details
+Label,Header,Offset,[t]
+t stands for text file in serveral Encodings
+limits:offset always equals to 0
+
+Header format(real size=32)
+1.ascii char, e.g. [PK]
+2.hex value, e.g. 3031, equals to [01]
+3.single hex value char with extension code
+	FF*F, e.g. 00*3, equals to 000000
+	FF/EE, e.g. 00/01, stands for 00 or 01
+	FF&EE, e.g. 07&0F, stands for value&0F equals to 07
+4.spesial option %
+	%sFF, e.g. %s04, stands for compare value with file size - 4
+5.helper code
+	~F, e.g. ~7, stands for skip next 7byte
+
+
+based on emule 0.48a Xtreme 6.1
+compiled with:
+id3lib 3.9.0-devel 2009-08-30 (lite)
+libpng 1.5.4
+zlib 1.2.5
+Crypto++ 5.6.2 SVN 529 (lite and mod)
+CxImage version 7.02 (lite)
+miniupnp 1.6
+boost 1.46.1

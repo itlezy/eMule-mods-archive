@@ -1,0 +1,400 @@
+Tuxman's eMule beba
+
+- OLDER 1.x CHANGES -
+_______________________________________________________
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+v1.71 [the brandless edition]:
+Just a small maintenance update. By the way, beba's website URL has slightly changed, you might need to check your bookmarks... ;-)
+
+* February 25, 2008
+* Italian lang .dll included, thanks to the DarkForge team!
+
+- added: Open Incoming folder from tray menu [taz]
+
+- improved: added Client Analyzer statistics [WiZaRd]
+- improved: disabled some menu items for LowID peers [fox88]
+- improved: various small improvements [Tuxman]
+
+- fix (o): CorruptionBlackBox: false banning fix [Xanatos]
+- fix (o): fixed GDI leak in the prefs' treectrls [Rapid_Mule/WiZaRd]
+- fix (o): fixed several webserver bugs [WiZaRd]
+- fix (o): Search Related Files was available with no reason [Tuxman]
+
+- changed: website links [Tuxman]
+  * added DDoS web link, changed menu icon, fixed link to beba's website
+
+- updated: updated Enhanced Client Recognition [Spike2]
+- updated: updated Kad auto update to SharkX v1.0 codebase [taz]
+- updated: updated libpng to a newer version [Tuxman]
+
+_______________________________________________________
+v1.7 [the big bang edition]:
+Bang bang, happy new year! Some improvements, some fixes... hell!
+I tried to satisfy all of your wishes, including a quite simple, switchable Release Bonus implementation and MoNKi's automatic shared files reloader. However, beba still ain't a releaser mod, so you still won't get any PowerShare, PowerRelease or something.
+(I hereby urge all future beta testers to tell me that they actually test. Just to keep an overview.)
+
+* December 31, 2007
+
+- added: Automatic shared files updater [MoNKi/Stulle, Tuxman]
+- added: Relative Priority [Avi3k, Tuxman]
+  * sets multiple files' download priorities according to their source count
+- added: Release Bonus [sivka/Stulle, Tuxman]
+
+- improved: Kad anti-fragmenting [NetFinity]
+- improved: nodes.dat update now triggers automatically when needed [taz]
+- improved: rearranged source details window, showing full client version now [Tuxman]
+- improved: some stuff around the new Kad keyword cleanup [Tuxman]
+
+- fix (o): "Completed" display precision fix [fox88/taz]
+- fix (o): eMule sent BSOBs where it should use UINT64 [NetFinity]
+- fix (b): FDC slider wasn't disabled when calling beba prefs with inactive FDC [Tuxman]
+- fix (b): "Find all sources" didn't take care of the AHL [Spike2]
+- fix (b): "Obfuscation padding length" is now in the right group :/ [Tuxman]
+- fix (o): possible null pointer exception in ServerListCtrl.cpp [fox88]
+- fix (o): prefs tree bug in PPgTweaks.cpp [TimDzang]
+- fix (o): server sockets are deleted correctly [NetFinity]
+- fix (o): small ResString fix in WebServer.cpp [ducho]
+
+- changed: revamped beba prefs dialog [Tuxman]
+- changed: some icons and some menu stuff [some Tuxman]
+
+_______________________________________________________
+v1.6 [the bellaItalia edition]:
+A new version of the famous beba mod, adequately named after one of these days' sunniest countries to have a vacation in. (-;
+This version features tits (TITS!) and some changes related to Kad and the recent eD2K server confiscations, including a Nodes.dat updater for a Kad-only configuration. I also found some unexpected graphical beba issues while experimenting with the v1.5, and I casually applied a few more improvements. Here they are:
+
+* October 17 2007
+
+- added: Nodes.dat update via URL [Xanatos]
+- added: Tits [Tuxman]
+  * note that they are displayed by a random generator; to stop displaying them at all, add the line "EasterEgg=0" to the [beba] section of the file preferences.ini.
+
+- improved: added the obfuscation's padding length setting to the "hidden preferences" [Tuxman]
+- improved: auto-clean bad Kad keywords [BlueSonicBoy]
+- improved: automatically switch default search type, depending on the network settings [taz]
+- improved: better passive source finding [Xman]
+- improved: Inform Clients is also valid for eMule+ [Spike2]
+- improved: Nodes.dat will be saved every 4 hours [Avi3k/Xanatos]
+- improved: request AICH hashset only if necessary [WiZaRd]
+
+- fix (b): Client Analyzer information wasn't displayed (rofl) [Tuxman]
+- fix (b): Filename Disparity Check displayed the wrong icon [Tuxman]
+- fix (b): Friends Details dialog couldn't be closed correctly [Tuxman]
+  * changed the dialog to a basic one [SLUGFILLER/Xanatos]
+  * we don't need to call the whole ClientDetailsDialog here ...
+- fix (o): unhandled floating point exception in Contact.cpp [NetFinity]
+
+- changed: disabled eD2K network by default [Tuxman]
+  * why does anyone need it when there's Kademlia?
+- changed: disabled "show dl info on cat tabs" by default again [Tuxman]
+
+_______________________________________________________
+v1.5 [the berminator edition]:
+Anyone knows the verminator? (-;
+Now Slot Focus should finally work smoothly with the Slot Control. Thanks to all beba users who reported the incompatibilities! Besides, some optimizations were made and, due to popular request, SUQWT was finally added. Remember that you may lose any previously gathered credits. :)
+(Note: In this changelog I started differenciating between official (o) and beba (b) fixes to avoid it looking like beba being full of bugs, eheh.)
+
+* August 24 2007
+
+- added: SUQWT [Moonlight/CB/Tuxman]
+
+- improved: beba now prevents that "application busy" popup on Windows startup [leuk_he]
+- improved: gather no further search results when the search has been stopped [bengarchy]
+- improved: some Slot Focus improvements [Tuxman]
+  * should additionally fix incompatibilities with the Slot Control
+
+- fix (o): accurate compression percentage indication "fix" [BlueSonicBoy]
+- fix (o): crash when hashing during eMule shutdown [Xman]
+- fix (o): division by zero fix in TaskbarNotifier.cpp [Xman]
+- fix (o): missing reaction to OP_REQUESTFILENAME [WiZaRd]
+- fix (o): possible exception in CClientReqSocket::PacketReceived [fafner]
+- fix (b): removed useless code in the beba prefs [Tuxman]
+- fix (b): Slot Focus couldn't be switched when there was no uploading process [Tuxman/JvA]
+- fix (b): small merging bug in TransferWnd.cpp [Tuxman]
+
+- changed: added beba's website URL to the About logo, removed board URL :) [Tuxman]
+- changed: various small SLS improvements [taken from the X-Ray and Xtreme mods]
+
+- removed: Vista fix - not needed anymore [leuk_he/Xman]
+
+_______________________________________________________
+v1.41 [the beta edition]:
+Outside the weather goes crazy, so do I: here's a new beba version.
+No new features nor important bugfixes, though; if 1.4 runs fine for you, you don't need this version. Nevertheless some of you noticed that beba's new upload slot system doesn't work as great as the old one, so I merged it back. Have fun. :)
+
+* June 24 2007
+
+- improved: added guide how to determine your connection speed [Tuxman]
+- improved: changed default nick to beba's website [Tuxman]
+
+- fix: Kademlia prefs directory under Vista [godlaugh2007]
+- fix: merged Slot Control back to beba's old 1.3 base [Tuxman]
+  * SHOULD fix all slot glitches; please let me know if it works better for you.
+
+- changed: added readme/ directory for changelogs and the new readme file [Tuxman]
+- changed: the Slot Control value is only used if Slot Focus is disabled [Tuxman]
+
+_______________________________________________________
+v1.4 [the bullet-proof edition]:
+Welcome to eMule 0.48a!
+Note that the SLS system has been changed, so all currently saved sources will be lost!
+
+* June 02 2007
+
+- merged: eMule 0.48a
+
+- added: LowID to HighID auto callback (L2HAC) [Xanatos]
+  * without a prefs option; why should anyone want to disable it?
+- added: searchCatch [SLUGFILLER]
+
+- improved: added checkbox to switch logging of Kad security events [Tuxman]
+- improved: added some #pragma stuff to avoid obsolete 4702 warnings [Tuxman]
+- improved: inform sources of the new ID after a reconnect [Xanatos/Spike2]
+- improved: optimization for large shared file list [leuk_he]
+- improved: optimizations for socket SendTo functions [BlueSonicBoy]
+
+- fix: client/queue list bug [Xman]
+- fix: fix for corrupt PreferencesKad.dat [NetFinity]
+- fix: Infinite Queue [SLUGFILLER]
+- fix: small fix in SharedDirsTreeCtrl.cpp [Tuxman]
+- fix: some things found while compiling in debug mode [Tuxman, thx to JvA]
+
+- changed: default "max. connections" value increased to 15000 [Tuxman]
+- changed: readded old MiniMule prefs icon [Tuxman]
+- changed: spreadReask [SLUGFILLER]
+- changed: updated emulations to newest client versions [Spike2, Tuxman]
+  * released in the beba Easter Edition mod before (no longer available!)
+
+- removed: fix for startupload [Xman]
+
+- updated: Dynamic Block Request to newest Spike2 codebase [NetFinity]
+- updated: Slot Control to newest X-Ray CVS codebase [JvA]
+- updated: SLS to newest X-Ray CVS codebase [Spike2]
+
+_______________________________________________________
+v1.3 [the baguette edition]:
+A very senseful, but clichéd edition name, isn't it? However, I'm very glad to see that the beba mod has many fans in France. Merci! :-)
+This release is mostly a graphical redesign; only a few small things were fixed. Also WiZaRd's IntelliFlush system has been added (replaces the old file buffer slider).
+
+* April 04 2007
+
+- added: drop single sources ("Stop this client!") [Xman]
+- added: IntelliFlush system [WiZaRd]
+- added: link to beba's website to the Tools menu [Tuxman]
+
+- improved: added startup flood protection [WiZaRd]
+- improved: eDonkey Hybrid recognition [netfinity]
+- improved: find best sources [Xman]
+
+- fix: dropped sources are temporarily set dead [Tuxman, thx to WiZaRd]
+  * decreases overhead and avoids reasking recently dropped sources
+- fix: some rather small things [Tuxman, thx to MadDog]
+- fix: XS fix for use with obfuscation [Xanatos]
+
+- changed: added Client Analyzer information to client details' page [WiZaRd]
+- changed: finally I managed to add the new beba logo from the forums :) [Tuxman]
+- changed: increased SLS limit to 50 [Tuxman]
+- changed: reworked options (styles, alignments and default settings) [Tuxman]
+- changed: the tray bunny's ass doesn't cover the speed bars anymore *lol* [Tuxman]
+- changed: toolbar buttons [Tuxman]
+  * taken from the Xtreme mod... no idea who created them but they look way better than beba's old ones!
+- changed: updated Client Analyzer to eMuleFuture 0.3 base [WiZaRd]
+  * fixes a "crash on exit" bug
+- changed: updated extended tooltip support to OnyxMule 1.2 base [Avi3k/CB]
+- changed: updated Remove Unused AICH Hashes to Xtreme 5.4.2 base [Xman]
+
+- removed: redundant ULONGLONG FileSize() [Tuxman]
+- removed: WiZaRd's session ratio code ... maybe for later? [Tuxman]
+
+_______________________________________________________
+v1.2 [the bugs bunny edition]:
+Okay, I finally made 1.2 out of the actual 1.1b, there are too many changes, and I didn't really want to continue the broken 1.1 series anymore.
+The AHL wasn't implemented well (as you might have noticed, cough), so I decided to change it completely. The (newer) advanced system from the eMF mod seems to be a great solution. Who knows?
+
+  * February 24 2007
+
+  - fix: obfuscation fix for servers which don't support them [WiZaRd]
+  - fix: small UPnP changes [Arabella]
+  - fix: sources/HL display in DownloadListCtrl [Tuxman]
+    * there were quite many lines missing... huh?
+  - fix: uploading full chunks didn't work correctly [Tuxman, thx to WiZaRd]
+  
+  - changed: merged Auto Hard Limit to eMF 0.2 codebase [WiZaRd]
+  - changed: mlDonkey reask time [Spike2/WiZaRd]
+  - changed: some changes to RSAIC [Xman/Stulle/Spike2, even Tuxman :p]
+  - changed: tagged beba prefs [Tuxman]
+  - changed: tray icons [Tuxman]
+    * note: the speed display in the tray is now covered by the bunnies
+  
+  - removed: Pay Back First [Tuxman]
+  - removed: tons of obsolete code [Tuxman]
+    * there still was some code from the Reask Timer... I wonder how it could survive?
+	
+_______________________________________________________
+v1.1a HOTFIX [the beasty edition]:
+Whoops. I'm sorry for the inconveniences caused by the 1.1 version. Here's the fixed one.
+Finally, the AHL is (should be) working fine. *g*
+Special thanks to WiZaRd who helped me to find the bugs listed below...
+
+  * February 11 2007
+
+  - fix: Auto Hard Limit (*cough*) [Tuxman]
+  - fix: removed some code which shouldn't be there anymore after removing the Full Chunk Transfer checkbox [Tuxman]
+  - fix: successful upload sessions are now counted correctly [Tuxman]
+    * which fixes the bad statistics, too
+
+  - removed: Queue Overflow Minimum Contingent due to a strange coding flaw and stuff [Tuxman]
+
+_______________________________________________________
+v1.1 [the birthday edition]:
+Now we are running .47c.
+Not many other big changes this time, only some merging and fixing... fair enough. But beba got a website now. ;-)
+About the edition's name: No, it's not *my* birthday... ;-)
+
+  * January 27 2007
+  * compiled with VS.net 2003 SP1
+
+  - merged: eMule 0.47c
+  
+  - added: list all requested files from user [sivka, small changes by Tuxman]
+  
+  - improved: added checkboxes for toggling SLS and CryptLayer logging [Tuxman]
+  - improved: code improvement on copying comments to clipboard [Avi3k]
+  - improved: optimized expensive checks (UploadClient and BaseClient) [WiZaRd]
+  - improved: secure identification always active [Tuxman]
+  - improved: tweaked some more default prefs [Tuxman]
+  - improved: upload tweaks [Xman]
+  
+  - fix: some uint64 fix in the interval shrinking procedure [WiZaRd]
+    * should fix the failed download sessions
+  - fix: Vista event 4226 fix [leuk_he/Xman]
+  - fix: XS Workaround [WiZaRd]
+
+  - changed: merged Enhanced Client Recognition to Spike2 0.9 codebase [Spike2]
+  - changed: merged UPnP support to Xtreme 5.4 codebase [Xman]
+  - changed: moved SLS output to the verbose log [Tuxman]
+  - changed: some changes in Dynamic Block Requests [NetFinity]
+  - changed: some icons changed [Tuxman]
+  - changed: some upload stuff... [Tuxman]
+  - changed: UL slot settings -> merged to X-Ray mod [Sivka/JvA, changes by Tuxman]
+  
+  - removed: preallocate space per file [Tuxman]
+
+_______________________________________________________
+v1.01a HOTFIX [the bite me! edition]:
+Another day, another try... an error seems to have creeped into the 1.0 major update. It also seems that I had a look at the very wrong place when I added a patch to v1.01. Well, I used my recent days' free time to have a deeper look into the client's core functions, so I could finally verify another patch...
+
+  * September 08 2006
+
+  - fix: fixed CT_NAME tag sending [Tuxman]
+
+_______________________________________________________
+v1.01 [the buddhist edition]:
+Strange edition name, eh? However, not a critical update this time. (-;
+
+  * September 01 2006
+
+  - added: UPnP support [ACAT/Xman]
+
+  - improved: removed unused code [Tuxman]
+  - improved: replaced left CURRENT_VERSION_LONG matches by MOD_VERSION [Tuxman]
+    * should fix strange mod version displays
+
+  - fix: rating fix [Aenarion]
+
+  - changed: changed first start message again [Tuxman]
+  - changed: removed strange UL throttler code [Tuxman]
+    * maybe a bugfix? let's see...
+  - changed: some tweaks in beba prefs page [Tuxman]
+
+_______________________________________________________
+v1.0 [the brand-new edition]:
+This version supposed to be v0.6 before, and there were three 0.6 beta versions before starting the 1.x branch. I decided starting 1.x series because of the number of changes since 0.5, and the .47 codebase, of course.
+Note to everyone who blamed me for banning "official" clients: This is the first official beba version which uses WiZaRd's Client Analyzer instead of the old Leecher List stuff, so you can now blame WiZaRd instead. :p
+
+  * July 27 2006
+  * now with language support
+
+  * merged: eMule 0.47a
+
+  - added: Client Analyzer v1.4 [WiZaRd]
+    * removed Fine Credit System as it has become unnecessary (bad clients are punished twice?)
+    * note that Payback First won't have any effect on the Analyzer CS (would be rather senseless)...
+  - added: Dynamic Block Requests [NetFinity]
+  - added: Infinite Queue [SLUGFILLER]
+  - added: menu entry to remove all friend slots at once [Loulach]
+  - added: Mod Statistics [Xanatos]
+  - added: modeless dialogs [SLUGFILLER]
+  - added: more hidden prefs according to eMule changelog (see changes.txt for details) [Tuxman]
+    * systray icon flash on new chat message
+    * use highres scheduling
+  - added: per-file full space allocation [Xanatos]
+  - added: slot control [cyrex2001/Stulle]
+    * max. number of upload slots (replacing beba's old, buggy minmax system)
+    * slot speed control
+  - added: Winsock2 support [eWombat]
+
+  - improved: added a checkbox to disable automatic dead servers' deletion [Tuxman/WiZaRd]
+  - improved: added a checkbox to enable/disable logging AICH events [Xanatos]
+  - improved: added A4AF counter [SiRoB]
+  - improved: added dumpfile enumeration [WiZaRd]
+  - improved: added Kademlia interface improvement [Xanatos]
+    * mainly allows better cancelling of a running Kad search
+    * includes some more improvements...
+  - improved: added multiSort [SLUGFILLER]
+  - improved: added preview for music files [IceCream]
+  - improved: added/changed some icons [Tuxman]
+  - improved: cleaned up all beba language and control IDs [Tuxman]
+    * re-enabled language selection ;-)
+  - improved: cleaned up all code; re-tagged all features, improvements and fixes (yay) [Tuxman]
+  - improved: improved upload throttler's efficiency [lupzz]
+  - improved: reconnect on Kad [cyrex2001]
+  - improved: reduced OnlineSig overhead [BlueSonicBoy]
+  - improved: remove IP filtered servers automatically [BlueSonicBoy/WiZaRd]
+  - improved: source finding [Spanish Man] - Find All Sources
+  - improved: various other improvements and additions [Tuxman/WiZaRd/SiRoB/Xanatos/Xman]
+
+  - fix: added official (therefore untagged) Kademlia patches [Unknown1]
+  - fix: check for a friend who has the same userhash as the specified one [Arabella]
+  - fix: collection double extension fix [Moloko+]
+  - fix: eMule steals focus when message from new client is received [raccoonI]
+  - fix: fixed printing of offset and byte count [NetFinity]
+  - fix: some menu fix in all lists [CB]
+  - fix: some possible crash dump creation error [WiZaRd]
+    * crash dump creation is always active now
+  - fix: some UINT thingy in queuelistctrl [jsandraw]
+  - fix: sorting by mod version (I guess) [Tuxman]
+  - fix: various other fixes [Spike2/WiZaRd/SiRoB/SLUGFILLER/Xman/Xanatos]
+    * way too many :p
+  - fix: web server templates will work fine again [Tuxman]
+
+  - changed: added beba support board to Links menu [Tuxman]
+  - changed: better dumping [WiZaRd]
+  - changed: did some work on the prefs [Tuxman]
+    * added new submenus to beba prefs and "hidden" prefs
+    * reordered "hidden" prefs by importance (as far as I guess)
+  - changed: Global Hard Limit [WiZaRd/cyrex2001/Max]
+    * note: now based on latest cyrex2001 code :)
+    * note: this version doesn't support per-file AHL anymore.
+  - changed: Save/Load Sources [Xman/Tuxman]
+    * note for prior 0.6 beta users: based on Xtreme code again :)
+    * changed for use with beba prefs
+  - changed: readded proxy support due to popular request [Tuxman]
+  - changed: some GUI tweaks not worth to be mentioned here... [Tuxman]
+  - changed: some small changes in random queue [Xanatos]
+
+  - removed: ability to disable Transfer Full Chunks [Tuxman]
+  - removed: ability to disable using a credit system [Tuxman]
+  - removed: Chunk Control (too many bugs, too less output :p) [Tuxman]
+  - removed: Faster Endgame (didn't work as well as I thought / DBR does a similar job) [Tuxman]
+  - removed: iONiX Leecher Secure [Tuxman]
+    * removed beba log window, too (no need for this anymore now)
+  - removed: not needed eMail notifier controls [Tuxman]
+  - removed: Reload Shared Files due to a bloody crash bug [Tuxman]
+  - removed: RQR display (too much playing stuff now :p) [Tuxman]
+  - removed: SF-IOM additional Safe Hash [Tuxman]
+
+  - updated: Enhanced Client Recognization to latest Spike2 codebase [Spike2]
+    * incl. fix for eMule Plus 1.2 [Enig123]
+  - updated: Filename Disparity Check to TK4 1.5d codebase [BlueSonicBoy/modified by Tuxman]

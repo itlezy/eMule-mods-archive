@@ -1,0 +1,13 @@
+<configuration>
+   <files_allowed>
+      <item ext="gif" type="image/gif"/>
+      <item ext="jpg" type="image/jpg"/>
+      <item ext="jpeg" type="image/jpg"/>
+      <item ext="png" type="image/png"/>
+      <item ext="bmp" type="image/bmp"/>
+      <item ext="ico" type="image/x-icon"/>
+      <item ext="css" type="text/css"/>
+      <item ext="js" type="text/javascript"/>
+      <item ext="xsl" type="text/xsl"/>
+   </files_allowed>
+</configuration>

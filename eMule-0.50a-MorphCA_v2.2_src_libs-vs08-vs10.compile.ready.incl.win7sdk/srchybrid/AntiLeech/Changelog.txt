@@ -1,0 +1,185 @@
+DO NOT DOWNLOAD IF YOU DO NOT HAVE THE PASSWORD! YOU CAN NOT HACK IT, IT'S TOO LONG! DO NOT WASTE TRAFFIC!
+
+TOMBSTONE - main features:
+
+- CLIENTANALYZER
+ new age leecher detection - no more unfair bans/punishments, SUPPORT the net, don't HURT it!
+ 
+- FULLY TRICKLE SLOT ORIENTATED UPLOAD SYSTEM
+
+- POWERSHARE/MULTI-FU SYSTEM:
+ * allows PowerShareing of ALL files
+ * PS on partfiles will be substracted from sessionupload and lower the ratio!
+ * tweak added to respect friendslots
+ * stat display added for ratio w/o PS and uploaded data via PS
+ * PowerShared files are shown with "[PS] priority"
+ * proper sorting including PS prio in QueueList and SharedFilesList
+ * tweak added to send "correct" waiting position based upon PowerShare status
+ * number of chunks to upload to a friendslot can be selected
+ * friendsslots are saved an restored after restart
+
+- AUTOMATIC KAD FIREWALLED RECHECKS
+
+- SESSIONRATIO && ALWAYS FULL CHUNK UPLOADS
+ fairness for the whole network
+ 
+- RESOURCE SAVING 
+ don't waste precious CPU cycles
+
+
+
+Changelog v1.51:
+NOTE! antileech.met files created with this version are NOT compatible to older versions!
+Make a backup of your file if you want to continue to use it with older versions!
+
+- ADDED:   you can now select the number of chunks to transfer to friend slots
+- ADDED:   tagging for the analyzer - TAG: WiZaRd::ClientAnalyzer
+- ADDED:   PowerShareing - TAG: WiZaRd::PowerShare
+ * allows PowerShareing of ALL files
+ * PS on partfiles will be substracted from sessionupload and lower the ratio!
+ * tweak added to respect friendslots
+ * stat display added for ratio w/o PS and uploaded data via PS
+ * PowerShared files are shown with "[PS] priority"
+ * proper sorting including PS prio in QueueList and SharedFilesList
+ * tweak added to send "correct" waiting position based upon PowerShare status
+- ADDED:   assigned friendslots are saved now - TAG: WiZaRd::Save FU
+- ADDED:   multiple friendslots are allowed because of codechange - TAG: WiZaRd::MultiFU
+- ADDED:   fix for weird official sorting behaviour - TAG: WiZaRd::Sort FiX
+- ADDED:   the source of a "relative" search will be shown with green hash - TAG: WiZaRd::Show Related Source Colored
+- FIXED:   fixed wastage of ratings in official client - TAG: WiZaRd::Wasted Ratings FiX
+- FIXED:   rectshiftfix in downloadlistctrl
+- FIXED:   official fix in kad source
+- FIXED:   forgot to filter loglines for filtered messages
+- CHANGED: sessionratio reduced to 1:3
+- CHANGED: friend upload is NOT taken into account for the session ratio! - TAG: WiZaRd::MultiFU
+- CHANGED: replaced handshake-fix by SiRoBs solution - TAG: SiRoB::HandShake-FiX
+- CHANGED: small change to "save cpu" code
+- CHANGED: upload slot opening mechanism is now fully trickle orientated
+- CHANGED: added 2 more checks to the "filefaker" checks of the analyzer
+- CHANGED: (internal) no more of those ugly warnings 4702 while compiling @ lv.4 ;)
+
+
+Changelog v1.50:
+- CHANGED:  friendslots get 1 chunk and are then put on trickle position, this is to be more fair to other clients
+- FIXED:  fixed analyzers badaction count (the crash on exit?)
+- ADDED:  relax on startup - TAG: WiZaRd::Relax on StartUp
+- ADDED:  improved upload caching - TAG: WiZaRd::Improved Upload Caching
+
+Changelog v1.49:
+- ADDED:  chatfocus fix by racconI (http://forum.emule-project.net/index.php?showtopic=103354) - TAG: raccoonI::Chatfocus-FiX
+- ADDED:  handshake fix by eklm (http://forum.emule-project.net/index.php?showtopic=103202) - TAG: eklm::HandShake-FiX
+- CHANGED/FIXED:  datarate setting in prefs is now in kB
+- FIXED:  fixed exceptions caused by malformed "shrink" log entries
+- FIXED:  modthief detection works properly (Reported by BigTiger)
+
+eMule.v0.47a.Tombstone.v1.48
+
+CORE: ClientAnalyzer v1.4:
+//v1.4:  14 changes
+//-      Force one score calculation on startup
+//-      New function "IsBadGuy()" - can be used to draw an icon or something...
+//-      Made some functions non-static using the parent pointer
+//-      Only use the UL/DL treshold as a punisher for clients that have something for us
+//-      Fast Reask treshold will only be used after collecting 3 reasks
+//-      XS spam/exploit check changed due to buggy implementation (***/WiZ)
+//-      XS exploiters will only be checked after 10 reasks
+//-      Punishment for Nick- and/or ModThieves reduced to 3*AT_MIDPUNISH
+//-      Combined punishment for UDP-FNF and/or FileFakers
+//-      Changed logging to an uniform standard
+//-      Added a try/catch handler on exit because a crash was experienced there (still searching for the reason)
+//-      Added missing initialisation for the badaction counter
+//-      tweaked some functions to not call ReCheckScore() if it wasn't needed
+//-      replaced the memset command by md4clr for the hashkey
+
+Changelog v1.48:
+
+- FIXED:  fixed some localization problems
+- CHANGED:  default nickname changed
+- CHANGED:  removed some unneeded codelines in modstring sort
+- FIXED:  fixed the display for remaining size (added a separate column to upload)
+- REMOVED:  min upload for trickle slots (system seems to work fine now), should fix the incorrect trickle slot number display, too
+
+
+Changelog v1.47:
+
+- FIXED:  fixed multiple instances checkbox display
+- ADDED:  real full chunk upload plus remaining upload data display from SF-IOM mod - TAG: VQB: fullChunk
+- CHANGED:  when slotfocus is enabled, then try to send at least 1k to trickles
+- CHANGED:  slotopening again, takes into concern the number of trickle slots
+
+
+Changelog v1.46:
+
+- CHANGED:  changed the error dumping code to ALWAYS create the dump and to remember the user on startup,
+      this should help in cases where no dumps were written - TAG: WiZaRd::Better dumping
+- ADDED:  various code improvements to save CPU - TAG: WiZaRd::Save CPU
+- CHANGED:  slotopening on both slotfocus and fixed datarate
+
+
+Changelog v1.45:
+
+- ADDED:  faster slotopening after UL session end
+- ADDED:  firewalled retries limit (limit: 15 retries ~ 30 minutes)
+- ADDED:  KAD-patch by Unkown1
+- ADDED:  DynamicBlockRequests by Netfinity - TAG: NetFinity::DynamicBlockRequests
+
+
+Changelog v1.44:
+
+- CHANGED:  refined slotopening of slotfocus mode
+- CHANGED:  small change in filescore calculation to save cpu
+- ADDED:  cpu calm down on score calculation - TaG: WiZaRd::CPU calm down*
+- FIXED:  added some codechanges to fix improperly counted failed ul/dl sessions
+
+*I *think* that this was once introduced in a similar way by LoveLace... in this case: "idea by LoveLace"
+
+
+Changelog v1.43:
+
+- ADDED:  Startup Flood Prevention proposed by James R. Bath (http://forum.emule-project.net/index.php?showtopic=101181) - TAG: WiZaRd::Startup Flood Prevention
+- ADDED:  dumpfile enumeration - TAG: WiZaRd::Dumpfile Enumeration
+- ADDED:  automatic recheck firewalled status - TAG: WiZaRd::Automatic Firewalled Retries
+- CHANGED:  try to connect to kad by default
+- FIXED:  added a patch to multiple instances to prevent another instance to start when starting a new download (seems like an official bug to me)
+- FIXED:  definately fixed the traytooltip to show up properly *g*
+- CHANGED:  more comments in code... every b00n should be able to copy everything he wants now AND learn something *g*
+- ADDED:  ModVersion display in all important columns - TAG: WiZaRd::Show ModVer
+- CHANGED:  improved slotfocus slotopening a bit (less slots... at least I hope so *lol*)
+
+
+Changelog v1.42:
+
+- ADDED:  a "warning" popup on first start to inform the users of the purpose of the mod
+- CHANGED:  if you are updating from a tombstone version then the "first time wizard" won't pop up - TAG: WiZaRd::NoWiZaRd (*rofl*)
+- FIXED:  fixed the traytooltip to show up properly (who needs to know the version anyways... the speed is important ;)) - TAG: WiZaRd::ToolTip-FiX
+- CHANGED:  added some better tagging/comments to the code
+- FIXED:    Glitch-FiX in CDownloadClientsCtrl.cpp - TAG: WiZaRd::Glitch-FiX [21.02.2006]
+- CHANGED:  SlotFocus is active now by setting datarate to "0" (default)
+//if slotfocus is active then a datarate of 10kB is used to determine the needed slots
+- ADDED:  added a checkbox to enable/disable the allowance of multiple instances
+
+
+Changelog v1.41:
+
+- ADDED:  10sec delay before opening a new slot
+- ADDED:  SlotFocus (fixed)
+- ADDED:  datarate selection
+- REMOVED:  possibility to switch off full chunk transfer
+- FIXED:  additional icon display
+- FIXED:  lang update was not working
+- CHANGED:  CS-tree is now expanded by default
+- CHANGED:  crash dump creation is always active
+
+
+Changelog v1.40:
+
+Based upon v0.47a:
+
+- ADDED:  new splashscreen (+sig +avatar) by Mr.FrEEzEr - thx a lot!
+- ADDED:  icon for badguys (SKULL)
+- ADDED:  icon for same mod (TOMBSTONE) - TAG: WiZaRd::Same ModVersion Detection
+- ADDED:  modversion - TAG: WiZaRd::Easy ModVersion
+- FIXED:  BugFix in XS packet creation (Xtreme/***/WiZ)
+- ADDED:  SessionRatio 1:4
+- REMOVED:  SpamBan (due to the analyzer)
+- CHANGED:  you can now select between 3 cs: none, official and analyzer (recommended+default)

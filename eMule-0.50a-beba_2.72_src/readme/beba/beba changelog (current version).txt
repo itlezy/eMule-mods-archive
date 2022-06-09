@@ -1,0 +1,25 @@
+Tuxman's eMule beba
+
+- CHANGELOG -
+_______________________________________________________
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+v2.72 [the bad codename edition]
+While digging through my code, I happened to accidentally find a critical scoring issue caused by my own modifications. beba v2.72 fixes the scoring and makes the Client Analyzer probably work correctly for the first time since it was added. I'm positive the issue has finally been smashed. Thanks to dylandog84 for helping me test the fix under real-life conditions. Also I improved beba's version check in terms of design and functionality, made it more obvious and added a couple of small code improvements all over the code. May it do its duty!
+
+* July 8, 2013
+
+- added: added the eMule Content Database as a search source [Tuxman]
+  * this replaced the now-defunct FileDonkey method
+
+- improved: added recognition of Android applications (.apk) [Tuxman]
+- improved: improved beba's manual version checking quite a bit [Tuxman]
+- improved: improved some code (no, really) [Tuxman]
+- improved: merged a few general code improvements from NetF WARP mod [NetFinity]
+- improved: merged a few Kad code improvements and fixes from kMule mod [WiZaRd]
+
+- fix (b): fixed a fix from beba v2.70 [Tuxman]
+- fix (b): fixed score calculation with the Analyzer CS [Tuxman]
+  * probably broken since beba v1.0; well then.
+
+- updated: updated to libpng 1.6.2 [Tuxman]

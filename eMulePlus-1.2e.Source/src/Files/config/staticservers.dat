@@ -1,0 +1,17 @@
+############################################
+# Static Servers File
+# enter one server per line
+#
+# Format:
+# ServerIP/Hostname:Port,Priority,ServerName
+#
+# Priority:
+# 2 = High, 1 = Normal, 0 = Low
+#
+# Examples:
+# 120.120.120.120:4661,0,TestServer1
+# myserver.yi.org:4662,1,TestServer2
+
+212.63.206.35:4242,2,eDonkeyServer No2
+89.248.174.84:6543,1,TVU DonkeyServer No1
+88.191.50.111:1111,0,PEERATES.NET

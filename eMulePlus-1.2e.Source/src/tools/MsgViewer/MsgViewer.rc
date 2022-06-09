@@ -1,0 +1,319 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MsgViewer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MsgViewer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MsgViewer"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MsgViewer Version %d.%d.%d.%d",IDC_VER,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MSGVIEWER_DIALOG DIALOGEX 0, 0, 386, 225
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "eMule messages viewer"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "File:",IDC_STATIC,5,10,14,8
+    PUSHBUTTON      "&Pick...",IDC_LOAD,265,5,50,14
+    PUSHBUTTON      "&Refresh",IDC_REFRESH,325,5,50,14
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | NOT WS_VISIBLE | WS_TABSTOP,5,25,310,20
+    COMBOBOX        IDC_FILENAMECOMBO,20,5,235,125,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Filter...",IDC_FILTER,325,200,50,14
+    CONTROL         "Progress1",IDC_FILTERPROGRESS,"msctls_progress32",
+                    WS_BORDER,115,200,200,14
+    LTEXT           "Passed Filter:",IDC_STATSCAPTION,5,205,45,8
+    EDITTEXT        IDC_FILTERSTATS,50,200,60,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_ARROWKEYS | 
+                    UDS_HORZ,325,30,50,10
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,48,370,147
+END
+
+IDD_PROCESSFILE DIALOG  0, 0, 167, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    15,25,135,14
+    LTEXT           "Parsing the selected file. Please wait...",IDC_STATIC,
+                    15,10,122,8
+    PUSHBUTTON      "&Interrupt",IDC_INTERRUPT,55,45,50,14
+END
+
+IDD_MSGVIEW DIALOGEX 0, 0, 291, 174
+STYLE DS_SETFONT | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "eMule message details"
+FONT 9, "Courier New", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,235,155,50,14
+    EDITTEXT        IDC_MSGDATA,5,5,280,145,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "&Export...",IDC_EXPORT,175,155,50,14
+END
+
+IDD_FILTER DIALOGEX 0, 0, 267, 277
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Filter"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Message types",IDC_STATIC,5,5,245,145
+    LISTBOX         IDC_MESSAGES,10,20,170,125,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Keep - &Alive",IDC_KEEPALIVE,"Button",BS_AUTO3STATE | 
+                    BS_FLAT | WS_TABSTOP,190,35,55,10
+    CONTROL         "&Disconnect",IDC_CONNECTION_BREAK,"Button",
+                    BS_AUTO3STATE | BS_FLAT | WS_TABSTOP,190,65,50,10
+    PUSHBUTTON      "Selec&t All",IDC_SELECTALL,190,110,50,14
+    PUSHBUTTON      "&Deselect All",IDC_DESELECT,190,130,50,14
+    GROUPBOX        "Remote ID",IDC_STATIC,5,160,110,105
+    LTEXT           "Single values (12, 117, 243,...)",IDC_STATIC,10,175,97,
+                    8
+    EDITTEXT        IDC_REMOTE_LIST,10,185,95,60,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    CONTROL         "Include",IDC_INC,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    10,250,39,10
+    CONTROL         "Exclude",IDC_EXC,"Button",BS_AUTORADIOBUTTON,65,250,41,
+                    10
+    GROUPBOX        "Direction",IDC_STATIC,125,165,70,60,WS_GROUP
+    CONTROL         "&Incoming",IDC_INCOMING,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,135,180,45,10
+    CONTROL         "Outgoing",IDC_OUTCOMING,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,135,195,45,10
+    CONTROL         "Neither",IDC_NEITHER,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,135,210,39,10
+    CONTROL         "Server",IDC_TYPE_SERV,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,130,235,37,10
+    CONTROL         "Peer",IDC_TYPE_PEER,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,130,250,31,10
+    DEFPUSHBUTTON   "Set",IDOK,205,245,50,14
+    CONTROL         "&Unknown",IDC_UNKNOWN,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,190,80,45,10
+END
+
+IDD_PREVIEW DIALOGEX 0, 0, 262, 198
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Image preview"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "MsgViewer MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "MsgViewer"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "MsgViewer.EXE"
+            VALUE "ProductName", "MsgViewer Application"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MSGVIEWER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+    END
+
+    IDD_PROCESSFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_MSGVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 129
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MsgViewer..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MsgViewer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,31 @@
+	How to Compile
+
+From 1.5.3 on, X Mod need less steps to comile it:
+eMule need ATL Server Source and Headers, can find it in http://www.codeplex.com/AtlServer.
+For VS2008:
+1.open libs.sln and use "Unicode Release" to compile all the libraries
+2.add ATL Server Headers, boost(if you have), DirectX\Extras\DirectShow\Include and DirectX\Include to your VS2008 include settings
+3.open emule.sln. if you don't have boost, comment this line
+#define HAVE_BOOST
+in srchybrid\map_inc.h.
+4.use "Unicode Release" to compile the emule project
+
+For VS2010:
+1.open libs10.sln and use "Unicode Release" to compile all the libraries
+2.open emule10.sln. change the project include settings(ATL Server Headers, boost(if you have), DirectX\Extras\DirectShow\Include and DirectX\Include).
+if you don't have boost, comment this line
+#define HAVE_BOOST
+in srchybrid\map_inc.h.
+3.use "Unicode Release" to compile the emule project
+
+Some compile options:
+1.STLport support.
+2.option HAVE_UNORDERED
+replace std::map, std:set with TR1's unordered_map, unordered_set. Boost's unordered_map is recommended. (default on)
+3.option REPLACE_ATLMAP and REPLACE_MFCMAP
+replace CAtlMap and CMap with unordered_map. (default off)
+4.OpenMP support. (default off)
+5.link with shared MFC DLL(ShareRelease or ShareDebug Mode)
+
+dolphin
+Jul 4, 2010

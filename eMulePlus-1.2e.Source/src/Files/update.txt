@@ -1,0 +1,19 @@
+This update replaces some files you might have updated yourself so be careful when you answer to the question about overwriting an existing file. You should also point to the folder where eMule Plus is installed for the update to work.
+
+These files contain important updates:
+
+config\addresses.dat (a list of serverlists sites to update your servers)
+config\ipfilter.dat (search filter to filter out some results received from servers)	
+config\staticservers.dat (a list of fixed servers)
+config\webservices.dat (configuration file for WebServices that include some informative web sites)
+
+You will be asked for each one to be overwritten. We recommend that you update at least 'addresses.dat' that handles server updates and now has trusted server lists.
+
+This installer also removes the server.met file that has server information. If you don't want this to happen better cancel the procedure. We think this is mandatory as most users have rogue servers in their lists that are impairing their eMule Plus experience.
+
+If you have questions or serious problems, please read the FAQ first at http://emuleplus.info/faq/
+
+If you didn't find an answer, SEARCH the forum for a topic related to your problem, DO NOT open a new topic at once, most likely someone else had the same problem before.
+
+The official Forum is also at http://emuleplus.info/forum/
+Please use only English there and PLEASE do not report bugs that are already posted by someone else.

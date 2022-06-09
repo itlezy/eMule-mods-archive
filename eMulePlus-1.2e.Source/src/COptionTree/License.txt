@@ -1,0 +1,41 @@
+// COptionTree
+//
+// License
+// -------
+// This code is provided "as is" with no expressed or implied warranty.
+// 
+// You may use this code in a commercial product with or without acknowledgement.
+// However you may not sell this code or any modification of this code, this includes 
+// commercial libraries and anything else for profit.
+//
+// I would appreciate a notification of any bugs or bug fixes to help the control grow.
+//
+//
+// History:
+// --------
+//	5/7/2002	1.0.0.0		Initial implementation.	
+//
+//	5/10/2002 	1.1.0.0		Fix problems with icon and color items. Also fixed problems
+//					with expanding columns and column size. Added TAB support, 
+//					hit TAB to activate next item, and SHIFT TAB to activate previous item.
+//					NOTE: You must commit current item with the ENTER key before tabbing, 
+//					this is because some controls use TAB i.e.) edit, control box, radio, and so on.
+//
+//	5/11/2002	1.1.1.0		Fixed IsWindow() issues, which are the causes for a lot of Win98 problems. 
+//					Fixed IDC_HAND problem for non Win 2K or XP users. Fixed some resource and 
+//					overhead problems. Also added expand all feature. Huge thanks go out to all 
+//					bug reporters, especially YoSilver.
+//
+//	5/14/2002	1.1.2.0		Fixed icon and color bug. Also added GetItemType() to determine different item types.
+//
+//	9/1/2002	1.1.2.1		Beta release, beta is not stable by any means.
+//
+//	9/8/2002	2.0.0.0		The long awaited 2.0 version is here. Fixed a lot of bugs, created more bugs,
+//					added several more items, and a lot of other stuff that is way too much to list here.
+//					Oh plus I added fancy new version numbers, this I think was the biggest update.
+//						
+//
+//
+// Copyright (c) 1999-2002 
+// ComputerSmarts.net 
+// mattrmiller@computersmarts.net

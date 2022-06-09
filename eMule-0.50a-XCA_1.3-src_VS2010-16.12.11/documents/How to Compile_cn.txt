@@ -1,0 +1,29 @@
+	如何编译
+
+从1.5.3开始, X Mod 编译更方便了点, 步骤如下:
+eMule 需要ATL Server的头文件, 可以从http://www.codeplex.com/AtlServer处得到.
+针对VS2008:
+1.打开 libs.sln, 使用"Unicode Release" 编译所有的库
+2.添加 ATL Server 头文件, boost(如果有的话), DirectX\Extras\DirectShow\Include 和 DirectX\Include 到你的VS2008 include 设置中
+3.打开 emule.sln, 如果你没有boost, 注释掉srchybrid\map_inc.h里的
+#define HAVE_BOOST
+4.使用"Unicode Release" 编译 emule 项目
+
+针对VS2010:
+1.打开 libs10.sln, 使用"Unicode Release" 编译所有的库
+2.打开 emule10.sln, 修改项目include路径(ATL Server 头文件, boost(如果有的话), DirectX\Extras\DirectShow\Include and DirectX\Include).
+如果没有boost, 需要注释掉srchybrid\map_inc.h里的
+#define HAVE_BOOST
+3.使用"Unicode Release" 编译 emule 项目
+
+编译选择:
+1.STLport支持.
+2.HAVE_UNORDERED选项
+使用TR1的unordered_map替换std::map. 推荐使用Boost的实现. 默认已开启
+3.REPLACE_ATLMAP和REPLACE_MFCMAP选项
+使用unordered_map替换CAtlMap和CMap. 默认关闭
+4.OpenMP支持. 默认关闭
+5.连接MFC动态链接dll（ShareRelease或ShareDebug模式）
+
+dolphin
+2010年7月4日

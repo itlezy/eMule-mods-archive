@@ -1,0 +1,630 @@
+0.50a X-Mod 1.6.1.1
+----------------
+修正:
+直接下载对话框"预览"按钮文字未显示
+CAICHRecoveryHashSet::UntrustedHashReceived AddDebugLogLine 类型错误 (dontsueme)
+CAsyncSocketEx strcpy_s 导致的崩溃
+MiniUPnP 调试日志输出错误
+传输窗口分割条问题
+CServerSocket::ProcessPacket m_bneedpublicIP
+CSourceData 拷贝构造函数
+Lovelace积分系统浮点数异常
+IsValidSearchResultClientIPPort 问题 (gureedo)
+下载历史删除文件后崩溃
+SetMaxUpload 问题
+当删除共享文件时删除单个共享文件列表的文件
+当文件损坏后如果最后一块大小<=EMBLOCKSIZE跳过它 [Import Parts] & [IPR] - [Improved Part Recovery]
+失败时延迟 AICH 请求 [Import Parts] & [IPR] - [Improved Part Recovery]
+
+去除:
+旧的 UPnP 代码
+Shareaza 的 WinServ UPnPImpl
+最小化到托盘的修正
+
+修改:
+替换一些API函数为crt版本
+CIni使用'\n'替换"\r\n"
+从VC10编译的二进制文件中删除特性包的代码
+改进UPnP实现
+使用sfmt替换crt的rand
+修改部分memfile的初始大小
+修改写入缓存块大小
+使用修改过的Poco的线程替换MFC的线程
+简化队列的读写磁盘
+来源保存过滤lowID
+DLP用小写检查不区分大小写的字符串
+更新集成的 DLP 至 v44
+更新依赖库至最新版本
+
+增加:
+一个ACAT UPnP的UPnPImpl实现
+
+引入 Xtreme 8.1 部分代码
+(
+- 改进: 支持根据完成进度进行排序 (Fafner/Xman)
+- 改进: 可以对 aMule 的modstring进行排序 (Stulle)
+- 修正: 从 SourceForge 下载时可能出现的HTTP错误 (WiZaRd)
+- 修正: 将我们能连接上的用户视为HighID (Enig123)
+- 修正: 不再重新连接到被禁止的客户 (Enig123)
+- 修正: 带宽管理器中潜在的除0错误 (Stulle)
+- Stulle 代码中更多的小修正和小改进
+- 添加: 可以设置图表中网络适配器的曲线的颜色 (Stulle)
+)
+
+0.50a X-Mod 1.6.0.0
+----------------
+- updated to 0.50a codebase
+修正:
+重写 eMulePlusIniClass 并修正相关问题
+下载文件列表拖动文件时奔溃
+当kad关闭后断开Kad状态为检查防火墙的客户端时崩溃
+共享文件列表忽略的文件显示为已共享 [QOH] - [QueryOnHashing]
+一些网页界面的问题
+启用AICHHashset写入缓存下当关闭eMule后有文件hash完成时发生内存泄露 [BF] - [Bug Fix]
+
+去除:
+X-Ray :: AICHSecurity AICHHash 请求检查
+旧 X-Mod 在统计上的问题的修正
+发送缓存选项
+High Speed Upload Timer
+库的控制台错误输出
+
+修改:
+用_byteswap_*替换hton*, ntoh*
+被请求文件列表对话框图标 morph4u
+用 CAsyncSocketEx 替换剩余的 CAsyncSocket [SUDPS] - [CAsyncSocketEx UDP Support]
+改进 GetFilePrioAsNumber (WiZaRd)
+合并缩略图工具栏连接和断开连接按钮
+为兼容 VC 10 编译改 CMemDC 名为 CMemoryDC
+json 里获得 aich 值 [JFS] - [JSON Format Search]
+自动修改 socket 的发送和接收缓存 [DSRB] - [Dynamic Send and Receive Buffer]
+本地化共享文件窗口 tab 标题
+不把 HTTP 源加入 DeadSourceList (Avi-3k)
+eMule 随系统启动后不弹出一些模态消息窗口
+使用一些自动关闭的 XMessageBox 替换 AfxMessageBox
+把 CheckSlotSpeed 代码移到 SetMaxUpload, 现在上传通道速度会随着上传速度的变化而变化 (once375ml)
+AICH 同步线程和 Fincan Hash 检测里使用 (unordered_)set 替换 CAtlList
+保存 Fincan 社区 hash met 文件， 更新前检查上次更新时间
+改进集成的DLP里用户 hash 的检查
+只解析下载中的 partfile 主机名 [WiZaRd] (Stulle)
+简体中文的一些翻译
+更新集成的 DLP 至 v42
+
+增加:
+CAsyncSocketEx UDP 支持 [SUDPS] - [CAsyncSocketEx UDP Support]
+悬浮窗自定义配置文件 [SGW] - [SpeedGraphWnd]
+VC 10 项目文件
+CHttpDownloadDlg 发送 If-Modified-Since 并检查 HTTP 304
+繁体中文
+
+引入 Tombstone v2.1 部分代码
+(
+Removed unnecessary user limitation that prevented downloading files in the default cat alphabetically 
+Fixed localization bug in shared files window
+MetaDataDlg is now added on-the-fly when you change the ext controls pref setting 
+)
+
+引入 Xtreme 8.0 部分代码
+(
+- 更新国家旗帜DLL, 支持更多国家 (tomchen1989)
+- 添加Fincan社区用户检测 (WiZaRd)
+- 支持从系统中获取MTU (netfinity)
+- 添加AICHHashset缓存算法, 减少Hashing文件时的磁盘读写 (zz_fly)
+- 改进: 根据官方对Hash的修改更新Safe Hash的代码 (Stulle)
+- 修正: 最小化到系统栏后可能出现的问题 (Enig123)
+- 修正: 不要发送重叠的数据请求 (emuleplus)
+)
+
+miniupnp
+(
+对Win2000的支持 Win2000 support
+)
+
+0.49c X-Mod 1.5.3.7
+----------------
+修正:
+打开minimule时可能崩溃 (BG7BLV)
+合并ip2country时可能崩溃 (**Riso64Bit**, BG7BLV)
+已知客户列表排序问题 (**Riso64Bit**)
+
+0.49c X-Mod 1.5.3.6
+----------------
+修正:
+在Vista下不显示欢迎窗口时启动出错 (shenjunqiu)
+不该在关闭时显示欢迎窗口时仍然显示的问题 (morph4u)
+下载历史的一些问题 (**Riso64Bit**)
+总是自动创建曾设置为Incoming文件夹的文件夹的问题 [BF] - [Bug Fix] do not create cat0 Incoming now
+对于减分的客户端进行完整的DLP检查
+ArchiveRecovery.cpp中几处可能存在的内存泄漏 (gureedo)
+CUpDownClient::SendPreviewAnswer和CMMServer::PreviewFinished的修正 (WiZaRd)
+修正写入下载缓存时可能发生死循环的问题 [GB] - [Global Buffer]
+文件详细信息对话框可能发生地文字错误 (ducho)
+修正DLP 39的一处错误 (zz_fly)
+共享文件列表复选框可见时删除文件可能导致程序崩溃的问题 (morph4u)
+
+去除：
+禁用AsyncSocketEx IPv6部分代码 ENABLE_IPV6
+
+修改:
+调整编译选项,减小可执行文件大小 (morph4u)
+国家根据名字排序 (**Riso64Bit**)
+IPFilter加载增加OpenMP支持(当前编译未开启) _OPENMP
+恢复任务栏速度显示
+重新实现strtoul减少加载IPFilter、IP2Country时间
+x64下更多地使用64位整数
+重写CUInt128的各个成员函数
+重写FileVerify部分代码 [FV] - [FileVerify]
+在UploadBandwidthThrottler等里几处使用整数替换浮点数
+兼容STLport _STLP_WIN32
+使用boost的unordered_map替换STL的map HAVE_BOOST
+修正KnownFileList里m_mapKnownFilesByAICH和m_mapCancelledFiles的初始化哈希表的问题
+使用ATL容器类替换MFC容器类
+使用typeid替换MFC的RTTI
+文件类型过滤菜单增加图标
+改进webserver里的排序
+将一些单独调用读取ini的选项移到CPreferences里
+当源很多时不保存LowID和Leecher源 [ISS] - [Improved Source Save]
+来源交换时不发送Leecher源 [DUL] - [Don't Upload to Leecher]
+
+增加：
+共享文件列表和下载历史列表增加查找相关文件菜单项
+预编译选项使用unordered_map替换ATL和MFC的Hash Map REPLACE_ATLMAP REPLACE_MFCMAP
+
+ResizableLib
+(
+使用ATL的容器类
+)
+
+0.49c X-Mod 1.5.2.5
+----------------
+修正:
+对Win2000的支持 Win2000 support
+去除不必要通知
+不要在Webserver/CML/MM中重置连接设置 (Stulle) Don't reset Connection Settings for Webserver/CML/MM [Stulle] - Stulle
+Nodes.dat有时保存出错 (Nissenice)
+Ini读取数值的一处bug
+做一些改动以修正wine的DrawText DT_CALCRECT显示错误
+kad节点列表ip排序问题
+
+去除：
+SHAHashSet里的X-Ray :: AICHSecurity 
+
+修改:
+去掉不必要的动态加载dll
+重写继续下载和改进已损坏文件段的恢复 [IP] - [Import Parts] [IPR] - [Improved Part Recovery]
+改进下载列表移除和更新 [CI] - [Code Improvement]
+改进统计对话框客户端部分
+
+增加：
+easymule2的识别 SO_EASYMULE2
+
+miniupnp
+(
+修正一处upnp映射失败的问题
+)
+
+0.49c X-Mod 1.5.2.4
+----------------
+修正:
+清除被阻止的客户端
+来自OfFixed 1.0的大部分修正
+kademlia\Search.cpp里可能发生地内存泄漏 (WiZaRd)
+增加leecherlog有时会崩溃的问题 [BF] - [Bug Fix]
+集成DLP的一处错误
+
+修改:
+恢复为8磅字体
+半透明悬浮窗 [GPUI] - [GDI Plus UI]
+客户端图标
+重写了BarShader和Mulelist的部分代码 [CI] - [Code Improvement] BarShader
+使用全局缓存限制和类似Inteli-Flush的方式 [GB] - [Global Buffer]
+在恢复前不请求已损坏文件段
+
+增加：
+拦截invalid parameter异常
+对JSON格式http搜索和对VeryCD网站搜索 (jsonparse来自JSON.org)[JFS] - [JSON Format Search]
+MediaInfo inform的调用 (来自ScarAngel) Advanced Options [Official/MorphXT] - Stulle
+
+id3lib
+(
+去除写入部分
+)
+
+CxImage
+(
+只保留eMule用到的函数
+)
+
+0.49c X-Mod 1.5.2.3
+----------------
+修正:
+Preferences的一处修正 (morph4u)
+保存http源的bug [SUS] - [Save URL Source] & [ISS] - [Improved Source Save]
+本地化 "OK" "Apply" "Cancel" 按钮 [AL] - [Additional Localize]
+CompareDirectories的修正 [BF] - [Bug Fix]
+CemuleDlg::OnWebGUIInteraction里的几处修正 [BF] - [Bug Fix]
+
+去除：
+任务栏速度显示 [SGW] - [SpeedGraphWnd]
+平均队列 [UIC] - [UIChange]
+文件块选择方式菜单和Order文件块选择方式
+旧的网页模版支持
+_PfnLoadUnicows
+
+修改:
+网页界面支持异步请求 [AEWI] - [AJAX Enabled Web Interface]
+网页服务器支持发送 "HTTP/1.1 304" 和压缩文件请求 [AEWI] - [AJAX Enabled Web Interface]
+统计的HTML特性 [AEWI] - [AJAX Enabled Web Interface]
+使用9磅字体 [UIC] - [UIChange] Large Font Size
+压缩DLP防止二进制修改 [CDLP] - [Compressed DLP]
+选项页是否被修改的检查 [CI] - [Code Improvement] Apply if modified
+对吸血驴减少下载超时 [DUL] - [Don't Upload to Leecher]
+不上传只在使用集成dlp的情况下才能被启用 [DUL] - [Don't Upload to Leecher]
+修改不接受上传的实现 [RU] - [RefuseUpload]
+减少文件缓存的上下限
+更新集成DLP至v39
+改进旧有功能
+
+增加：
+支持 NTFS 文件系统特性 [FSFS] - [FileSystemFeaturesSupport]
+悬浮窗 [SGW] - [SpeedGraphWnd]
+选项 DontCheckDLPVer(不检查dlp版本) [DLPI] - [DLP Integerated]
+启动时随机端口 [RPOS] - [RandomPortOnStartup]
+
+引入 X-Ray 1.7 部分代码
+(
+Optimizations - No Need to Refresh a stopped File
+NiceMove
+eMulePlusIniClass
+NewHTTPProgressbar
+AICHSecurity
+FiXeS :: Bugfix :: bscabral
+FiXeS :: Obfuscation-Bugfix :: WiZaRd
+FiXeS :: Bugfix :: WiZaRd cmdline
+ReconnectToKadAfterConnectionError
+Optimizations -  Don't Refresh item if not needed
+SearchCatch
+Different reasktime(FastReaskforMLDonkey,...)
+)
+
+0.49c X-Mod 1.5.1
+----------------
+修正:
+kademlia\Indexed.cpp的小修正 (WiZaRd)
+一定情况下上传下载比很大 [BF] - [Bug Fix]
+
+去除：
+对随机Modstring的判断 [ARM] - [Anti-Random Modstring]
+对MediaInfo 0.4版本的支持 [RMIS] - [Remove MediaInfo 0.4 Support]
+Shareaza的md4和sha的实现
+
+修改:
+改进源的保存及允许保存LowID源 [ISS] - [Improved Source Save]
+对BarShader的小改进 [CI] - [Code Improvement]
+使用crypto++的md5实现 [CI] - [Code Improvement] use crypto++'s md5 implementation
+使用crypto++的md4实现(netfinity) Use cryptlib for all platforms
+使用官方UPnP编译
+完善从吸血驴下载而不上传给它的功能 [DUL] - [Don't Upload to Leecher]
+不对http源Failed-Download-Ban
+改进旧有功能
+
+增加：
+对http源的保存 [SUS] - [Save URL Source]
+
+引入NetF WARP 0.3a.13 BETA部分代码
+(
+Rearranged for alignment reasons
+Moved this inline for speed!
+Credits Reset Exploit Prevention
+To reduce task switching on multicore CPU's
+Changed to types for better portability between different CPU targets
+Use cryptlib for non X86 platforms
+Latest CAsyncSocketEx(Version 1.3)
+)
+
+crypto++
+(
+更新至5.6.1 SVN 469
+使用5.5.2 的Rijndael的x64实现(5.6.x的实现会使emule崩溃)
+去除未使用的加密算法代码
+)
+
+0.49c X-Mod 1.5.0
+----------------
+修正:
+DoSwap里的问题
+旧 X-Mod 在统计上的问题
+当文件不存在时频繁重复检查共享文件
+列表滚动条上下文菜单问题 [BF] - [Bug Fix]
+目录树文件夹图标错误 [BF] - [Bug Fix]
+服务器连接失败时可能产生的内存泄露 [BF] - [Bug Fix]
+Zipfile.cpp的小Bug (WiZaRd)
+
+修改:
+改进 ClientCreditsList 以及来自 ACAT 的优化
+改进 CDownloadListCtrl::AddSource
+当 A4AF 到其他文件时跳过正在下载的源
+不记住未被下载历史引用的 AICH
+改进 添加和删除 UPNP
+不强制共享位于Incoming 和分类的Incoming 的新共享文件  [QOH] - [QueryOnHashing] Exclude files
+更新集成DLP至v37
+vector预先调用reserve(),并使用std::vector<T>().swap()替换.clear()
+仅排除非单独共享的文件 (Stulle)
+
+增加：
+记住传输窗口分类tab [RCI] - [Remember Catalog ID]
+对随机Modstring的判断 [ARM] - [Anti-Random Modstring]
+官方UPnP条件编译
+
+引入Xtreme 7.2部分代码
+(
+- 默认的用户目录模式改为在程序目录下
+- 在下载历史列表中加入 Ctrl+C 和 Del 键支持 (Stulle)
+  下载历史列表可以向共享文件列表一样，用 Ctrl+C 复制 ED2K 链接，用 Del 删除记录。
+- 修正: 传输中来源的处理发生意外而导致的崩溃 (Enig123)
+- 修正: 关闭 Xtreme 时可能出现的崩溃 (MorphXT)
+- 修正: 关闭 Xtreme 时还在 Hash 文件的情况下可能导致的一个小错误 (WiZaRd)
+- 修正: 好友处理时出现的一个小错误 (WiZaRd)
+- 恢复: Xman 的 Socket 关闭算法
+        虽然这个算法需要占用更多的内存(10~20MB)，但是对部分用户来说它是必要的。
+)
+
+0.49b X-Mod 1.4.6
+----------------
+修正：
+OK Temporary Countries的Localize
+PartFileConvert两处错误检查 [BF] - [Bug Fix]
+路径显示双\的问题 [BF] - [Bug Fix] get rid of X:\\001.part
+客户端文件名的显示 [UIC] - [UIChange] m_strClientFilename urldecode
+
+去除：
+系统菜单的选项菜单 [UIC] - [UIChange] remove SysOptions
+队列的Banned列
+
+增加：
+索引临时IP过滤 使用二分查找改进ipfilter的插入和删除 [ITF] - [Index Temporary Filter]
+集成DLP V36 [DLPI] - [DLP Integerated]
+增加不上传给Leecher的功能和 ban Leecher的菜单项 [DUL] - [Don't Upload to Leecher]
+自动保存Nodes.dat [AC] - [ActionChange] Auto Save Nodes
+查看收藏集菜单
+直接下载对话框增加预览功能 [PL] - [Preview Links]
+对IP2Country格式为“国家[地区]”的长国家名的支持 [IP2L] - [IP2Location]
+downloadlist和clientlist国名地区显示
+不加载ipfilter描述信息，减少内存占用 [NIPFD] - [No IPFilter Description]
+
+修改：
+恢复更新通知
+改名为X-Mod 为了与Mod名一致
+监视剪贴板使用直接下载对话框 [UIC] - [UIChange] allow change cat
+显示动态ip服务器的ip和国旗 [UIC] - [UIChange] show Dynip,[CI] - [Code Improvement] show Dynip country
+对服务器的ip过滤和一处判断 [CI] - [Code Improvement],[BF] - [Bug Fix]
+调整分类对话框的自动完成
+统一默认分类名 [UIC] - [UIChange] change cat0 Title
+网络对话框当所有内容显示完毕后显示 [UIC] - [UIChange] show after content load
+改进统计树client部分的显示并修正一处错误
+引入Enig123发现和整理的一系列修正 Enig123
+trayicon 显示上传速度
+改进旧有功能
+
+0.49b Mexter 1.4.5
+----------------
+修正：
+调整Localize的调用 [RUL] - [Remove Useless Localize]
+
+去除：
+去除更新通知
+去除LBM
+去除Debug代码 [RDL] - [Remove Debug Log]
+去除0.46b preference兼容和其他兼容性代码
+削减FV功能
+去除Ord选项
+
+增加：
+几处Localize [AL] - [Additional Localize]
+增加共享文件扩展名过滤 [DSE] - [DontShareExt]
+增加共享文件Hash前的行为设置 [QOH] - [QueryOnHashing]
+增加继续下载，TrustHash [IP] - [Import Parts]
+分类菜单增加直接下载
+加入快速完成, 丢弃慢速的来源(netfinity) [DSC] - [Drop Slow Client]
+
+修改：
+精确client百分比 more accuracy
+修改ipfilter提高加载速度 已顺序时不排序 [SUL] - [SpeedUpLoading]
+修改ip2country提高加载速度 已顺序时不排序 使用std::map减少内存分配带来的时间消耗 [SUL] - [SpeedUpLoading]
+不需要创建skin文件夹时不创建
+需要创建logs文件夹时创建 [BF] - [Bug Fix] create log dir before log taz-me
+改进共享文件夹树的右键菜单弹出 [UIC] - [UIChange] no context menu for SDI_ALL and SDI_DIRECTORY WiZaRd
+ip2country 引入Enig123::Reduce GDI handles
+修正P2PThreat [BF] - [Bug Fix]
+
+引入Xtreme 7.1部分代码
+(
+- 修正官方在UserHash初始化上的一系列问题 （Enig123）
+- 改进: 使得来源添加行为成为进程间安全的 (Enig123)
+- 修正Socket关闭时可能出现的一个错误 (netfinity)
+- 修正一个可能导致userhash碰撞的错误 (DreaMule)
+- 加入好友链接模块 (MorphXT)(部分) 并且修复一处内存泄漏错误
+- 改进: 当下载完成或取消时释放不再使用的内存 (Enig123)
+- 改进: 减少了上传带宽控制过程的CPU占用
+- 改进: 使用素数来初始化客户积分列表, 提高效率
+- 让用户详细信息中的用户名和国家信息随着对话框的扩大而扩大
+- 支持24k发送缓存
+)
+
+
+0.49b Mexter 1.4.4
+----------------
+修正：
+当分类过滤显示设置为收藏集时显示为？
+语言改变后服务器列表标签不显示数值
+当分配磁盘空间时单击右键造成界面无响应 [BF] - [Bug Fix]
+文件完成当所在分类的incomming文件夹不存在时创建它然后移动而不是直接移动默认incomming文件夹 [ActionChange]
+
+去除：
+Xtreme更新通知
+Don't Draw Hidden Rect
+
+增加：
+搜索列表的类型过滤 [FI] - [FilterItem]
+自己的更新通知 X version check
+
+修改：
+改用非Unicode方式读ip2country以提高加载速度
+改善Transfer各list切换效果
+优先使用自动分类的temp文件夹 [ActionChange]
+改名为Mexter
+修改ipfilter代码提高ipfilter加载速度
+显示过滤ip数量 [SFH] - [Show IP Filter Hits]
+丰富splash状态信息 [MSI] - [More Splash Info]
+DLP默认屏蔽
+不绘制不显示的列 [DDHC] - [Don't Draw Hidden Column]
+总是显示cachebar 仅在显示更多控制时显示cachebar [CB] - [CacheBar]
+修正导出html的代码
+增加64bit编译
+
+引入Xtreme 7.0部分代码
+(
+- 更新UPnP模块
+- 在我的信息窗口中显示UPnP状态
+- 当IP改变时重新绑定UPnP
+- 增加UPnP路由器探测的次数
+- 去除Fix Connection Collision (不再需要)
+)
+引入ScarAngel 3.1部分代码
+(
+TK4 CreditSystem
+ZZUL CreditSystem
+Threaded Known Files Saving
+)
+引入X-Ray 1.6部分代码
+(
+MoreFourCCCodes
+Optimizations
+)
+
+0.49a X 0.1.3
+----------------
+恢复原版代码方便升级，并完成代码注释
+
+增加：
+加入网站链接
+选项只读(增加选项ReadOnly) [ROP] - [ReadOnlyPreference]
+
+修改：
+只显示已存在的语言 [UIC] - [UIChange]
+显示平均下载速度
+
+引入ScarAngel 3.0部分代码
+(
+Recognize MlDonkey XS Answer
+relax on startup
+Source Counts Are Cached derivated from Khaos
+)
+引入X-Ray 1.5部分代码
+(
+FiXeS
+IP2Country (for KAD)
+Optimizations
+)
+引入Xtreme 7.0部分代码
+(
+- 修正一个可能导致重复Hash文件的问题
+- 增加国内各类吸血鬼的检测
+- 修正一个可能导致死锁的错误
+)
+
+0.49a X 0.1.2
+----------------
+- updated to 0.49a codebase
+修正：
+Crypto++使用typeid(T).name()在VC下发生内存泄露
+引入ModelessDialogs 后，massrename对话框会crash [BF] - [Bug Fix]
+
+
+增加：
+显示LBM的状态[LBM] - [LastBlockMonitor]
+分类和CollectionView的Temp文件夹设置 [TD] - [TempDir]
+右键菜单项文件块选择方式 [CC] - [ChunckChoose]
+右键菜单项写入缓冲 [FB] - [FlushBuffer]
+断开速度为0的源 [C0SC] - [Clear 0 Speed Client]
+排除特定扩展名的文件以不压缩方式上传设置 [DCE] - [DontCompressExt]
+增强文件识别的设置，Fileformat.csv [FV] - [FileVerify]
+
+修改：
+Search里的分类Tab跟随Transfer的 [UIC] - [UIChange]
+剪贴板的直接下载会放置在当前分类里 [ActionChange]
+显示头部完成百分比 [HP] - [HeaderPercent]
+动态增大文件缓存上限 [FBS] - [FileBufferSize]
+调整Order文件块选择方式 [Ord] - [Order]
+恢复tray菜单
+TreeOptionCtrl禁用显示样式 [UIC] - [UIChange]
+添加服务器可以识别地址加端口的形式
+引入 0.49b代码 [MNC] - [eMuleNewCode]
+
+引入Neo4.5部分代码
+(
+目录选项页面 ppgDirectory MTD - [MultiTempDirectories],
+部分窗口非模态 MLD - [ModelesDialogs],
+sharefileswnd工具栏 AKF - [AllKnownFiles]
+文件完成时停止 POFC - [PauseOnFileComplete]
+快速开始 QS - [QuickStart]
+)
+引入ScarAngel 3.0部分代码
+(
+积分系统 CreditSystems
+客户端识别 Enhanced Client Recognition
+隐身模式 Invisible Mode
+)
+
+0.48a Xtreme 6.1
+----------------
+修正：
+启动后当Transfer不是第1，2 个按钮按下时再切换到第1，2 个按钮时分类Tab位置错误
+
+增加：
+64bit编译兼容（zlib源于网络，md4 sha源于Shareaza 2.3.1.0）
+显示文件缓存大小 [CB] - [CacheBar]
+全面使用64bit时间 [64T] - [64BitTime] & [E64T] - [Enable64BitTime]
+增加Order文件块选择方式 [Ord] - [Order]
+临近完成文件速度低于某设定值时自动设为高优先级，并一定时间后重新下载的设置（不总是有效）[LBM] - [LastBlockMonitor]
+当速度大于某值时自动优先级的文件拒绝接受上传的设置 [RU] - [RefuseUpload]
+写入缓冲的时限设置 [TL] - [TimeLimits]
+historylist的过滤 [FI] - [FilterItem]
+
+修改：
+CastItoXByte中KB显示小数点后一位 [UIC] - [UIChange]
+KAD距离显示为16进制 [UIC] - [UIChange]
+压缩文件预览大小显示为字节 [UIC] - [UIChange]
+百分比显示小数点后两位 [UIC] - [UIChange]
+程序默认优先级降低为Normal
+增大文件缓存上限
+允许所有文件优先下载预览部分 [ActionChange]
+
+
+Fileformat.csv格式细节
+Label,Header,Offset,[t]
+t表示多种编码格式的文本文件
+文本文件限制：不允许offset
+
+Header标示格式（总大小=32）
+1.可识别的ascii码,例如:[PK]
+2.十六进制值，例如:3031，等价于[01]
+3.单个十六进制字符扩展指令
+	FF*F，例如:00*3，等价于000000
+	FF/EE，例如:00/01，表示此处值可以为00或01
+	FF&EE，例如:07&0F，表示此处值&0F必须为07
+4.特殊选项%
+	%sFF，例如:%s04表示此处于文件大小-4比较
+5.辅助指令(伪指令)
+	~F,例如:~7，表示此处以后7字节为任意值，跳过
+
+
+based on emule 0.48a Xtreme 6.1
+compiled with:
+id3lib 3.9.0-devel 2009-08-30 (lite)
+libpng 1.5.4
+zlib 1.2.5
+Crypto++ 5.6.2 SVN 529 (lite and mod)
+CxImage version 7.02 (lite)
+miniupnp 1.6
+boost 1.46.1

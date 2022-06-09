@@ -1,0 +1,2035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="ReleaseNoSSE|Win32">
+      <Configuration>ReleaseNoSSE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseNoSSE|x64">
+      <Configuration>ReleaseNoSSE</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SharedDebug|Win32">
+      <Configuration>SharedDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SharedDebug|x64">
+      <Configuration>SharedDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SharedRelease|Win32">
+      <Configuration>SharedRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SharedRelease|x64">
+      <Configuration>SharedRelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="test|Win32">
+      <Configuration>test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="test|x64">
+      <Configuration>test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode_Debug|Win32">
+      <Configuration>Unicode_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode_Debug|x64">
+      <Configuration>Unicode_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode_Release|Win32">
+      <Configuration>Unicode_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode_Release|x64">
+      <Configuration>Unicode_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>emule</ProjectName>
+    <ProjectGuid>{584EA69D-3443-4197-8994-364880FC1B9B}</ProjectGuid>
+    <RootNamespace>emule</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b*.asm%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b*.asm%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">*.obj;*.ilk;*.pdb;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.bat;*.asm;$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b*.asm%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">*.obj;*.ilk;*.pdb;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.bat;*.asm;$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b*.asm%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='test|Win32'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='test|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='test|Win32'">*.obj;*.ilk;*.pdb;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.bat;*.asm;$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='test|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='test|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='test|x64'">*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b*.asm%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">*.obj;*.ilk;*.pdb;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.bat;*.asm;$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b*.asm%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='test|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='test|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='test|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='test|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='test|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='test|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='test|Win32'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Template|x64'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='test|x64'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">D:\libs\ATL_Server_Source_and_Headers_9_0_70425_Alpha\include;D:\libs\DirectX\Include;D:\libs\DirectX\Extras\DirectShow\Include;D:\libs\boost;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;ATLServer\include;DirectX\Extras\DirectShow\Include;DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_DUMP;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;winmm.lib;ws2_32.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;WININET.lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x86 Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=X86, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;ATLServer\include;DirectX\Extras\DirectShow\Include;DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;_DEBUG;_DUMP;ID3LIB_LINKOPTION=1;NOT_USE__ASM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;winmm.lib;ws2_32.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;WININET.lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x64 Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=AMD64, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Wall %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;winmm.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;WS2_32.Lib;WININET.lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x86 Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=X86, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Wall %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;_DEBUG;_DUMP;ID3LIB_LINKOPTION=1;NOT_USE__ASM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;_UNICODE;UNICODE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>version.lib;winmm.lib;ws2_32.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;WININET.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=AMD64, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;ATLServer\include;DirectX\Extras\DirectShow\Include;DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/safeseh %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>unicows.lib;kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WinInet.Lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x86 Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=X86, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;ATLServer\include;DirectX\Extras\DirectShow\Include;DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;NOT_USE__ASM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WININET.lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x64 Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=AMD64, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/safeseh %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>unicows.lib;kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WinInet.Lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x86 Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=X86, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;NOT_USE__ASM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WININET.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=AMD64, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='test|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/safeseh %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>unicows.lib;kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WinInet.Lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x86 Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=X86, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='test|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;NOT_USE__ASM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WININET.lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x64 Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=AMD64, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;ATLServer\include;DirectX\Extras\DirectShow\Include;DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/safeseh %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>unicows.lib;kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WinInet.Lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x86 ReleaseNoSSE;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=X86, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Inputs>%(Inputs)</Inputs>
+    </CustomBuildStep>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;..;..\id3lib\include;..\crypto;ATLServer\include;DirectX\Extras\DirectShow\Include;DirectX\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_WINDOWS;NDEBUG;ID3LIB_LINKOPTION=1;NOT_USE__ASM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_UNICODE;UNICODE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;gdiplus.lib;ADSIId.lib;crypt32.lib;wmvcore.lib;ws2_32.lib;WININET.lib;Iphlpapi.lib;zlib.lib;cryptlib.lib;libpng.lib;CxImage.lib;ResizableLib.lib;id3lib.lib;miniupnpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\x64 Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>oleacc.dll;gdiplus.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AssemblyIdentity>Microsoft.Windows.emule, processorArchitecture=AMD64, version=1.0.0.0, type=win32</AssemblyIdentity>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractFile.cpp" />
+    <ClCompile Include="Addons\AntiLeech\ClientAnalyzer.cpp" />
+    <ClCompile Include="AICHSyncThread.cpp" />
+    <ClCompile Include="ArchiveRecovery.cpp" />
+    <ClCompile Include="AsyncProxySocketLayer.cpp" />
+    <ClCompile Include="AsyncSocketEx.cpp" />
+    <ClCompile Include="AsyncSocketExLayer.cpp" />
+    <ClCompile Include="BaseClient.cpp" />
+    <ClCompile Include="CaptchaGenerator.cpp" />
+    <ClCompile Include="CBase64Coding.cpp" />
+    <ClCompile Include="ClientCredits.cpp" />
+    <ClCompile Include="ClientList.cpp" />
+    <ClCompile Include="ClientUDPSocket.cpp" />
+    <ClCompile Include="Collection.cpp" />
+    <ClCompile Include="CollectionFile.cpp" />
+    <ClCompile Include="CorruptionBlackBox.cpp" />
+    <ClCompile Include="DeadSourceList.cpp" />
+    <ClCompile Include="DownloadClient.cpp" />
+    <ClCompile Include="DownloadQueue.cpp" />
+    <ClCompile Include="ED2KLink.cpp" />
+    <ClCompile Include="EMSocket.cpp" />
+    <ClCompile Include="Emule.cpp" />
+    <ClCompile Include="EncryptedDatagramSocket.cpp" />
+    <ClCompile Include="EncryptedStreamSocket.cpp" />
+    <ClCompile Include="FileIdentifier.cpp" />
+    <ClCompile Include="FirewallOpener.cpp" />
+    <ClCompile Include="FrameGrabThread.cpp" />
+    <ClCompile Include="Friend.cpp" />
+    <ClCompile Include="FriendList.cpp" />
+    <ClCompile Include="GZipFile.cpp" />
+    <ClCompile Include="HttpClientReqSocket.cpp" />
+    <ClCompile Include="I18n.cpp" />
+    <ClCompile Include="Ini2.cpp" />
+    <ClCompile Include="IPFilter.cpp" />
+    <ClCompile Include="KnownFile.cpp" />
+    <ClCompile Include="KnownFileList.cpp" />
+    <ClCompile Include="ListenSocket.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="MD4.cpp" />
+    <ClCompile Include="MD5Sum.cpp" />
+    <ClCompile Include="Mdump.cpp" />
+    <ClCompile Include="MediaInfo.cpp" />
+    <ClCompile Include="MfcStaticBinaryCompatible.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NetF.cpp" />
+    <ClCompile Include="OtherFunctions.cpp" />
+    <ClCompile Include="Packets.cpp" />
+    <ClCompile Include="Parser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PartFile.cpp" />
+    <ClCompile Include="PartFileConvert.cpp" />
+    <ClCompile Include="PerfLog.cpp" />
+    <ClCompile Include="Poco\Event.cpp" />
+    <ClCompile Include="Poco\Mutex.cpp" />
+    <ClCompile Include="Poco\Thread.cpp" />
+    <ClCompile Include="Poco\Timestamp.cpp" />
+    <ClCompile Include="Preferences.cpp" />
+    <ClCompile Include="Preview.cpp" />
+    <ClCompile Include="Quantize.cpp" />
+    <ClCompile Include="QueuedThread.cpp" />
+    <ClCompile Include="RARFile.cpp" />
+    <ClCompile Include="SafeFile.cpp" />
+    <ClCompile Include="Scanner.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Scheduler.cpp" />
+    <ClCompile Include="SearchFile.cpp" />
+    <ClCompile Include="SearchList.cpp" />
+    <ClCompile Include="SecRunAsUser.cpp" />
+    <ClCompile Include="SelfTest.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="ServerList.cpp" />
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="sfmt\SFMT.cpp" />
+    <ClCompile Include="SHA.cpp" />
+    <ClCompile Include="SHAHashSet.cpp" />
+    <ClCompile Include="ShareableFile.cpp" />
+    <ClCompile Include="SharedFileList.cpp" />
+    <ClCompile Include="Sockets.cpp" />
+    <ClCompile Include="StatisticFile.cpp" />
+    <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='test|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringConversion.cpp" />
+    <ClCompile Include="ToolbarWnd.cpp" />
+    <ClCompile Include="TransferDlg.cpp" />
+    <ClCompile Include="UDPSocket.cpp" />
+    <ClCompile Include="UploadBandwidthThrottler.cpp" />
+    <ClCompile Include="UploadClient.cpp" />
+    <ClCompile Include="UploadQueue.cpp" />
+    <ClCompile Include="UPnPImpl.cpp" />
+    <ClCompile Include="UPnPImplACAT.cpp" />
+    <ClCompile Include="UPnPImplMiniLib.cpp" />
+    <ClCompile Include="UPnPImplWrapper.cpp" />
+    <ClCompile Include="URLClient.cpp" />
+    <ClCompile Include="vc10fix\afxctrlcontainer.cpp" />
+    <ClCompile Include="vc10fix\afxglobals.cpp" />
+    <ClCompile Include="Version.cpp" />
+    <ClCompile Include="WebSocket.cpp" />
+    <ClCompile Include="ZIPFile.cpp" />
+    <ClCompile Include="kademlia\io\BufferedFileIO.cpp" />
+    <ClCompile Include="kademlia\io\ByteIO.cpp" />
+    <ClCompile Include="kademlia\routing\Contact.cpp" />
+    <ClCompile Include="kademlia\io\DataIO.cpp" />
+    <ClCompile Include="kademlia\kademlia\Entry.cpp" />
+    <ClCompile Include="kademlia\io\FileIO.cpp" />
+    <ClCompile Include="kademlia\kademlia\Indexed.cpp" />
+    <ClCompile Include="kademlia\io\IOException.cpp" />
+    <ClCompile Include="kademlia\kademlia\Kademlia.cpp" />
+    <ClCompile Include="kademlia\net\KademliaUDPListener.cpp" />
+    <ClCompile Include="kademlia\utils\KadHelper.cpp" />
+    <ClCompile Include="kademlia\utils\LookupHistory.cpp" />
+    <ClCompile Include="kademlia\utils\MiscUtils.cpp" />
+    <ClCompile Include="kademlia\net\PacketTracking.cpp" />
+    <ClCompile Include="kademlia\kademlia\Prefs.cpp" />
+    <ClCompile Include="kademlia\routing\RoutingBin.cpp" />
+    <ClCompile Include="kademlia\routing\RoutingZone.cpp" />
+    <ClCompile Include="kademlia\kademlia\Search.cpp" />
+    <ClCompile Include="kademlia\kademlia\SearchManager.cpp" />
+    <ClCompile Include="kademlia\utils\ThreadName.cpp" />
+    <ClCompile Include="kademlia\kademlia\UDPFirewallTester.cpp" />
+    <ClCompile Include="kademlia\utils\UInt128.cpp" />
+    <ClCompile Include="AddFriend.cpp" />
+    <ClCompile Include="AddSourceDlg.cpp" />
+    <ClCompile Include="ArchivePreviewDlg.cpp" />
+    <ClCompile Include="BarShader.cpp" />
+    <ClCompile Include="ButtonsTabCtrl.cpp" />
+    <ClCompile Include="CatDialog.cpp" />
+    <ClCompile Include="ChatSelector.cpp" />
+    <ClCompile Include="ChatWnd.cpp" />
+    <ClCompile Include="ClientDetailDialog.cpp" />
+    <ClCompile Include="ClosableTabCtrl.cpp" />
+    <ClCompile Include="CollectionCreateDialog.cpp" />
+    <ClCompile Include="CollectionViewDialog.cpp" />
+    <ClCompile Include="ColorButton.cpp" />
+    <ClCompile Include="ColourPopup.cpp" />
+    <ClCompile Include="ComboBoxEx2.cpp" />
+    <ClCompile Include="CommentDialog.cpp" />
+    <ClCompile Include="CommentDialogLst.cpp" />
+    <ClCompile Include="CommentListCtrl.cpp" />
+    <ClCompile Include="CustomAutoComplete.cpp" />
+    <ClCompile Include="DialogMinTrayBtn.cpp" />
+    <ClCompile Include="DirectDownloadDlg.cpp" />
+    <ClCompile Include="DirectoryTreeCtrl.cpp" />
+    <ClCompile Include="DropDownButton.cpp" />
+    <ClCompile Include="DropTarget.cpp" />
+    <ClCompile Include="ED2kLinkDlg.cpp" />
+    <ClCompile Include="EditDelayed.cpp" />
+    <ClCompile Include="EditX.cpp" />
+    <ClCompile Include="EmuleDlg.cpp" />
+    <ClCompile Include="EnBitmap.cpp" />
+    <ClCompile Include="FileDetailDialog.cpp" />
+    <ClCompile Include="FileDetailDialogInfo.cpp" />
+    <ClCompile Include="FileDetailDialogName.cpp" />
+    <ClCompile Include="FileDetailDlgStatistics.cpp" />
+    <ClCompile Include="FileInfoDialog.cpp" />
+    <ClCompile Include="GDIThread.cpp" />
+    <ClCompile Include="HTRichEditCtrl.cpp" />
+    <ClCompile Include="HttpDownloadDlg.cpp" />
+    <ClCompile Include="HyperTextCtrl.cpp" />
+    <ClCompile Include="IconStatic.cpp" />
+    <ClCompile Include="IESecurity.cpp" />
+    <ClCompile Include="InputBox.cpp" />
+    <ClCompile Include="IPFilterDlg.cpp" />
+    <ClCompile Include="KadContactHistogramCtrl.cpp" />
+    <ClCompile Include="KademliaWnd.cpp" />
+    <ClCompile Include="KadLookupGraph.cpp" />
+    <ClCompile Include="ListCtrlEditable.cpp" />
+    <ClCompile Include="ListCtrlX.cpp" />
+    <ClCompile Include="ListViewSearchDlg.cpp" />
+    <ClCompile Include="ListViewWalkerPropertySheet.cpp" />
+    <ClCompile Include="MetaDataDlg.cpp" />
+    <ClCompile Include="MeterIcon.cpp" />
+    <ClCompile Include="MiniMule.cpp" />
+    <ClCompile Include="MuleStatusBarCtrl.cpp" />
+    <ClCompile Include="MuleToolBarCtrl.cpp" />
+    <ClCompile Include="NetworkInfoDlg.cpp" />
+    <ClCompile Include="OScopeCtrl.cpp" />
+    <ClCompile Include="PPgConnection.cpp" />
+    <ClCompile Include="PPgDebug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PPgDirectories.cpp" />
+    <ClCompile Include="PPgDisplay.cpp" />
+    <ClCompile Include="PPgFiles.cpp" />
+    <ClCompile Include="PPgGeneral.cpp" />
+    <ClCompile Include="PPgMessages.cpp" />
+    <ClCompile Include="PPgNotify.cpp" />
+    <ClCompile Include="PPgProxy.cpp" />
+    <ClCompile Include="PPgScheduler.cpp" />
+    <ClCompile Include="PPgSecurity.cpp" />
+    <ClCompile Include="PPgServer.cpp" />
+    <ClCompile Include="PPgStats.cpp" />
+    <ClCompile Include="PPgTweaks.cpp" />
+    <ClCompile Include="PPgWebServer.cpp" />
+    <ClCompile Include="PreferencesDlg.cpp" />
+    <ClCompile Include="PreviewDlg.cpp" />
+    <ClCompile Include="ProgressCtrlX.cpp" />
+    <ClCompile Include="RichEditCtrlX.cpp" />
+    <ClCompile Include="RichEditStream.cpp" />
+    <ClCompile Include="SearchDlg.cpp" />
+    <ClCompile Include="SearchParamsWnd.cpp" />
+    <ClCompile Include="SearchResultsWnd.cpp" />
+    <ClCompile Include="ServerWnd.cpp" />
+    <ClCompile Include="SharedDirsTreeCtrl.cpp" />
+    <ClCompile Include="SharedFilesWnd.cpp" />
+    <ClCompile Include="SmileySelector.cpp" />
+    <ClCompile Include="SplitterControl.cpp" />
+    <ClCompile Include="StatisticsDlg.cpp" />
+    <ClCompile Include="StatisticsTree.cpp" />
+    <ClCompile Include="TabCtrl.cpp" />
+    <ClCompile Include="TaskbarNotifier.cpp" />
+    <ClCompile Include="TitleMenu.cpp" />
+    <ClCompile Include="ToolBarCtrlX.cpp" />
+    <ClCompile Include="ToolTipCtrlX.cpp" />
+    <ClCompile Include="TransferWnd.cpp" />
+    <ClCompile Include="TreeOptionsCtrl.cpp" />
+    <ClCompile Include="TreeOptionsCtrlEx.cpp" />
+    <ClCompile Include="TreePropSheet.cpp" />
+    <ClCompile Include="TreePropSheetPgFrame.cpp" />
+    <ClCompile Include="TreePropSheetPgFrameDef.cpp" />
+    <ClCompile Include="VisualStylesXP.cpp" />
+    <ClCompile Include="WebServer.cpp" />
+    <ClCompile Include="XMessageBox.cpp" />
+    <ClCompile Include="ClientListCtrl.cpp" />
+    <ClCompile Include="CollectionListCtrl.cpp" />
+    <ClCompile Include="DownloadClientsCtrl.cpp" />
+    <ClCompile Include="DownloadListCtrl.cpp" />
+    <ClCompile Include="FriendListCtrl.cpp" />
+    <ClCompile Include="KadContactListCtrl.cpp" />
+    <ClCompile Include="KadSearchListCtrl.cpp" />
+    <ClCompile Include="MuleListCtrl.cpp" />
+    <ClCompile Include="QueueListCtrl.cpp" />
+    <ClCompile Include="SearchListCtrl.cpp" />
+    <ClCompile Include="ServerListCtrl.cpp" />
+    <ClCompile Include="SharedFilesCtrl.cpp" />
+    <ClCompile Include="UploadListCtrl.cpp" />
+    <ClCompile Include="GradientStatic.cpp" />
+    <ClCompile Include="MuleSystrayDlg.cpp" />
+    <ClCompile Include="TrayDialog.cpp" />
+    <ClCompile Include="TrayMenuBtn.cpp" />
+    <ClCompile Include="BandWidthControl.cpp" />
+    <ClCompile Include="HistoryListCtrl.cpp" />
+    <ClCompile Include="IP2Country.cpp" />
+    <ClCompile Include="NumEdit.cpp" />
+    <ClCompile Include="P2PThreat.cpp" />
+    <ClCompile Include="PPgXtreme.cpp" />
+    <ClCompile Include="ReadWriteLock.cpp" />
+    <ClCompile Include="SourceSaver.cpp" />
+    <ClCompile Include="FileVerify.cpp" />
+    <ClCompile Include="FilterDlg.cpp" />
+    <ClCompile Include="FilterItem.cpp" />
+    <ClCompile Include="GDIPlusUtil.cpp" />
+    <ClCompile Include="ResumeDownloadDlg.cpp" />
+    <ClCompile Include="SpeedGraphWnd.cpp" />
+    <ClCompile Include="SplashScreenEx.cpp" />
+    <ClCompile Include="VolumeInfo.cpp" />
+    <ClCompile Include="SA\TreeOptionsInvisibleKeyCombo.cpp" />
+    <ClCompile Include="SA\TreeOptionsInvisibleModCombo.cpp" />
+    <ClCompile Include="NEO\Modeless.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MD4_asm.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='test|x64'">
+      </Command>
+    </CustomBuild>
+    <MASM Include="SHA_asm.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">
+      </Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='test|x64'">
+      </Command>
+      <FileType>Document</FileType>
+      <UseSafeExceptionHandlers Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">true</UseSafeExceptionHandlers>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Parser.y">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">%(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">bison --no-lines --defines --output "%(RootDir)%(Directory)%(Filename).cpp" "%(Filename)%(Extension)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">$(ProjectDir)\%(Filename).cpp; $(ProjectDir)\%(Filename).hpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">%(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">bison --no-lines --defines --output "%(RootDir)%(Directory)%(Filename).cpp" "%(Filename)%(Extension)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">$(ProjectDir)\%(Filename).cpp; $(ProjectDir)\%(Filename).hpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">%(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">bison --no-lines --defines --output "%(RootDir)%(Directory)%(Filename).cpp" "%(Filename)%(Extension)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">$(ProjectDir)\%(Filename).cpp; $(ProjectDir)\%(Filename).hpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='test|Win32'">Performing Custom Build Step</Message>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|x64'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='test|x64'">Performing Custom Build Step</Message>
+    </CustomBuild>
+    <CustomBuild Include="Scanner.l">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">%(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">flex -L -o"$(ProjectDir)%(Filename).cpp" "-S$(ProjectDir)flex.skl" "%(FullPath)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='SharedDebug|Win32'">$(ProjectDir)%(Filename).cpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">%(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">flex -L -8 -o"$(ProjectDir)%(Filename).cpp" "-S$(ProjectDir)flex.skl" "%(FullPath)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">$(ProjectDir)%(Filename).cpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="Flex.skl" />
+    <None Include="res\all.ico" />
+    <None Include="res\ArchivePreview.ico" />
+    <None Include="res\BadGuy.ico" />
+    <None Include="res\bold.ico" />
+    <None Include="res\Cancel.ico" />
+    <None Include="res\Category.ico" />
+    <None Include="res\Chat.ico" />
+    <None Include="res\clear1.ico" />
+    <None Include="res\clear2.ico" />
+    <None Include="res\Client0.ico" />
+    <None Include="res\Client1.ico" />
+    <None Include="res\Client2.ico" />
+    <None Include="res\Client3.ico" />
+    <None Include="res\Client4.ico" />
+    <None Include="res\ClientaMule.ico" />
+    <None Include="res\ClientaMulePlus.ico" />
+    <None Include="res\ClientCompatible.ico" />
+    <None Include="res\ClientCompatiblePlus.ico" />
+    <None Include="res\ClientDefault.ico" />
+    <None Include="res\ClientDefaultPlus.ico" />
+    <None Include="res\ClienteDonkey.ico" />
+    <None Include="res\ClienteDonkeyHybrid.ico" />
+    <None Include="res\ClienteDonkeyHybridPlus.ico" />
+    <None Include="res\ClienteDonkeyPlus.ico" />
+    <None Include="res\ClientFriend.ico" />
+    <None Include="res\ClientFriendPlus.ico" />
+    <None Include="res\ClientlPhant.ico" />
+    <None Include="res\ClientlPhantPlus.ico" />
+    <None Include="res\ClientMLDonkey.ico" />
+    <None Include="res\ClientMLDonkeyPlus.ico" />
+    <None Include="res\Clientobfuovl.ICO" />
+    <None Include="res\ClientSecureHashOvl.ico" />
+    <None Include="res\Clientsecurehasobfuhovl.ICO" />
+    <None Include="res\ClientShareaza.ico" />
+    <None Include="res\ClientShareazaPlus.ico" />
+    <None Include="res\ClientsKnown.ico" />
+    <None Include="res\ClientsOnQueue.ico" />
+    <None Include="res\CloseTab.ico" />
+    <None Include="res\CloseTabSelected.ico" />
+    <None Include="res\Collapse.ico" />
+    <None Include="res\colour.ico" />
+    <None Include="res\Comments.ico" />
+    <None Include="res\ConnectDo.ico" />
+    <None Include="res\ConnectDrop.ico" />
+    <None Include="res\Connected.gif" />
+    <None Include="res\ConnectedHighHigh.gif" />
+    <None Include="res\ConnectedHighHigh.ico" />
+    <None Include="res\ConnectedHighLow.gif" />
+    <None Include="res\ConnectedHighLow.ico" />
+    <None Include="res\ConnectedHighNot.gif" />
+    <None Include="res\ConnectedHighNot.ico" />
+    <None Include="res\ConnectedLowHigh.gif" />
+    <None Include="res\ConnectedLowHigh.ico" />
+    <None Include="res\ConnectedLowLow.gif" />
+    <None Include="res\ConnectedLowLow.ico" />
+    <None Include="res\ConnectedLowNot.gif" />
+    <None Include="res\ConnectedLowNot.ico" />
+    <None Include="res\ConnectedNotHigh.gif" />
+    <None Include="res\ConnectedNotHigh.ico" />
+    <None Include="res\ConnectedNotLow.gif" />
+    <None Include="res\ConnectedNotLow.ico" />
+    <None Include="res\ConnectedNotNot.gif" />
+    <None Include="res\ConnectedNotNot.ico" />
+    <None Include="res\Connection.ico" />
+    <None Include="res\ConnectStop.ico" />
+    <None Include="res\Contact0.ico" />
+    <None Include="res\Contact1.ico" />
+    <None Include="res\Contact2.ico" />
+    <None Include="res\Contact3.ico" />
+    <None Include="res\Contact4.ico" />
+    <None Include="res\Convert.ico" />
+    <None Include="res\Copy.ico" />
+    <None Include="res\CopySelected.ico" />
+    <None Include="res\CopyVisible.ico" />
+    <None Include="res\CycleView.ico" />
+    <None Include="res\Delete.ico" />
+    <None Include="res\DeleteAll.ico" />
+    <None Include="res\DeleteSelected.ico" />
+    <None Include="res\DirectDownload.ico" />
+    <None Include="res\Display.ico" />
+    <None Include="res\Download.gif" />
+    <None Include="res\Download.ico" />
+    <None Include="res\DownloadFiles.ico" />
+    <None Include="res\Dropicon.ico" />
+    <None Include="res\eD2kLink.ico" />
+    <None Include="res\eD2kLinkPaste.ico" />
+    <None Include="res\Empty.ico" />
+    <None Include="res\emule.rc2" />
+    <None Include="res\emuleCollAdd.ico" />
+    <None Include="res\emuleCollectionFileType.ico" />
+    <None Include="res\emuleCollEdit.ico" />
+    <None Include="res\emuleCollSearch.ico" />
+    <None Include="res\emuleCollView.ico" />
+    <None Include="res\Exit.ico" />
+    <None Include="res\ExpandAll.ico" />
+    <None Include="res\ExpandAll2.ico" />
+    <None Include="res\ExportAll.ico" />
+    <None Include="res\ExportSelected.ico" />
+    <None Include="res\FileComments.ico" />
+    <None Include="res\FileCommentsOvl.ico" />
+    <None Include="res\FileDonkey.ico" />
+    <None Include="res\FileInfo.gif" />
+    <None Include="res\FileInfo.ico" />
+    <None Include="res\FileMassRename.ico" />
+    <None Include="res\FileOpen.ico" />
+    <None Include="res\FilePriority.ico" />
+    <None Include="res\FileRating0.ico" />
+    <None Include="res\FileRating1.ico" />
+    <None Include="res\FileRating2.ico" />
+    <None Include="res\FileRating3.ico" />
+    <None Include="res\FileRating4.ico" />
+    <None Include="res\FileRating5.ico" />
+    <None Include="res\FileRename.ico" />
+    <None Include="res\FileRequested.ico" />
+    <None Include="res\FileSharedKad.ico" />
+    <None Include="res\FileSharedServer.ico" />
+    <None Include="res\FileStatusIcons\Downloading.ico" />
+    <None Include="res\FileStatusIcons\Erroneous.ico" />
+    <None Include="res\FileStatusIcons\Paused.ico" />
+    <None Include="res\FileStatusIcons\Preview.ico" />
+    <None Include="res\FileStatusIcons\Stopped.ico" />
+    <None Include="res\FileStatusIcons\Waiting.ico" />
+    <None Include="res\FileTypeAny.ico" />
+    <None Include="res\FileTypeArchive.ico" />
+    <None Include="res\FileTypeAudio.ico" />
+    <None Include="res\FileTypeCDImage.ico" />
+    <None Include="res\FileTypeDocument.ico" />
+    <None Include="res\FileTypeEmuleCollection.ico" />
+    <None Include="res\FileTypePicture.ico" />
+    <None Include="res\FileTypeProgram.ico" />
+    <None Include="res\FileTypeVideo.ico" />
+    <None Include="res\FolderOpen.ico" />
+    <None Include="res\Folders.ico" />
+    <None Include="res\Friend.ico" />
+    <None Include="res\Friends1.ico" />
+    <None Include="res\friends1slot.ICO" />
+    <None Include="res\Friends2.ico" />
+    <None Include="res\friends2slot.ICO" />
+    <None Include="res\Friends3.ico" />
+    <None Include="res\friends3slot.ICO" />
+    <None Include="res\FriendSlot.ico" />
+    <None Include="res\FriendSlotOvl.ico" />
+    <None Include="res\Global.ico" />
+    <None Include="res\HardDisk.gif" />
+    <None Include="res\HardDisk.ico" />
+    <None Include="res\Help.ico" />
+    <None Include="res\Import.ico" />
+    <None Include="res\Incoming.gif" />
+    <None Include="res\Incoming.ico" />
+    <None Include="res\incomplete.ico" />
+    <None Include="res\InetDownload.avi" />
+    <None Include="res\Info.ico" />
+    <None Include="res\InvMode.ico" />
+    <None Include="res\IPFilter.ico" />
+    <None Include="res\IRC.ico" />
+    <None Include="res\IRCClipboard.ico" />
+    <None Include="res\Kad.ico" />
+    <None Include="res\KadBootstrap.ico" />
+    <None Include="res\KadContactList.ico" />
+    <None Include="res\KadCurrentSearches.ico" />
+    <None Include="res\KadFileSearch.ico" />
+    <None Include="res\KadNodeSearch.ico" />
+    <None Include="res\KadServer.ico" />
+    <None Include="res\KadStoreFile.ico" />
+    <None Include="res\KadStoreWord.ico" />
+    <None Include="res\KadWordSearch.ico" />
+    <None Include="res\Kad_Rating_Search.ico" />
+    <None Include="res\leecher.ICO" />
+    <None Include="res\ListAdd.ico" />
+    <None Include="res\ListRemove.ico" />
+    <None Include="res\ListViewSortDown.bmp" />
+    <None Include="res\ListViewSortDown2x.bmp" />
+    <None Include="res\ListViewSortUp.bmp" />
+    <None Include="res\ListViewSortUp2x.bmp" />
+    <None Include="res\Log.ico" />
+    <None Include="res\Logo.jpg" />
+    <None Include="res\MediaInfo.ico" />
+    <None Include="res\Message.ico" />
+    <None Include="res\MessagePending.ico" />
+    <None Include="res\Messages.ico" />
+    <None Include="res\MetaData.ico" />
+    <None Include="res\MiniMule.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="res\MiniMuleBack.gif" />
+    <None Include="res\Mule.ico" />
+    <None Include="res\mule_wiz.gif" />
+    <None Include="res\mule_wiz_hdr.gif" />
+    <None Include="res\NavigateBack.ico" />
+    <None Include="res\NavigateForward.ico" />
+    <None Include="res\NoAccessFolderOvl.ico" />
+    <None Include="res\Notifications.ico" />
+    <None Include="res\Pause.ico" />
+    <None Include="res\Preferences.gif" />
+    <None Include="res\Preferences.ico" />
+    <None Include="res\Preview.ico" />
+    <None Include="res\Priority.ico" />
+    <None Include="res\PriorityAuto.ico" />
+    <None Include="res\PriorityHigh.ico" />
+    <None Include="res\PriorityLow.ico" />
+    <None Include="res\PriorityNormal.ico" />
+    <None Include="res\Proxy.ico" />
+    <None Include="res\queue.ico" />
+    <None Include="res\QUICKSTART.ico" />
+    <None Include="res\Rating.ico" />
+    <None Include="res\RatingBad.ico" />
+    <None Include="res\Records.ico" />
+    <None Include="res\Rename.ico" />
+    <None Include="res\resetformat.ico" />
+    <None Include="res\Restore.ico" />
+    <None Include="res\RestoreWindow.gif" />
+    <None Include="res\RestoreWindow.ico" />
+    <None Include="res\Scheduler.ico" />
+    <None Include="res\Search.ico" />
+    <None Include="res\SearchEdit.ico" />
+    <None Include="res\SearchGlobalActive.ico" />
+    <None Include="res\SearchKad.ico" />
+    <None Include="res\SearchKadActive.ico" />
+    <None Include="res\SearchParams.ico" />
+    <None Include="res\SearchResults.ico" />
+    <None Include="res\SearchServerActive.ico" />
+    <None Include="res\Security.ico" />
+    <None Include="res\Server.ico" />
+    <None Include="res\ServerAdd.ico" />
+    <None Include="res\ServerInfo.ico" />
+    <None Include="res\ServerList.ico" />
+    <None Include="res\ServerSearch.ico" />
+    <None Include="res\ServersUpdate.ico" />
+    <None Include="res\SharedFiles.ico" />
+    <None Include="res\SharedFilesList.ico" />
+    <None Include="res\SharedFolderOvl.ico" />
+    <None Include="res\sharevisible.ico" />
+    <None Include="res\Smiley_Cry.ico" />
+    <None Include="res\Smiley_Disgust.ico" />
+    <None Include="res\Smiley_Happy.ico" />
+    <None Include="res\Smiley_Interest.ico" />
+    <None Include="res\Smiley_Laugh.ico" />
+    <None Include="res\Smiley_lookside.ico" />
+    <None Include="res\Smiley_Love.ico" />
+    <None Include="res\Smiley_omg.ico" />
+    <None Include="res\Smiley_Ph34r.ico" />
+    <None Include="res\Smiley_Sad.ico" />
+    <None Include="res\Smiley_sadq.ico" />
+    <None Include="res\Smiley_Sealed.ico" />
+    <None Include="res\Smiley_Skeptic.ico" />
+    <None Include="res\Smiley_Smile.ico" />
+    <None Include="res\Smiley_smileq.ico" />
+    <None Include="res\Smiley_Tongue.ico" />
+    <None Include="res\Smiley_Wink.ico" />
+    <None Include="res\Spam.ico" />
+    <None Include="res\Speed.ico" />
+    <None Include="res\SpeedMax.ico" />
+    <None Include="res\SpeedMin.ico" />
+    <None Include="res\splash.bmp" />
+    <None Include="res\splash.GIF" />
+    <None Include="res\SplitWindow.ico" />
+    <None Include="res\Start.ico" />
+    <None Include="res\Statistics.ico" />
+    <None Include="res\StatisticsDetail.ico" />
+    <None Include="res\StatsCumulative.ico" />
+    <None Include="res\StatsDay.ico" />
+    <None Include="res\StatsGeneric.ico" />
+    <None Include="res\StatsMonth.ico" />
+    <None Include="res\StatsProjected.ico" />
+    <None Include="res\StatsTime.ico" />
+    <None Include="res\StatsYear.ico" />
+    <None Include="res\Stop.ico" />
+    <None Include="res\TaskbarNotifier.gif" />
+    <None Include="res\Tools.ico" />
+    <None Include="res\Transfer.ico" />
+    <None Include="res\TransferUpDown.ico" />
+    <None Include="res\TrayBtnBlue.bmp" />
+    <None Include="res\TrayBtnHomestead.bmp" />
+    <None Include="res\TrayBtnMetallic.bmp" />
+    <None Include="res\TrayConnected.ico" />
+    <None Include="res\TrayDisconnected.ico" />
+    <None Include="res\TrayLowID.ico" />
+    <None Include="res\Tweak.ico" />
+    <None Include="res\underline.ico" />
+    <None Include="res\Up0down0.ico" />
+    <None Include="res\Up0down1.ico" />
+    <None Include="res\Up1down0.ico" />
+    <None Include="res\Up1down1.ico" />
+    <None Include="res\Upload.gif" />
+    <None Include="res\Upload.ico" />
+    <None Include="res\User.ico" />
+    <None Include="res\UserAdd.ico" />
+    <None Include="res\UserDelete.ico" />
+    <None Include="res\UserDetails.ico" />
+    <None Include="res\UserFiles.ico" />
+    <None Include="res\UserMessage.ico" />
+    <None Include="res\ViewDownload.ico" />
+    <None Include="res\ViewUpDown.ico" />
+    <None Include="res\ViewUpload.ico" />
+    <None Include="res\Web.ico" />
+    <None Include="res\WideCharLowerMap.bin" />
+    <None Include="res\Wizard.ico" />
+    <None Include="res\Wizzard.ico" />
+    <None Include="..\setup\eMule Light.tmpl" />
+    <None Include="..\setup\eMule.tmpl" />
+    <None Include="..\setup\staticservers.dat" />
+    <None Include="..\setup\Template.eMuleSkin.ini" />
+    <None Include="..\setup\webservices.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractFile.h" />
+    <ClInclude Include="Addons\AntiLeech\ClientAnalyzer.h" />
+    <ClInclude Include="Addons\Modname\Modname.h" />
+    <ClInclude Include="AICHSyncThread.h" />
+    <ClInclude Include="ArchiveRecovery.h" />
+    <ClInclude Include="AsyncProxySocketLayer.h" />
+    <ClInclude Include="AsyncSocketEx.h" />
+    <ClInclude Include="AsyncSocketExLayer.h" />
+    <ClInclude Include="CaptchaGenerator.h" />
+    <ClInclude Include="CBase64Coding.hpp" />
+    <ClInclude Include="ClientCredits.h" />
+    <ClInclude Include="ClientList.h" />
+    <ClInclude Include="ClientStateDefs.h" />
+    <ClInclude Include="ClientUDPSocket.h" />
+    <ClInclude Include="Collection.h" />
+    <ClInclude Include="CollectionFile.h" />
+    <ClInclude Include="CorruptionBlackBox.h" />
+    <ClInclude Include="DeadSourceList.h" />
+    <ClInclude Include="Debug_FileSize.h" />
+    <ClInclude Include="DebugHelpers.h" />
+    <ClInclude Include="DownloadQueue.h" />
+    <ClInclude Include="ED2KLink.h" />
+    <ClInclude Include="EMSocket.h" />
+    <ClInclude Include="Emule.h" />
+    <ClInclude Include="emule_site_config.h" />
+    <ClInclude Include="EncryptedDatagramSocket.h" />
+    <ClInclude Include="EncryptedStreamSocket.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="FileIdentifier.h" />
+    <ClInclude Include="FirewallOpener.h" />
+    <ClInclude Include="FrameGrabThread.h" />
+    <ClInclude Include="Friend.h" />
+    <ClInclude Include="FriendList.h" />
+    <ClInclude Include="GZipFile.h" />
+    <ClInclude Include="HttpClientReqSocket.h" />
+    <ClInclude Include="Ini2.h" />
+    <ClInclude Include="IPFilter.h" />
+    <ClInclude Include="KnownFile.h" />
+    <ClInclude Include="KnownFileList.h" />
+    <ClInclude Include="langids.h" />
+    <ClInclude Include="ListenSocket.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MapKey.h" />
+    <ClInclude Include="MD4.h" />
+    <ClInclude Include="MD5Sum.h" />
+    <ClInclude Include="Mdump.h" />
+    <ClInclude Include="MediaInfo.h" />
+    <ClInclude Include="NetF.h" />
+    <ClInclude Include="Opcodes.h" />
+    <ClInclude Include="OtherFunctions.h" />
+    <ClInclude Include="Packets.h" />
+    <ClInclude Include="PartFile.h" />
+    <ClInclude Include="PartFileConvert.h" />
+    <ClInclude Include="PerfLog.h" />
+    <ClInclude Include="Poco\Event.h" />
+    <ClInclude Include="Poco\Mutex.h" />
+    <ClInclude Include="Poco\ScopedLock.h" />
+    <ClInclude Include="Poco\Thread.h" />
+    <ClInclude Include="Poco\Timestamp.h" />
+    <ClInclude Include="Preferences.h" />
+    <ClInclude Include="Preview.h" />
+    <ClInclude Include="Quantize.h" />
+    <ClInclude Include="QueuedThread.h" />
+    <ClInclude Include="RARFile.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SafeFile.h" />
+    <ClInclude Include="Scheduler.h" />
+    <ClInclude Include="SearchFile.h" />
+    <ClInclude Include="SearchList.h" />
+    <ClInclude Include="SecRunAsUser.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="ServerList.h" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="sfmt\SFMT-alti.h" />
+    <ClInclude Include="sfmt\SFMT-params.h" />
+    <ClInclude Include="sfmt\SFMT-sse2.h" />
+    <ClInclude Include="sfmt\SFMT.h" />
+    <ClInclude Include="SHA.h" />
+    <ClInclude Include="SHAHashSet.h" />
+    <ClInclude Include="ShareableFile.h" />
+    <ClInclude Include="SharedFileList.h" />
+    <ClInclude Include="Sockets.h" />
+    <ClInclude Include="StatisticFile.h" />
+    <ClInclude Include="Statistics.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="StringConversion.h" />
+    <ClInclude Include="ThreadLocal.h" />
+    <ClInclude Include="ThrottledSocket.h" />
+    <ClInclude Include="ToolbarWnd.h" />
+    <ClInclude Include="TransferDlg.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="UDPSocket.h" />
+    <ClInclude Include="UpdownClient.h" />
+    <ClInclude Include="UploadBandwidthThrottler.h" />
+    <ClInclude Include="UploadQueue.h" />
+    <ClInclude Include="UPnPImpl.h" />
+    <ClInclude Include="UPnPImplACAT.h" />
+    <ClInclude Include="UPnPImplMiniLib.h" />
+    <ClInclude Include="UPnPImplWinServ.h" />
+    <ClInclude Include="UPnPImplWrapper.h" />
+    <ClInclude Include="URLClient.h" />
+    <ClInclude Include="Version.h" />
+    <ClInclude Include="VistaDefines.h" />
+    <ClInclude Include="WebServices.h" />
+    <ClInclude Include="WebSocket.h" />
+    <ClInclude Include="ZIPFile.h" />
+    <ClInclude Include="kademlia\io\BufferedFileIO.h" />
+    <ClInclude Include="kademlia\io\ByteIO.h" />
+    <ClInclude Include="kademlia\routing\Contact.h" />
+    <ClInclude Include="kademlia\io\DataIO.h" />
+    <ClInclude Include="kademlia\kademlia\Defines.h" />
+    <ClInclude Include="kademlia\kademlia\Entry.h" />
+    <ClInclude Include="kademlia\kademlia\Error.h" />
+    <CustomBuildStep Include="kademlia\io\FileIO.h" />
+    <ClInclude Include="kademlia\kademlia\Indexed.h" />
+    <ClInclude Include="kademlia\io\IOException.h" />
+    <ClInclude Include="kademlia\utils\KadClientSearcher.h" />
+    <ClInclude Include="kademlia\kademlia\Kademlia.h" />
+    <ClInclude Include="kademlia\net\KademliaUDPListener.h" />
+    <ClInclude Include="kademlia\utils\KadHelper.h" />
+    <ClInclude Include="kademlia\utils\KadUDPKey.h" />
+    <ClInclude Include="kademlia\utils\LookupHistory.h" />
+    <ClInclude Include="kademlia\routing\Maps.h" />
+    <ClInclude Include="kademlia\utils\MiscUtils.h" />
+    <ClInclude Include="kademlia\net\PacketTracking.h" />
+    <ClInclude Include="kademlia\kademlia\Prefs.h" />
+    <ClInclude Include="kademlia\routing\RoutingBin.h" />
+    <ClInclude Include="kademlia\routing\RoutingZone.h" />
+    <ClInclude Include="kademlia\kademlia\Search.h" />
+    <ClInclude Include="kademlia\kademlia\SearchManager.h" />
+    <ClInclude Include="kademlia\kademlia\Tag.h" />
+    <ClInclude Include="kademlia\utils\ThreadName.h" />
+    <ClInclude Include="kademlia\kademlia\UDPFirewallTester.h" />
+    <ClInclude Include="kademlia\utils\UInt128.h" />
+    <ClInclude Include="AddFriend.h" />
+    <ClInclude Include="AddSourceDlg.h" />
+    <ClInclude Include="AfxBeginMsgMapTemplate.h" />
+    <ClInclude Include="ArchivePreviewDlg.h" />
+    <ClInclude Include="BarShader.h" />
+    <ClInclude Include="ButtonsTabCtrl.h" />
+    <ClInclude Include="CatDialog.h" />
+    <ClInclude Include="ChatSelector.h" />
+    <ClInclude Include="ChatWnd.h" />
+    <ClInclude Include="ClientDetailDialog.h" />
+    <ClInclude Include="ClosableTabCtrl.h" />
+    <ClInclude Include="CollectionCreateDialog.h" />
+    <ClInclude Include="CollectionViewDialog.h" />
+    <ClInclude Include="ColorButton.h" />
+    <ClInclude Include="ColourPopup.h" />
+    <ClInclude Include="ComboBoxEx2.h" />
+    <ClInclude Include="CommentDialog.h" />
+    <ClInclude Include="CommentDialogLst.h" />
+    <ClInclude Include="CommentListCtrl.h" />
+    <ClInclude Include="CustomAutoComplete.h" />
+    <ClInclude Include="DialogMinTrayBtn.h" />
+    <ClInclude Include="DirectDownloadDlg.h" />
+    <ClInclude Include="DirectoryTreeCtrl.h" />
+    <ClInclude Include="Drawgdix.h" />
+    <ClInclude Include="DropDownButton.h" />
+    <ClInclude Include="DropTarget.h" />
+    <ClInclude Include="ED2kLinkDlg.h" />
+    <ClInclude Include="EditDelayed.h" />
+    <ClInclude Include="EditX.h" />
+    <ClInclude Include="EmuleDlg.h" />
+    <ClInclude Include="EnBitmap.h" />
+    <ClInclude Include="FileDetailDialog.h" />
+    <ClInclude Include="FileDetailDialogInfo.h" />
+    <ClInclude Include="FileDetailDialogName.h" />
+    <ClInclude Include="FileDetailDlgStatistics.h" />
+    <ClInclude Include="FileInfoDialog.h" />
+    <ClInclude Include="GDIThread.h" />
+    <ClInclude Include="HelpIDs.h" />
+    <ClInclude Include="HighColorTab.hpp" />
+    <ClInclude Include="HTRichEditCtrl.h" />
+    <ClInclude Include="HttpDownloadDlg.h" />
+    <ClInclude Include="HyperTextCtrl.h" />
+    <ClInclude Include="IconStatic.h" />
+    <ClInclude Include="IESecurity.h" />
+    <ClInclude Include="InputBox.h" />
+    <ClInclude Include="IPFilterDlg.h" />
+    <ClInclude Include="KadContactHistogramCtrl.h" />
+    <ClInclude Include="KademliaWnd.h" />
+    <ClInclude Include="KadLookupGraph.h" />
+    <ClInclude Include="ListCtrlEditable.h" />
+    <ClInclude Include="ListCtrlItemWalk.h" />
+    <ClInclude Include="ListCtrlX.h" />
+    <ClInclude Include="ListViewSearchDlg.h" />
+    <ClInclude Include="ListViewWalkerPropertySheet.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="MenuCmds.h" />
+    <ClInclude Include="MetaDataDlg.h" />
+    <ClInclude Include="MeterIcon.h" />
+    <ClInclude Include="MiniMule.h" />
+    <ClInclude Include="MuleStatusBarCtrl.h" />
+    <ClInclude Include="MuleToolBarCtrl.h" />
+    <ClInclude Include="NetworkInfoDlg.h" />
+    <ClInclude Include="OScopeCtrl.h" />
+    <ClInclude Include="Parser.hpp" />
+    <ClInclude Include="PPgConnection.h" />
+    <ClInclude Include="PPgDebug.h" />
+    <ClInclude Include="PPgDirectories.h" />
+    <ClInclude Include="PPgDisplay.h" />
+    <ClInclude Include="PPgFiles.h" />
+    <ClInclude Include="PPgGeneral.h" />
+    <ClInclude Include="PPgMessages.h" />
+    <ClInclude Include="PPgNotify.h" />
+    <ClInclude Include="PPgProxy.h" />
+    <ClInclude Include="PPgScheduler.h" />
+    <ClInclude Include="PPgSecurity.h" />
+    <ClInclude Include="PPgServer.h" />
+    <ClInclude Include="PPgStats.h" />
+    <ClInclude Include="PPgTweaks.h" />
+    <ClInclude Include="PPgWebServer.h" />
+    <ClInclude Include="PreferencesDlg.h" />
+    <ClInclude Include="PreviewDlg.h" />
+    <ClInclude Include="ProgressCtrlX.h" />
+    <ClInclude Include="RichEditCtrlX.h" />
+    <ClInclude Include="RichEditStream.h" />
+    <ClInclude Include="Scanner.h" />
+    <ClInclude Include="SearchDlg.h" />
+    <ClInclude Include="SearchExpr.h" />
+    <ClInclude Include="SearchParams.h" />
+    <ClInclude Include="SearchParamsWnd.h" />
+    <ClInclude Include="SearchResultsWnd.h" />
+    <ClInclude Include="ServerWnd.h" />
+    <ClInclude Include="SharedDirsTreeCtrl.h" />
+    <ClInclude Include="SharedFilesWnd.h" />
+    <ClInclude Include="SmileySelector.h" />
+    <ClInclude Include="SplitterControl.h" />
+    <ClInclude Include="StatisticsDlg.h" />
+    <ClInclude Include="StatisticsTree.h" />
+    <ClInclude Include="TabCtrl.hpp" />
+    <ClInclude Include="TaskbarNotifier.h" />
+    <CustomBuildStep Include="TextToSpeech.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseNoSSE|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedDebug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SharedRelease|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode_Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='test|x64'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <ClInclude Include="TitleMenu.h" />
+    <ClInclude Include="ToolBarCtrlX.h" />
+    <ClInclude Include="ToolTipCtrlX.h" />
+    <ClInclude Include="TransferWnd.h" />
+    <ClInclude Include="TreeOptionsCtrl.h" />
+    <ClInclude Include="TreeOptionsCtrlEx.h" />
+    <ClInclude Include="TreePropSheet.h" />
+    <ClInclude Include="TreePropSheetPgFrame.h" />
+    <ClInclude Include="TreePropSheetPgFrameDef.h" />
+    <ClInclude Include="UserMsgs.h" />
+    <ClInclude Include="VisualStylesXP.h" />
+    <ClInclude Include="WebServer.h" />
+    <ClInclude Include="XMessageBox.h" />
+    <ClInclude Include="ClientListCtrl.h" />
+    <ClInclude Include="CollectionListCtrl.h" />
+    <ClInclude Include="DownloadClientsCtrl.h" />
+    <ClInclude Include="DownloadListCtrl.h" />
+    <ClInclude Include="FriendListCtrl.h" />
+    <ClInclude Include="KadContactListCtrl.h" />
+    <ClInclude Include="KadSearchListCtrl.h" />
+    <ClInclude Include="MuleListCtrl.h" />
+    <ClInclude Include="QueueListCtrl.h" />
+    <ClInclude Include="SearchListCtrl.h" />
+    <ClInclude Include="ServerListCtrl.h" />
+    <ClInclude Include="SharedFilesCtrl.h" />
+    <ClInclude Include="UploadListCtrl.h" />
+    <ClInclude Include="GradientStatic.h" />
+    <ClInclude Include="MuleSystrayDlg.h" />
+    <ClInclude Include="TrayDialog.h" />
+    <ClInclude Include="TrayMenuBtn.h" />
+    <ClInclude Include="BandWidthControl.h" />
+    <ClInclude Include="HistoryListCtrl.h" />
+    <ClInclude Include="IP2Country.h" />
+    <ClInclude Include="NumEdit.h" />
+    <ClInclude Include="P2PThreat.h" />
+    <ClInclude Include="PPgXtreme.h" />
+    <ClInclude Include="ReadWriteLock.h" />
+    <ClInclude Include="SourceSaver.h" />
+    <ClInclude Include="Defaults.h" />
+    <ClInclude Include="FileVerify.h" />
+    <ClInclude Include="FilterDlg.h" />
+    <ClInclude Include="FilterItem.h" />
+    <ClInclude Include="GDIPlusUtil.h" />
+    <ClInclude Include="map_inc.h" />
+    <ClInclude Include="ResumeDownloadDlg.h" />
+    <ClInclude Include="SpeedGraphWnd.h" />
+    <ClInclude Include="SplashScreenEx.h" />
+    <ClInclude Include="VolumeInfo.h" />
+    <ClInclude Include="SA\TreeOptionsInvisibleKeyCombo.h" />
+    <ClInclude Include="SA\TreeOptionsInvisibleModCombo.h" />
+    <ClInclude Include="NEO\Modeless.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="emule.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="emule.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

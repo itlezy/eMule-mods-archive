@@ -1,0 +1,134 @@
+//*@@@+++@@@@******************************************************************
+//
+// Microsoft Windows Media
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//
+//*@@@---@@@@******************************************************************
+//
+cpp_quote( "//=========================================================================" )
+cpp_quote( "//" )
+cpp_quote( "// Microsoft Windows Media Technologies" )
+cpp_quote( "// Copyright (C) Microsoft Corporation.  All Rights Reserved." )
+cpp_quote( "//" )
+cpp_quote( "//=========================================================================" )
+
+import "oaidl.idl";
+
+// The following is a partial list of DRM actions that are of interest to applications
+//
+cpp_quote( "static const WCHAR *g_wszWMDRM_RIGHT_PLAYBACK                    = L\"Play\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_RIGHT_COPY_TO_CD                  = L\"Print.redbook\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_RIGHT_COPY_TO_SDMI_DEVICE         = L\"Transfer.SDMI\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_RIGHT_COPY_TO_NON_SDMI_DEVICE     = L\"Transfer.NONSDMI\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_RIGHT_BACKUP                      = L\"Backup\";" )
+
+// DRM properties
+//
+cpp_quote( "static const WCHAR *g_wszWMDRM_IsDRM                             = L\"IsDRM\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_IsDRMCached                       = L\"IsDRMCached\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_BaseLicenseAcqURL                 = L\"BaseLAURL\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_Rights                            = L\"Rights\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_LicenseID                         = L\"LID\";" )
+
+cpp_quote( "static const WCHAR *g_wszWMDRM_ActionAllowed                     = L\"ActionAllowed.\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_ActionAllowed_Playback            = L\"ActionAllowed.Play\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_ActionAllowed_CopyToCD            = L\"ActionAllowed.Print.redbook\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_ActionAllowed_CopyToSDMIDevice    = L\"ActionAllowed.Transfer.SDMI\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_ActionAllowed_CopyToNonSDMIDevice = L\"ActionAllowed.Transfer.NONSDMI\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_ActionAllowed_Backup              = L\"ActionAllowed.Backup\";" )
+
+cpp_quote( "static const WCHAR *g_wszWMDRM_LicenseState                      = L\"LicenseStateData.\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_LicenseState_Playback             = L\"LicenseStateData.Play\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_LicenseState_CopyToCD             = L\"LicenseStateData.Print.redbook\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_LicenseState_CopyToSDMIDevice     = L\"LicenseStateData.Transfer.SDMI\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_LicenseState_CopyToNonSDMIDevice  = L\"LicenseStateData.Transfer.NONSDMI\";" )
+
+cpp_quote( "static const WCHAR *g_wszWMDRM_DRMHeader                         = L\"DRMHeader.\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_DRMHeader_KeyID                   = L\"DRMHeader.KID\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_DRMHeader_LicenseAcqURL           = L\"DRMHeader.LAINFO\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_DRMHeader_ContentID               = L\"DRMHeader.CID\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_DRMHeader_IndividualizedVersion   = L\"DRMHeader.SECURITYVERSION\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_DRMHeader_ContentDistributor      = L\"DRMHeader.ContentDistributor\";" )
+cpp_quote( "static const WCHAR *g_wszWMDRM_DRMHeader_SubscriptionContentID   = L\"DRMHeader.SubscriptionContentID\";" )
+
+
+// This enum indicates the category for each possible output string to be displayed.
+// 0 -  Playback not permitted.
+// 1 -  Playback unlimited.
+// 2 -  Playback valid 5 times.
+// 3 -  Playback valid from 7/12/00.
+// 4 -  Playback valid until 7/12/00.
+// 5 -  Playback valid from 5/12 to 9/12.
+// 6 -  Playback valid 5 times from 7/12/00.
+// 7 -  Playback valid 5 times until 7/12/00.
+// 8 -  Playback valid 5 times from 5/12 to 9/12.
+// 9 -  Playback valid for 24 hours from first use.
+
+typedef enum DRM_LICENSE_STATE_CATEGORY
+{
+    WM_DRM_LICENSE_STATE_NORIGHT = 0,
+    WM_DRM_LICENSE_STATE_UNLIM,
+    WM_DRM_LICENSE_STATE_COUNT,
+    WM_DRM_LICENSE_STATE_FROM,
+    WM_DRM_LICENSE_STATE_UNTIL,
+    WM_DRM_LICENSE_STATE_FROM_UNTIL,
+    WM_DRM_LICENSE_STATE_COUNT_FROM,
+    WM_DRM_LICENSE_STATE_COUNT_UNTIL,
+    WM_DRM_LICENSE_STATE_COUNT_FROM_UNTIL,
+    WM_DRM_LICENSE_STATE_EXPIRATION_AFTER_FIRSTUSE
+} DRM_LICENSE_STATE_CATEGORY;
+
+typedef struct _DRM_LICENSE_STATE_DATA
+{
+    DWORD dwStreamId;                           // 0 -> All streams, != 0 -> A particular stream.
+    DRM_LICENSE_STATE_CATEGORY dwCategory;      // Indicates the category of string to be displayed.
+    DWORD dwNumCounts;                          // Number of items supplied in dwCount.
+    DWORD dwCount[4];                           // Up to 4 counts.
+    DWORD dwNumDates;                           // Number of items supplied in dwDate.
+    FILETIME datetime[4];                       // Up to 4 dates.
+    DWORD dwVague;                              // 0 -> certain, 1 -> atleast.  (There could be more
+                                                //               licenses. Aggregation not possible.)
+} DRM_LICENSE_STATE_DATA;
+
+typedef enum DRM_HTTP_STATUS
+{
+    HTTP_NOTINITIATED = 0,
+    HTTP_CONNECTING,
+    HTTP_REQUESTING,
+    HTTP_RECEIVING,
+    HTTP_COMPLETED
+} DRM_HTTP_STATUS;
+
+//  The various states individualization can be in:
+typedef enum DRM_INDIVIDUALIZATION_STATUS
+{
+    INDI_UNDEFINED   = 0x0000,
+    INDI_BEGIN       = 0x0001,
+    INDI_SUCCEED     = 0x0002,
+    INDI_FAIL        = 0x0004,
+    INDI_CANCEL      = 0x0008,
+    INDI_DOWNLOAD    = 0x0010,
+    INDI_INSTALL     = 0x0020
+} DRM_INDIVIDUALIZATION_STATUS;
+
+typedef struct _WMIndividualizeStatus
+{
+    HRESULT                         hr;
+    DRM_INDIVIDUALIZATION_STATUS    enIndiStatus;
+    LPSTR                           pszIndiRespUrl;
+    DWORD                           dwHTTPRequest;
+    DRM_HTTP_STATUS                 enHTTPStatus;
+    DWORD                           dwHTTPReadProgress;
+    DWORD                           dwHTTPReadTotal;
+} WM_INDIVIDUALIZE_STATUS;
+
+typedef struct _WMGetLicenseData
+{
+    DWORD   dwSize;
+    HRESULT hr;
+    WCHAR   *wszURL;
+    WCHAR   *wszLocalFilename;
+    BYTE    *pbPostData;
+    DWORD   dwPostDataSize;
+} WM_GET_LICENSE_DATA;
+

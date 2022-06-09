@@ -1,0 +1,151 @@
+
+XCA 1.3
+================
+
+Build 16.12.2011
+
+compiled with Visual Studio 2010 SP1
+
+Upgrade to X-Mod 1.6.1.1 [dolphinx] codebase from 2011-09-18
+Add: Intelligent SOTN [WiZaRd] 
+Removed: HideOS/SOTN [Slugfiller/Stulle]
+Removed: Massrename
+
+
+code from X-Mod 1.6.1.1 [dolphinx]
+(
+Fixed:
+
+"Preview" button's text is not shown in Direct Download Dialog
+wrong data type in CAICHRecoveryHashSet::UntrustedHashReceived AddDebugLogLine (dontsueme)
+crash caused by strcpy_s in CAsyncSocketEx
+wrong DebugLog in MiniUPnP
+TransferWnd splitter issue
+CServerSocket::ProcessPacket m_bneedpublicIP
+CSourceData copy constructor
+an float exception in the Lovelace credit system
+IsValidSearchResultClientIPPort bug (gureedo)
+crash when remove a file in historylistctrl
+SetMaxUpload bug
+remove the file from single sharedfile list when removing a shared file
+skip the last chunck AICH hash if its size <= EMBLOCKSIZE when it is corrupted [Import Parts] & [IPR] - [Improved Part Recovery]
+delay AICH request when failed [Import Parts] & [IPR] - [Improved Part Recovery]
+
+Removed:
+
+old UPnP code
+Shareaza's WinServ UPnPImpl
+fix minimize to tray issue
+
+Changed:
+
+replace some API with crt version
+CIni use '\n' instead of "\r\n"
+remove feature pack code from VC10 binary
+improve UPnP implementation
+replace crt rand with sfmt
+change some memfiles' initial size
+change flush buffer block size
+replace MFC thread with modified Poco thread
+simplified queued disc-access for read/flushing-threads
+source save ignore lowIDs
+update libs to latest version
+
+Added:
+
+an UPnPImpl implementation of ACAT UPnP
+)
+
+code from Xtreme 8.1
+(
+- improved: Sort progress bars by percentage (Fafner/Xman)
+- improved: Also include modstring when sorting by software for aMule (Stulle)
+- fixed: Fix broken HTTP downloads from SourceForge (WiZaRd)
+- fixed: Client is always highid if we are connecting to them (Enig123)
+- fixed: don't reconnect to banned clients (Enig123)
+- fixed: Potential devision by zero in UploadBandwidthThrottler (Stulle)
+- more minor fixes and improves from Stulle's merge
+- add: Ability to translate "Network Adapter" and "eMule control + data" for graphs (Stulle)
+- add: Own color option for Network Adapter graph line (Stulle)
+)
+
+
+
+
+XCA 1.2
+================
+
+Build 24.05.2011
+
+Change: Some upgrades from Xtreme 8.1 [Xman/zz_fly]
+Change: Small changes in ClientAnalyzer
+Change: Changed Preview ready and Share visibility icons to overlayicon
+Change: Better code to display friend/friendslot colors
+Change: UI changes in searchwindow to get more space
+Change: Default URL's for ipfilter/nodes.dat/server.met updates
+Change: Moved auto update IPFilter checkbox to security tab
+Change: Moved show additional graph lines checkbox to statistic tab
+Change: Preview menu in downloadlist
+Change: Download Toolbar default disabled
+Change: Share only the need (SOTN) default enabled
+Change: Pay Back First default enabled
+Add: Save Friendslot [WiZaRd]
+Add: Fix broken HTTP downloads [WiZaRd]
+Add: Remove client from DownloadClientsList on RemoveSource [WiZaRd] 
+Add: A4AF counter, ahead of user nickname [sivka]
+Add: Optimize Process Kad client list [WiZaRd] 
+Add: Colored TotalUpDown [some parts from X-Ray/JVA]
+Add: Double click uncomplet files in SharedFile window display FileDetail [SiRoB]
+Add: Sort upload progress bars by percentage [Fafner/Xman]
+Add: Pay Back First [AndCycle/SiRoB/Stulle]
+Add: Superior Client Handling [Stulle]
+Add: Keep Sup clients in up if there is no other sup client in queue [Stulle]
+Add: Option to disable file status icons
+Add: Option to disable download color
+Removed: New menu bar
+Fix: Splitterbar in transfer window
+Fix: "Download parts needed for preview first" was not grayed out if a preview is possible
+Fix: Some minor fixes
+
+=======================================================================================
+
+
+XCA 1.1
+================
+
+Build 12.12.2010
+
+Add: Lovelace credit
+Add: Colored Clientstate [EastShare]
+Add: New menu bar (switchable in prefernces.ini NewMenu=1 or 0)
+Fix: Display bug in downloaded history list
+
+=======================================================================================
+
+
+XCA 1.0
+================
+
+Build 11.12.2010
+
+Add: ClientAnalyzer [WiZaRd]
+Remove: DLP antileech
+Change: Modname from Xtreme 8.0 -RSE- to XCA
+Removed: Many unused code/icons
+Add: Color for connected server, downloading files, partfiles, friends, friendslot
+Add: "open incoming dir" to toolbar [WiZaRd]
+Add: "open incoming dir" to Win7 thumbbuttons list [WiZaRd]
+Change: GUI, icons, and some more
+Remove: Ip2Country from Kad
+Add: Spread bars [Slugfiller/Stulle]
+Add: HideOS & SOTN [Slugfiller/Stulle]
+Add: MinQR if extended controls is enabled [???]
+Add: Show session download if extended controls is enabled [Xanatos]
+Known bug:
+splitter bar bug in download window
+
+
+=======================================================================================
+eMule XCA is based on X-Mod [dolphinx]
+=======================================================================================
+

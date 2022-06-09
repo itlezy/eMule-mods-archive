@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResizableLib90", "ResizableLib90.vcproj", "{A5743026-DE7A-4C3D-86EA-46D6B6847F14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Static|Win32 = Debug Static|Win32
+		Debug|Win32 = Debug|Win32
+		debug90|Win32 = debug90|Win32
+		Release Static|Win32 = Release Static|Win32
+		Release|Win32 = Release|Win32
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Release|Win32 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Debug Static|Win32.ActiveCfg = Debug Static|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Debug Static|Win32.Build.0 = Debug Static|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Debug|Win32.Build.0 = Debug|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.debug90|Win32.ActiveCfg = debug90|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.debug90|Win32.Build.0 = debug90|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Release Static|Win32.ActiveCfg = Release Static|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Release Static|Win32.Build.0 = Release Static|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Release|Win32.ActiveCfg = Release|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Release|Win32.Build.0 = Release|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{A5743026-DE7A-4C3D-86EA-46D6B6847F14}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

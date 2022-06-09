@@ -1,0 +1,299 @@
+Tuxman's eMule beba
+
+- OLDER 2.x CHANGES -
+_______________________________________________________
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+v2.71 [the beef edition]
+Obviously, v2.70 had no major issues left. Time for another small maintenance release with some neat improvements. Thanks to my favorite eMule-Mods.it members for taking their time to test.
+
+* June 4, 2013
+
+- improved: added recognition of some more file types [Tuxman]
+- improved: enhanced eD2k filters in Shared Files; applied by folder, listed as subfolders [Tuxman/WiZaRd]
+
+- fix (o): preventing OP_HASHSETREQUEST by invalid clients [Enig123]
+
+- changed: tiny code changes to reduce C4244 warnings [Tuxman]
+
+_______________________________________________________
+v2.70 [the beep edition]
+This is the start of a new era. As a result of a recently published poll, beba's slogan "feel the lightweight!" was finally confirmed by its audience. I took this as a reason to do some (more and maybe better) work on the logo image. Sorry for my ongoing lack of GFX skills.
+
+In other news: Another project I have been working on (kMule) has let me notice that beba actually lacks something that filters spam results from the search window, so I added WiZaRd's enhanced FakeAlyzer system (originally by NetFinity). A couple of tweaks have been made so beba can finally be (and is) compiled with Visual Studio 2010 now. Also I randomly changed something and stuff. Major hugs to WiZaRd for patiently standing my thick-wittedness.
+
+* March 23, 2013
+* compiled with Visual Studio 2010 (finally made the switch)
+
+- added: additional fake check from the search list [WiZaRd/NetFinity]
+- added: NeoLoader detection [David Xanatos]
+
+- improved: added recognition of Ogg Theora (.ogv) and TAK (.tak) media files [Tuxman]
+- improved: added recognition of some WordPerfect Office document files [Tuxman]
+- improved: fixed unfair treatment of clients requesting more than 1 file [eklmn/WiZaRd]
+- improved: improved Visual Studio 2010 compatibility [Tuxman/WiZaRd]
+- improved: prevent failed UL sessions due to deleted/missing shared files [WiZaRd]
+- improved: removed some debug-related functions in release builds [YumeYao]
+
+- fix (o): a double click on the USS status bar item opened the messages window instead of the Tweaks prefs page [Eulero]
+
+- changed: finally fixed the URL in the logo image and did some decent redesign [Tuxman]
+- changed: improved the Slot Focus upload list context menu item (clearer display of "enabled"/"disabled") [Tuxman]
+- changed: randomly changed something and stuff [Tuxman]
+- changed: removed the Slot Focus prefs item (redundant) [Tuxman]
+- changed: removed the option to disable Windows 7+ taskbar integration [Tuxman]
+- changed: Winsock2 support can not be disabled anymore (removed checkbox) [Tuxman]
+  * fallback to Winsock1 has been the default behavior anyway
+
+- removed: support for low color desktops [WiZaRd]
+  * people using VS2010-binary compatible systems should not have them anymore. :-)
+
+- updated: Crypto++ v5.6.2 [Tuxman]
+- updated: libpng v1.6.0 [Tuxman/WiZaRd]
+- updated: miniupnplib v1.8 [Tuxman]
+  * including fallback mode for Windows XP [WiZaRd]
+
+_______________________________________________________
+v2.65 [the berserk edition]:
+WiZaRd recently found an issue with HTTP downloads not working correctly in the official eMule client (thus also in beba). A fix was tested and added.
+After having released v2.64, I was told recent Snarl versions (starting with version 2.6) would not ban eMule for "spamming" any longer. If you ran into that issue, I advise you to update Snarl. Also, eMule beba is featured on Snarl's website now. :-)
+
+* June 28, 2012
+
+- fix (b): beba might crash on exit [WiZaRd]
+- fix (o): HTTP downloads ending prematurely [WiZaRd]
+
+- changed: fixed weblink to beba's Italian support board [Tuxman]
+- changed: "intelligent flushing" checkbox in the prefs comes without the "?" now [Tuxman]
+- changed: reworked Snarl notification support [Tuxman]
+  * everything is done within the ShowNotifier() function now (thx to WiZaRd for the idea)
+  * sound is turned off when using Snarl (brings its own sounds)
+
+- removed: Search Related Files [Tuxman]
+
+- updated: Crypto++ 5.6.1 [Tuxman / WiZaRd]
+- updated: zlib 1.2.7 [Tuxman / WiZaRd]
+
+_______________________________________________________
+v2.64 [the bourne edition]:
+Long time no see, eh? (-;
+Suddenly, a wild beba appears and brings a very new very own feature: support for Snarl notifications! Install Snarl and watch the magic happen.
+Thanks to WiZaRd for debugging and dev discussions.
+
+* February 11, 2012
+
+- added: block ratio (drop blocking clients) [Stulle, morph4u]
+- added: Snarl support [Tuxman]
+  * can be turned off in beba's Options dialog
+
+_______________________________________________________
+v2.63 [the bingo edition]:
+Another small maintenance release in order to cover latest Client Analyzer changes. I also added a tiny new feature that displays the current server's name in your status line when connected, inspired by aMule.
+
+* December 31, 2010
+
+- added: display current server name in status line [Tuxman]
+
+- changed: ASFU 3.5 was still logging as 3.4 [Tuxman]
+- changed: URLINDICATOR constant (taken from eMuleFuture 1.1) [eMF team, presumably]
+- changed: various misalignments [Tuxman]
+
+- updated: Client Analyzer to eMuleFuture 1.1 codebase [WiZaRd]
+
+_______________________________________________________
+v2.62 [the between edition]:
+Accidentally missed something when updating to .50a. :)
+
+* August 31, 2010
+
+- fix (b): fixed misaligned PPgWebserver page [Tuxman]
+- fix (o): SourceForge.net downloads failed [Stulle]
+
+_______________________________________________________
+v2.61 [the beloved edition]:
+Shortly after having released beba v2.60, I dug through the code again and did some more fine-tuning. This first 2.6x maintenance release fixes some known annoyances. The legendary "Hidden tweaks" are now completely optional, basically hidden themselves, as it (usually) is not really necessary to change anything there. Of course this also affects more common settings like "Show active downloads in bold", but after all I consider it a good idea.
+
+* June 30, 2010
+
+- improved: added the "List All Requested Files" item also to the download clients list [Tuxman]
+- improved: the meta data dialog is now correctly depending on "Show ext. controls" [WiZaRd]
+- improved: the speedguide link now has a hand cursor :-) [Tuxman]
+
+- fix (b): added a missing check for HAVE_WIN7_SDK_H [Tuxman]
+- fix (b): "remove dead servers" did not work properly [Tuxman]
+  * note: the name of the prefs entry has been changed during this to avoid further confusion.
+- fix (o): the new Shared Files panel was not translated correctly [WiZaRd]
+
+- changed: "Show extended controls" is disabled by default again [Tuxman]
+- changed: the Hidden Tweaks section is now hidden unless "Show extended controls" is enabled [Tuxman]
+
+_______________________________________________________
+v2.60 [the better edition]:
+Now this is more than just a bugfix release due to the new code base. The beba-only changes try to fix some small glitches and feature some rather tiny improvements. Oh, and you can finally choose your own toolbar skins. That's all, basically. Probably I will add more lightweight in a later version.
+Special thanks to Spike2 and WiZaRd for important hints and some help with this version.
+
+* April 27, 2010
+
+- merged: eMule 0.50a
+  * including some lib updates
+
+- improved: add and remove sources only from downloading list if they are visible [dolphinX]
+- improved: added even more file types [Tuxman]
+- improved: analyzed mod thieves are not added to Mod Stats anymore [Tuxman]
+- improved: applied some smaller code changes and improvements [Tuxman, WiZaRd, Xman, Spike2, JvA]
+- improved: clients on upload queue are also informed of an ID change now [Spike2/Stulle, modified by Tuxman]
+- improved: don't create a beta test file (for ASFU) [Stulle]
+- improved: increased width of the Queue number display label (may fix the truncation on some systems) [Tuxman]
+- improved: layout of the Files options dialog (has been out of alignment since the .49c codebase update) [Tuxman]
+- improved: readded the "don't draw hidden rect" improvement in several places [SiRoB]
+- improved: reduced CPU usage of some UInt128 functions [NetFinity]
+- improved: skip not needed requeuing on NNS [SLUGFILLER/WiZaRd]
+
+- fix (o): disappearing tray icon fix [dolphinX]
+- fix (o): friend detection fix [WiZaRd]
+- fix (b): IntelliFlush was (partially) broken [Tuxman]
+- fix (o): memleak fix in ArchiveRecovery.cpp [gureedo]
+- fix (b): several memleaks in modeless dialogs [WiZaRd]
+- fix (o): SortProc issue in SharedFilesCtrl [moloko+]
+- fix (b): toolbar skins work now ;-) [thanks to jerryBG]
+
+- changed: beba's classical FutureMule icon is back :-) [Tuxman]
+
+- updated: Automatic Shared Files Updater [Stulle]
+  * includes a crash fix by WiZaRd
+- updated: Client Analyzer v1.5 [WiZaRd/zz_fly]
+  * includes Anti-Corruption and stats fixes
+- updated: Enhanced Client Recognition v2 [Spike2]
+  * includes CompatClientStats [Stulle]
+  * also added easyMule 2 detection [Sundawner]
+
+_______________________________________________________
+v2.50 [the boiled edition]:
+It took a bit longer this time, but now beba is officially based on eMule 0.49c.
+This release features lots of official fixes and some small improvements; it's good to see Avi3k and moloko+ back. :)
+Additionally, some weird stuff was changed... (yep, slightly modified versioning scheme)
+
+* March 28 2009
+* I was finally awarded one of the Golden eMule Awards 2008; thank you. ;-)
+  http://forum.emule-project.net/index.php?showtopic=142250
+
+- merged: eMule 0.49c
+
+- added: Payback First [WiZaRd]
+
+- improved: added even more file types [Tuxman]
+- improved: added hidden TxtEditor setting [Tuxman]
+- improved: beba's first start information is now displayed separately [Tuxman]
+- improved: better randomizer on creating first user hash [bscabral]
+- improved: clear message field when closing a chat tab [Tuxman]
+- improved: major overhaul of beba's Drop Buttons code [Tuxman, thx to WiZaRd]
+  * fixes a strange display bug
+- improved: merged add/remove friend menu entries into a single one [Tuxman]
+- improved: Modeless Dialogs used in more dialogs now :-) [SLUGFILLER/Xanatos]
+- improved: readded "clear ban list" to queue context menu [Tuxman]
+- improved: removed hover tracking in TransferWnd.cpp [SLUGFILLER]
+- improved: removed server advertisements [CiccioBastardo]
+- improved: some internal SlotFocus code improvements [Tuxman]
+
+- fix (o): AddFileLinkToDownload checks if the file is actually known [Avi3k]
+- fix (o): double-click behaviour in SearchListCtrl [WiZaRd]
+- fix (b): full chunk transfer should work right now [Tuxman]
+- fix (o): perform inverse sorting in queue list [moloko+]
+- fix (o): possible crash (minor issue) in SharedFilesWnd.cpp [WiZaRd]
+- fix (b): small Client Analyzer display fixes [Tuxman]
+- fix (b): some Vista-related stuff [Tuxman]
+- fix (o): splitter positioning in server wnd [moloko+]
+- fix (o): StringLimit now returns the correct value [Avi3k]
+- fix (o): use a pointer list when setting a server's priority [moloko+]
+- fix (b): WebService menu had a weird structure [Tuxman]
+
+- changed: beba now has eMule's default application icon (yet) [Tuxman]
+  * been too lazy to paste the old one, cough ..
+- changed: FDC has a better indicator icon [Tuxman]
+- changed: several default preferences [Tuxman]
+
+- removed: removed some tweaks due to the codebase upgrade [Tuxman]
+- removed: Tooltip delay option [Tuxman]
+  * always 1 second now :)
+
+- updated: updated miniupnpc library to v1.2 [Thomas Bernard]
+
+_______________________________________________________
+v2.1 [the boobies edition :D]:
+Thanks to everyone who reported any flaws in v2.01. This version introduces some more fixes to correct them as well as some general usability improvements. Additionally, it's - of course - based on the latest eMule version.
+
+* August 2, 2008
+
+- merged: eMule 0.49b
+
+- improved: added an option to draw files affected by FDC with a red background [Tuxman]
+- improved: added default IPFilter.dat and server.met download URLs [Tuxman]
+- improved: added link to beba's online version check [Tuxman]
+- improved: added more file types to "don't compress" list [aSceT]
+- improved: added support for additional file types [Tuxman]
+- improved: "automatic" search method uses global instead of server search [Tuxman]
+- improved: FDC needs more than one match now [Tuxman]
+- improved: improved MediaInfo.dll support [Tuxman]
+- improved: MiniMule's transparency code should work even better now [Avi3k]
+
+- fix (b): beba shared inactive files, too :-/ [Tuxman]
+- fix (b): downloading list was accidentally cleared in some cases [Tuxman]
+- fix (o): fixed IP check in AttachToAlreadyKnown [Xman]
+- fix (b): long category names don't overlap the Drop Buttons anymore [Tuxman]
+- fix (o): removed unused A4AF icon from PPgTweaks [Tuxman]
+- fix (b): several Client Analyzer fixes [gidi/WiZaRd]
+
+- changed: "AntiLeech Info" is now hidden if the client is not bad [Tuxman]
+- changed: set the minimum upload slots for very fast connections to 4 [Tuxman]
+- changed: small Infinite Queue display changes [dlarge]
+
+_______________________________________________________
+v2.01 [the brightest edition]:
+Another small maintenance update, mainly to try to cut the run on my AnalyZZUL mod...
+Thanks to pesti for testing Slot Focus under heavier conditions...
+By the way, to the guys @ leechermods.blogspot.com: I'm not TitsMan. *lol*
+
+* May 21, 2008
+* Happy 3rd birthday, beba!
+
+- improved: added .flv to video file types [Tuxman]
+- improved: Slot Focus probability [BlueSonicBoy]
+
+- fix (b): fixed the Analyzer's spam recognition [WiZaRd, taken from eMuleFuture-CVS]
+- fix (b): the Client Details' window was undersized :-) [Tuxman]
+
+- changed: moved mod version string to Version.h [Tuxman]
+
+_______________________________________________________
+v2.0a HOTFIX [the brighter edition]:
+Just a quick fix for known 2.0 bugs... sorry for them... :-)
+
+* May 12, 2008
+
+- fix (b): shrunk prefs dialog a bit [Tuxman]
+- fix (b): Slot Focus opened too many slots [Tuxman]
+
+_______________________________________________________
+v2.0 [the bright edition]:
+New codebase with a version jump, so I do the same. :)
+
+* May 11, 2008
+
+- merged: eMule 0.49a
+- readded: Version Check :-)
+
+- improved: added hidden "UseSystemFontForMainControls" setting [Tuxman]
+- improved: added more file types to SED2KFileType [Tuxman]
+- improved: "Show extended controls" has more influence now :-) [Tuxman]
+- improved: small SlotFocus menu code improvements [Tuxman]
+- improved: the Preferences dialog will be reset if needed [Tuxman]
+
+- fix (o): added missing Unban menu item in ClientListCtrl.cpp [fox88]
+- fix (b): enabled saving the Copy eD2K link setting for my Hidden Prefs [Tuxman]
+
+- changed: Kad reconnection [Spike2]
+- changed: some more default prefs tweaks [Tuxman]
+
+- removed: removed advanced calculation method checkbox - always active now [Tuxman]
+
+- updated: Client Analyzer [WiZaRd]

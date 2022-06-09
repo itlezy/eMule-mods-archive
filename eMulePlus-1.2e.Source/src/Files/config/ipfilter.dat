@@ -1,0 +1,357 @@
+# IPFilter.dat
+#
+# All entered IP ranges will be blocked in eMule Plus for both Upload and Download.
+# Be extremely careful with what you put here.
+# Wrong entries might block eMule Plus from performing well.
+#
+# Format:
+# IP-Range , Access Level , Description
+# 000.000.000.000 - 000.255.255.255 , 100 , LOW_ID (invalid)
+#
+# Access Levels:
+# <  127 blocked
+# >= 127 permitted
+
+255.255.255.255 - 255.255.255.255 , 000 , INADDR_NONE
+000.000.000.000 - 000.255.255.255 , 100 , LOW_ID (invalid)
+003.000.000.000 - 003.255.255.255 , 100 , General Electric Company
+004.023.000.000 - 004.023.255.255 , 100 , IRC spybots
+004.036.109.000 - 004.036.109.255 , 100 , Universal Studios Inc. UNIVORLANDO-109-24
+004.042.244.160 - 004.042.244.175 , 100 , Federal Bureau of Investigation
+004.042.244.192 - 004.042.244.223 , 100 , Federal Bureau of Investigation
+004.043.096.000 - 004.043.096.255 , 100 , Media Force (P2P monitoring) (valid)
+004.043.108.000 - 004.043.108.255 , 100 , IRC spybots
+004.043.124.192 - 004.043.124.255 , 100 , MediaForce
+004.067.043.000 - 004.067.043.255 , 100 , IRC spybots
+011.000.000.000 - 011.255.255.255 , 100 , DoD Network Information Center
+012.038.031.216 - 012.038.031.223 , 100 , Federal Bureau of Investigation
+012.148.209.192 - 012.148.209.255 , 100 , NameProtect
+012.150.191.000 - 012.150.191.255 , 100 , RIAA
+018.215.000.015 - 018.215.000.015 , 100 , Massachusettes Institute Of Technology
+020.000.000.000 - 020.255.255.255 , 100 , Computer Sciences Corporation
+024.049.160.000 - 024.049.191.255 , 100 , Adelphia
+024.053.096.000 - 024.053.111.255 , 100 , Adelphia
+024.225.128.000 - 024.225.223.255 , 100 , Patriot-Media-Communications
+025.000.000.000 - 025.255.255.255 , 100 , Royal Signals and Radar Establishment
+029.000.000.000 - 029.255.255.255 , 100 , DoD Network Information Center
+034.000.000.000 - 034.255.255.255 , 100 , Halliburton Company
+038.144.057.000 - 038.144.057.255 , 100 , IRC spybots
+038.144.198.024 - 038.144.198.024 , 100 , Replies with ..exe and !_.exe
+038.144.198.150 - 038.144.198.150 , 100 , Replies with ..exe and !_.exe
+051.000.000.000 - 051.255.255.255 , 100 , Department of Social Security of UK
+053.000.000.000 - 053.255.255.255 , 100 , cap debis ccs
+054.000.000.000 - 054.255.255.255 , 100 , Merck and Co., Inc
+055.000.000.000 - 055.255.255.255 , 100 , Army National Guard Bureau
+056.000.000.000 - 056.255.255.255 , 100 , U.S. Postal Service (state agency)
+061.060.000.000 - 061.060.031.255 , 100 , Taiwan Government Service Network
+061.062.000.000 - 061.062.255.255 , 100 , Sony NetTw Limited (add. range)
+061.064.128.000 - 061.064.255.255 , 100 , Sony-Network-Taiwan-Limited and Hacking attempts on port 8575
+061.088.128.038 - 061.088.128.038 , 100 , Australian Federal Police---
+061.172.250.096 - 061.172.250.111 , 100 , SOFT-WORLD-INTERNATIONAL
+061.197.225.096 - 061.197.225.128 , 100 , BSA.or.jp
+061.197.255.096 - 061.197.255.211 , 100 , BSA.or.ip
+061.206.130.240 - 061.206.130.255 , 100 , BSA.lu
+062.072.107.000 - 062.072.107.255 , 100 , www.amcrecords.com
+062.111.212.001 - 062.111.212.001 , 100 , eMule leecher
+062.145.135.192 - 062.145.135.255 , 100 , BSA.is
+062.156.146.128 - 062.156.147.127 , 100 , IFPI Germany
+062.156.153.000 - 062.156.153.255 , 100 , IFPI Germany
+062.210.138.000 - 062.210.138.255 , 100 , P2P Overflow
+062.210.176.134 - 062.210.176.134 , 100 , Studios Guillaume Tell / Paris,France
+063.064.005.000 - 063.064.005.255 , 100 , Cyveillance (P2P monitoring)
+063.076.173.032 - 063.076.173.047 , 100 , MediaForce
+063.087.238.000 - 063.087.239.255 , 100 , NMPA (National Music Publishers Association)
+063.100.163.000 - 063.100.163.255 , 100 , CYVEILLANCE (unlisted)
+063.127.255.000 - 063.127.255.255 , 100 , Cyveillance
+063.148.099.000 - 063.148.099.255 , 100 , Cyveillance (63.148.99.224 - 63.148.99.255)
+063.199.057.096 - 063.199.057.128 , 100 , MPAA Phoenix Manufacturing
+063.212.171.000 - 063.212.171.255 , 100 , Web Sense
+063.236.052.020 - 063.236.052.020 , 100 , Xupiter.com - Site
+063.240.000.000 - 063.240.255.255 , 100 , FBI
+063.242.000.000 - 063.242.255.255 , 100 , FBI
+064.014.037.128 - 064.014.037.159 , 100 , OverPeer
+064.014.040.160 - 064.014.040.191 , 100 , OverPeer
+064.015.224.000 - 064.015.255.255 , 100 , OverPeer
+064.032.128.000 - 064.032.255.255 , 100 , IRMA (Mail)
+064.049.254.000 - 064.049.254.255 , 100 , Big Champagne
+064.062.000.000 - 064.062.127.255 , 100 , Sony Taiwan Host
+064.062.143.064 - 064.062.143.095 , 100 , Audible Magic #2
+064.071.166.000 - 064.071.166.255 , 100 , Audible Magic #3
+064.075.004.192 - 064.075.004.223 , 100 , OverPeer
+064.094.089.000 - 064.094.089.255 , 100 , Gator.com
+064.106.170.128 - 064.106.170.192 , 100 , C&DCop (Warner)
+064.152.000.000 - 064.152.255.255 , 100 , IRMA
+064.153.000.000 - 064.153.255.255 , 100 , IRMA
+064.158.221.050 - 064.158.221.050 , 100 , IRMA
+064.159.002.041 - 064.159.002.041 , 100 , Presence Studios Westport/Westport, CT
+064.166.187.128 - 064.166.187.192 , 100 , MPAA
+064.201.096.000 - 064.201.111.255 , 100 , Race Technologies P2P Scanners
+064.208.086.128 - 064.208.086.159 , 100 , Conway Recording Studios/Hollywood/Los Angeles, CA
+064.224.000.000 - 064.224.255.255 , 100 , MPAA
+064.225.000.000 - 064.225.255.255 , 100 , MPAA
+064.226.000.000 - 064.226.255.255 , 100 , MPAA
+064.227.000.000 - 064.227.255.255 , 100 , MPAA
+064.236.032.050 - 064.236.032.050 , 100 , xupiter.com
+064.241.031.000 - 064.241.031.255 , 100 , RIAA
+065.101.193.000 - 065.101.193.255 , 100 , media signature Virtual Portal Corporation
+065.118.041.000 - 065.118.041.255 , 100 , Cyveillance (P2P monitoring)
+065.160.000.000 - 065.160.127.225 , 100 , OverPeer
+065.174.000.000 - 065.174.253.255 , 100 , OverPeer
+065.174.254.000 - 065.174.255.255 , 100 , BAY SOFTWARE
+065.192.000.000 - 065.192.000.255 , 100 , Media Force (P2P monitoring)
+065.215.219.000 - 065.215.219.255 , 100 , IRC spybots
+065.217.219.000 - 065.217.219.255 , 100 , Media Force (P2P monitoring)
+065.223.000.000 - 065.223.255.255 , 100 , MediaForce (Obsidian Holdings)
+065.233.255.000 - 065.233.255.255 , 100 , Media Force (P2P monitoring)
+065.243.215.000 - 065.243.215.063 , 100 , MediaForce
+065.244.101.001 - 065.244.101.255 , 100 , betis.com ==> RIAA Host
+065.247.105.240 - 065.247.105.255 , 100 , MediaForce
+066.028.103.000 - 066.028.103.255 , 100 , Bogus File Server
+066.028.148.000 - 066.028.148.255 , 100 , CogentSystems
+066.028.151.000 - 066.028.151.255 , 100 , Bogus File Server
+066.035.229.000 - 066.035.229.255 , 100 , GainCME (Spyware)
+066.035.247.000 - 066.035.247.255 , 100 , GainCME (Spyware)
+066.077.124.007 - 066.077.124.007 , 100 , Universal Studios (ns3.mca.com)
+066.079.000.000 - 066.079.255.255 , 100 , MediaDefender (P2P fakes/spam/monitoring)
+066.111.054.167 - 066.111.054.182 , 100 , Replies with .html
+066.111.055.150 - 066.111.055.165 , 100 , Fake Files Source
+066.113.128.000 - 066.113.255.255 , 100 , RIAA (Hostway Corp)
+066.117.002.000 - 066.117.002.255 , 100 , XBMC.COM
+066.118.165.120 - 066.118.165.120 , 100 , AVI Faker
+066.118.165.180 - 066.118.165.180 , 100 , AVI Faker
+066.118.181.004 - 066.118.181.004 , 100 , P2P Scanner
+066.150.161.133 - 066.150.161.136 , 100 , Retspan
+066.212.125.000 - 066.212.125.255 , 100 , BMI (Broadcast Music, Inc. )
+066.220.031.128 - 066.220.031.159 , 100 , Audible Magic #1 (Correction. Please Remove Other)
+066.230.219.137 - 066.230.219.137 , 100 , popupad.net (Annoying but not *AA)
+066.250.024.002 - 066.250.024.009 , 100 , Bogus File Server
+066.250.032.227 - 066.250.032.242 , 100 , Cogent Systems
+066.252.128.000 - 066.252.143.255 , 100 , MPAA
+068.055.066.177 - 068.055.066.177 , 100 , Hacking, Port Scanning
+069.028.148.033 - 069.028.148.033 , 100 , limelight networks
+080.078.128.000 - 080.078.129.255 , 100 , BSA.mr
+080.239.022.064 - 080.239.022.127 , 100 , Secure Group
+081.000.202.000 - 081.000.202.255 , 100 , www.BSA.sk
+081.000.210.152 - 081.000.210.152 , 100 , Replies with search>_cool.mpg
+081.016.038.000 - 081.016.038.031 , 100 , BSA.at
+081.091.161.000 - 081.091.161.031 , 100 , IFPI Germany
+081.101.016.009 - 081.101.016.009 , 100 , Fakefinder
+081.220.198.171 - 081.220.198.171 , 100 , ???
+081.220.198.253 - 081.220.198.253 , 100 , ???
+081.240.072.127 - 081.240.072.127 , 100 , eMule leechers on Skynet.be
+128.121.215.173 - 128.121.215.173 , 100 , BSA.org
+128.241.000.000 - 128.241.255.255 , 100 , NetPD
+129.250.002.220 - 129.250.002.220 , 100 , Right Track Studios/New York
+129.250.005.115 - 129.250.005.115 , 100 , World Music Group
+130.094.000.000 - 130.094.255.255 , 100 , Crescent Moon Studios/Miami, FL
+140.113.000.000 - 140.113.255.255 , 100 , Ministry of Education Computer Center
+142.145.000.000 - 142.145.255.255 , 100 , Government Of The Province Of Ontario (Canada)
+143.001.000.000 - 143.040.255.255 , 100 , The Procter and Gamble Company
+144.232.000.000 - 144.232.255.255 , 100 , Chicago Recording Company and Ardent Studios UK and Remote Recording Services/New York/Philadelphia
+145.228.000.000 - 145.228.255.255 , 100 , Bertelsmann group world wide (includes BMG Music)
+145.253.163.128 - 145.253.163.143 , 100 , WILD-NET
+145.253.172.032 - 145.253.172.047 , 100 , Aug. Prien Bauunternehmung ???
+146.082.174.000 - 146.082.174.255 , 100 , RIAA
+147.186.254.000 - 147.186.254.255 , 100 , Swedish Police
+149.101.000.000 - 149.101.255.255 , 100 , US Department of Justices
+150.187.000.000 - 150.187.255.255 , 100 , Consejo Nacional de Investigaciones
+151.037.099.001 - 151.037.099.001 , 100 , UNASIGNED ?
+152.019.000.000 - 152.019.255.255 , 100 , North Carolina Research and Education Network
+152.023.000.000 - 152.023.255.255 , 100 , North Carolina Research and Education Network
+152.063.018.025 - 152.063.018.025 , 100 , National Music Publishers of America
+152.063.066.013 - 152.063.066.013 , 100 , misra records
+152.063.113.057 - 152.063.113.057 , 100 , Verve Music Group/Los Angeles Ca
+152.063.113.065 - 152.063.113.065 , 100 , Universal Music Enterprises/Los Angeles
+152.063.113.069 - 152.063.113.069 , 100 , Universal Music Group/(Motown Records)/Los Angeles Ca/MCA Records
+153.031.000.000 - 153.031.255.255 , 100 , Federal Bureau of Investigation - CJIS
+157.086.113.004 - 157.086.113.004 , 100 , ???
+158.044.000.000 - 158.044.255.255 , 100 , TriGem
+158.169.000.000 - 158.169.255.255 , 100 , European Union
+159.141.000.000 - 159.141.255.255 , 100 , Eisenhower Medical Center
+162.023.000.000 - 162.023.255.255 , 100 , Swiss Federal Government, Swiss Federal Office of Information Technology and Systems, Bundesamt fur Informatik
+162.033.154.069 - 162.033.154.069 , 100 , Secret paysite passwords .html
+164.128.037.017 - 164.128.223.145 , 100 , Police of Switzerland
+166.063.167.010 - 166.063.167.010 , 100 , British Phonographic Industry
+166.090.148.200 - 166.090.148.200 , 100 , Metro-Goldwyn-Mayer
+166.121.000.000 - 166.121.255.255 , 100 , Ministry of Education Computer Services
+167.167.000.000 - 167.167.255.255 , 100 , MCA
+168.160.250.191 - 168.160.250.191 , 100 , Unknown..persistent connection attempts (revised)
+168.161.000.000 - 168.161.255.255 , 100 , Time Warner Inc
+172.015.254.254 - 172.015.254.254 , 100 , not resolvable (whois)
+172.178.102.003 - 172.178.102.003 , 100 , BayTSP ?? Port : 3131
+174.049.006.232 - 174.049.006.232 , 100 , ???
+177.107.170.085 - 177.107.170.085 , 100 , not resolvable (whois)
+179.089.033.173 - 179.089.033.173 , 100 , not resolvable (whois)
+179.099.212.077 - 179.099.212.077 , 100 , ???
+180.001.171.001 - 180.001.171.001 , 100 , ???
+180.013.170.085 - 180.013.170.085 , 100 , ???
+183.102.156.223 - 183.102.156.223 , 100 , ???
+184.073.111.018 - 184.073.111.018 , 100 , not resolvable (whois)
+190.051.073.131 - 190.051.073.131 , 100 , not resolvable (whois)
+190.100.000.001 - 190.100.000.001 , 100 , ???
+192.001.001.000 - 192.001.001.255 , 100 , Bolt Beranek and Newman Inc
+192.083.166.000 - 192.083.166.255 , 100 , Ministry of Education Computer Center (tw)
+192.108.053.001 - 192.108.053.031 , 100 , When-U
+192.188.162.000 - 192.188.162.255 , 100 , Palisade Systems
+192.205.000.000 - 192.205.255.255 , 100 , http://www.worldstudio.com/ peer to peer monitoring on winmx
+192.251.066.000 - 192.251.066.255 , 100 , Universal Studios
+192.251.067.009 - 192.251.067.009 , 100 , Universal Studios (gate.mca.com)
+192.251.067.132 - 192.251.067.132 , 100 , Universal Studios (ns2.mca.com)
+193.005.088.000 - 193.005.095.255 , 100 , World Intellectual Property Organization
+193.074.019.000 - 193.074.019.255 , 100 , IFPI Belgium
+193.108.008.000 - 193.108.015.255 , 100 , GEMA - German Copyright Society
+193.111.198.139 - 193.111.199.193 , 100 , RIPE Network Coordination Centre
+193.121.026.001 - 193.121.027.255 , 100 , Sabam (Belgian Society of Authors, Composers and Publishers)
+193.121.083.001 - 193.121.083.255 , 100 , Federale politie - Police federale (BELGIUM)
+193.158.124.000 - 193.158.125.255 , 100 , IFPI Germany
+193.172.176.000 - 193.172.177.255 , 100 , Dutch Covernment
+193.191.209.192 - 193.191.209.207 , 100 , Belgium Federal Government
+193.251.047.158 - 193.251.047.158 , 100 , France Telecom
+193.252.029.094 - 193.252.029.094 , 100 , France Telecom
+193.252.072.142 - 193.252.072.142 , 100 , French Department of Defense
+193.252.228.000 - 193.252.228.255 , 100 , Prefecture de police de Paris
+193.253.178.142 - 193.253.178.142 , 100 , France Telecom
+193.253.183.188 - 193.253.183.188 , 100 , France Telecom
+193.253.232.167 - 193.253.232.167 , 100 , France Telecom
+194.079.208.000 - 194.079.208.255 , 100 , it.cw.net used by Guardia di Finanza (Italy)
+194.089.205.000 - 194.089.205.255 , 100 , Finnish Police
+194.102.077.000 - 194.102.077.255 , 100 , Ogilvy & Mather advertising
+194.129.073.000 - 194.129.073.255 , 100 , www.emigroup.com
+194.179.107.029 - 194.179.107.029 , 100 , Direccion General de la Guardia Civil
+194.179.107.131 - 194.179.107.131 , 100 , Direccion General de la Guardia Civil (Spain)
+194.194.240.000 - 194.194.240.255 , 100 , Teosto
+194.213.194.037 - 194.213.194.037 , 100 , Replies with .url and .mpg
+194.213.210.000 - 194.213.210.255 , 100 , BSA.cz
+194.228.211.204 - 194.228.211.204 , 100 , Replies with .mpg .html .url
+195.000.000.000 - 195.000.007.255 , 100 , Audit Services, Tax Consultants
+195.002.039.000 - 195.002.039.255 , 100 , Sony Europe Front Network
+195.006.115.038 - 195.006.115.038 , 100 , APP
+195.013.160.032 - 195.013.160.163 , 100 , www.BSA.lv
+195.014.000.000 - 195.015.037.255 , 100 , netcologne.de and netblock of bsa.lt (nslookup www.bsa.lt) and bsa.it and EMI Electrola GmbH (Germany)
+195.020.032.099 - 195.020.032.099 , 100 , MPAA
+195.029.168.000 - 195.029.168.255 , 100 , netblock of bsa.hr (nslookup www.bsa.hr)
+195.037.192.000 - 195.037.207.255 , 100 , Regierung
+195.040.000.128 - 195.040.000.255 , 100 , IFPI
+195.040.001.000 - 195.040.001.255 , 100 , IFPI
+195.040.039.005 - 195.040.039.005 , 100 , IFPI (mail)
+195.042.192.000 - 195.042.192.255 , 100 , Antipiracybyra Sweden
+195.046.218.178 - 195.046.218.178 , 100 , French Military Police
+195.068.059.001 - 195.068.059.007 , 100 , ADAMI (Society of civil rights for performing artists, France)
+195.076.172.000 - 195.076.172.255 , 100 , Direccion General de la Policia (SPAIN)
+195.076.204.034 - 195.076.204.034 , 100 , Ministerio del Interior (Spain)
+195.076.238.000 - 195.076.238.255 , 100 , SGAE
+195.101.232.000 - 195.101.232.255 , 100 , Interpol
+195.102.060.040 - 195.102.060.050 , 100 , Alpa Association
+195.121.011.142 - 195.121.011.142 , 100 , MGM.COM
+195.122.136.008 - 195.122.136.008 , 100 , Puk Recording Studios/Gjerlev,Denmark
+195.141.090.004 - 195.141.090.063 , 100 , Beaulieu Software sarl
+195.142.192.000 - 195.142.192.255 , 100 , Antipiracybyra Sweden
+195.143.092.132 - 195.143.092.188 , 100 , BMG Ariola München GmbH (Germany)
+195.154.072.000 - 195.154.072.255 , 100 , Sacem
+195.215.006.042 - 195.215.006.042 , 100 , Gigasoft
+195.222.252.000 - 195.222.252.127 , 100 , Edel Records GmbH (Hamburg/Germany)
+195.228.224.000 - 195.228.229.255 , 100 , www.bsa.hu
+195.243.162.000 - 195.243.162.255 , 100 , netblock of bsa.de (nsloopup www.bsa.de) and BSA.or.at.de.ch and host of bsa.ch
+196.002.128.000 - 196.002.159.255 , 100 , BSA.co.za
+198.066.034.066 - 198.066.034.066 , 100 , Red Led Studios / Madrid,Spain
+198.070.114.000 - 198.070.114.255 , 100 , MPAA
+198.190.209.000 - 198.190.209.255 , 100 , Federal Bureau of Investigation
+199.095.206.000 - 199.095.209.255 , 100 , Double Click
+200.004.218.038 - 200.004.218.038 , 100 , BSAPERU.org
+200.059.091.010 - 200.059.091.010 , 100 , MSN Popup
+200.075.000.000 - 200.075.255.255 , 100 , imedia
+200.157.042.051 - 200.157.042.051 , 100 , LACNIC-200
+200.163.190.151 - 200.163.190.151 , 100 , MSN Popup
+202.039.048.000 - 202.039.048.255 , 100 , BSA.org.tw
+202.044.041.084 - 202.044.041.084 , 100 , Secret paysite passwords .html
+202.103.038.000 - 202.103.038.063 , 100 , Wuhan Research Institute of Posts and Telecommunications
+202.139.113.106 - 202.139.113.106 , 100 , Festival Mushroom Records/Sydney Au
+202.139.224.000 - 202.139.255.255 , 100 , BSAA.com.au
+203.022.000.000 - 203.022.015.255 , 100 , Communications and Entertainment Television Pty Ltd
+203.026.016.000 - 203.026.031.255 , 100 , bsa.com.au
+203.147.240.000 - 203.147.240.255 , 100 , BSA.com.au (host of www.bsaa.au)
+204.092.244.000 - 204.092.244.255 , 100 , Ranger
+204.178.112.160 - 204.178.112.191 , 100 , Double Click
+205.138.003.000 - 205.138.003.255 , 100 , Double Click
+205.150.075.000 - 205.150.075.255 , 100 , CAAST.org
+205.170.026.000 - 205.170.026.255 , 100 , media signature Tomas Jablonski
+205.229.233.000 - 205.229.233.255 , 100 , Federal Bureau of Investigation
+206.129.000.000 - 206.129.000.255 , 100 , Interliant
+206.129.001.000 - 206.129.001.255 , 100 , BESS
+206.241.030.000 - 206.241.031.255 , 100 , US Customs
+206.245.128.000 - 206.245.128.255 , 100 , Warner Music Group (206.245.64.0 - 206.245.127.255)
+207.043.055.000 - 207.043.055.255 , 100 , Federal Bureau of Investigation
+207.044.222.047 - 207.044.222.047 , 100 , Everyones Internet, Inc.
+207.079.074.222 - 207.079.074.222 , 100 , R. R. Donnelly (Harvesting/Marketing)
+207.095.032.000 - 207.095.047.255 , 100 , host of www.spa.org + www.siia.net
+207.139.069.000 - 207.139.069.255 , 100 , www.CAAST.org
+207.150.192.000 - 207.150.223.255 , 100 , BSAPERU.org
+207.155.128.000 - 207.155.255.255 , 100 , NetPD and Vidius
+207.178.128.000 - 207.178.255.255 , 100 , host of www.grammy.com (207.178.164.210)
+208.050.066.224 - 208.050.066.255 , 100 , MPAA
+208.162.216.000 - 208.162.219.255 , 100 , IRMA
+208.192.000.000 - 208.192.255.255 , 100 , RIAA Pathlink Technology
+208.196.168.000 - 208.196.175.255 , 100 , The Allegro Group
+208.207.098.025 - 208.207.098.025 , 100 , RIAA
+208.209.002.110 - 208.209.002.113 , 100 , RIAA
+208.218.191.010 - 208.218.191.010 , 100 , UUnet Technologies-RIAA ??
+208.225.090.000 - 208.225.090.255 , 100 , RIAA
+208.229.253.049 - 208.229.253.049 , 100 , riaa
+208.244.233.000 - 208.244.233.255 , 100 , Skywalker Sound/Marin County, CA
+208.251.137.000 - 208.251.137.255 , 100 , MediaForce
+209.067.000.000 - 209.067.255.255 , 100 , MPAA and Cable & Wireless and Double Click
+209.068.004.000 - 209.068.004.255 , 100 , Grayzone.com
+209.122.130.000 - 209.122.130.255 , 100 , BayTSP
+209.132.098.000 - 209.132.098.255 , 100 , Web Sense
+209.132.099.000 - 209.132.099.255 , 100 , Web Sense
+209.203.064.000 - 209.203.127.255 , 100 , Warner Music Group
+209.204.128.000 - 209.204.253.255 , 100 , BayTSP (Sonic.net InHouseA) (p2p monitoring)
+209.255.006.077 - 209.255.006.077 , 100 , bannerfarm.ace.advertising
+210.077.155.000 - 210.077.158.255 , 100 , CHINESEBSA.org
+210.160.094.192 - 210.160.094.199 , 100 , ACCS
+212.001.049.000 - 212.001.049.031 , 100 , Universal Entertainment GmbH, Berlin/Germany (Universal Music Group)
+212.018.032.000 - 212.018.047.255 , 100 , netblock of bsa.si (nslookup www.bsa.si)
+212.019.195.008 - 212.019.195.008 , 100 , politie.nl
+212.037.044.052 - 212.037.044.052 , 100 , Single IP ?
+212.037.044.151 - 212.037.044.151 , 100 , Single IP ?
+212.037.045.000 - 212.037.045.015 , 100 , DR3NET
+212.037.047.000 - 212.037.047.015 , 100 , DR3NAT and DR4NET
+212.079.056.128 - 212.079.056.187 , 100 , Warner Music (Germany)
+212.083.174.091 - 212.083.174.091 , 100 , Restpan Fighter (Good this one)
+212.098.253.000 - 212.098.253.255 , 100 , BSA.org.tr
+212.105.232.128 - 212.105.232.159 , 100 , BSA.hu
+212.107.032.000 - 212.107.035.191 , 100 , BSA.ee
+212.123.028.000 - 212.123.028.255 , 100 , www.arsproductions.com
+212.123.224.160 - 212.123.224.191 , 100 , SickofPolice and BumaStemra
+212.131.000.000 - 212.131.255.255 , 100 , BSA.it
+212.152.174.000 - 212.152.174.127 , 100 , KOCH International Multimedia
+212.227.116.140 - 212.227.116.140 , 100 , MG Sound Studios/Vienna,Austria
+213.037.086.014 - 213.037.086.014 , 100 , Single IP ?
+213.037.086.108 - 213.037.086.108 , 100 , Single IP ?
+213.061.148.000 - 213.061.148.255 , 100 , Audiofon Chat & Play GmbH
+213.068.248.000 - 213.068.248.127 , 100 , KOS-Online Internetdienstleistungen
+213.083.174.091 - 213.083.174.091 , 100 , Retspan (Chat Warning)
+213.150.032.000 - 213.150.063.255 , 100 , APG and Scan Error
+213.183.177.000 - 213.183.177.255 , 100 , nordCom (test network for automatet process)
+213.186.035.203 - 213.186.035.203 , 100 , Capri Digital Studios/Isle of Capri, Italy
+213.210.018.000 - 213.210.018.255 , 100 , Zomba Records
+213.229.017.088 - 213.229.017.095 , 100 , Meyer Ernst u Wilhelmine, Meyer-Holz Wood-Industries
+214.000.000.000 - 214.255.255.255 , 100 , DoD Network Information Center
+215.000.000.000 - 215.255.255.255 , 100 , DoD Network Information Center (More)
+216.035.073.128 - 216.035.073.159 , 100 , OverPeer
+216.046.246.238 - 216.046.246.238 , 100 , hexillion (email harvesting)
+216.052.242.000 - 216.052.242.255 , 100 , Warner Music Group (216.52.242.0-216.52.242.255)
+216.064.128.000 - 216.064.191.255 , 100 , Time Warner Telecom
+216.073.080.000 - 216.073.095.255 , 100 , DoubleClick
+216.074.057.197 - 216.074.057.216 , 100 , n-Case Ad Delivery
+216.074.128.000 - 216.074.191.255 , 100 , Cable & Wireless  nd Sony Music Entertainment Inc. and Sony Music Belgium
+216.118.066.000 - 216.118.066.255 , 100 , Brussel politie - Police bruxelles
+216.120.077.000 - 216.120.077.255 , 100 , AFMA (American Film Marketing Association)
+216.122.000.000 - 216.122.255.255 , 100 , Ranger
+216.144.224.000 - 216.144.239.255 , 100 , SHA1 Hash Faker
+216.146.085.224 - 216.146.085.255 , 100 , Federal Bureau of Investigation
+216.194.192.000 - 216.194.255.255 , 100 , IDSA
+216.205.094.000 - 216.205.094.255 , 100 , Interliant
+216.218.000.000 - 216.218.255.255 , 100 , Audible Magic (copyright breach tracking org)
+217.167.182.001 - 217.167.182.255 , 100 , French Department of Defense
+217.204.027.212 - 217.204.027.215 , 100 , IFPI

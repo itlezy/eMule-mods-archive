@@ -1,0 +1,320 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FLAG_AD ICON                    "res24\\ad.ico"
+IDI_FLAG_AE ICON                    "res24\\ae.ico"
+IDI_FLAG_AF ICON                    "res24\\af.ico"
+IDI_FLAG_AG ICON                    "res24\\ag.ico"
+IDI_FLAG_AI ICON                    "res24\\ai.ico"
+IDI_FLAG_AL ICON                    "res24\\al.ico"
+IDI_FLAG_AM ICON                    "res24\\am.ico"
+IDI_FLAG_AN ICON                    "res24\\an.ico"
+IDI_FLAG_AO ICON                    "res24\\ao.ico"
+IDI_FLAG_AR ICON                    "res24\\ar.ico"
+IDI_FLAG_AS ICON                    "res24\\as.ico"
+IDI_FLAG_AT ICON                    "res24\\at.ico"
+IDI_FLAG_AU ICON                    "res24\\au.ico"
+IDI_FLAG_AW ICON                    "res24\\aw.ico"
+IDI_FLAG_AX ICON                    "res24\\ax.ico"
+IDI_FLAG_AZ ICON                    "res24\\az.ico"
+IDI_FLAG_BA ICON                    "res24\\ba.ico"
+IDI_FLAG_BB ICON                    "res24\\bb.ico"
+IDI_FLAG_BD ICON                    "res24\\bd.ico"
+IDI_FLAG_BE ICON                    "res24\\be.ico"
+IDI_FLAG_BF ICON                    "res24\\bf.ico"
+IDI_FLAG_BG ICON                    "res24\\bg.ico"
+IDI_FLAG_BH ICON                    "res24\\bh.ico"
+IDI_FLAG_BI ICON                    "res24\\bi.ico"
+IDI_FLAG_BJ ICON                    "res24\\bj.ico"
+IDI_FLAG_BM ICON                    "res24\\bm.ico"
+IDI_FLAG_BN ICON                    "res24\\bn.ico"
+IDI_FLAG_BO ICON                    "res24\\bo.ico"
+IDI_FLAG_BR ICON                    "res24\\br.ico"
+IDI_FLAG_BS ICON                    "res24\\bs.ico"
+IDI_FLAG_BT ICON                    "res24\\bt.ico"
+IDI_FLAG_BW ICON                    "res24\\bw.ico"
+IDI_FLAG_BY ICON                    "res24\\by.ico"
+IDI_FLAG_BZ ICON                    "res24\\bz.ico"
+IDI_FLAG_CA ICON                    "res24\\ca.ico"
+IDI_FLAG_CC ICON                    "res24\\cc.ico"
+IDI_FLAG_CD ICON                    "res24\\cd.ico"
+IDI_FLAG_CF ICON                    "res24\\cf.ico"
+IDI_FLAG_CG ICON                    "res24\\cg.ico"
+IDI_FLAG_CH ICON                    "res24\\ch.ico"
+IDI_FLAG_CI ICON                    "res24\\ci.ico"
+IDI_FLAG_CK ICON                    "res24\\ck.ico"
+IDI_FLAG_CL ICON                    "res24\\cl.ico"
+IDI_FLAG_CM ICON                    "res24\\cm.ico"
+IDI_FLAG_CN ICON                    "res24\\cn.ico"
+IDI_FLAG_CO ICON                    "res24\\co.ico"
+IDI_FLAG_CR ICON                    "res24\\cr.ico"
+IDI_FLAG_CU ICON                    "res24\\cu.ico"
+IDI_FLAG_CV ICON                    "res24\\cv.ico"
+IDI_FLAG_CX ICON                    "res24\\cx.ico"
+IDI_FLAG_CY ICON                    "res24\\cy.ico"
+IDI_FLAG_CZ ICON                    "res24\\cz.ico"
+IDI_FLAG_DE ICON                    "res24\\de.ico"
+IDI_FLAG_DJ ICON                    "res24\\dj.ico"
+IDI_FLAG_DK ICON                    "res24\\dk.ico"
+IDI_FLAG_DM ICON                    "res24\\dm.ico"
+IDI_FLAG_DO ICON                    "res24\\do.ico"
+IDI_FLAG_DZ ICON                    "res24\\dz.ico"
+IDI_FLAG_EC ICON                    "res24\\ec.ico"
+IDI_FLAG_EE ICON                    "res24\\ee.ico"
+IDI_FLAG_EG ICON                    "res24\\eg.ico"
+IDI_FLAG_EH ICON                    "res24\\eh.ico"
+IDI_FLAG_ER ICON                    "res24\\er.ico"
+IDI_FLAG_ES ICON                    "res24\\es.ico"
+IDI_FLAG_ET ICON                    "res24\\et.ico"
+IDI_FLAG_FI ICON                    "res24\\fi.ico"
+IDI_FLAG_FJ ICON                    "res24\\fj.ico"
+IDI_FLAG_FK ICON                    "res24\\fk.ico"
+IDI_FLAG_FM ICON                    "res24\\fm.ico"
+IDI_FLAG_FO ICON                    "res24\\fo.ico"
+IDI_FLAG_FR ICON                    "res24\\fr.ico"
+IDI_FLAG_GA ICON                    "res24\\ga.ico"
+IDI_FLAG_GB ICON                    "res24\\gb.ico"
+IDI_FLAG_GD ICON                    "res24\\gd.ico"
+IDI_FLAG_GE ICON                    "res24\\ge.ico"
+IDI_FLAG_GG ICON                    "res24\\gg.ico"
+IDI_FLAG_GH ICON                    "res24\\gh.ico"
+IDI_FLAG_GI ICON                    "res24\\gi.ico"
+IDI_FLAG_GL ICON                    "res24\\gl.ico"
+IDI_FLAG_GM ICON                    "res24\\gm.ico"
+IDI_FLAG_GN ICON                    "res24\\gn.ico"
+IDI_FLAG_GP ICON                    "res24\\gp.ico"
+IDI_FLAG_GQ ICON                    "res24\\gq.ico"
+IDI_FLAG_GR ICON                    "res24\\gr.ico"
+IDI_FLAG_GS ICON                    "res24\\gs.ico"
+IDI_FLAG_GT ICON                    "res24\\gt.ico"
+IDI_FLAG_GU ICON                    "res24\\gu.ico"
+IDI_FLAG_GW ICON                    "res24\\gw.ico"
+IDI_FLAG_GY ICON                    "res24\\gy.ico"
+IDI_FLAG_HK ICON                    "res24\\hk.ico"
+IDI_FLAG_HN ICON                    "res24\\hn.ico"
+IDI_FLAG_HR ICON                    "res24\\hr.ico"
+IDI_FLAG_HT ICON                    "res24\\ht.ico"
+IDI_FLAG_HU ICON                    "res24\\hu.ico"
+IDI_FLAG_ID ICON                    "res24\\id.ico"
+IDI_FLAG_IE ICON                    "res24\\ie.ico"
+IDI_FLAG_IL ICON                    "res24\\il.ico"
+IDI_FLAG_IM ICON                    "res24\\im.ico"
+IDI_FLAG_IN ICON                    "res24\\in.ico"
+IDI_FLAG_IO ICON                    "res24\\io.ico"
+IDI_FLAG_IQ ICON                    "res24\\iq.ico"
+IDI_FLAG_IR ICON                    "res24\\ir.ico"
+IDI_FLAG_IS ICON                    "res24\\is.ico"
+IDI_FLAG_IT ICON                    "res24\\it.ico"
+IDI_FLAG_JE ICON                    "res24\\je.ico"
+IDI_FLAG_JM ICON                    "res24\\jm.ico"
+IDI_FLAG_JO ICON                    "res24\\jo.ico"
+IDI_FLAG_JP ICON                    "res24\\jp.ico"
+IDI_FLAG_KE ICON                    "res24\\ke.ico"
+IDI_FLAG_KG ICON                    "res24\\kg.ico"
+IDI_FLAG_KH ICON                    "res24\\kh.ico"
+IDI_FLAG_KI ICON                    "res24\\ki.ico"
+IDI_FLAG_KM ICON                    "res24\\km.ico"
+IDI_FLAG_KN ICON                    "res24\\kn.ico"
+IDI_FLAG_KP ICON                    "res24\\kp.ico"
+IDI_FLAG_KR ICON                    "res24\\kr.ico"
+IDI_FLAG_KW ICON                    "res24\\kw.ico"
+IDI_FLAG_KY ICON                    "res24\\ky.ico"
+IDI_FLAG_KZ ICON                    "res24\\kz.ico"
+IDI_FLAG_LA ICON                    "res24\\la.ico"
+IDI_FLAG_LB ICON                    "res24\\lb.ico"
+IDI_FLAG_LC ICON                    "res24\\lc.ico"
+IDI_FLAG_LI ICON                    "res24\\li.ico"
+IDI_FLAG_LK ICON                    "res24\\lk.ico"
+IDI_FLAG_LR ICON                    "res24\\lr.ico"
+IDI_FLAG_LS ICON                    "res24\\ls.ico"
+IDI_FLAG_LT ICON                    "res24\\lt.ico"
+IDI_FLAG_LU ICON                    "res24\\lu.ico"
+IDI_FLAG_LV ICON                    "res24\\lv.ico"
+IDI_FLAG_LY ICON                    "res24\\ly.ico"
+IDI_FLAG_MA ICON                    "res24\\ma.ico"
+IDI_FLAG_MC ICON                    "res24\\mc.ico"
+IDI_FLAG_MD ICON                    "res24\\md.ico"
+IDI_FLAG_ME ICON                    "res24\\me.ico"
+IDI_FLAG_MG ICON                    "res24\\mg.ico"
+IDI_FLAG_MH ICON                    "res24\\mh.ico"
+IDI_FLAG_MK ICON                    "res24\\mk.ico"
+IDI_FLAG_ML ICON                    "res24\\ml.ico"
+IDI_FLAG_MM ICON                    "res24\\mm.ico"
+IDI_FLAG_MN ICON                    "res24\\mn.ico"
+IDI_FLAG_MO ICON                    "res24\\mo.ico"
+IDI_FLAG_MP ICON                    "res24\\mp.ico"
+IDI_FLAG_MQ ICON                    "res24\\mq.ico"
+IDI_FLAG_MR ICON                    "res24\\mr.ico"
+IDI_FLAG_MS ICON                    "res24\\ms.ico"
+IDI_FLAG_MT ICON                    "res24\\mt.ico"
+IDI_FLAG_MU ICON                    "res24\\mu.ico"
+IDI_FLAG_MV ICON                    "res24\\mv.ico"
+IDI_FLAG_MW ICON                    "res24\\mw.ico"
+IDI_FLAG_MX ICON                    "res24\\mx.ico"
+IDI_FLAG_MY ICON                    "res24\\my.ico"
+IDI_FLAG_MZ ICON                    "res24\\mz.ico"
+IDI_FLAG_NA ICON                    "res24\\na.ico"
+IDI_FLAG_NC ICON                    "res24\\nc.ico"
+IDI_FLAG_NE ICON                    "res24\\ne.ico"
+IDI_FLAG_NF ICON                    "res24\\nf.ico"
+IDI_FLAG_NG ICON                    "res24\\ng.ico"
+IDI_FLAG_NI ICON                    "res24\\ni.ico"
+IDI_FLAG_NL ICON                    "res24\\nl.ico"
+IDI_FLAG_NO ICON                    "res24\\no.ico"
+IDI_FLAG_NP ICON                    "res24\\np.ico"
+IDI_FLAG_NR ICON                    "res24\\nr.ico"
+IDI_FLAG_NU ICON                    "res24\\nu.ico"
+IDI_FLAG_NZ ICON                    "res24\\nz.ico"
+IDI_FLAG_OM ICON                    "res24\\om.ico"
+IDI_FLAG_PA ICON                    "res24\\pa.ico"
+IDI_FLAG_PE ICON                    "res24\\pe.ico"
+IDI_FLAG_PF ICON                    "res24\\pf.ico"
+IDI_FLAG_PG ICON                    "res24\\pg.ico"
+IDI_FLAG_PH ICON                    "res24\\ph.ico"
+IDI_FLAG_PK ICON                    "res24\\pk.ico"
+IDI_FLAG_PL ICON                    "res24\\pl.ico"
+IDI_FLAG_PM ICON                    "res24\\pm.ico"
+IDI_FLAG_PN ICON                    "res24\\pn.ico"
+IDI_FLAG_PR ICON                    "res24\\pr.ico"
+IDI_FLAG_PS ICON                    "res24\\ps.ico"
+IDI_FLAG_PT ICON                    "res24\\pt.ico"
+IDI_FLAG_PW ICON                    "res24\\pw.ico"
+IDI_FLAG_PY ICON                    "res24\\py.ico"
+IDI_FLAG_QA ICON                    "res24\\qa.ico"
+IDI_FLAG_RO ICON                    "res24\\ro.ico"
+IDI_FLAG_RS ICON                    "res24\\rs.ico"
+IDI_FLAG_RU ICON                    "res24\\ru.ico"
+IDI_FLAG_RW ICON                    "res24\\rw.ico"
+IDI_FLAG_SA ICON                    "res24\\sa.ico"
+IDI_FLAG_SB ICON                    "res24\\sb.ico"
+IDI_FLAG_SC ICON                    "res24\\sc.ico"
+IDI_FLAG_SD ICON                    "res24\\sd.ico"
+IDI_FLAG_SE ICON                    "res24\\se.ico"
+IDI_FLAG_SG ICON                    "res24\\sg.ico"
+IDI_FLAG_SH ICON                    "res24\\sh.ico"
+IDI_FLAG_SI ICON                    "res24\\si.ico"
+IDI_FLAG_SK ICON                    "res24\\sk.ico"
+IDI_FLAG_SL ICON                    "res24\\sl.ico"
+IDI_FLAG_SM ICON                    "res24\\sm.ico"
+IDI_FLAG_SN ICON                    "res24\\sn.ico"
+IDI_FLAG_SO ICON                    "res24\\so.ico"
+IDI_FLAG_SR ICON                    "res24\\sr.ico"
+IDI_FLAG_ST ICON                    "res24\\st.ico"
+IDI_FLAG_SV ICON                    "res24\\sv.ico"
+IDI_FLAG_SY ICON                    "res24\\sy.ico"
+IDI_FLAG_SZ ICON                    "res24\\sz.ico"
+IDI_FLAG_TC ICON                    "res24\\tc.ico"
+IDI_FLAG_TD ICON                    "res24\\td.ico"
+IDI_FLAG_TF ICON                    "res24\\tf.ico"
+IDI_FLAG_TG ICON                    "res24\\tg.ico"
+IDI_FLAG_TH ICON                    "res24\\th.ico"
+IDI_FLAG_TJ ICON                    "res24\\tj.ico"
+IDI_FLAG_TK ICON                    "res24\\tk.ico"
+IDI_FLAG_TL ICON                    "res24\\tl.ico"
+IDI_FLAG_TM ICON                    "res24\\tm.ico"
+IDI_FLAG_TN ICON                    "res24\\tn.ico"
+IDI_FLAG_TO ICON                    "res24\\to.ico"
+IDI_FLAG_TR ICON                    "res24\\tr.ico"
+IDI_FLAG_TT ICON                    "res24\\tt.ico"
+IDI_FLAG_TV ICON                    "res24\\tv.ico"
+IDI_FLAG_TW ICON                    "res24\\tw.ico"
+IDI_FLAG_TZ ICON                    "res24\\tz.ico"
+IDI_FLAG_UA ICON                    "res24\\ua.ico"
+IDI_FLAG_UG ICON                    "res24\\ug.ico"
+IDI_FLAG_US ICON                    "res24\\us.ico"
+IDI_FLAG_UY ICON                    "res24\\uy.ico"
+IDI_FLAG_UZ ICON                    "res24\\uz.ico"
+IDI_FLAG_VA ICON                    "res24\\va.ico"
+IDI_FLAG_VC ICON                    "res24\\vc.ico"
+IDI_FLAG_VE ICON                    "res24\\ve.ico"
+IDI_FLAG_VG ICON                    "res24\\vg.ico"
+IDI_FLAG_VI ICON                    "res24\\vi.ico"
+IDI_FLAG_VN ICON                    "res24\\vn.ico"
+IDI_FLAG_VU ICON                    "res24\\vu.ico"
+IDI_FLAG_WF ICON                    "res24\\wf.ico"
+IDI_FLAG_WS ICON                    "res24\\ws.ico"
+IDI_FLAG_YE ICON                    "res24\\ye.ico"
+IDI_FLAG_YU ICON                    "res24\\yu.ico"
+IDI_FLAG_ZA ICON                    "res24\\za.ico"
+IDI_FLAG_ZM ICON                    "res24\\zm.ico"
+IDI_FLAG_ZW ICON                    "res24\\zw.ico"
+IDI_NO_FLAG ICON                    "res24\\not.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

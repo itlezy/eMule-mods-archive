@@ -1,0 +1,38 @@
+﻿<templates>
+   <template for="/">
+      <item type="dynamic" name="header"/>
+      <item type="static" name="welcome"/>
+   </template>
+   <template for="servers">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="servers"/>
+   </template>
+   <template for="files">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="files"/>
+   </template>
+   <template for="search">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="search"/>
+   </template>
+   <template for="shared">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="shared"/>
+   </template>
+   <template for="stats">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="stats"/>
+   </template>
+   <template for="graphs">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="graphs"/>
+   </template>
+   <template for="logs">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="logs"/>
+   </template>
+   <template for="debug">
+      <item type="dynamic" name="header"/>
+      <item type="dynamic" name="debug"/>
+   </template>
+</templates>

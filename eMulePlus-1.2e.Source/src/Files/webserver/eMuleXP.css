@@ -1,0 +1,399 @@
+/*### eMule Plus eMuleXP TEMPLATE ###*/
+
+body {
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+pre {
+	font-family: "Lucida Console", Monaco, "Andale Mono", monospace;
+	color: black;
+	background-color: white;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+img {
+	border:0px;
+}
+
+img.link {
+	cursor:pointer;
+}
+
+form {
+	display:inline;
+}
+
+a:active,
+a:link,
+a:visited {
+	color:white;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#FFC412;
+	text-decoration:none;
+}
+
+.down-line-downloading a:hover {
+	color:#FFC412;
+	text-decoration:none;
+}
+
+.down-header,
+.down-line-hashing,
+.down-line-waitinghash,
+.down-line-error,
+.down-line-stalled,
+.down-line-complete,
+.down-line-completing,
+.down-line-waiting,
+.down-line-paused,
+.down-line-stopped,
+.down-line-downloading,
+.up-header,
+.up-line-uploading,
+.up-line-connecting,
+.server-header,
+.server-line-disconnected,
+.server-line-high,
+.server-line-low,
+.server-line-connecting,
+.server-line-failed,
+.shared-header,
+.shared-line-file,
+.shared-line-filedown,
+.header,
+.smallheader,
+.commontext,
+.upqueue-header,
+.upqueue-none-line,
+.upqueue-banned-line,
+.upqueue-friend-line,
+.upqueue-credit-line,
+.upqueue-next-line,
+.search-header,
+.search-main,
+.search-line,
+.addserver-header,
+.addserver-line {
+	font-size: 8pt;
+}
+
+.tabs {
+	background:#1F76A5;
+	font-size:8pt;
+}
+
+.tabs_too {
+	background:#0075B3;
+	font-size:8pt;
+}
+
+.tabs_three {
+	font-size:8pt;
+}
+
+.tabs_four {
+	font-size:8pt;
+}
+
+.tabs_five {
+	background:#005784;
+	font-size:8pt;
+}
+
+.down-header,
+.down-line-hashing,
+.down-line-waitinghash,
+.down-line-error,
+.down-line-stalled,
+.down-line-complete,
+.down-line-completing,
+.down-line-waiting,
+.down-line-paused,
+.down-line-stopped,
+.down-line-downloading,
+.up-header,
+.up-line-connecting,
+.up-line-uploading,
+.server-header,
+.server-line-disconnected,
+.server-line-high,
+.server-line-low,
+.server-line-connecting,
+.server-line-failed,
+.shared-header,
+.shared-line-file,
+.shared-line-filedown,
+.upqueue-header,
+.upqueue-none-line,
+.upqueue-banned-line,
+.upqueue-friend-line,
+.upqueue-credit-line,
+.upqueue-next-line,
+.search-header,
+.search-line,
+.addserver-header,
+.addserver-line {
+	text-align:center;
+}
+
+.search-main,
+.left {
+	text-align:left;
+}
+
+.search-header-right,
+.right {
+	text-align:right;
+}
+
+.down-header,
+.up-header,
+.server-header,
+.shared-header,
+.upqueue-header,
+.addserver-header,
+.search-header,
+.search-header-right {
+	background:#005784;
+}
+
+.search-main {
+	background:#000000;
+}
+
+.header {
+	background:#0046AC;
+}
+
+.smallheader {
+	background:#003C6E;
+	color:#FFFFFF;
+}
+
+.commontext {
+	background:#FFFFFF;
+	color:#000000;
+}
+
+.down-line-hashing,
+.down-line-waitinghash,
+.down-line-error,
+.down-line-stalled,
+.down-line-complete,
+.down-line-completing,
+.down-line-waiting,
+.down-line-paused,
+.down-line-stopped,
+.down-line-downloading,
+.up-line-connecting,
+.up-line-uploading,
+.server-line-disconnected,
+.server-line-high,
+.server-line-low,
+.server-line-connecting,
+.server-line-failed,
+.shared-line-file,
+.shared-line-filedown,
+.upqueue-none-line,
+.upqueue-banned-line,
+.upqueue-friend-line,
+.upqueue-credit-line,
+.upqueue-next-line,
+.search-line,
+.addserver-line {
+	background:#1F76A5;
+}
+
+.down-line-waiting a:active,
+.down-line-waiting a:link,
+.down-line-waiting a:visited,
+.shared-line-file a:active,
+.shared-line-file a:link,
+.shared-line-file a:visited,
+.server-line-disconnected a:active,
+.server-line-disconnected a:link,
+.server-line-disconnected a:visited {
+	color:#ffffff;
+}
+
+.server-line-high,
+.server-line-high a:active,
+.server-line-high a:link,
+.server-line-high a:visited,
+.upqueue-friend-line,
+.up-line-uploading,
+.down-line-downloading,
+.down-line-downloading a:link,
+.down-line-downloading a:active,
+.down-line-downloading a:visited {
+	color:#00ff00;
+}
+
+.server-line-low,
+.server-line-low a:active,
+.server-line-low a:link,
+.server-line-low a:visited,
+.upqueue-credit-line,
+.down-line-hashing,
+.down-line-hashing a:active,
+.down-line-hashing a:link,
+.down-line-hashing a:visited {
+	color:#ffff00;
+}
+
+.down-line-waitinghash,
+.down-line-waitinghash a:active,
+.down-line-waitinghash a:link,
+.down-line-waitinghash a:visited {
+	color:#feff89;
+}
+
+.server-line-connecting,
+.server-line-connecting a:active,
+.server-line-connecting a:link,
+.server-line-connecting a:visited,
+.down-line-complete,
+.down-line-complete a:active,
+.down-line-complete a:link,
+.down-line-complete a:visited {
+	color:#1D3445;
+}
+
+.down-line-completing,
+.down-line-completing a:active,
+.down-line-completing a:link,
+.down-line-completing a:visited {
+	color:#2D4F69;
+}
+
+.upqueue-banned-line,
+.down-line-error,
+.down-line-error a:active,
+.down-line-error a:link,
+.down-line-error a:visited {
+	color:#FF0000;
+}
+
+.upqueue-next-line,
+.down-line-stalled,
+.down-line-stalled a:active,
+.down-line-stalled a:link,
+.down-line-stalled a:visited {
+	color:#FFC412;
+}
+
+.down-line-paused,
+.down-line-paused a:active,
+.down-line-paused a:link,
+.down-line-paused a:visited,
+.shared-line-filedown,
+.shared-line-filedown a:active,
+.shared-line-filedown a:link,
+.shared-line-filedown a:visited,
+.server-line-failed,
+.server-line-failed a:active,
+.server-line-failed a:link,
+.server-line-failed a:visited {
+	color:#C1C1C1;
+}
+
+.down-line-stopped,
+.down-line-stopped a:active,
+.down-line-stopped a:link,
+.down-line-stopped a:visited {
+	color:#A0A0A0;
+}
+
+.percent_table {
+	border:0px solid #000000;
+	border-collapse:collapse;
+}
+
+.message {
+	background:#005784;
+	font-size:8pt;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+.dinput {
+	border-width:1px;
+	border-color:black;
+	border-style:dotted;
+}
+
+.fdown {
+	font-weight:bold;
+	color:#CC0000;
+}
+
+.fok {
+	font-weight:bold;
+	color:#CCFFCC;
+}
+
+.menuskin {
+	background:#005784;
+	position:absolute;
+	border:1px solid black;
+	line-height:14px;
+	font-size:12px;
+	font-weight:normal;
+	z-index:100;
+	visibility:hidden;
+	white-space:nowrap;
+}
+
+.menuskin a {
+	text-decoration:none;
+	color:white;
+}
+
+.menuimages {
+	background:#003C6E;
+	border:2px #003C6E solid;
+	vertical-align:middle;
+}
+
+.menuchecked {
+	background:#005784;
+	border:2px #005784 solid;
+	vertical-align:middle;
+}
+
+#mouseoverstyle {
+	background:#003C6E;
+}
+
+#mouseoverstyle .menuchecked {
+	background:#003C6E;
+	border:2px #003C6E solid;
+}
+
+#dhtmlpointer {
+	left:-300px;
+	position:absolute;
+	visibility:hidden;
+	z-index:101;
+}
+
+#dhtmltooltip {
+	background-color: #ffd; 
+	border:1px solid black;
+	color:black;
+	font-size:8pt;
+	line-height:14px;
+	left:-300px;
+	overflow:hidden;
+	padding:6px;
+	position:absolute;
+	text-overflow:ellipsis;
+	visibility:hidden;
+	width:400px;
+	z-index:100;
+}

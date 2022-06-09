@@ -1,0 +1,260 @@
+Tuxman's eMule beba
+
+- OLDER 0.x CHANGES -
+_______________________________________________________
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+v0.5a HOTFIX [the bailey's edition]:
+  * November 14 2005
+
+  * fix: saving preferences bug
+    * note: please make a clean install!
+
+_______________________________________________________
+v0.5 [the bloody bavarian edition]:
+  * November 13 2005
+  * eMule-Beba.de.vu got a new home... (thanks to eMuleFuture.de)
+
+  - added: Filename Disparity Check [TK4]
+  - added: G@mer Ban [Xman]
+  - added: "hidden" official tweaks - from hebMule [Avi3k/Tuxman]
+    * note: I've put them into "Extended->More tweaks" to avoid confusion
+  - added: StulleMule ban [Tuxman]
+    * note: The ban only affects versions < 2.1 which is finally "clean"
+  - added: support for 128-char tooltips [CB]
+    * note: This only works with IE 5.0 or higher installed!
+
+  - improved: source finding [Arabella] ;-)
+
+  - fix: adding to shares on redownloading already downloaded file [Xman]
+  - fix: code improvement in AbstractFile.h [Avi3k]
+  - fix: compression % fix in file details dialog [Avi3k]
+  - fix: CTag code improvement [Avi3k]
+  - fix: CurrentIdentState fix [WiZaRd]
+  - fix: GetRequestState fix [Xman]
+  - fix: memleak fix in SharedFilesCtrl [WiZaRd]
+  - fix: memleak fix in URLClient [WiZaRd]
+  - fix: missing search code [Avi3k]
+  - fix: possible MiniMule crash fix [BlueSonicBoy]
+  - fix: reconnect Kad on IP change - only active if Kad is selected [Tuxman]
+  - fix: sort order fix in DownloadListCtrl [Xman]
+  - fix: sorting clients by mod version (at least I hope so) [Tuxman]
+  - fix: sound notification prefs should now work again [Tuxman]
+  - fix: TitleMenu resource leak [Avi3k]
+
+  - changed: always pack src info packet (saves some overhead) [WiZaRd]
+  - changed: Auto Hard Limit - merged to cyrex2001 6.1 codebase [cyrex2001, Tuxman/Arabella]
+  - changed: beba security menu - divided into leecher and download security [Tuxman]
+  - changed: default nickname [Tuxman]
+  - changed: drop button placing on add. toolbar activation [Tuxman]
+  - changed: "Emulate Shareaza" code - updated to latest Spike2 codebase [Spike2]
+  - changed: Faster Endgame - updated for 0.46c [Spike2]
+  - changed: FDC - sensitivity changed to 1.1333 [Arabella/Tuxman]
+  - changed: FDC - updated to TK4 v1.3e codebase [BlueSonicBoy]
+  - changed: Hard Limit set to 5 for eMule collections [Xman]
+  - changed: max. file buffer size to 3 MB [Tuxman]
+  - changed: put Probabilistic Upload Queue into Upload Tweaks :p [Tuxman]
+  - changed: Reask Sources After IP Change - updated to v2 [Xman/Stulle]
+  - changed: Reask Sources Timer - updated to StulleMule 2.0 codebase [Stulle]
+  - changed: Safe Hash - merged with latest SF-IOM beta (test11) [SLUGFILLER]
+
+  - (re-)removed: Defeat 0-filled Part Senders [Tuxman]
+  - (re-)removed: doubled Hardmule ban (oops... oO) [Tuxman]
+  - removed: unused TrayDialog functions [WiZaRd]
+  - (re-)removed: VeryCD mod ban (for now...) [Tuxman]
+
+_______________________________________________________
+v0.4 [the breathe edition]:
+  * September 26 2005
+
+  - added: anti-leecher UDP-FNF fix [WiZaRd]
+  - added: Auto Hard Limit [sivka/WiZaRd]
+  - added: Chunk Control [Torni/Xanatos]
+    * note: the "block/free parts" menu is only available on complete files! (thanks to spanish man)
+       * Manual Part Sharing
+       * Manual Chunk Selection
+       * Spreadbar
+  - added: don't kill source if it's the only one or a friend [LSD]
+  - added: ed2k view filter in shared files [Avi3k, including KuSh/SLUGFILLER optimizations]
+  - added: Fine Credit System [CB]
+  - added: missing bans' check code [WiZaRd]
+  - added: MOD_VERSION tag format [Uns33n]
+  - added: Slot Focus [Telperion]
+
+  - fix: added correct handling for ONQUEUE in SharedFilesCtrl.cpp [Tuxman]
+  - fix: added some missing SLS things in SOURCEFROM [Xman]
+  - fix: code optimizations in UploadQueue.cpp - should decrease failed sessions [Xman]
+  - fix: crash error fix for the Chunk Control [KTS]
+  - fix: drop buttons should be displayed correctly if additional toolbar is activated [spanish man]
+  - fix: memleak in directory watcher [WiZaRd]
+  - fix: MLdonkey emulation works with newer versions too [Torni/Spike2]
+  - fix: new msg log entry fix [Avi3k]
+  - fix: queue overflow fix [WiZaRd]
+  - fix: Tempfile Category Display in Shared Files [WiZaRd]
+  - fix: using GetPageIndex instead of fixed enumeration in PrefDlg [Avi3k]
+  - fix: Verbose option for RSF output should now work... (oops) [Tuxman]
+  - fix: Wrong Max File Size in ED2KLink.cpp [Avi3k]
+  - fix: zlib issues (that made the search not work) - thx to Arabella! [Tuxman]
+
+  - changed: a more proper way to determine UL slots [mkol]
+  - changed: added Ultimativ-MoD and VeryCD to the leecher list [Tuxman]
+  - changed: delay reloading shared files if a download is completing [MoNKi]
+  - changed: disabled language selection because lang files don't work yet [Tuxman]
+  - changed: drop src menu only enabled if dropping is possible [Tuxman]
+  - changed: Find icon in server context menu [Tuxman]
+  - changed: max. queue size to 25000 - experimental [Tuxman]
+  - changed: MiniMule transparent code improvement [Avi3k]
+  - changed: removed ban in CheckFailedFileIdReqs [Xman]
+  - changed: replaced beba toolbar images in stats tree by the original ones [Tuxman]
+  - changed: source saver - updated to v4.4 (now removes expired sources and sth more) [Xman]
+
+  - removed: all credit systems of former beba versions due to some bugs [Tuxman]
+  - removed: disable Safe Server Connect [Tuxman]
+  - (re-)removed: drop timer control [Tuxman]
+    * note: may return in future versions ... still looking for some better implementation
+  - removed: kick to upload ("force uploading") [Tuxman]
+  - (re-)removed: show full cat name [Tuxman]
+  - removed: unused files from the src [Tuxman]
+  - removed: Version Check [Tuxman]
+
+_______________________________________________________
+v0.3 [the buzz buzz edition]:
+  * August 01 2005
+  * now there's a support board: eMule-beba.de.vu :)
+
+  * updated: zlib 1.2.3 due to security reasons
+
+  - added: Emulate lPhant [Spike2]
+  - added: Emulate Shareaza [Spike2/Torni]
+  - added: Verbose option for reloading shared dirs output [Tuxman]
+
+  - fix: destroyCursor stuff [SLUGFILLER]
+  - fix: directory watcher didn't work correctly if a root directory was shared [MoNKi]
+  - fix: leecher log is now displayed correctly (only once ;)) [Tuxman]
+  - fix: onQueue sorting in Shared Files view [Tuxman]
+  - fix: reversed sorts in DownloadClientsCtrl.cpp [Avi3k]
+  - fix: SNAKE leecher strings (won't ban older ZX anymore) [Spike2]
+
+  - changed: "drop sources" and "friend handling" menus are now cascaded [Tuxman/Xanatos]
+  - changed: eMail address on dump window (obsolete) [Tuxman]
+  - changed: max UL slots for users with max bandwidth [Tuxman]
+  - changed: reloading shared files is also done on device change [MoNKi]
+
+  - removed: some unused string IDs [Tuxman]
+
+_______________________________________________________
+v0.2a HOTFIX [the banana edition]:
+  * July 28 2005
+
+  - fix: client score calculation went somewhat wrong [Tuxman]
+  - fix: memset args order issue in ClientCredits.cpp [Avi3k]
+  - fix: removed unused include stuff in ClientCredits.cpp [Tuxman]
+
+_______________________________________________________
+v0.2 [the bugfix edition]:
+  * July 27 2005
+  * this version won't crash anymore *dance*
+
+  * merged: eMule 0.46c
+
+  - added: Auto Unban Friends [Telperion]
+  - added: Extended friend handling via context menu [Xman]
+  - added: Faster Endgame [dazzle]
+  - added: Nice Hash [Xman]
+  - added: Refresh Shared Files Automatically [MoNKi]
+
+  - fix: absolute values for complete sources [Viruzzz]
+  - fix: added some .46a/b stuff I somehow deleted *oops* [Tuxman]
+  - fix: IPfilter counter works [Xman]
+  - fix: missing brackets, useless code parts & stuff [thaaaaaaaaaanks to Antares!]
+  - fix: moved Drop buttons to the right to prevent display errors [Tuxman]
+  - fix: "open folder" in shared files now leads to the right one [Avi3k]
+  - fix: possible crash on dead sources [Xman]
+  - fix: PPgFiles issue when changing "remember" options [eMulefan83]
+  - fix: RQR/DL in upload list now shown correctly [FASTT]
+    * fix for the fix by Antares...
+  - fix: selection bugs in MuleListCtrl [Avi3k]
+  - fix: user hash was sent twice... [WiZaRd]
+
+  - changed: beba log should be displayed properly (splitter compatible) [Tuxman]
+  - changed: new about logo [thx to Napster!]
+  - changed: new beba prefs icon [taken from VipeR]
+
+  - updated: leecher strings [Tuxman]
+
+_______________________________________________________
+v0.1 final [the brouhaha edition]:
+  * June 03 2005
+
+  - added: Credit Systems (eF-Mod) [Tuxman]
+       * Eastshare
+       * Lovelace
+       * Pawcio
+       * RT
+  - added: Drop Timer Control (eNOS) [Tuxman]
+  - added: Mod Version in Server Log (eF-Mod) [Tuxman]
+  - added: Probabilistic Queue (SlugFiller) [Tuxman]
+
+  - fix: Some prefs weren't handled correctly [Tuxman] - thanks to Stulle!
+
+  - changed: Kademlia activated by default [Tuxman]
+  - changed: Min/Max Upload Slots values [Tuxman]
+
+  - removed: Proxy [Tuxman]
+
+_______________________________________________________
+v0.1 public beta:
+  * May 29 2005
+
+  - added: AntiNickThief: ClientBanTime (iONiX) [Tuxman]
+  - added: Allow Overflow Waiting Queue with Minimum contingent (Xtreme) [Tuxman]
+  - added: Pay back first (VipeR) [Tuxman]
+  - added: Reask Sources Timer (StulleMule) [Tuxman]
+  - added: See Shared Files On Queue (Xtreme) [Tuxman]
+  - added: SLS (Xtreme) [Tuxman]
+
+  - fix: Load settings on beba prefs [Tuxman]
+  - fix: Reconnect Kad on IP Change (Xtreme) [Tuxman]
+
+  - changed: New Drop buttons [ZX]
+  - changed: New eMule icon (FutureMule) [Bl4ckf0x]
+  - changed: New Toolbar icons [Kokaine] - thanks to BexX for the Image Slicing tool!
+
+  - removed: MobileMule [Tuxman]
+  - removed: Text To Speech [Tuxman]
+
+_______________________________________________________
+only for history ... first version:
+v0.1-pre (testers only):
+  * May 25 2005
+  * based on eMule 0.46a
+
+  - added: Spread Reask (SLUGFILLER) [Tuxman]
+  - added: Mod Version (Pawcio) [Tuxman]
+  - added: RQR DL/Speed View (Trust_Me) [Tuxman]
+  - added: Drop NNS/FQ/TM/UNK (eRabbit/LSD) [Tuxman]
+  - added: Clear Ban List (hoTy3k) [Tuxman]
+  - added: Force Uploading (Torni) [Tuxman]
+  - added: Modlog (MorphXT) [Tuxman]
+  - added: Emulate MLdonkey/eDonkey/eDHybrid (eF-Mod) [Tuxman]
+  - added: Show Full Category Name (MorphXT) [Tuxman]
+  - added: Defeat 0-filled Part Senders (Maella/eF-Mod) [Tuxman]
+  - added: Reask Sources After IP Change (eF-Mod) [Tuxman]
+  - added: Change Number Of Upload Slots [Tuxman]
+    * note: be careful with the values please!
+  - added: iONiX Leecher Secure (bobo/WiZaRd) [Tuxman]
+       * SNAFU v3.1
+       * AntiNickThief
+       * AntiLeecher (Username/Mod)
+       * Leecher Log
+
+  - fix: Better chunk selection for rare files [Xman]
+  - fix: Relax on startup [WiZaRd]
+
+  - changed: MiniMule disabled by default [Tuxman]
+
+  - removed: Help [Tuxman]
+  - removed: IRC [Tuxman]
+  - removed: Wizard [Tuxman]
+  - removed: Scheduler [Tuxman]
+  - removed: Splashscreen [Tuxman]

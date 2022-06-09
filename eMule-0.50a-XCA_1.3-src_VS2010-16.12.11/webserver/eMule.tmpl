@@ -1,0 +1,410 @@
+<-- ############################################################## -->
+<-- ##			eMule AJAX TEMPLATE			## -->
+<-- ##		MODIFIED VERSION BY eMuleX.Sourceforge.net	## -->
+<-- ############################################################## -->
+<-- ##		BASED ON MODIFIED VERSION BY eMule-Project.net	## -->
+<-- ##		BASED ON MODIFIED VERSION BY eMule+		## -->
+<-- ##		BASED ON TEMPLATE BY Chicane			## -->
+<-- ############################################################## -->
+
+<--TMPL_VERSIONX-->
+1
+<--TMPL_VERSIONX_END-->
+
+<-- ################################################################# -->
+<-- ############################ LOGIN ############################## -->
+<-- ################################################################# -->
+
+<--TMPL_LOGIN-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=[CharSet]" />
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<link href="login.css" rel="stylesheet" type="text/css" />
+<title>[eMuleAppName] - [WebControl]</title>
+<script src="jquery.js"></script>
+<script>function noselect(e){var t=window.event.srcElement,name=t.tagName;return (name=="INPUT"&&t.type.toLowerCase()=="text")||name=="TEXTAREA";}
+$(function(){$('#p').focus();if($.browser.msie){document.onselectstart=noselect;document.ondragstart=noselect;}});</script>
+</head>
+<body><div><div class="login" style="z-index:1001;">
+<div class="login_top"></div>
+<div class="nofloat" style="height:300px;">
+<div class="login_lefttop"></div><div class="login_topdown"><div style="padding:36px 24px;width:350px;"><a href="http://emule-project.net" target="_blank" style="display:block;border:2px #fff solid;"><img src="logo.jpg" alt=""></a></div><div style="font-size:10pt;height:16px;padding:17px 0;"><b>[WebControl]</b> | [Login]</div></div><div class="login_righttop"></div></div>
+<div class="login_topsep"></div>
+<div class="nofloat" style="height:130px;"><div class="login_lefttop"></div><div class="login_downmain">
+<form method="POST" style="font-size:10pt;">
+<div style="padding:28px 0 22px;">[EnterPassword]</div>
+<div><input type="password" id="p" name=p maxlength=12 size=37 style="border:0;" value=""><input type="hidden" name=w value="password"></div>
+<div style="padding-top:19px;"><input type="submit" value="[LoginNow]"></div>
+</form></div><div class="login_righttop"></div></div>
+<div class="login_bottom"></div></div></div>
+</body>
+</html>
+<--TMPL_LOGIN_END-->
+
+<-- ################################################################# -->
+<-- ######################### MAIN SITE ############################# -->
+<-- ################################################################# -->
+
+<--TMPL_MAIN_WND-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=[CharSet]" />
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>[eMuleAppName]</title>
+<script src="jquery.js"></script>
+<script src="[Lang].js"></script>
+<script src="main.js"></script>
+<script>var admin=[admin],session=[Session],timeout=[RefreshVal],hilevel=[hiLevel],verchecklink='[VersionCheck]';</script>
+</head>
+<body>
+<div id="toolbar"></div><div id="lists"></div>[ED2K]
+<div id="statusbar" class="nofloat">[StatusBar]</div>
+</body>
+</html>
+<--TMPL_MAIN_WND_END-->
+
+<--TMPL_ED2K-->
+<div id="ed2k_open" class='muledlg'>
+<div class="titlebar"><div class="close">X</div>[Ed2klink]</div>
+<div class="dlgbody">
+<form onsubmit="startDown();return false;">
+<textarea id="ed2k_ed2k" class="autoHeight"></textarea>
+<div class="dlgbtns"><input type="submit" value="[Start]"><img src="l_catarrow.gif">[CATBOXED2K]</div></form>
+</div>
+</div>
+<--TMPL_ED2K_END-->
+
+<--TMPL_STATUSBAR-->
+<script>serverstate='[ConState]';</script>
+<div style="width:320px;"><div class="icon iusers"></div>[Panel1]</div>
+<div style="width:240px;"><div class="icon i[UpDownState]"></div>[Panel2]</div>
+<div><div class="icon i[ConState]"></div>eD2K:[ConText]|Kad:[KadConText]</div>
+<--TMPL_STATUSBAR_END-->
+
+<-- ################################################################# -->
+<-- ######################## SERVER WINDOW ############################ -->
+<-- ################################################################# -->
+
+<--TMPL_SERVER_WND-->
+<script>var serverinfo=[];$(function(){initServer([SortColumn],[[ColumnHidden]]);});</script>
+[AddServerBox]
+<div><div class="subTitle"><div class="icon iserver"></div>[ServerList]</div>
+<div class="autoHeight">
+<div id="serverlist" class="list-table autoWidth">
+<div class="headers"><div class="server0 col-1"><div onclick="SortServers(0)" class="icon">&times;</div><div onclick="SortServers(1)">[Servername]</div></div><div class="server1 col-2" onclick="SortServers(2)">[Address]</div><div class="server2 col-3" onclick="SortServers(3)">[Description]</div><div class="server3 col-4" onclick="SortServers(4)">[Ping]</div><div class="server4 col-5" onclick="SortServers(5)">[Users]</div><div class="server5 col-6" onclick="SortServers(6)">[Files]</div><div class="server6 col-7" onclick="SortServers(7)">[Priority]</div><div class="server7 col-8" onclick="SortServers(8)">[Failed]</div><div class="server8 col-9" onclick="SortServers(9)">[Limit]</div><div class="server9 col-10" onclick="SortServers(10)">[Version]</div></div>
+[ServersList]</div></div></div>
+<--TMPL_SERVER_WND_END-->
+
+<--TMPL_SERVER_LIST_FOOTER-->
+<script>onUpdate('server',[SortReverse]);</script>
+<--TMPL_SERVER_LIST_FOOTER_END-->
+
+<--TMPL_SERVER_LINE-->
+<div class="item sv_[ServerState]"><script>serverinfo.push({ed2k:'[ed2k]',ip:'[ip]',port:'[port]',isstatic:'[isstatic]',priority:'[server-priority]'});</script><div class="server0"><div class="icon i[ServerState]"><div class="icon i[ServerType]"></div></div>[Servername]</div><div class="server1">[Address]</div><div class="server2">[Description]</div><div class="server3">[Ping]</div><div class="server4">[Users]</div><div class="server5">[Files]</div><div class="server6">[Priority]</div><div class="server7">[Failed]</div><div class="server8">[Limit]</div><div class="server9">[Version]</div></div>
+<--TMPL_SERVER_LINE_END-->
+
+<-- ################################################################# -->
+<-- ####################### ADD SERVER BOX ########################## -->
+<-- ################################################################# -->
+
+<--TMPL_ADDSERVERBOX-->
+<div style="float:right;width:350px;">
+<div class="subTitle"><div class="icon iaddsvr"></div>[AddServer]</div>
+<div class="autoHeight">
+<form onsubmit="addserver();return false;">
+<div class="subbody">
+<div><div class="nsf1">[IP]</div><div class="nsf2"><input id="as_serveraddr" type="text" size="15"></div></div>
+<div><div class="nsf1">[Port]</div><div class="nsf2"><input id="as_serverport" type="text" size="6"></div></div>
+<div><div class="nsf1">[Name]</div><div class="nsf2"><input id="as_servername" type="text" size="30"></div></div>
+<div><div class="nsf1">[Static]</div><div class="nsf2"><input type='checkbox' id="as_addtostatic" value='true'></div></div>
+<div><div class="nsf1">[ConnectNow]</div class="nsf2"><div><input type='checkbox' id="as_connectnow" value='true'></div></div>
+<div><div class="nsf1">[Priority]</div><div class="nsf2"><select id="as_priority"><option value="low">[Low]</option><option value="normal">[Normal]</option><option value="high" checked>[High]</option></select></div></div>
+</div>
+<div class="dlgbtns"><input type="submit" value="[Add]"></div>
+</form>
+<div class="subTitle"><div class="icon iaddsvr"></div>[UpdateServerMetFromURL]</div>
+<form onsubmit="updateservermet();return false;">
+<div class="subbody">[IP] <input id="usm_servermeturl" type="text" size="30"></div>
+<div class="dlgbtns"><input type="submit" value="[Apply]"></div>
+</form>
+</div></div>
+<--TMPL_ADDSERVERBOX_END-->
+
+<-- ################################################################# -->
+<-- ######################### TRANSFER WINDOW ####################### -->
+<-- ################################################################# -->
+
+<--PROGRESSBARWIDTH-->
+350
+<--PROGRESSBARWIDTH_END-->
+
+<--PROGRESSBARIMGS-->
+<img src="[PROGRESSGIFNAME]" style="height:13px;width:[PROGRESSGIFINTERNAL]px">
+<--PROGRESSBARIMGS_END-->
+
+<--PROGRESSBARPERCENTIMG-->
+<div style="text-align:left;"><img src="[PROGRESSGIFNAME]" style="height:3px;width:[PROGRESSGIFINTERNAL]px"></div>
+<--PROGRESSBARPERCENTIMG_END-->
+
+<--TMPL_TRANSFER_WND-->
+<script>var downinfo=[],upinfo=[],catindex,cats=[[Cats]],filter=[[CatFilter]],curfilter=[Filter];
+$(function(){initTransfer([DSortColumn],[[DColumnHidden]],[USortColumn],[[UColumnHidden]],[QSortColumn],[[QColumnHidden]]);});
+</script>
+<style>.down3{width:[PROGRESSBARWIDTHVAL]px;}</style>
+<div class="subTitle nofloat">
+<div><div class="icon idown"></div>[DownloadList]</div>
+<div id="downCatFilter" class="tabHeader nofloat" style="float:right"></div></div>
+<div class="autoHeight">
+<div id="downlist" class="list-table autoWidth">
+<div class="headers"><div class="down0 col-2"><div onclick="SortDowns(0)" class="icon">&times;</div><div onclick="SortDowns(1)" class="icon">&times;</div><div onclick="SortDowns(2)">[Filename]</div></div><div class="down1 col-3" onclick="SortDowns(3)">[Size]</div><div class="down2 col-4" onclick="SortDowns(4)">[Transferred]</div><div class="down3 col-6" onclick="SortDowns(6)">[Progress]</div><div class="down4 col-5" onclick="SortDowns(5)">[Speed]</div><div class="down5 col-7" onclick="SortDowns(7)">[Sources]</div><div class="down6 col-8" onclick="SortDowns(8)">[Priority]</div><div class="down7 col-9" onclick="SortDowns(9)">[Category]</div></div>
+[DownloadFilesList]</div></div>
+<div onclick="Togglelist('up')" class="subTitle"><div class="icon iup"></div>[UploadList]</div>
+<div class="hide">
+<div id="uplist" class="list-table autoWidth">
+<div class="headers"><div class="up0 col-1"><div onclick="SortUps(5)" class="icon">&times;</div><div onclick="SortUps(0)" class="icon">&times;</div><div onclick="SortUps(1)">[UserName]</div></div><div class="up1 col-2" onclick="SortUps(2)">[Version]</div><div class="up2 col-3" onclick="SortUps(3)">[Filename]</div><div class="up3 col-4" onclick="SortUps(4)">[RATIO]</div><div class="up4 col-5" onclick="SortUps(5)">[Speed]</div></div>
+[UploadFilesList]</div></div>
+<div class="subTitle nofloat">
+<div onclick="Togglelist('queue')"><div class="icon iqueue"></div>[UploadQueueList]</div>
+<div id="queuecount" style="float:right">[CounterQueue]</div></div>
+<div class="hide">
+<div id="queuelist" class="list-table autoWidth">
+<div class="headers"><div class="queue0 col-1"><div onclick="SortQueues(4)" class="icon">&times;</div><div onclick="SortQueues(0)" class="icon">&times;</div><div onclick="SortQueues(1)">[UserName]</div></div><div class="queue1 col-2" onclick="SortQueues(2)">[Version]</div><div class="queue2 col-3" onclick="SortQueues(3)">[Filename]</div><div class="queue3 col-4" onclick="SortQueues(4)">[Score]</div></div>
+[QueueList]</div></div>
+<--TMPL_TRANSFER_WND_END-->
+
+<--TMPL_TRANSFER_DOWN_FOOTER-->
+<script>catindex=[CatIndex];$('#downCatFilter>.selectedtab').removeClass('selectedtab');$('#downCatFilter>div').eq(catindex).addClass('selectedtab');onUpdate('down',[SortReverse]);</script>
+<--TMPL_TRANSFER_DOWN_FOOTER_END-->
+
+<--TMPL_TRANSFER_DOWN_LINE-->
+<div class="item d_[DownState]"><script>downinfo.push({finfo:'[finfo]',ed2k:'[ed2k]',downstate:'[DownState]',isgetflc:'[isgetflc]',fname:'[fname]',filehash:'[filehash]',fcomments:'[fcomments]',downloadable:'[downloadable]',priority:'[down-priority]',catindex:'[CatIndex]'});</script><div class="down0"><div class="icon i[DownState]"></div><div class="icon i[FileType]"><div class="icon i[FileCommentIcon]"></div></div>[ShortFileName]</div><div class="down1">[2]</div><div class="down2">[3]</div><div class="down3"><div style="height:0;">[DownloadBar]</div>[Progress]</div><div class="down4">[4]</div><div class="down5">[5]</div><div class="down6">[PrioVal]</div><div class="down7">[Category]</div></div>
+<--TMPL_TRANSFER_DOWN_LINE_END-->
+
+<--TMPL_TRANSFER_UP_FOOTER-->
+<script>showList('up');onUpdate('up',[SortReverse]);</script>
+<--TMPL_TRANSFER_UP_FOOTER_END-->
+
+<--TMPL_TRANSFER_UP_LINE-->
+<div class="item u_[ClientState]"><script>upinfo.push({clientextra:'[ClientExtra]',userhash:'[UserHash]',finfo:'[FileInfo]'});</script><div class="up0"><div class="icon iu[ClientState]"></div><div class="icon ict[ClientSoft]"><div class="icon i[ClientExtra]"></div></div>[1]</div><div class="up1">[ClientSoftV]</div><div class="up2">[2]</div><div class="up3">[3]</div><div class="up4">[4]</div></div>
+<--TMPL_TRANSFER_UP_LINE_END-->
+
+<--TMPL_TRANSFER_UP_QUEUE_FOOTER-->
+<script>$('#queuecount').text("[CounterQueue]");showList('queue');onUpdate('queue',[SortReverse]);</script>
+<--TMPL_TRANSFER_UP_QUEUE_FOOTER_END-->
+
+<--TMPL_TRANSFER_UP_QUEUE_LINE-->
+<div class="item uq_[ClientState]"><div class="queue0"><div class="icon iu[ClientStateSpecial]"></div><div class="icon ict[ClientSoft]"><div class="icon i[ClientExtra]"></div></div>[UserName]</div><div class="queue1">[ClientSoftV]</div> <div class="queue2">[FileName]</div> <div class="queue3">[Score]</div></div>
+<--TMPL_TRANSFER_UP_QUEUE_LINE_END-->
+
+
+<-- ################################################################# -->
+<-- ########################### SEARCH WINDOW ####################### -->
+<-- ################################################################# -->
+
+<--TMPL_SEARCH-->
+<div id="searchleft" style="position:absolute;width:330px;">
+<div id="searchtab" class="tabHeader nofloat subTitle">
+<div class="selectedtab"><div class="icon iaddsvr"></div>[Search]</div>
+<div><div class="icon ifdonkey"></div>FileDonkey [Search]</div></div>
+<div class="autoHeight">
+<div class="subbody">
+<form onsubmit="search();return false;">
+<div><div class="sf1">[Name]</div><div class="sf2"><input id="s_tosearch" type="text" size="28"></div></div>
+<div><div class="sf1">[Type]</div><div class="sf2"><select id="s_type"><option value="">[Any]</option><option value="Arc">[Archive] (.zip .rar .ace...)</option><option value="Audio">[Audio] (.mp3 .ogg .wav...)</option><option value="Iso">[CDImage] (.iso .bin .nrg...)</option><option value="Doc">[Document] (.doc .txt .pdf...)</option><option value="Image">[Image] (.jpg .gif .png...)</option><option value="Pro">[Program] (.exe .zip .rar...)</option><option value="Video">[Video] (.avi .mpg .ogm...)</option></select></div></div>
+<div><div class="sf1">[SizeMin]</div><div class="sf2"><input id="s_min" type="text" size="10"></div></div>
+<div><div class="sf1">[SizeMax]</div><div class="sf2"><input id="s_max" type="text" size="10"></div></div>
+<div><div class="sf1">[Availabl]</div><div class="sf2"><input id="s_avail" type="text" size="10"></div></div>
+<div><div class="sf1">[Extention]</div><div class="sf2"><input id="s_ext" type="text" size="10"></div></div>
+<div style="height:40px;"><div class="sf1">[METHOD]</div><div class="sf2"><input value="server" type="radio" name="s_method" checked>[USESSERVER]<input value="global" type="radio" name="s_method">[Global]<input value="kademlia" type="radio" name="s_method">[USEKADEMLIA]</div></div>
+<div class="dlgbtns"><input type="submit" s_value="[Search]"></div>
+</form>
+<form onsubmit="fdsearch();return false;" style="display: none;">
+<div><div class="sf1">[Name]</div><div class="sf2"><input id="fd_pattern" type="text" size="30"></div></div>
+<div><div class="sf1">[Type]</div><div class="sf2"><select id="fd_scope"><option value="">[Any]</option><option value="avi">.avi</option><option value="mp3">.mp3</option><option value="mpg">.mpg</option><option value="rar">.rar</option><option value="zip">.zip</option><option value="">--------------------</option><option value="divx">DiVX</option><option value="dvd">DVD</option><option value="svcd">SVCD</option><option value="vcd">VCD</option><option value="vhs">VHS</option><option value="">--------------------</option><option value="fr">French</option><option value="german">German</option><option value="ita">Italian</option><option value="rus">Russian</option><option value="spanish">Spanish</option></select></div></div>
+<div><div class="sf1">[SizeMin]</div><div class="sf2"><input id="fd_min_size" type="text" size="10"></div></div>
+<div><div class="sf1">[SizeMax]</div><div class="sf2"><input id="fd_max_size" type="text" size="10"></div></div>
+<div class="dlgbtns"><input type="submit" value="[Search]"></div>
+</form>
+</div>
+</div></div>
+<div id="searchright" style="margin-left:330px;"><div class="subTitle"><div class="icon isearch"></div>[Result]<span id="s_message" onclick="SortSearches()" class="message"></span>
+<div style="float:right"><form onsubmit="downsearch();return false;"><input type="submit" value="[Download]"><img src="l_catarrow.gif">[CATBOX]</form></div></div>
+<div class="autoHeight">
+[RESULTLISTS]</div></div>
+<--TMPL_SEARCH_END-->
+
+<--TMPL_SEARCH_RESULT-->
+<script>var searchinfo=[];$(function(){initSearch([SortColumn],[[ColumnHidden]]);});</script>
+<div id="searchlist" class="list-table autoWidth">
+<div class="headers"><div class="search0 col-0"><div onclick="SortSearches(3)" class="icon">&times;</div><div onclick="SortSearches(4)" class="icon">&times;</div><div onclick="SortSearches(0)">[Filename]</div></div><div class="search1 col-1" onclick="SortSearches(1)">[Filesize]</div><div class="search2 col-2" onclick="SortSearches(2)">[Filehash]</div><div class="search3 col-3" onclick="SortSearches(3)">[Sources]</div><div class="search4"><input type="checkbox" value="%s" onclick="$(':checkbox[name]').attr('checked',$(this).attr('checked'))" /></div></div>
+[RESULTLIST]</div>
+<--TMPL_SEARCH_RESULT_END-->
+
+<--TMPL_SEARCH_RESULT_FOOTER-->
+<script>$('#s_message').text('[[Message]]');onUpdate('search',[SortReverse]);</script>
+<--TMPL_SEARCH_RESULT_FOOTER_END-->
+
+<--TMPL_SEARCH_RESULT_LINE-->
+<div class="item"><script>searchinfo.push({ed2k:'%s'});</script><div class="search0" style="color:#%s;"><div class="icon isrc%s"></div><div class="icon i%s"></div>%s</div><div class="search1">%s</div><div class="search2">%s</div><div class="search3">%s</div><div class="search4"><input type="checkbox" name="downit" /></div></div>
+<--TMPL_SEARCH_RESULT_LINE_END-->
+
+<-- ################################################################# -->
+<-- ###################### SHARED FILES WINDOW ######################## -->
+<-- ################################################################# -->
+
+<--TMPL_SHARED_LIST-->
+<script>var sharedinfo=[];$(function(){InitColumnHeader('shared','shared',[SortColumn],[[ColumnHidden]]);});</script>
+<div class="subTitle"><div class="icon ishared"></div>[SharedList] <span id="reloadmsg" class="message"></span></div>
+<div class="autoHeight">
+<div id="sharedlist" class="list-table autoWidth">
+<div class="headers"><div class="shared0 col-2"><div onclick="SortShareds(0)" class="icon">&times;</div><div onclick="SortShareds(1)" class="icon">&times;</div><div onclick="SortShareds(2)">[Filename]</div></div><div class="shared1 col-4" onclick="SortShareds(4,1)">[FileTransferred]</div><div class="shared2 col-6" onclick="SortShareds(6,1)">[FileRequests]</div><div class="shared3 col-8" onclick="SortShareds(8,1)">[FileAccepts]</div><div class="shared4 col-3" onclick="SortShareds(3)">[Size]</div><div class="shared5 col-10" onclick="SortShareds(10)">[Completes]</div><div class="shared6 col-11" onclick="SortShareds(11)">[Priority]</div></div>
+[SharedFilesList]</div></div>
+<div class="dlgbtns">
+<input type="button" value="[Refresh]" onClick="SortShareds()">
+<input type="button" value="[Reload]" onClick="getlist('shared&reload=true','shared')"></div>
+<--TMPL_SHARED_LIST_END-->
+
+<--TMPL_SHARED_LIST_FOOTER-->
+<script>var msg='[[Message]]';if(msg!='[]')$('#reloadmsg').text(msg);onUpdate('shared',[SortReverse]);</script>
+<--TMPL_SHARED_LIST_FOOTER_END-->
+
+<--TMPL_SHARED_LINE-->
+<div class="item sf_[FileState]"><script>sharedinfo.push({ed2k:'[ed2k]',hash:'[hash]',fname:'[fname]',filestate:'[FileState]',downloadable:'[Downloadable]',priority:'[shared-priority]'});</script><div class="shared0" title="[FileName] Hash: [FileHash]"><div class="icon i[FileState]"><div class="icon i[FileIsPriority]"></div></div><div class="icon i[FileType]"></div>[ShortFileName]</div><div class="shared1">[FileTransferred][FileAllTimeTransferred]</div><div class="shared2">[FileRequests][FileAllTimeRequests]</div><div class="shared3">[FileAccepts][FileAllTimeAccepts]</div><div class="shared4">[FileSize]</div><div class="shared5">[Completes]</div><div class="shared6">[Priority]</div></div>
+<--TMPL_SHARED_LINE_END-->
+
+<-- ################################################################# -->
+<-- ########################## STATISTICS ########################### -->
+<-- ################################################################# -->
+
+<--TMPL_STATS-->
+<div id="stats" class="commontext autoHeight">[Stats]</div>
+<div class="dlgbtns"><input type="button" value="[Refresh]" onClick="LoadWnd('stats')"></div>
+<--TMPL_STATS_END-->
+
+<-- ################################################################# -->
+<-- ########################### GRAPHS ############################## -->
+<-- ################################################################# -->
+
+<--TMPL_GRAPHS-->
+<div class="autoHeight" style="padding:10px 0;">
+<div id="downgraph" class="gragh nofloat"></div>
+<div class="graghtext">[TxtDownload]: Max [MaxDownload] [KByteSec], [TxtTime]: [ScaleTime]</div>
+<div id="upgraph" class="gragh nofloat"></div>
+<div class="graghtext">[TxtUpload]: Max [MaxUpload] [KByteSec], [TxtTime]: [ScaleTime]</div>
+<div id="congraph" class="gragh nofloat"></div>
+<div class="graghtext">[TxtConnections]: Max [MaxConnections], [TxtTime]: [ScaleTime]</div>
+</div>
+<div class="dlgbtns"><input type="button" value="[Refresh]" onClick="LoadWnd('graphs')"></div>
+<SCRIPT>traceGraph($('#downgraph'),[[GraphDownload]],[MaxDownload]*1024);traceGraph($('#upgraph'),[[GraphUpload]],[MaxUpload]*1024);traceGraph($('#congraph'),[[GraphConnections]],[MaxConnections]);</SCRIPT>
+<--TMPL_GRAPHS_END-->
+
+<-- ################################################################# -->
+<-- ######################### PREFERENCES ########################### -->
+<-- ################################################################# -->
+
+<--TMPL_PREFERENCES-->
+<form onsubmit="savePref();return false;">
+<div class="center">[WebControl]</div>
+<div class="subbody">
+<div class="optionname">[UseGzipForm]<input type="checkbox" id="pref_gzip" [UseGzipVal]></div>
+<div>[UseGzipComment]</div>
+<div class="optionname">[RefreshTimeForm]</div>
+<div>[RefreshTimeComment]<input type="text" id="pref_refresh" size="5" value="[RefreshVal]"></div>
+</div>
+<div class="center">[eMuleAppName]</div>
+<div class="subbody">
+<div class="optionname">[SpeedCapForm]</div>
+<div>[MaxCapDown]: <input type="text" id="pref_maxcapdown" size="5" value="[MaxCapDownVal]"> [KBS] [MaxCapUp]: <input type="text" id="pref_maxcapup" size="5" value="[MaxCapUpVal]"> [KBS]</div>
+<div class="optionname">[SpeedForm]</div>
+<div>[MaxDown]: <input type="text" id="pref_maxdown" size="5" value="[MaxDownVal]"> [KBS] [MaxUp]: <input type="text" id="pref_maxup" size="5" value="[MaxUpVal]"> [KBS]</div>
+<div class="optionname">[LimitForm]</div>
+<div class="list-table">
+<div><div>[MaxSources]</div><div><input type="text" id="pref_maxsources" size="5" value="[MaxSourcesVal]"></div></div>
+<div><div>[MaxConnections]</div><div><input type="text" id="pref_maxconnections" size="5" value="[MaxConnectionsVal]"></div></div>
+<div><div>[MaxConnectionsPer5]</div><div><input type="text" id="pref_maxconnectionsperfive" size="5" value="[MaxConnectionsPer5Val]"></div></div>
+</div>
+</div>
+<div class="dlgbtns"><input type="submit" value="[Apply]"> <input type="button" onClick="Open('[CONNECTIONTESTLINK]');" value="[CONNECTIONTESTLABEL]"></div>
+</form>
+
+<--TMPL_PREFERENCES_END-->
+
+<-- ################################################################# -->
+<-- ######################### SERVER INFO ########################### -->
+<-- ################################################################# -->
+
+<--TMPL_SERVERINFO-->
+<div class="autoHeight commontext"><pre>[ServerInfo]</pre></div>
+<div class="dlgbtns"><input type="submit" value="[Clear]" onclick="clearlog('sinfo')"></div>
+<--TMPL_SERVERINFO_END-->
+
+<-- ################################################################# -->
+<-- ############################ LOGS ############################### -->
+<-- ################################################################# -->
+
+<--TMPL_LOG-->
+<div class="autoHeight commontext"><pre>[Log]</pre></div>
+<div class="dlgbtns"><input type="submit" value="[Clear]" onclick="clearlog('log')"></div>
+<--TMPL_LOG_END-->
+
+<-- ################################################################# -->
+<-- ######################### DEBUG LOG ############################# -->
+<-- ################################################################# -->
+
+<--TMPL_DEBUGLOG-->
+<div class="autoHeight commontext"><pre>[DebugLog]</pre></div>
+<div class="dlgbtns"><input type="submit" value="[Clear]" onclick="clearlog('debuglog')"></div>
+<--TMPL_DEBUGLOG_END-->
+
+<-- ################################################################# -->
+<-- ######################### My Info ############################### -->
+<-- ################################################################# -->
+
+<--TMPL_MYINFO-->
+<div class="autoHeight commontext"><pre>[MYINFOLOG]</pre></div>
+<--TMPL_MYINFO_END-->
+
+<-- ################################################################# -->
+<-- ########################## KAD  ################################# -->
+<-- ################################################################# -->
+
+<--TMPL_BOOTSTRAPLINE-->
+<form onsubmit="bootstrap();return false;">
+<div class="center">[BOOTSTRAP]</div>
+<div class="list-table subbody">
+<div><div class="kad-0">[BS_IP]</div><div class="kad-1"><input id="kad_ip" type="text" size="16"></div></div>
+<div><div class="kad-0">[BS_PORT]</div><div class="kad-1"><input id="kad_port" type="text" size="6"></div></div>
+<div class="dlgbtns"><input type="submit" value="[BOOTSTRAP]"></div>
+</div>
+</form>
+<--TMPL_BOOTSTRAPLINE_END-->
+
+<--TMPL_KADDLG-->
+<div class="list-table">
+<div><div class="kad-0">[STATUS]</div><div class="kad-2">[KADSTATUS]</div><div class="kad-2">[KADACTION]</div></div>
+[BOOTSTRAPLINE]
+<div class="center">[KADSTAT]</div>
+<div class="subbody"><div class="kad-0">[KADSTATSLABELS]</div><div class="kad-1">[KADSTATSDATA]</div></div>
+<--TMPL_KADDLG_END-->
+
+<-- ################################################################# -->
+<-- ########################## Comment List  ######################## -->
+<-- ################################################################# -->
+
+<--TMPL_COMMENTLIST-->
+<div class="muledlg comment">
+<div class="titlebar"><div class="close">X</div>[COMMENTS]</div>
+<div class="commentlist dlgbody list-table">
+<div class="headers"><div class="comment-1">[USERNAME]</div><div class="comment-2">[FILENAME]</div><div class="comment-3">[COMMENT]</div><div class="comment-4">[RATING]</div></div>
+[COMMENTLINES]
+</div>
+</div>
+<--TMPL_COMMENTLIST_END-->
+
+<--TMPL_COMMENTLIST_LINE-->
+<div><div class="comment-1">%s</div><div class="comment-2">%s</div><div class="comment-3">%s</div><div class="comment-4">%s</div></div>
+<--TMPL_COMMENTLIST_LINE_END-->

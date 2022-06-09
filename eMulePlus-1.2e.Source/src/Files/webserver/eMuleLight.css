@@ -1,0 +1,379 @@
+/*### eMule Plus eMuleLight TEMPLATE ###*/
+
+body {
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+pre {
+	font-family: "Lucida Console", Monaco, "Andale Mono", monospace;
+	color: black;
+	background-color: white;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+img {
+	border:0px;
+}
+
+img.link {
+	cursor:pointer;
+}
+
+input, select {
+	border:inset 1px white;
+	font-size:8pt;
+}
+
+form {
+	display:inline;
+}
+
+a:active,
+a:link,
+a:visited {
+	color:white;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#FFC412;
+	text-decoration:none;
+}
+
+.down-line-downloading a:hover {
+	color:#FCF4AD;
+	text-decoration:none;
+}
+
+.down-header,
+.down-line-hashing,
+.down-line-error,
+.down-line-stalled,
+.down-line-complete,
+.down-line-completing,
+.down-line-waiting,
+.down-line-paused,
+.down-line-stopped,
+.down-line-downloading,
+.up-header,
+.up-line-downloading,
+.up-line-waiting,
+.server-header,
+.server-line-disconnected,
+.server-line-high,
+.server-line-low,
+.server-line-connecting,
+.server-line-failed,
+.shared-header,
+.shared-line-file,
+.shared-line-filedown,
+.header,
+.smallheader,
+.commontext,
+.upqueue-header,
+.upqueue-line,
+.upqueue-banned-line,
+.upqueue-friend-line,
+.upqueue-credit-line,
+.search-header,
+.search-main,
+.search-line,
+.addserver-header,
+.addserver-line {
+	font-size:8pt;
+}
+
+.tabs {
+	background:#1F76A5;
+	font-size:10pt;
+}
+
+.tabs2 {
+	background:#005784;
+	font-size:9pt;
+}
+
+.down-header,
+.down-line-hashing,
+.down-line-error,
+.down-line-stalled,
+.down-line-complete,
+.down-line-completing,
+.down-line-waiting,
+.down-line-paused,
+.down-line-stopped,
+.down-line-downloading,
+.up-header,
+.up-line-waiting,
+.up-line-downloading,
+.server-header,
+.server-line-disconnected,
+.server-line-high,
+.server-line-low,
+.server-line-connecting,
+.server-line-failed,
+.shared-header,
+.shared-line-file,
+.shared-line-filedown,
+.upqueue-header,
+.upqueue-line,
+.upqueue-banned-line,
+.upqueue-friend-line,
+.upqueue-credit-line,
+.search-header,
+.search-line,
+.addserver-header,
+.addserver-line {
+	text-align:center;
+}
+
+.search-main,
+.left {
+	text-align:left;
+}
+
+.right {
+	text-align:right;
+}
+
+.down-header,
+.up-header,
+.server-header,
+.shared-header,
+.upqueue-header,
+.addserver-header,
+.search-header,
+.search-header-right {
+	background:#005784;
+}
+
+.search-main {
+	background:#000000;
+}
+
+.header {
+	background:#0046AC;
+}
+
+.smallheader {
+	background:#003C6E;
+	color:#FFFFFF;
+}
+
+.commontext {
+	background:#FFFFFF;
+	color:#000000;
+}
+
+.down-line-hashing,
+.down-line-error,
+.down-line-stalled,
+.down-line-complete,
+.down-line-completing,
+.down-line-waiting,
+.down-line-paused,
+.down-line-stopped,
+.down-line-downloading,
+.up-line-waiting,
+.up-line-downloading,
+.server-line-disconnected,
+.server-line-high,
+.server-line-low,
+.server-line-connecting,
+.server-line-failed,
+.shared-line-file,
+.shared-line-filedown,
+.upqueue-line,
+.upqueue-banned-line,
+.upqueue-friend-line,
+.upqueue-credit-line,
+.search-line,
+.addserver-line {
+	background:#1F76A5;
+}
+
+.down-line-waiting a:active,
+.down-line-waiting a:link,
+.down-line-waiting a:visited,
+.shared-line-file a:active,
+.shared-line-file a:link,
+.shared-line-file a:visited,
+.server-line-disconnected a:active,
+.server-line-disconnected a:link,
+.server-line-disconnected a:visited {
+	color:#FFFFFF;
+}
+
+.server-line-high,
+.server-line-high a:active,
+.server-line-high a:link,
+.server-line-high a:visited,
+.upqueue-friend-line,
+.up-line-downloading,
+.down-line-downloading,
+.down-line-downloading a:link,
+.down-line-downloading a:active,
+.down-line-downloading a:visited {
+	color:#83D683;
+}
+
+.server-line-low,
+.server-line-low a:active,
+.server-line-low a:link,
+.server-line-low a:visited,
+.upqueue-credit-line,
+.down-line-hashing,
+.down-line-hashing a:active,
+.down-line-hashing a:link,
+.down-line-hashing a:visited {
+	color:#FEFF92;
+}
+
+.server-line-connecting,
+.server-line-connecting a:active,
+.server-line-connecting a:link,
+.server-line-connecting a:visited,
+.down-line-complete,
+.down-line-complete a:active,
+.down-line-complete a:link,
+.down-line-complete a:visited,
+.down-line-completing,
+.down-line-completing a:active,
+.down-line-completing a:link,
+.down-line-completing a:visited {
+	color:#A9CAE2;
+}
+
+.upqueue-banned-line,
+.down-line-error,
+.down-line-error a:active,
+.down-line-error a:link,
+.down-line-error a:visited {
+	color:#E96969;
+}
+
+.down-line-stalled,
+.down-line-stalled a:active,
+.down-line-stalled a:link,
+.down-line-stalled a:visited {
+	color:#DF98E0;
+}
+
+.down-line-paused,
+.down-line-paused a:active,
+.down-line-paused a:link,
+.down-line-paused a:visited,
+.shared-line-filedown,
+.shared-line-filedown a:active,
+.shared-line-filedown a:link,
+.shared-line-filedown a:visited,
+.server-line-failed,
+.server-line-failed a:active,
+.server-line-failed a:link,
+.server-line-failed a:visited {
+	color:#DAD9D9;
+}
+
+.down-line-stopped,
+.down-line-stopped a:active,
+.down-line-stopped a:link,
+.down-line-stopped a:visited {
+	color:#A3A2A2;
+}
+
+.percent_table {
+	border:0px solid #000000;
+	border-collapse:collapse;
+}
+
+.message {
+	background:#C0C0C0;
+	font-size:10pt;
+	font-weight:bold;
+	text-align:center;
+	color:#C52222;
+}
+
+.dinput {
+	border-width:1px;
+	border-color:black;
+	border-style:none;
+}
+
+.ibutton {
+	background-color:#ddd;
+	border:outset 1px white;
+	cursor:pointer;
+	font-size:8pt;
+	font-weight:bold;
+}
+
+.menuskin {
+	background:#005784;
+	position:absolute;
+	border:1px solid black;
+	line-height:14px;
+	font-size:11px;
+	font-weight:normal;
+	z-index:100;
+	visibility:hidden;
+	white-space:nowrap;
+}
+
+.menuskin a {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+.menuimages {
+	background:#2184B5;
+	border:2px #2184B5 solid;
+	vertical-align:middle;
+}
+
+.menuchecked {
+	background:#005784;
+	border:2px #005784 solid;
+	vertical-align:middle;
+}
+
+#mouseoverstyle {
+	background:#003C6E;
+}
+
+#mouseoverstyle .menuchecked {
+	background:#003C6E;
+	border:2px #003C6E solid;
+}
+
+#dhtmlpointer {
+	left:-300px;
+	position:absolute;
+	visibility:hidden;
+	z-index:101;
+}
+
+#dhtmltooltip {
+	background-color: #ffd; 
+	border:1px solid black;
+	color:black;
+	font-size:8pt;
+	line-height:14px;
+	left:-300px;
+	overflow:hidden;
+	padding:6px;
+	position:absolute;
+	text-overflow:ellipsis;
+	visibility:hidden;
+	width:400px;
+	z-index:100;
+}
+
+
+.server-low {background-image:url(low.gif);background-position:center;background-repeat:no-repeat}
+.server-high {background-image:url(high.gif);background-position:center;background-repeat:no-repeat}
+.server-failed {background-image:url(failed.gif);background-position:center;background-repeat:no-repeat}
+.server-disconnected {background-image:url(disconnected.gif);background-position:center;background-repeat:no-repeat}
+.server-connecting {background-image:url(connecting.gif);background-position:center;background-repeat:no-repeat}

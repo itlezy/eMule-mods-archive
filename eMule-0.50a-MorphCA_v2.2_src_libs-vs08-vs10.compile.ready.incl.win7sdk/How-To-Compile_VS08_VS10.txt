@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------------------
+       How to compile eMule MorphCA using Visual Studio 2008 SP1 / Visual Studio 2010
+---------------------------------------------------------------------------------------------
+
+VS08: start project with emule90.sln
+
+or 
+
+Vs10: start project with emule100.sln

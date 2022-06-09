@@ -1,0 +1,304 @@
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v2.2
+--------------------------------------
+
+29-01-2010
+
+Based on MorphXT v12.6 [Stulle]
+
+Change: Update to MorphXT v12.6
+Change: Mulelistctrl UI change m_crGlow to m_crEvenLine
+Change: Some icons
+Add: zh_TW language file [thx xDargonDx]
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v2.1
+--------------------------------------
+
+18-11-2010
+
+Fix: Broken versionscheck link in logbox
+Fix: Broken display current uploading chunk
+Fix: Debug crash about missing icon in add friend dialog
+Change: Appropriate VS10 preoject files (src now compile ready with vs08 and vs10)
+Change: Remove Debug Log [dolphinx]
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v2.0
+--------------------------------------
+
+24-10-2010
+
+Based on MorphXT v12.5 [Stulle]
+
+Change: Update to MorphXT v12.5
+Remove: ModelessDialogs (now only used for SpeedGraphWindow)
+Remove: Community visualisation
+Fix: Some code around GDIPlusUtil in KadLookupGraph
+
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.9 Hotfix
+--------------------------------------
+
+08-10-2010
+
+Based on MorphXT v12.4 [Stulle]
+
+Removed: Forbidden community feature in USC
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.9
+--------------------------------------
+
+08-10-2010
+
+Based on MorphXT v12.4 [Stulle]
+
+Add: IntelliFlush (always enabled) [WiZaRd]
+Change: File Buffer Size increased a bit to 7,5 MB max. because of IntelliFlush (default 4MB) [Spike2]
+Removed: Flush Thread
+Change: Upload Splitting Class - Community clients with same classID how friends
+Change: Moved Community Tag setting to Upload Management-Friends/Community
+Change: Moved CA-log checkbox to verbose settings
+Add: Don't show MorphCA icon for nickthieves
+Readd: Setable compresslevel [leuk_he]
+Change: Variable compression switchable
+
+       
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.8
+--------------------------------------
+
+03-10-2010
+
+Based on MorphXT v12.4 [Stulle]
+
+Change: XMessageBox auto close display from = to [] 
+Fix: Check/uncheck not shown in menu for speedgraph
+Readd: Show eD2K Link to history list menu
+Add: Localize strings for statistic menu
+Add: Hide the "FileIdentifierDesc" loglines in release builds [emf]
+Change: Partfile color in shared file list
+Add: Connected Server color
+Change: Dowloading file color
+Changed: Leecher icon
+Changed: Client icons
+Add: Leecher greyed out
+Removed: LowID color
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.7
+--------------------------------------
+
+22-09-2010
+
+Change: Replaced XMessageBox with version of X-Mod [dolphinx]
+Add: Use some auto close XMessageBox instead of AfxMessageBox [dolphinx]
+Add: Auto close timer to "main exit" dialog [morph4u]
+Change: Some changes in CA from eMuleFuture 1.0 Beta2 [WiZaRd]
+Add: BadClientFlag [WiZaRd]
+Add: "open incoming dir" to toolbar [WiZaRd]
+Add: "open incoming dir" to Win7 thumbbuttons list [WiZaRd]
+Add: Localize strings for MorphCA [morph4u]
+Change: Some lines in History list menu
+Add: eMule Skin from "Cloudas" to bin package
+Add: Newest MediaInfo.dll to bin package
+Remove: ClipStat
+
+
+---------------------------------------------
+Changelog for eMule 0.50a MorphCA v1.6 Hotfix
+---------------------------------------------
+
+15-09-2010
+
+Fix: Some code around ModID
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.6
+--------------------------------------
+
+12-09-2010
+
+Based on MorphXT v12.4 [Stulle]
+
+Change: Update to MorphXT v12.4
+Add: Minimule open on tray [Stulle/morph4u]
+Add: ASFU v3.5 (auto shared files updater) [Monke/Stulle/Wiz]
+Change: Some changes in SpeedGraphWnd
+Fix: Crash in Shared files window open "All Directories" [thx once375ml for reporting]
+
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.5
+--------------------------------------
+
+15-06-2010
+
+Based on MorphXT v12.3 [Stulle]
+
+Change: Update to MorphXT v12.3
+Add: Average Queue Ranking [Xman]
+Add: Show Session Download [Xanatos]
+Fix: Display bug in client details
+Fix: Show modversion in downloadlist
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.4
+--------------------------------------
+
+03-06-2010
+
+Based on MorphXT v12.2 [Stulle]
+
+Change: Update to MorphXT v12.2 
+Add: Allowing reuse of http sources [Avi3k] http://forum.emule-project.net/index.php?showtopic=149677
+Fix: Minor bug in dowbloadclients
+Fix: Make Auto Server Disconnect only possible if KAD is running
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.3
+--------------------------------------
+
+01-06-2010
+
+Add: Auto Server Disconnect [morph4u]
+Add: Show IP Filter Hits [dolphinx]
+Add: Remove All Banned Clients at Tools button [X-Mod]
+Change/Fix: MorphXT Modversion to Easy Modversion [WiZaRd]
+Add: Auto Drop System [Sivka/JvA/Stulle]
+Change: Auto Drop System settings hardcoded [morph4u]
+Add: Show # of dropped sources [Stulle]
+Add: Limit PS by amount of data uploaded [Stulle]
+Add: Default server.met and nodes.dat URL [pP]
+Readd: Statistictree icons
+Remove: Useless code in PPgSecurity because new IPFilter update
+Remove: Show Permission
+Add: Relax on startup [WiZaRd] 
+Add: Save Last Request [JvA]
+Add: New HTTP Progressbar [JVA]
+Remove: Copy Friendlink
+Remove: Static Tray Icon
+Remove: Static IP Filter
+Remove: IP Filter White List
+Remove: Dynamic IP-Filters
+Remove: IP2Country auto-update
+Change: Changed some code of requested files popup
+Readd: InvisibleMode
+Fix: Partfile color in shared files
+Fix: Readd to much removed code in catselect
+Fix: Bug I done in Drop Blocking Clients
+Fix: Minor fixes in downloadlist and some others
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.2
+--------------------------------------
+
+19-05-2010
+
+Readd: Some parts of control mod tag
+Remove: Smart Upload Control
+Remove: Slot Limiter (experimental)
+Change: Some default settings
+Add: Prefs for ShowFileStatusIcon in optionspage
+Add: Drop Blocking Clients [X-Ray/Stulle]
+Add: QuickStart [Xanatos]
+Change: Sharevisibly color removed and added overlayicon
+Remove: Update server list when connecting to a server
+Remove: Update server list when a client connects
+Add: ClipStat [X-Ray/WiZaRd]
+Add: ClientAnalyzer to ClipStat [umek]
+Add: CPU/MEM usage [$ick$/Stulle]
+Add: Powershare to Stats [pP]
+Change: TotalUpDown with color [X-Ray]
+Fix: LowID color in uploadlist at wrong columm
+Add: ChatLog [CiccioBastardo]
+Add: Enhanced Client Recognition [Spike2]
+Add: Emulate Others [WiZ/Spike2/shadow2004]
+Add: Show MinQR in downloadlist [?]
+Fix: Ip2Country column in downloadclientsctrl [morph4u]
+Change: No FunnyNick for leecher and show in clientdetail dialog [pP]
+Change: VariableCompression [Xman/NetF]
+
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.1
+--------------------------------------
+
+16-05-2010
+
+to have a crash free build...
+
+Fix: Crash at cancel downloading file (my fault) [morph4u]
+Add: ModelesDialogs [Xanatos]
+Add: SpeedGraphWnd [dolphinx]
+Add: GDI Plus UI [dolphinx]
+Add: Additional Localize in preferencesdlg [dolphinx]
+Add: Open Log Folder at Tools Button [morph4u]
+Add: FileStatusIcons (disable in prefernces.ini ShowFileStatusIcon) [X-Ray]
+Add: See all sources [Xman]
+Remove: List icons
+Remove: Massrename
+Change: Colors for powershared/friends/friendslot/lowid/sharevisibly [morph4u]
+
+
+todo: cleaning emule.rc/recource.h about all removed strings a. icons
+
+
+--------------------------------------
+Changelog for eMule 0.50a MorphCA v1.0
+--------------------------------------
+
+13-05-2010
+
+Based on eMule 0.50a MorphXT 12.0 / Update to eMule 0.50a [Stulle]
+
+Add: ClientAnalyzer [WiZaRd]
+Add: OldStyle StatisticsWindow [TK4]
+Change: GUI, Optionspages and some icons [morph4u]
+Change: Log Window
+Remove: MorphXT anti leecher features
+Remove: Fake Check 
+Remove: Fakeanalyzer 
+Remove: Help
+Remove: IRC
+Remove: MobileMule
+Remove: VersionsCheck
+Remove: Wizzard
+Remove: AboutBox
+Remove: TextToSpeech
+Remove: Follow the Majority
+Remove: WapServer
+Remove: SlideBar
+Remove: SideBanner
+Remove: and many code i don't need to have a light wight version
+
+
+official mod without any bad features
+
+---------------------------------------
+MorphCA developed by morph4u
+---------------------------------------

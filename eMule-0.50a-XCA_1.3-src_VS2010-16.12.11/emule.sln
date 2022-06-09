@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emule", "srchybrid\emule.vcproj", "{584EA69D-3443-4197-8994-364880FC1B9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ReleaseNoSSE|Win32 = ReleaseNoSSE|Win32
+		ReleaseNoSSE|x64 = ReleaseNoSSE|x64
+		SharedDebug|Win32 = SharedDebug|Win32
+		SharedDebug|x64 = SharedDebug|x64
+		SharedRelease|Win32 = SharedRelease|Win32
+		SharedRelease|x64 = SharedRelease|x64
+		testRelease|Win32 = testRelease|Win32
+		testRelease|x64 = testRelease|x64
+		Unicode_Debug|Win32 = Unicode_Debug|Win32
+		Unicode_Debug|x64 = Unicode_Debug|x64
+		Unicode_Release|Win32 = Unicode_Release|Win32
+		Unicode_Release|x64 = Unicode_Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{584EA69D-3443-4197-8994-364880FC1B9B}.ReleaseNoSSE|Win32.ActiveCfg = ReleaseNoSSE|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.ReleaseNoSSE|Win32.Build.0 = ReleaseNoSSE|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.ReleaseNoSSE|x64.ActiveCfg = ReleaseNoSSE|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.ReleaseNoSSE|x64.Build.0 = ReleaseNoSSE|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedDebug|Win32.ActiveCfg = SharedDebug|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedDebug|Win32.Build.0 = SharedDebug|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedDebug|x64.ActiveCfg = SharedDebug|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedDebug|x64.Build.0 = SharedDebug|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedRelease|Win32.ActiveCfg = SharedRelease|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedRelease|Win32.Build.0 = SharedRelease|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedRelease|x64.ActiveCfg = SharedRelease|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.SharedRelease|x64.Build.0 = SharedRelease|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.testRelease|Win32.ActiveCfg = test|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.testRelease|x64.ActiveCfg = test|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Debug|Win32.ActiveCfg = Unicode_Debug|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Debug|Win32.Build.0 = Unicode_Debug|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Debug|x64.ActiveCfg = Unicode_Debug|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Debug|x64.Build.0 = Unicode_Debug|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Release|Win32.ActiveCfg = Unicode_Release|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Release|Win32.Build.0 = Unicode_Release|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Release|x64.ActiveCfg = Unicode_Release|x64
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Release|x64.Build.0 = Unicode_Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

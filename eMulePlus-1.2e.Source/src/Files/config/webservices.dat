@@ -1,0 +1,28 @@
+#########################################
+# Webservices Configuration File
+# input one service per line
+#
+# Format: Name,URL
+#
+# Placeholders:
+# #filename -> name of the file
+# #cleanname-> cleaned up name of the file without extension
+# #hashid   -> hashid of the file
+# #filesize -> size of the file
+#
+# <separator> -> set a separator line
+#
+# Examples:
+# eMule Plus Homepage,http://emuleplus.info
+# Testservice,http://www.webservice.com/search?p=ed2k:#filesize:#hashid
+#
+# Comment lines begin with # or /
+
+DonkeyFakes - Check File,http://www.donkeyfakes.net/fakes.php?hash=#hashid&size=#filesize
+DonkeyFakes - Report File,http://www.donkeyfakes.net/report.php?hash=#hashid&size=#filesize&name=#filename
+eMugle's File Details,http://www.emugle.com/details.php?f=#hashid
+Search IMDb Movie Info,http://imdb.com/find?s=tt&q=#cleanname
+<separator>
+eMule Plus FAQ,http://emuleplus.info/forum/index.php?showforum=23
+eMule Plus Forum,http://emuleplus.info/forum/
+MobileMule Guide,http://mobil.emule-project.net/index.php?page=guide&language=en

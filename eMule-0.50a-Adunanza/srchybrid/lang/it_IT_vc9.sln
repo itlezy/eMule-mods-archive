@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "languages - Italian (Italy)", "it_IT_vc9.vcproj", "{FEF2FD72-388B-42F6-B5DA-B9A663ACF557}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dynamic|Win32 = Dynamic|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEF2FD72-388B-42F6-B5DA-B9A663ACF557}.Dynamic|Win32.ActiveCfg = Dynamic|Win32
+		{FEF2FD72-388B-42F6-B5DA-B9A663ACF557}.Dynamic|Win32.Build.0 = Dynamic|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

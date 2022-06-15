@@ -1,0 +1,325 @@
+Neo Mule 4.55a Changelog
+fixed a major crash bug in download bandwidth trotler
+fixed some minor bugs
+
+
+Neo Mule 4.55 Changelog
+Updated to 0.49b
+fixed some bugs
+
+
+
+Neo Mule 4.5 Changelog
+
+/************* CORE 1 ***************/
+
+20.05.2007
+NV - [NeoVersion]
+SS - [SplashScreen]
+NPB - [PrefsBanner]
+NSB - [SlideBar]
+NCFG - [NeoConfiguration]
+/*CL00*/
+FFT - [FileFlushThread]
+/*CL01*/
+RBT - [ReadBlockThread]
+/*CL02*/
+STS - [SlugFillerThreadSafe]
+SSH - [SlugFillerSafeHash]
+/*CL03*/
+
+22.05.2007
+SCV - [SubChunkVerification]
+/*CL04*/
+SP - [SharedParts]
+PIX - [PartImportExport]
+CBBF - [CorruptionBlackBoxFix]
+MOD - [SpaceAllocate]
+/*CL05*/
+MTD - [MultiTempDirectories]
+/*CL06*/
+POFC - [PauseOnFileComplete]
+MOD - [NewUploadState]
+SAFS - [ShowAllFilesInShare]
+ML - [ModLog]
+/*CL07*/
+
+23.05.2007
+SSD - [ShareSubDirectories]
+SSF - [ShareSingleFiles]
+SDD - [ShareDargAndDrop]
+AKF - [AllKnownFiles]
+/*CL08*/
+
+/************* CORE 2 ***************/
+
+24.05.2007
+MOD - [SendAcceptUpload]
+NDBT - [NeoDownloadBandwidthThrottler]
+
+25.05.2007
+NUBT - [NeoUploadBandwidthThrottler]
+ASM - [AccurateSpeedMeasure]
+NUSM - [NeoUploadSlotManagement]
+/*CL11*/
+
+26.05.2007
+MOD - [IsPublicIP]
+NBC - [NeoBandwidthControl]
+NAFC - [NetworkAdapterFeatbackControl]
+MOD - [BindToAdapter]
+
+27.05.2007
+NBCs - [NeoBandwidthControlSheduler]
+NS - [NeoStats]
+/*CL12*/
+DSB - [DynamicSocketBuffer]
+/*CL13*/
+
+01.06.2007
+NLC - [NeoLanCast]
+MOD - [ResolveSourceHost]
+FIX - [BetterClientAttaching]
+NCC - [NeoConnectionChecker]
+/*CL14*/
+
+02.06.2007
+QS - [QuickStart]
+RIC - [ReaskOnIDChange]
+RKF - [RecheckKadFirewalled]
+RLD - [ReconnectOnLowID]
+/*CL15*/ 
+
+06.06.2007
+VOODOO - [UniversalPartfileInterface]
+VOODOOs - [SearchForwarding]
+/*CL16*/ 
+
+09.06.2007
+MOD - [EditServer]
+
+15.07.2007
+UPC - [UploadingProblemClient]
+BM - [BandwidthModeration]
+
+/************* CORE 3 ***************/
+
+09.06.2007
+SCFS - [SmartClientFileStatus]
+MOD - [RequestHashset]
+MFSB - [MultiFileStatusBars]
+RFL - [RequestFileList]
+MCM - [ManualClientManagement]
+MOD - [ClientMenu]
+XC - [ExtendedComments]
+/*CL2.1*/
+
+10.06.2007
+NMP - [NeoModProt]
+NMPi - [NeoModProtInfo]
+NMPm - [NeoModProtMultiPacket]
+/*CL2.2*/
+
+NMPx - [NeoModProtXS]
+/*CL2.3*/
+
+USPS - [UnSolicitedPartStatus]
+SCT - [SubChunkTransfer]
+ICS - [InteligentChunkSelection] (protocol only !!!)
+/*CL2.4*/
+
+NATT - [NatTraversal]
+UTCP - [UserModeTCP]
+LUC - [LowIDUplaodCallBack]
+/*CL2.5*/
+
+SCV - [SubChunkVerification]
+/*CL2.6*/
+
+15.07.2007
+FCC - [FixConnectionCollision]
+
+25.07.2007
+XCs - [SaveComments]
+KII - [KadInterfaceImprovement]
+XCk - [KnownComments]
+
+/************* CORE 4 ***************/
+
+14.06.2007
+SP - [SharedParts]
+AKF - [AllKnownFiles]
+NFDD - [NewFileDetailDialog]
+FIX - [BetterClientAttaching]
+
+
+15.06.2007
+NSC - [NeoSharedCategories]
+EFT - [ed2kFileType]
+
+17.06.2007
+FCFG - [FileConfiguration]
+/*CL00b*/
+
+/*25.06.2007*/
+DRT - [DownloadReaskTweaks]
+SR - [SpreadReask]
+SRT - [SourceRequestTweaks]
+SDT - [SourcesDropTweaks]
+FIX - [SourceCount]
+/*CL3.1*/
+
+/*26.06.2007*/
+TCR - [TCPConnectionRetry]
+XSC - [ExtremeSourceCache]
+/*CL3.2*/
+
+/*06.07.2007*/
+AHL - [AutoHardLimit]
+GSL - [GlobalSourceLimit]
+CSL - [CategorySourceLimit]
+/*CL3.3*/
+
+/*07.07.2007*/
+NSS - [NeoSourceStorage]
+NCD - [NeoClientDatabase]
+SFL - [SourceFileList]
+SHM - [SourceHashMonitor]
+NSA - [NeoSourceAnaliser]
+/*CL3.4*/
+
+/*12.07.2007*/
+DBR - [DynamicBlockRequest]
+MCS - [ManualChunkSelection]
+/*CL3.5*/
+
+/*17.07.2007*/
+KLC - [KhaosLugdunumCredits]
+MSR - [ManualSourceRequest]
+MSD - [ManualSourcesDrop]
+OCF - [OnlyCompleetFiles]
+SC - [SuspendCollecting]
+SD - [StandByDL]
+
+/*31.07.2007*/
+NEO: NXC - [NewExtendedCategories] 
+NTB - [NeoToolbarButtons]
+/*CL3.6*/
+
+/************* CORE 5 ***************/
+
+/*13.07.2007*/
+NPT - [NeoPartTraffic]
+MPS - [ManualPartSharing]
+IPS - [InteligentPartSharing] 
+/*CL4.1*/
+
+/*14.07.2007*/
+SSP - [ShowSharePermissions]
+SRS - [SmartReleaseSharing]
+/*CL4.2*/
+
+/*15.07.2007*/
+NMFS - [NiceMultiFriendSlots]
+TFL - [TetraFriendLinks]
+/*CL4.2*/
+
+MC - [MetCredits]
+SQ - [SaveUploadQueue]
+XCTA - [XmanExtenedCreditTableArragement]
+/*CL4.3*/
+
+MQ - [MultiQueue]
+RQ - [RandomQueue]
+PRSF - [PushSmallRareFiles]
+TQ - [TweakUploadQueue]
+/*CL4.4*/
+
+/*17.07.2007*/
+PSA - [PreferShareAll]
+
+/*20.07.2007*/
+NCS - [NeoCreditSystem]
+NFS - [NeoScoreSystem]
+/*CL4.5*/
+
+/*23.07.2007*/
+VSF - [VirtualSharedFiles]
+XSF - [ExtendedSharedFiles]
+
+meta core 3+4+5
+
+/*10.08.2007*/
+BPS - [BetterPassiveSourceFinding]
+
+/******** Beta 1 ********/
+/*16.08.2007*/
+MOD - [SeeTheNeed]
+MOD - [ShowBuffered]
+MOD - [BeterSpeedDisplay]
+MOD - [ESCFix]
+
+/*17.08.2007*/
+MLD - [ModelesDialogs]
+
+/*18.08.2007*/
+MOD - [MoreSearchColors]
+MID - [ModID]
+MIDI - [ModIDInfo]
+MIDS - [ModIDStat]
+SE - [SortExtension]
+SEa - [SortAltExtension]
+MOD - [NewSorting]
+
+/******** Beta 2 ********/
+/*31.08.2007*/
+NSTI - [NewSystemTrayIcon]
+STI - [StaticTray]
+IM - [InvisibelMode]
+TPP - [TrayPasswordProtection]
+PSM - [PlusSpeedMeter]
+CCF - [ColloredCategoryFlags]
+SI - [SysInfo]
+MOD - [Percentage]
+MOD - [SessionDL]
+MOD - [RelativeChunkDisplay]
+MOD - [ChunkDots]
+
+/*01.09.2007*/
+NTS - [NeoTreeStyle]
+NA - [NeoArgos]
+
+/*02.09.2007*/
+PP - [PasswordProtection]
+
+/*04.09.2007*/
+CUT - [CleanUploadTiming]
+FB - [FeedBack]
+MOD - [SearchHash]
+
+/******** Beta 3 ********/
+/*20.09.2007*/
+MOD - [DontRemoveStaticServers]
+MOD - [ServerIPFilter]
+
+/*21.09.2007*/
+NVC - [NeoVersionCheck]
+KBS - [KadBootStrap]
+IP2C - [IP2Country]
+
+/*23.09.2007*/
+NCI - [NewClientIcons]
+ECR - [EnhancedClientRecognization]
+
+/*24.09.2007*/
+CRC - [MorphCRCTag]
+MMR - [MorphMassRemane]
+
+/*25.09.2007*/
+NMX - [NeoMenuXP]
+CQR - [CollorQueueRank]
+
+/*26.09.2007*/
+NTT - [NewToolTips]
+
+/******** FINAL ********/

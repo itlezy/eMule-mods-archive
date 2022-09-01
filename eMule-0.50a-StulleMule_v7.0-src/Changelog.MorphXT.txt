@@ -1,0 +1,2294 @@
+--------------------------------------
+Changelog for eMule 0.49c MorphXT v11.3
+--------------------------------------
+20-04-2009
+
+ADD: Filter clients with failed downlods [Xman]
+ADD: Count failed TCP/IP Connections [Xman]
+ADD: Temporary IP Filter [Xman]
+CHANGE: reversed IRC chan join order [Stulle]
+CHANGE: Reworked "Use Download ACK" code to be less hacky [Stulle]
+CHANGE: Reapplied corrected sorting fix in Download List [Slugfiller/Stulle]
+CHANGE: Do not stop setting new PS limit if new value = old value [Stulle]
+CHANGE: Update GUI when reloading share via Tray Icon or on Cat add/edit [Stulle]
+CHANGE: Unified sorting by Software Version [Stulle]
+CHANGE: Updated webservices.dat [shortypower]
+FIX: Display proper icons in SharedDirsTreeCtrl [Stulle]
+FIX: Display extended info about tags client sent in Clients list [Stulle]
+FIX: Source items color in DownloadList was not always reset properly [JvA]
+FIX: "disable some toolbar options was set the other way around [Stulle]
+FIX: Falsely as shared display folders du to shareSubdir [Stulle]
+FIX: Do shared files reload via command line was broken [Stulle]
+FIX: (Official) Sorting fix for filetype [moloko+]
+FIX: (Official) Single shared files were hard excluded on unshare [Stulle]
+FIX: (Official) Logs folder was not created when log saving was enabled [Stulle]
+FIX: (Official) File download via WebServer was broke [Stulle]
+REMOVED: Unneccessary shared files reload fix (improper) [JackieKu]
+REMOVED: Dupe shared files reload on add/edit cat [Stulle]
+
+Note: Following languages updated: German [Stulle]; French [Nicolas_FR]; Chinese (P.R.C.) [zz_fly]; 
+	Chinese (Taiwan) [AndCycle]; Italian [v-x-vendetta]; Turkish [omeringen]; Spanish [guijarrelson]
+
+
+--------------------------------------
+Changelog for eMule 0.49c MorphXT v11.2
+--------------------------------------
+23-03-2009
+
+Merged to 0.49c [Stulle]
+ADD: Autojoin to #emule-morph in IRC [Stulle]
+ADD: Service description (Service needs to be reinstalled) [Stulle]
+ADD: High definition vista icon [Stulle]
+ADD: Microsoft Windows Media Format 9 SDK for MS VS2003 build [Stulle]
+ADD: Microsoft Windows Media Format 11 SDK for MS VS2005 build [Stulle]
+ADD: Microsoft Speach SDK for all builds [Stulle]
+ADD: Purge known.met settings (not at all, partially/ official, completely/ old Morph) [Stulle]
+Add: Option to remove AICH hashes immediatly [Stulle]
+ADD: Update Downloaded History List automatically to reflect changes in Shared Files List [Stulle]
+ADD: Delete files on hitting the del key in Downloaded History List [Stulle]
+ADD: Copy Ed2k links into clipboard using Ctrl+C in Downloaded History List [Stulle]
+ADD: Sort for "calculated CRC32" column in Shared Files List [Stulle]
+ADD: Progress Hash [O2]
+ADD: IP Filter White list [Stulle]
+ADD: New default IPFilter (Maintained by Ozzy) [Stulle]
+	+ uses DynDNS to check version, mirrored at SourceForge, unrar.dll required!
+ADD: RAR File download decompress for auto update [official]
+ADD: New hidden options to Advanced Options and Tooltips for new options [Stulle]
+ADD: Rebind UPnP mappings (UDP, TCP and Webserver for now) like the official does [Stulle]
+ADD: Turkish translation (partially) [omeringen]
+CHANGE: Display NNS in UploadListCtrl [Diabolo111]
+CHANGE: Cleaned up Static IP Filter code [Stulle]
+	+ only ipfilter.dat layout allowed!
+CHANGE: Switch category column and download started column (group cat related) [Stulle]
+CHANGE: Keep old default sorting behaviour for DownloadList (only names ascending) [Stulle]
+CHANGE: Default Fakes link to http://emulepawcio.sourceforge.net/fakes.zip [Stulle/Rick164]
+CHANGE: Default purge time for known.met is set to 31 days like in official instead of old 150 days [Stulle]
+CHANGE: Rewrite of Downloaded History List according to new List code layout from official [Stulle]
+CHANGE: Accept more file names for contents of downloaded ipfilter archives [official]
+CHANGE: Send ICS info even if the file is not extremely rare (as pointed out by WiZaRd) [Stulle]
+CHANGE: Made ICS mode local variable to save some bytes in RAM usage (as pointed out by WiZaRd) [Stulle]
+CHANGE: Updated Show less controls for new columns and added it for context menus [Stulle]
+CHANGE: Enabling Extended controls disables Show less controls and vice versa [Stulle]
+	+ close preferences window to avoid odd behaviour... kinda tricky...
+CHANGE: Switched on Global Hard Limit by default (upgrade unaffected) [Stulle]
+CHANGE: Only display category selection dialog if there is more than one category [Stulle]
+CHANGE: Enlarged IRC settings tree control and dir tree control in Directories preferences panel [Stulle]
+CHANGE: Use '1' as default min linear priority to reserve '0' for small files [JackieKu]
+FIX: Corrupted userhash ban [taz]
+FIX: Double increase for badrequests [taz]
+FIX: Incorrect and redundent operation for Double backup [AndCycle]
+FIX: Display FairPlay in lists only if requested file is complete [gomez82]
+FIX: Improper localization of altered category column in DownloadList [Stulle]
+FIX: Failing support of emulepawcio ipfilter.zip format [D10Tmain]
+FIX: Memleak fix around hashing [WiZaRd]
+FIX: Download ACK measurement was incorrect (when download was limited) [Stulle]
+FIX: Download ACK was not displayed and counted in stats as overhead [Stulle]
+FIX: Improper Friend Logging for FunnyNick affected friend clients [Stulle]
+FIX: Network mapped drives could not be selected [JackieKu]
+	http://social.msdn.microsoft.com/Forums/en-US/vcgeneral/thread/95f7b7e8-87fe-4566-bf9a-4f49a6c21811/
+FIX: Shared files were sometimes unneccessarily reloaded due to shareSubdir [JackieKu]
+FIX: Some improper localization in Morph preferences window [Stulle]
+REMOVED: Adunanza ban [Stulle]
+
+Note: Additional options stored in Known.met will be purged like some official stuff is.
+Note: Due to change in column orders we recommend a clean install. You may experience strange looks otherwise.
+Note: Microsoft DirectX 9 SDK for MS VS2005 build has already been added in an earlier version.
+Note: See How-To-Compile_VS05.txt in source package for guide on how to get the sources to compile.
+Note: New IPFilter will only be set when resetting the url or making a clean install.
+Note: Following languages updated: German [Morella/Myth88/Stulle]; French [Nicolas_FR]; Spanish [guijarrelson];
+	Portuguese (Brazil) [Heiler]; Chinese (P.R.C.) [zz_fly]; Chinese (Taiwan) [JackieKu]; Italian
+	[v-x-vendetta/Max/miao]
+
+IP Filter White List:
++ IPs on this list will not be banned
++ use ipfilter_white.dat to add IPs to the White List
+
+
+--------------------------------------
+Changelog for eMule 0.49b MorphXT v11.1
+--------------------------------------
+15-09-2008
+
+Merged to 0.49b [fafner]
+ADD: DirectX (Preview feature) support for VS05 [eMF]
+ADD: TextToSpeech support for VS05 [Stulle]
+ADD: Community/Corrupt userhash check [zz_fly/squallATF]
+ADD: Bad Shareaza detection [zz_fly]
+	Clients pretending to be eMule clients but sending UDP and Misc tags like Shareaza
+ADD: Vagaa check [zz_fly]
+	Clients sending a KAD tag from 0.49a+ but pretending to be 0.48a
+CHANGE: Exception Handling Model to /EHa [fafner]
+CHANGE: (Morph) Reverted a fix to fafner style [Stulle]
+CHANGE: Made download ack overhead (morph -> upload management) optional [leuk_he]
+CHANGE: Bring eMule to front when double click on static TrayIcon [Stulle]
+CHANGE: Updated SNAFU Anti-Leecher Protection [Xman/zz_fly]
+CHANGE: Updated Bad Mod List (DLP v33) [Xman/zz_fly/JvA/DLarge/WiZ/more?]
+CHANGE: Cleaned up the group box code a bit [Stulle]
+CHANGE: Enable highlevel functions in Webserver panel when Multi enabled [Stulle]
+CHANGE: Use PushButton for applying the right settings for using NT Service [Stulle]
+CHANGE: Web Interface tabs now multilingual [Stulle]
+FIX: Display download ack overhead in statistics correct [leuk_he]
+FIX: Improperly reloading icons for SharedDirsTree [Stulle]
+FIX: Store searches if enabled [Stulle]
+FIX: Unjustified bans as reported here http://forum.emule-project.net/index.php?showtopic=137052
+FIX: Show proper icon on all Webserver tabs [Stulle]
+FIX: Show proper tab when closing and reopening Preferences (for Multi and NT service) [Stulle]
+FIX: Show proper tab when switching group box from and to Multi or NT service [Stulle]
+FIX: Set focus to EditBox for setting Linear Priority [fafner]
+
+
+--------------------------------------
+Changelog for eMule 0.49a MorphXT v11.0
+--------------------------------------
+19-05-2008
+FIX: Release build instead of alpha build.
+18-05-2008
+Compiled with visual studio 2003 sp1. 
+  should also work with vs 2005 sp1
+
+Merged to 0.49a [Stulle] 
+CHANGE:update libping to 1.28 (which is same source as 1.27) [leuk_he]
+CHANGE:update CxImage to 6.00 (we use the rather complete lib) [Stulle]
+CHANGE:update cryptolib Version 5.5.2 (9/24/2007)
+FIX: clients downloading during large file completion stuck with 'stalled, reading from disk' [fafner]
+ADD: spreadbars to history [fafner]
+ADD: percentage client already got in QueueList and UploadList [fafner]
+ADD: chunk number to chunk details in UploadList [fafner]
+ADD: Show  much verbose info on content-> mediafinfo.dll (if you disable advanced options mediainfo_RIFF for avi files...)
+ADD: (BETA!) download ack overhead used in in upload calculation
+ADD: show if server obfuscation key is available
+FIX: use part.met.bak files instead of hardly ever seen valid part.met.backup files. [leuk_he]
+ADD: experimental support for visual studio 2005 sp1. See readme. [fafner/rapid mule/leuk_he]
+ADD: alpha support for vs2008, make very sure to read the readme.
+CHANGE: reduce some cpu under wine [leuk_he]
+CHANGE: Using a different method to create captcha due to new version of CxImage lib [Stulle]
+CHANGE: FriendSlots now saved in 0x03 (0x2 occupied by official) [Stulle]
+REMOVED: SafeKAD (the Officials did a big step in that direction) [Stulle]
+REMOVED: KAD optimizations (what ever :P) [Stulle]
+
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.5 installer
+--------------------------------------
+25-11-2007
+
+CHANGE: innosetup 5.2.2 allows to "run" on vista when installed
+ADD: Chinese traditional to installer. 
+
+
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.5
+--------------------------------------
+25-11-2007
+
+CHANGE: USC: tuned upload.
+FIX: USC: fix extreme slot explosion bug for ps 100%.
+CHANGE: Clipboard watch uses clipboard chain, save a bit of cpu. [leuk_he]
+CHANGE: Clipboard ed2k link file watch  now queues into morph category selection.
+FIX: rare heap corruption when safeconnnect is disabled. (netfinity)
+CHANGE: update Safekad to warpf 0.3a.11 beta  (netfinity)
+FIX: KAD for filesize > 4GB (netfinity)
+ADD: USS: initial  TTL (stulle/MonKi)
+ADD: Reconnect kad & server after resume from hibernation.
+
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.4
+--------------------------------------
+06-10-2007
+
+CHANGE: USC: tuned upload:
+CHANGE: USC: Upload speed sense is fucntioning again. 
+CHANGE: USC: Don't remove spare trickle slot disables slotfocus. 
+ADD: uPnP: Add some option to gui and move main setting to connenction settings like official.
+FIX: Advanced prefs. save the options added in 10.3.
+ADD: Chinese traditional translation, ZH_TW (eastshare) 
+CHANGE: Updated modicons [stulle]
+CHANGE: The binary release has a server.met file included. 
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.3
+--------------------------------------
+11-09-2007
+FIX: Connect to not obfuscated servers (since 10.2)
+ADD: Some advanced official preferences. 
+FIX: Memleaks (fafner)
+
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.2 installer
+--------------------------------------
+08-09-2007
+Add: Check for win98, do not allow to install. 
+
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.2
+--------------------------------------
+05-09-2007
+FIX: xmlnews feeddirectory corrected. (since 10.0) 
+CHANGED: upload completing slots behaviour. 
+ADD: Sharesubdir. Remember what directories are shared including subdir, share new subdirs when added (Slugfiller)
+ADD: inactive UNC path/unplugged removable harddrives are remembered. 
+ADD: Scheduler:Reload shared files action [leuk_he]
+ADD:"emule.exe reload" rescan shared directory.
+ADD: USS:option to set icmp data size to workarround some buggy firewalls(ping -l option)
+ADD: AppleJuice detection [Xman/Anonymous Anti-Leecher]
+REMOVED: second apply button on schedule options screen [leuk_he]
+
++various code optimizations. 
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.1 installer
+--------------------------------------
+29-06-2007
+Add: More detailed installation options. see http://wiki.emule-web.de/index.php/Morph_installation_guide
+Add: Installer support for the new shared usage option  http://www.emule-project.net/home/perl/help.cgi?l=1&rm=show_topic&topic_id=1259
+
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.1
+--------------------------------------
+29-06-2007
+FIX: Do not save obfuscated sources.
+FIX: Layout of messages tab. 
+FIX: Chrash on "open incoming directory" on category.
+ADD: Some donwnload optimizations (when downloading at really high speeds) 
+ADD: Preference for disable color on categories tab.
+CHANGE: Add a warning when using config in my_documents combined with NTservice.
+CHANGE: Webservice.dat updated with some fake reporting services. 
+CHANGE: Don't update display for notdisplayed fields. 
+CHANGE: Spellcheck of tooltips [albion] 
+CHANGE: UploadBandwidth updated with zz code arround stat locker
+CHANGE: Behaviour of network wizard, "custom" speed now default.
+
+--------------------------------------
+Changelog for eMule 0.48a MorphXT v10.0
+--------------------------------------
+06-06-2007
+Merged to 0.48a [Stulle]
+ADD:     FollowTheMajority, a new feature that will auto rename your file with majority used, default action
+	     can be changed from ModOptions->EastShare->FollowTheMajority, can be direct active from right click
+	     or  disable by any rename operation per file based. [AndCycle]
+ADD:     FairPlay, at least upload one copy of downloaded file with priority.  [AndCycle]
+REMOVED: WebCache (http://forum.emule-project.net/index.php?showtopic=124737)
+FIXED:   Obfucated server only connect on first startup, Always send cryptping. 
+ADD:     Safe KAD :slows down the spreading of bad KAD nodes & kad cpu optimizations. (netfinity)
+FIX:     KAD: save in correct directory to prevent loosing kad pref under vista. (godlaugh2007)
+ADD:     CryptTCPPaddingLength added to advanced preferences.
+Add:     Anti Mod Faker [Xman]
+CHANGED: Never ask confirmation when emule stopped with  "eMule.exe exit"
+CHANGED: Send non existing "morph 9.7" to old mods to work arround bug in morph anti leecher. 
+CAHNGED: Do not save obfuscated sources [Xman]
+CHANGED: Calculate own score the new way for >= 0.48a clients
+FIXED:   Official bug when dis/enabling Queuelist/Clientslist (Xman)
+FIXED:   Official bug when checking for empty userhash (ilmira)
+FIXED:   Hang(deadlock) on exit (xman) 
+
+UPDATED:French (nicolas_FR)
+        italian(idro), 
+        Simplified chinese(pennyliu123), 
+        Portugese_braziallian(heiler bemerguy), 
+        Spanish(guijarrelson))
+        
+Source code: 
+emule_all.sln & emule_71.vcproj removed. Replaced by emule.sln with depenancies.
+
+Note: Windows 95/98 no longer supported due to limited resource memory. 
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.6 installer
+--------------------------------------
+22-03-2007
+ADD: emule shell extention 1.0.3 : see http://www.emule-project.net/home/perl/news.cgi?l=1&rm=id&news_id=174
+UPDATED:Italian(idro), 
+        Simplified chinese(pennyliu123), 
+        Portugese_braziallian(heiler bemerguy), 
+        Spanish(guijarrelson))
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.6
+--------------------------------------
+19-03-2007
+ADD: Startup wizard, Show less controls: custimize toolbar and columns to show some less. Useful for beginners.
+FIX: load of multiuser web interface preferences in [webserver] section. 
+FIX: mass rename:Unicode issue .
+FIX: Upnp: hang on close of upnp. 
+CHANGED: massrename: resizeable dialog. 
+CHANGED: Run as service. method "started" reported earlier. 
+CHANGED: Run as service. Disabled some optimizations to fix 100% load issue. 
+CHANGED: workarround failing to startup under wine. 
+CHANGED: icon & tray icon. 
+CHANGED: upnp "my info" displayed. 
+CHANGED: upload splitting class: review code.
+CHANGED: ZZratio is active display in connection options. 
+CHANGES: iMaxFilesPerTcpFrame in local server request tuned. 
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.5 installer
+--------------------------------------
+07-02-2007
+ADD: also associate .emulecollection extension
+UPDATE: languages: portugese_brazilian (also fo installer), spanish, italian,chinese(simplified).
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.5
+--------------------------------------
+04-02-2007
+ADD:	Servers ->obfuscated connection to server required preference. 
+		 -Only obfuscated connections to servers are made.
+		 -fake/spy servers do no support obfuscation 8-) 
+		 Note: you may have to increase server retries if you enable this option and 
+		 enable serverlist from servers again....
+ADD:     startup wizard, New obfuscation required option to servers added.
+ADD:     Startup wizard, show more controls and option to start import after wizard.
+REMOVE:  Startup wizard, Set auto up/down file priority (default still is enabled..)
+ADD:	 Preferences groups (ePlus/Sirob)
+CHANGED: Complete pending hashing at shutdown like official to prevent rehash. 
+ADDED  : USC: limiting of opening slots with exponential delay based on the number of new connecting slot.
+ADDED  : USC: Don't allow new slot to be opened if number of half connection reached the limit.
+CHANGED: USC: Reviewed to allow high latency remote client to download at a higher speed.
+FIX:     Default for advanced preference MEDIAINFO_RIFF/ID3LIB (avi/mp3) detection was unchecked, should be enabled.
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.4 installer
+--------------------------------------
+26-01-2007
+ADD: Option for ed2k:// association. 
+ADD: close windows firewall on uninstall.
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.4
+--------------------------------------
+24-01-2007
+CHANGED:DBR: tuned for finishing downloads faster.
+CHANGED:Advanced preferences. Fix wrong values during reading.
+CHANGED:Advanced preferences. Add UseUserSortedServerList preference.
+CHANGED:Run As service, startup service detection.
+CHANDED:Vista/X64/win2003 detection to lower number of half open connenctions. 
+CHANGED:Upload: smooth socket buffer when remote client is fast.
+CHANGED:Avoid GUI glitches due to Static Tray Icon
+UPDATE :Simplified chinese tranlation [pennyliu123]
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.3 installer
+--------------------------------------
+20-01-2007
+REMOVED: run from installer on vista because it runs under wrong account.
+ADD    : exit and uninstall service on uninstall.
+ADD    : example AC_SearchStrings.dat on new install. 
+CHANGE : Apply ACL on config/temp/incoming dir. 
+UPDATE : Italian translation. [idro182]
+UPDATE : Portugese (brazialian) translation updated. [heiler bemerguy]
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.3
+-------------------------------------
+14-01-2007
+ADD:    Always show as trayicon option.
+ADD:	Http links in ed2k links like linkcreator (MoNKi)
+ADD:	Friendnote. Noting area for adding notes about friendlist. (CB mod)
+		-Will be automatically saved and reloaded at each start-up. 
+ADD:	Static IP Filter (Stulle)
+		remark: save "ipfilter_static.dat" in config dir
+ADD:	run as NT service v1. [leuk_he]
+	    -No need to login into XP.
+		-keeps running after logging out/ switching users
+		-new command line options:
+		"emule install"    --> install as a service
+		"emule uninstall"  --> uninstall as a service.
+		-make sure all settings are correct before installing as a service. 
+		-links as passed to webservice. 
+		-See Preferences->Webserver->NTservice tab
+		remark: Not meant to save cpu/memory. 
+ADD:	 Context menu on chat context. (wizard codesnippet) 
+ADD:    Lost preferences. Most official preferences that got an prefereces.ini setting but no gui are 
+		Added in preferences->extented->Advanced preferneces. 
+CHANGED:USC: better slotfocus.
+CHANGED:More upload speed for webcache requester. (no 100ms delay)
+CHANGED:And also DBR reviewed for high bandwidth transfer.
+CHANGED:Flush thread, improved.
+CHANGED:Better requested block queuing
+CHANGED:Sr-13 import, Also use AICH hash when required.  
+FIX:	Upnp: using same port for tcp & udp now possible.
+CHANGED:uPnP moved most logging to verbose level. 
+FIX:    sr-13 import: Chrash on cancel during running import. 
+FIX:    Chrash on low diskspace resume.  
+ADDED:	Official fix arround CreatePackedPackets (missed overhead filerequest value for file >4GB)
+		  24 instead of 28
+UPDATE: Updated spanish lang translation [guijarrelson]
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.2
+-------------------------------------
+3 nov-2006
+CHANGED: USC review:
+         Powersharing 100% is working again. 
+CHANGED: (minor) Friendslot logging with funnynick more consistent. 
+CHANGED: (minor) Copy comment, not username, on file details (pacobell) 
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.1
+-------------------------------------
+21-Oct-2006
+CHANGED:USC review upload splitting class code.
+CHANGED:Slotlimiter/3 relaxed a bit.
+CHANGED:Preferences for adding users in multiuser webserver reviewed. [leuk_he]
+        -userData is now written to Webserver.ini. Conversion happens automatic. 
+CHANGED:uPnP reverted to 8.10 intel library for better compatibility. 
+ADDED:  Send user agent as firefox for http downloads when obfucscation enabled. 
+ADDED:  Morpu update: Weekly update ip filter & fakes.  
+FIXED:  import & sr13 import now work again.  
+FIXED:  Loosing spam prefs in messages preferences when security tab opened. 
+
+--------------------------------------
+Changelog for eMule 0.47c MorphXT v9.0
+-------------------------------------
+-- 1 oct 2006
+Merged to emule 0.47c 
+-
+CHANGED: USC, reviewed upload code.
+CHANGED: source-cache modified. 
+FIX:     an official bug in source-exchange (Xanatos)
+CHANGED: Do not recommend ICF firewall opener on sp2 installation. 
+CHANGED: upnp: Do not require restart for enabling upnp.  
+CHANGED: upnp, relax xml parsing 
+ADDED:   Downloaded History (Monki/Xman) 
+ADDED:   Code Improvement for ShowFilesCount(Xman)
+ADDED:   SharedView Ed2kType (Avi3k)
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.14
+-------------------------------------
+===4-sep-2006==
+Compiled with vs2003 sp1
+
+CHANGED: upload splitting class, allow more data to be send to lower latency clients
+         The upload is not as regular as you might have been used to because of
+         this higher latency . Short spikes in the upload are possible. 
+CHANGED: USC: Take allowed overhead out highest allowable class.              
+CHANGED: USC: take tcp/ip overhead more into account.
+CHANGED: Upnplib: reversed some check in upnplib to have better device detection again. [leuk_he]
+CHANGED: Upnplib: Allow 2nd instance to use also upnp [leuk_he]
+CHANGED: Some bindipadress in preferences could cause exceptions. 
+CHANGED: Mulelistcontrol: change moment of update of display. 
+
+ADDED: filter bigbang server messages because of gpl violation [leuk_he]
+ADDED: Setable CompressLevel. [leuk_he]
+     A new parameter in preferences.ini can be added:
+     CompressLevel=9
+     9 is best compression, slightly more cpu use (default in eMule)
+     1 is worst compression , save some cpu. Values in between also posisble 
+     for very high uploader (> 200 kb/s) and/or slow cpu some cpu can be saved.
+ADDED: ionix advanced webserver (ionix/Aireoreion/wizard)
+       You must select the multi user template to enable 
+       the multi user settings. 
+ADDED: multi user webserver  in ef-mod style tabs. [leuk_he]
+
+FIXED: File completion of files over 4GB. 
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13
+-------------------------------------
+FIXED: MergeKnown: statistic merge from SlugFiller mod has been fixed to avoid crash
+- also fixes duplicate files
+
+FIXED: SCC: Khaos Category management
+- When you add multiple file those file are now properly associated to category reguarding setting
+- Default to category 0, if all other methods don't match.
+FIXED: GUI: Official fix arround unability to open completed file when they were renamed in the sharedfile window
+FIXED: GUI: Wrong sorting arround sharedfile window
+FIXED: Command line: Do not start after "emule exit" and emule was not running.
+
+ADDED: GUI: more mod icons [Stulle]
+ADDED: GUI: Extra infos in Client Tooltip
+ADDED: GUI: Remaining Available Data from a client in Remaining Size column of Transfer windows
+ADDED: Don't compress uploaded data if datarate is above 180kBytes/s
+ADDED: Split block package accorddingly to datarate speed (idea of zz)
+ADDED: KAD: Apply ip filter for send udp packets. No packets are send to ip that are ipfiltered on receive.[leuk_he]
+ADDED: Official fix to work arround Reask Answer dropped for lowid behind router with NAPT enabled (pointed by DavidXanatos)
+ADDED: Portugese braziallian (pt_br) translation [fabulous]
+ADDED: Chinese simplified translation (zh_CN) translation [pennyliu123]
+ADDED: More Webcache statistics displayed. 
+
+CHANGED: DCD: Display also current download chunk number and session completed download from a client
+CHANGED: Some tooltip spelling thx to fabulous (pt_br translator) [leuk_he] 
+CHANGED: USC: Should now respect higher class number of slot and reduce as much as possible open slot
+CHANGED: WAP: Removed some uneeded code
+CHANGED: FlushThread: Reviewed to work arround not flushed data at shutdown
+CHANGED: ReadBlockFromFileThread: Reviewed to be able to read data from disk and prepare block requested at the same time
+CHANGED: Unlimited upload now works on WSA_WOULDBLOCK corrreclty.  (No USC needed)
+CHANGED: Update upnp library to 1.4.x (thrunk version) 26/07/2006  http://www.libupnp.org/ 
+CHANGED: known.met format better compatible. (noted by david?)
+CHANGED: Drop lower class"pre-empt" slots more often when opehing higher class slot 
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13 BETA7
+-------------------------------------
+FIX    : [url=http://forum.emule-project.net/index.php?showtopic=107054]Collection double extension[/url] from CiccioBastardo
+
+CHANGED: USC: SOlve "slot explosions" from previous beta
+CHANGED: USC: Roll back the old slot counter way
+CHANGED: USC: Solved slot added and not needed 
+CHANGED  : Dynamic Block Request, number of requested blocks.
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13 BETA6
+--------------------------------------
+CHANGED: USC: Use same socket buffer for all class (may reduce focus effet on faster client)
+CHANGED: USC: Slot are properly added into uploadbandwidth list
+CHANGED: USC: LowID client are now correctly added when they missed a slot
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13 BETA5
+--------------------------------------
+CHANGED: USC: global code review (Slot# is now displayed per class)
+CHANGED: DBR: only request additionnal block when it remains only one block on remote client
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13 BETA4
+--------------------------------------
+FIX:     LOG: Chrash on adding ed2k link. 
+
+ADDED  : WC: Chunk Detail Display
+
+CHANGED: CDD: Chunk Detail Display homogeneous color choise
+CHANGED: ReadBlockFromFileThead: Changed to only prebuffer up to 2*180kBytes
+CHANGED: USC: Reworked to handle all possible case for opening slot strategy
+CHANGED: DSB: Changed the way to accumulate data
+CHANGED: WC: Fixed the socket transformation from clientsocketreq to webcachesocket class by preserving the connect state
+CHANGED: Slotlimit: upspeed/3 is now per class.
+
+TWEAKED: Enhanced DBR: Take into account remaining reserved data
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13 BETA3
+--------------------------------------
+ADDED  : GUI: Dont ask me again on exit dialog. (minor)
+ADDED  : GUI: Downloading Chunk Detail Display in Completed column  
+ADDED  : GUI: Downloading & Uploading Chunk block limit display
+
+CHANGED: DSB: Wait before sending data until we have 250ms of bandwidth to send (acummulate data)
+
+REMOVED: GUI: Don't Refresh item if not needed to work arround sorting issu
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13 BETA2
+--------------------------------------
+Minor: DSB Slotfoucs and  class queue handling [leuk_he/stulle]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.13 BETA
+--------------------------------------
+ADDED  : GUI: Upload Chunk detail Column
+
+CHANGED: IP+TCP header from data transfer are now considered as overhead, you still able to compare data overhead by looking at emule statusbar [SiRoB]
+CHANGED: DSB: Rise socket buffer limit to 1MBytes (was 256kB) [SiRoB]
+CHANGED: USC: Adapted it to get benefit of DSB [SiRoB]
+
+/!\: You will notice higher and proper overhead display on graph.
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.12
+--------------------------------------
+CHANGED: DSB: Activate Dynamic socket buffer (Was forced to 256kB) [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.11
+--------------------------------------
+FIXED  : (major) FlushThread: Crash Fix when we canceled a file and Flush thread running [SiRoB]
+FIXED  : (minor) GUI: Busy state display now the busy state of right socket (Normal, PeerCache, WebCache) [SiRoB]
+
+ADDED  : DSB: Dynamic Socket Buffering [SiRoB]
+- set socket buffer used to transfert data up to 250ms of uploadbandwidth
+ADDED  : DBR: Enhance number of requested block [SiRoB]
+
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.11 BETA2
+--------------------------------------
+FIXED  : (minor) WC: fix the temporary wrong download session count (very old bug) [SiRoB]
+
+ADDED  : Reactivate Webcache Proxy on succefull manual test [SiRoB]
+ADDED  : DBR: Extended it to use aproximative remaining data from the source vs global remaining data [SiRoB]
+ADDED  : Adapted number of requested block (less for slowest sources) [SiRoB]
+ADDED  : GUI: Started But Incomplete chunk visualisation from zz mod
+ADDED  : KAD: Official patch by Unknown1 [SiRoB]
+ADDED  : Send Array Packet (feature that may reduce upload perturbation) [SiRoB]
+ADDED  : Socket BUffering (feature to reduce effect of high latency uploading client) [SiRoB]
+ADDED  : Only one upload connecting client at a time when scheduled slot are available [SiRoB]
+ADDED  : WC: drop WCBlock with proxyip filtered by ipfilter [SiRoB]
+ADDED  : GUI: Official fix Statistics dialog too small (2x) by bluesonicboy [leuk_he]
+
+CHANGED: Moved community tag visualisation from Morph to MorphShare Preferences [SiRoB]
+CHANGED: Updated Fix connection collision [SiRoB]
+CHANGED: GUI: Draw chunk dot on top [SiRoB]
+CHANGED: FlushThread: Updated it to work arround Completing start before all buffered data was freed [SiRoB]
+
+REMOVED: WC: removed submit link from wcprefs since it is abandoned [leuk_he]
+REMOVED: netfinity: Raised threshold as anything below 3kB/s suggest there is a problem [SiRoB]
+
+TWEAKED: ICS: merged into partstatus making less resource and cpu consumption [SiRoB]
+TWEAKED: USC: Reduce Uploading Slot [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.10
+--------------------------------------
+FIXED  : (minor) USC: Percentage setting for PowerShare Class was not taken into account (thanks to fafner) [SiRoB]
+FIXED  : (minor) correct ipfiltering of servers based on report by bluesonicboy [leuk_he]
+
+ADDED  : DBR: Dynamic Block Requests by netfinity [SiRoB]
+ADDED  : minor official bug fix arround upload Obtained Parts [SiRoB]
+- this help to properly display yellow pending upload area
+ADDED  : minor official bug fix arround DownloadClient ProgressBar [SiRoB]
+- this prevent false green chunk display
+ADDED  : Tooltips for some preferences [leuk_he]
+ADDED  : Bindaddr added to extended preferences [leuk_he]
+ADDED  : Added a Bind addres for Upnp [leuk_he]
+ADDED  : emcrypt gpl violator protection by Xman [leuk_he]
+ADDED  : Fix connection collision [SiRoB]
+- you can see the activities by enabling up/down log event and check the morph log
+ADDED  : GUI: Server Icon in DownloadClientsCtrl [Stulle]
+ADDED  : GUI: Powershare Graph [SiRoB]
+ADDED  : DBR: extended it to prevent extra download time (light BlueSonicBoy code) [SiRoB]
+- avoid download stuck with very slow source (trickle) and reserve too much block
+ADDED  : SendCancelTransfer after the A4AF swap try when we run out possible block to request [SiRoB]
+ADDED  : Don't count aborted downloading source du to noneeded part as failed [SiRoB]
+
+CHANGED: WC: reworked to make proxy configuration test working with random port feature [SiRoB]
+CHANGED: ICS: reworked to take into account an A4AF swaping during a ProcessFileStatus [SiRoB]
+CHANGED: USS: Default Forced UDP Ping has been changed to disable [SiRoB]
+CHANGED: USS: renamed uss Force udp on, (USSUDP_FORCE), you will have to reenable if you needed it before. [leuk_he]
+CHANGED: ImportPart: we can import part into Stopped or Paused file if AICH list is available [SiRoB]
+CHANGED: ImportPart: Chunk with some data already written are also imported [SiRoB]
+CHANGED: USC: proper equal bandwidth for each slot when we don't use slot focus [SiRoB]
+CHANGED: HIDEOS & SOTN: reworked a bit to properly display hidden chunk [SiRoB]
+CHANGED: GUI: No log messagge in log on spam. (only in verbose) [leuk_he]
+CHANGED: GUI: focus steal check on message by raccoonI [leuk_he]
+CHANGED: updated with zzUL-0060413-2149 with some fix arround socket requeue [SiRoB]
+CHANGED: USC: updated to feet zz change [SiRoB]
+CHANGED: GUI: dimmed ipfiltered servers[leuk_he]
+CHANGED: FlushThread: Reflush When we attempted to flushBuffer whereas the thread didn't get enough time to finish [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.9
+--------------------------------------
+ADDED  : netfinity: Fixed printing of offset and byte count (need to use 64 bit format codes) [SiRoB]
+ADDED  : netfinity: Raised threshold as anything below 3kB/s suggest there is a problem [SiRoB]
+ADDED  : WC: We are able to see which chunk received WCBlock to be downloaded from proxy [SiRoB]
+
+CHANGED: WC: Something was wrong arround the methode choise for Publish WCBlock [SiRoB]
+
+NOTE: sorry for those numerous update, but i don't have a proper webcache proxy hunder the hand.
+Anyway if i had not dig a bit the code this feature will have still useless for ever.
+Now every thing is ok, i finaly found why WCBlock were not properly spreaded as in the old offcial webcache client.
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.8
+--------------------------------------
+FIXED  : WC: WCBlock sent will content the proper proxy ip [SiRoB]
+
+CHANGED: WC: received WCBlock not succefully downloaded were blocking some filepart zone to be downloaded [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.7
+--------------------------------------
+CHANGED: WC: Finaly working fine [SiRoB]
+
+ADDED  : Trickle datarate is now 0.1kB/s for low speed datarate (i.e <6kB/s)[SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.6
+--------------------------------------
+FIXED  : ImportParts: Put back previous file state at the end of the import process [SiRoB]
+FIXED  : SpreadBar is now correctly saved for +4GB file [SiRoB]
+
+CHANGED: HideOS & SOTN: They are working together and always revalate 2 chunks [SiRoB]
+CHANGED: Average datarate calcul a bit [SiRoB]
+CHANGED: SlugFiller SafeHash code changed to work arround false corrupted part report with the ReadBlockFromFileThread [SiRoB]
+CHANGED: WC: In case download query failed use ed2k request instead [SiRoB]
+CHANGED: WC: ResolveWebCachename has been changed to work arround dns change [SiRoB]
+
+ADDED  : HideOS & SOTN:  Don't upload requested hidden block [SiRoB]
+ADDED  : Attempt to avoid connection Collision [SiRoB]
+ADDED  : Global source limit [Stulle]
+ADDED  : Source cache by Xman [Stulle]
+ADDED  : USS: Option to force UDP ping in morph preferency [SiRoB]
+ADDED  : USC: max upload datarate setting for a each class based on upload speed percentage [SiRoB]
+
+TWEAKED: USC: available bandwidth is spreaded differently [SiRoB] 
+TWEAKED: Lowering memory consumption a bit by merging some data (See Chunk that we hide) [SiRoB]
+TWEAKED: ReadBlockFromFileThread:
+- get free of the upload process timer
+- this make 1.8MB/s limit rise up to ?
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.5
+--------------------------------------
+FIXED  : (minor) ImportParts: make it working when the file is stopped [SiRoB]
+FIXED  : (major) ReadBlockFromFileThread: don't use partfile permanent handle in thread [SiRoB]
+FIXED  : (minor) GetAvailablePartCount() by adding us as available part [SiRoB]
+FIXED  : (minor) SlugFiller SafeHash code to work arround ed2klink with hashset [SiRoB]
+
+ADDED : Slotlimit like StulleMule [leuk_he]
+- not limmited, Where the upload code decides to open more slots as needed.
+- a set number 60-255, for high speed uploaders that wants to limit the upload slots manually.
+ADDED : Occurate download limiter [SiRoB]
+
+CHANGED: Roll back my nice average calcul system [SiRoB]
+
+REMOVED: Removed SlugFiller Code arround WriteToBuffer [SiRoB]
+- there is a bug but i got headache to fix it, maybe something arround gaplist.
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.4
+--------------------------------------
+FIXED  : (minor) Save sources for multiple tempdir & system icon multi tempdirs [leuk_he]
+FIXED  : (major) average datarate calcul was wrong (USS & Onlinesig were affected, introduced in 8.3) [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.3
+--------------------------------------
+FIXED  : (minor) WC: Make the Webcache Test work when we are using RandomPort feature [SiRoB]
+FIXED  : (minor) WC: Make the WebCache Test work when we are using Fast Connection Reject option [SiRoB]
+FIXED  : (major) WC: Reworked a bit the fix arround MultiOHCB [SiRoB]
+FIXED  : (minor) WC: Display only once msgbox "Your Proxyserver does not seem to...." [SiRoB]
+
+CHANGED: Average datarate speed as been reviewed a bit [SiRoB]
+CHANGED: Turn back official slot limiter [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.2
+--------------------------------------
+FIXED  : (minor) Fixed glitch display arround webcache file infos detail [SiRoB]
+FIXED  : (major) Fixed Official WebCache OP_MULTI_FILE_REASK packet build [SiRoB]
+- packet were malformed du to extrat data at begin
+FIXED  : (minor) MemLeak fix arround ICS pointed by WiZaRd [SiRoB]
+FIXED  : (major) WebCache 2.0.1 Fix arround allocated memory [SiRoB]
+
+ADDED  : Offcial Patch for Getclosestto function by Unknown1 [SiRoB]
+ADDED  : Upnp checkbox in first time run wizard. [leuk_he]
+ADDED  : Take into account IP+TCP header [SiRoB]
+- WARNING Keep in mind you will see more overhead
+
+CHANGED: TryToConnect has been changed to know when we filter some connection reducing false failed upload (banned client) [SiRoB]
+
+REMOVED: Removed SlugFiller noneededrequeue [SiRoB]
+REMOVED: Removed SlugFiller safe hash arround hashsetneeded [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.1
+--------------------------------------
+FIXED  : (major) Weird change making some eratic opened slot [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.47a MorphXT v8.0
+--------------------------------------
+MERGED : Ported to 0.47a version [SiRoB/Stulle]
+
+FIXED  : (major) Crash on rename from explorer if file still displayed in transer list [leuk_he]
+FIXED  : (major) No more crash du to completed file (a very very old bug in SlugFiller code) [SiRoB]
+FIXED  : (minor) When there is only A4AF source and they are removed, display information are updated [SiRoB]
+FIXED  : (minor) GUI: file detail arround webcache stat is properly displayed [Stulle]
+
+ADDED  : USC: Don't open new slot when connection doesn't send any data [SiRoB]
+ADDED  : FlushThread to write on hard disk without locking GUI [SiRoB]
+
+CHANGED: No FunnyNick for added HTTP sources [Stulle]
+CHANGED: No ZZ ratio for added HTTP sources [Stulle]
+CHANGED: WC: Support +4GBytes files [SiRoB]
+CHANGED: ImportPart: Reworked to be used and stopped at anytime [SiRoB]
+CHANGED: SOTN: Reviewed to not show us as a complet source even if we are the only source [SiRoB]
+- du to share only the need mecanisme client will always see a virtual complet source
+- share only the need still the safer and best way to always keep a file well spreaded by balancing the upload chunk
+CHANGED: Auto PowerShare and PowerShare limit has been reviewed [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.46c MorphXT v7.8
+--------------------------------------
+FIXED : (major) Various crash arround category manipulation or file completion [SiRoB]
+FIXED : (minor) Minimize to tray when we use the autostart [SiRoB]
+
+CHANGED: Added TMPL_FAILEDLOGIN into eMule.tmpl [leuk_he]
+CHANGED: Put back full safe hash code from Slugfiller mod [SiRoB]
+CHANGED: Put some kind of official open slot limitation [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.46c MorphXT v7.7
+--------------------------------------
+FIXED  : (minor) Assertion for PPgMorph.cpp [Stulle]
+FIXED  : (minot) feedback for other languages (transferred) [Stulle]
+FIXED  : (minor) Avi3k: maxfilesize fix [leuk_he]
+FIXED  : (minor) Avi3k: search index check [leuk_he]
+FIXED  : (minor) Xanatos: critical socket fix [leuk_he]
+FIXED  : (major) Patched safehash thread hashing to avoid crash when reading on a bad cluster [SiRoB]
+ - This permit to avoid just the crash, you still need to perform a scandisk to move part pointing to bad cluster
+FIXED  : (major) Patched safehash to avoid crash when we are shuting down emule [SiRoB]
+FIXED  : (minor) Turn back change to fix Multisort wroung column sorting with only client sort (CTRL+column click) [SiRoB]
+
+ADDED  : ReadBlockFromFileThead: make read block for uploading client no main thread blocking [SiRoB]
+ - It will help to avoid disturbing upload when harddisk is under heavy access.
+
+CHANGED: Equal Chances for Each File uses Session values now [Stulle]
+CHANGED: USC: Avoid limiting speed of client too much when switching from focused to no focused mode [SiRoB]
+CHANGED: (secutity) Backlog on WEBserver listen socket have been set to 5 [SiRoB]
+CHANGED: (secutity) Backlog on WAPserver listen socket have been set to 5 [SiRoB]
+CHANGED: Updated Anti-Leecher [SiRoB]
+
+REMOVED: unused Nice Hash preferences code [Stulle]
+REMOVED: Obsolete security icon in Morhp settings removed. [leuk_he]
+REMOVED: Help from morph preferences (caused a crash) [leuk_he]
+
+--------------------------------------
+Changelog for eMule 0.46c MorphXT v7.6
+--------------------------------------
+FIXED  : (minor) USC open slot with unlimited datarate class [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.46c MorphXT v7.5
+--------------------------------------
+FIXED  : (minor) icon arround webcache proxyclient in downloadclientctrl [SiRoB]
+FIXED  : (minor) sorting item arround downloadclientctrl (by XMan) [SiRoB]
+FIXED  : (minor) WC: Avoid  xml setting autoupdating when webcache is disable [SiRoB]
+FIXED  : (minor) display of score ratio in icon for lovelace and Pawcio CS [Stulle]
+FIXED  : (minor) USC: High class limiter (FS, PS or PBF) are respected [SiRoB]
+FIXED  : (minor) Load hot key for invisible mode correct from preferences[leuk_he]
+FIXED  : (minor) no server busy  switch to message on a busy pc during windows starup[leuk_he]
+FIXED  : Prevent forgetting identical named .met files in different tempdirs[leuk_he]
+FIXED  : (minor) Static servers do not need a static priority. [leuk_he] 
+FIXED  : (minor) Fix log scrollbar redraw [SiRoB]
+
+ADDED  : Display BusyRatio in uploading list [SiRoB]
+
+CHANGED: PowerShare limit have been limited to 5 virtual sources [SiRoB]
+CHANGED: UploadBandWidthThrottler: Limiting send buffer to DoubleSendSize to avoid createnextblockpackage to be blocked too much time [SiRoB]
+
+TWEAKED: USC: hope this will take into account much possible case to avoid not filled bandwidth [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.46c MorphXT v7.4
+--------------------------------------
+FIXED  : (major) SafeHash Patch from SlugFiller mod (Borschtsch)
+FIXED  : (minor) Mixed icon in downloadclientlist
+FIXED  : (major) Rollback code arround ICS feature
+FIXED  : (minor) Smart A4AF swaping
+FIXED  : (minor) Advanced A4AF management
+FIXED  : (minor) Shared Part column have been fixed (missed merging code from 0.46c)
+FIXED  : (minor) Changed Share Only The Need a bit due to official change
+
+CHANGED: Turned back the right sorting of the file status column
+CHANGED: Moved back "Download In Alphabetical Order" setting in priority popup menu
+CHANGED: Reworked a bit the Anti-leecher to not ban client morph based mod
+CHANGED: Linear priority column show us all information regarding download priority
+CHANGED: EastShare CS has been updated according to change in official
+CHANGED: Create ipfilter, fake and ip2country class first to avoid multiple hd access while hashing
+CHANGED: USC: changed the way to limit upload slot datarate to balance upload and avoid lost of bandwidth
+- so don't worry if you see datarate above limit with 1" upload avarage setting
+- in short trickel slot may take high datarate until their avarage download reach upload limit setting
+CHANGED: WC: WebCache site has been shutdown due to high load, so i removed link for autoupdate webcachesetting
+CHANGED: Every client are now equal arround PowerShare file state
+CHANGED: zz code update arround scheduled upload system
+CHANGED: Auto PowerShare trigger differently now
+
+ADDED  : Patch to make shareable file succefuly completed with insufficient space disk on target
+
+TWEAKED: Anti-Leecher test order by Stulle
+
+--------------------------------------
+Changelog for eMule 0.46c MorphXT v7.3
+--------------------------------------
+FIXED  : (major) Patched Official minimule to eradicate the systray crash [SiRoB]
+FIXED  : (major) Patched Official CreateBlockRequests causing crash reported by leuk_he [SiRoB] 
+FIXED  : (major) Missed code when merging to offical 0.46c causing unpredicable resulte [SiRoB]
+FIXED  : (minor) Missed some code with the previous hideos update [SiRoB]
+FIXED  : (minor) wrong display rating icon in transfer window [SiRoB]
+
+ADDED: Catch creditmet file loading exception for public key length greater than MAXPUBKEYSIZE [SiRoB]
+- this fix crash when a specific corruption occur in creditmet files.
+
+CHANGED: Reviewed every lib project setting to speed up the code [SiRoB]
+CHANGED: Updated zlib to 1.2.3 version [SiRoB]
+CHANGED: USC: Reviewed the way to consume bandwidth [SiRoB]
+CHANGED: USC: Try to keep always one trickle slot [SiRoB]
+CHANGED: pthread dll have benn turned into static lib thank's to leuk_he (no need to keep pthreadvc dll) [SiRoB]
+CHANGED: Changed crash dump directive to not show the emule dump email adress [SiRoB]
+CHANGED: Fake.dat file are now available in zip format so i changed the reset setting [SiRoB]
+
+REMOVED: No more ReadWriteLock safeHash code [SiRoB]
+
+TWEAKED: May the loading of creditmet file speed up [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.46c MorphXT v7.2
+--------------------------------------
+MERGED : Ported to 0.46c version [SiRoB]
+
+FIXED  : Properly display the upload overhead [SiRoB]
+FIXED  : May i found the responsible for rare crash arround resume next file [SiRoB]
+
+ADDED  : Serveral const optimization [SiRoB]
+ADDED  : Even more requpfile Optimization (for crazy user sharing many files :), reduce CPU usage on zz upload system based mod) [SiRoB]
+- In short this avoid looking for knownfile pointer in the sharedlist. If you are sharing many many file this may reduce considerably cpu load.
+ADDED  : Some kind of stop open slot in some congestion case or when connection is lost [SiRoB]
+
+CHANGED: USS: use the official one now [SiRoB]
+CHANGED: Updated bad MODSTRING with the fucking ita mod [SiRoB]
+CHANGED: Updated MultiSort from SlugFiller mod + small change to permit both sorting with CTRL key [SiRoB]
+CHANGED: Updated SafeHash from SlugFiller mod [SiRoB]
+CHANGED: Updated UPNP Support from MoNKi patch [SiRoB]
+
+REMOVED: Updated bad MODSTRING with null char [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.46a MorphXT v7.1
+--------------------------------------
+FIXED  : Possible crash when using HideOS or Share Only The Need (same client request different file) [SiRoB]
+FIXED  : Crash-fix on close using systray by Xman1 [SiRoB]
+FIXED  : USC: Higher class where not properly capped [SiRoB]
+FIXED  : ImportPart: avoid crash when importing part file stored on bad sector [SiRoB]
+FIXED  : Datarate Management: display properly the average datarate when we use 1s setting [SiRoB]
+
+ADDED  : requpfile Optimization (for crazy user sharing many files :), reduce CPU usage on zz upload system based mod) [SiRoB]
+
+CHANGED: USS: changed a bit to avoid perturbation [SiRoB]
+CHANGED: Datarate Management: reviewed a bit the way to keep sample [SiRoB]
+CHANGED: Updated bad MODSTRING with fake sivka version [SiRoB]
+CHANGED: Updated bad MODSTRING with null char [SiRoB]
+CHANGED: USC: reviewved to avoid trickle slot to timeout [SiRoB]
+
+REMOVED: Removed ACAT bad MODSTRING [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.46a MorphXT v7.0
+--------------------------------------
+MERGED : Ported to 0.46a version [SiRoB]
+MERGED : Merged A4AF from latest ZZ Mod [SiRoB]
+
+FIXED  : SafeHash code fix arround corruptionblackbox [SiRoB]
+FIXED  : SafeHash code fix arround AICHSyncThread start (delay load shared files) [SiRoB]
+FIXED  : Official Crash fix arround Chat Context menu [SiRoB]
+FIXED  : Official Minor fix arround middle button click in the Transfert Window [SiRoB]
+FIXED  : Crash fix on category merge [SiRoB]
+FIXED  : Fix eMule process remain on shutdown by using updated pthread (v2.6) [SiRoB]
+FIXED  : zz scheduled slot: added a check in AcceptNewClient to bypass 4 slot limit [SiRoB]
+
+ADDED  : NiceHash from CB mod (need some feed back for this testing) [AndCycle]
+         relate topic http://forum.emule-project.net/index.php?showtopic=63906&hl=nicehash
+ADDED  : Calcul Over Head by using Upload Over Head from uploadbandwidththrottler [SiRoB]
+ADDED  : Separate average upload based on 30" for USS system (as in the official client) [SiRoB]
+ADDED  : Datarate Average Time Management (Default 30s near the official client) [SiRoB]
+ADDED  : Anti WSAEWOULDBLOCK ensure that socket buffer is larger than app one [SiRoB]
+ADDED  : Rescue CatResumeOrder (Linear Priority) due to the new official tag used for SourceLimit [SiRoB]
+ADDED  : UPNPLIB: Added preprocessor definitions (UPNP_STATIC_LIB) for a proper compilation [SiRoB]
+ADDED  : Display busy state for upload client [SiRoB]
+
+CHANGED: ImportParts: Updated with 003 version from SR13 mod [SiRoB]
+CHANGED: USS: Minor change [SiRoB]
+CHANGED: Use the latest UPNP from emulespana mod (Big thx to MoNKi) + MemLeak fix [SiRoB]
+CHANGED: QueueBar: Added hard limit one [SiRoB]
+CHANGED: Updater: Use an other methode to see if we need to update it [SiRoB]
+CHANGED: Display the Default ShareOnlyTheNeed mode in Sharedfile window [SiRoB]
+CHANGED: FunnyNick: fully dynamic now [SiRoB]
+
+TEAWKED: See parts hidden by HOS and SOTN have been tweaked a bit [SiRoB]
+
+REMOVED: Only Lock When Needed (arround ControlPacket Queueing) [SiRoB]
+
+NOTE:
+- Compiled with VS2003 + wspapi.h patch by NetInfinity.
+- Don't forget to use pthreadVC2.dll instead of version 1.
+- As many people don't understand the need to display live upload data rate i added a manual setting (every one schould be happy).
+
+--------------------------------------
+Changelog for eMule 0.45b MorphXT v6.7
+--------------------------------------
+FIXED  : DownloadClientCtrl: Middle Mouse click on client item work properly for downloadtransfer window [SiRoB]
+FIXED  : WC: CreateMFRPacket memleak fix focused by WiZaRd [SiRoB]
+
+ADDED  : Don't kill source if it's the only one complet source, it's a friend, a proxy or not ed2kclient [SiRoB]
+ADDED  : Don't kill client if we are the only one complet source, it's a friend or a proxy [SiRoB]
+ADDED  : Only Lock When Needed (arround ControlPacket Queueing) [SiRoB]
+ADDED  : Force TryToConnect for OP_CALLBACKREQUESTED (should avoid false setting in quarantine) [SiRoB]
+
+CHANGED: Don't auto show community column (remain auto-hide capable :p) [SiRoB]
+
+TWEAKED: USC: Should be even more efficient (lowering focus effect due to different client latency) [SiRoB]
+
+REMOVED: Avoid Kad consume too much CPU (changed the while by if in uploadBandWidthThrottler) [SiRoB]
+
+NOTE: Due to some change webcache should be more responsive now (proxy should not be deadsourcelisted anymore).
+Webcache system decide to stop working himself.
+
+--------------------------------------
+Changelog for eMule 0.45b MorphXT v6.6
+--------------------------------------
+FIXED  : proper Scheduled slot order (keep older completing last and newer pre-empted first) [SiRoB]
+FIXED  : Missed some SafeHash code [SiRoB]
+
+CHANGED: Reworked again the USC to get smoother upload (more upload slot that the way to get linear upload) [SiRoB]
+
+TWEAKED: PBF: Lower a bit the CPU load on start [SiRoB]
+TWEAKED: Avoid Kad consume too much CPU (changed the while by if in uploadBandWidthThrottler) [SiRoB]
+
+REMOVED: FIXED  : USS udp ping switcher take long time to establish due to icmp udp alternate [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.45b MorphXT v6.5
+--------------------------------------
+FIXED  : USC: Reworked completly the per client datarate limit [SiRoB]
+FIXED  : Proper fix arround AddSource memory execption [SiRoB]
+
+ADDED  : Safe .met replace [AndCycle]
+ADDED  : noNeededrequeue from SlugFiller [SiRoB]
+ADDED  : doubleLucas from SlugFiller [SiRoB]
+ADDED  : Updated Bad MODSTRING list [SiRoB]
+
+CHANGED: Updated Control Mod Tag [SiRoB]
+CHANGED: Finaly use full SafeHash from SlugFiller [SiRoB]
+CHANGED: Updated UPNP Support, this should fix various trouble (Big thx to MoNKi) [SiRoB]
+CHANGED: IPToCountry should load a bit faster [SiRoB]
+
+REMOVED: AddSource memory exception Official Bugfix by WiZaRd [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.45b MorphXT v6.4
+--------------------------------------
+FIXED  : False message box telling credit file is corrupted [SiRoB]
+FIXED  : USC: Toomany slot when using per client datarate limit [SiRoB]
+FIXED  : WC: Minor localization fix [SiRoB]
+
+CHANGED: When using friend slot, zzRatio isn't activated if friend globaldatarate is lower than 3KB/s [SiRoB]
+CHANGED: Updated SNAFU [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.45b MorphXT v6.3
+--------------------------------------
+FIXED  : USC: slot datarate limit was not respected [SiRoB]
+FIXED  : Prevent invalide parameter preferency message box due to other mod usage [SiRoB]
+FIXED  : USS udp ping switcher take long time to establish due to icmp udp alternate [SiRoB]
+
+CHANGED: Updated Webcache to 1.9a beta3 [SiRoB]
+CHANGED: Updated Anti-Leecher ban MorphXT+ and eChanblard v7.0 [SiRoB]
+CHANGED: Updated SNAFU [SiRoB]
+CHANGED: When SUWQT is disable suwqt file is no more updated [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.45b MorphXT v6.2
+--------------------------------------
+FIXED  : Identified a very old bug that make crash morph in particular waiting-queue configuration [SiRoB]
+FIXED  : Friend eLink minor fix from emulEspaa [SiRoB]
+FIXED  : DoubleClick on the chat window friend icon open the file preferency [SiRoB]
+FIXED  : AddSource memory exception Official Bugfix by WiZaRd [SiRoB]
+FIXED  : DownloadClientCtrl: Double click on client item is working now [SiRoB]
+
+ADDED  : Scheduled remove slot from zz mod [AndCycle/SiRoB]
+ADDED  : zzRatio triggered and activated reason [SiRoB]
+ADDED  : Optionnal funnyNick Display [SiRoB]
+ADDED  : fake emuleVersion detection [SiRoB]
+ADDED  : fake MODSTRING detection [SiRoB]
+
+CHANGED: SLS: LowID are now recorded [SiRoB]
+CHANGED: SpreadBar is now disabled by default in share preferency [SiRoB]
+CHANGED: USC: Reworked to work properly with the new scheduled remove slot [SiRoB]
+CHANGED: updated -UPnPNAT Support- by MoNKi from emulEspania [SiRoB]
+CHANGED: updated -Improved ICS-Firewall support- by MoNKi from emulEspania [SiRoB]
+CHANGED: updated -Random Ports- by MoNKi from emulEspania [SiRoB]
+CHANGED: Datarate is based on 5'' instead of 10'' before (30'' for official) [SiRoB]
+
+REMOVED: CPU live optimization [SiRoB]
+REMOVED: No more ban on bad user name [SiRoB]
+
+TWEAKED: USC: Ensure proper new open slot in all case [SiRoB]
+
+NOTE: About upnp support now you can disable the XP service :), big thanks to MoNKi.
+Also don't be surprised to see graph not as linear than the official.
+
+--------------------------------------
+Changelog for eMule 0.45b MorphXT v6.1
+--------------------------------------
+MERGED : Ported to 0.45b Official version [SiRoB]
+
+FIXED  : WC: when enable crash can occure (thx jpkoester1) [SiRoB]
+
+CHANGED: Roll back some 5.18 code [SiRoB]
+
+NOTE: I keept the multisort from SlugFiller
+
+--------------------------------------
+Changelog for eMule 0.45a MorphXT v6.0
+--------------------------------------
+MERGED : Ported to 0.45a Official version [SiRoB]
+
+FIXED  : Download part file progress bar is now drawn correctly [SiRoB]
+FIXED  : Intercept wrong friend link to avoid crash when pasted in friendlist [SiRoB]
+FIXED  : ICS: Don't send for complete file by netfinity [SiRoB]
+FIXED  : USC: Minor fix arround Friend Class Limit consign [SiRoB]
+FIXED  : KAD: Official Busy loop fix by gcostanza (i.e.: abnormal cpu usage) [SiRoB]
+
+CHANGED: Download Client part file progress bar has a lighter color now for confirmed download chunk when in flat mode [SiRoB]
+
+TWEAKED: Various code optimization [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.18
+--------------------------------------
+FIXED  : Kad: Buddy patch to avoid crash by tHeWiZaRdOfDoS [SiRoB]
+FIXED  : PC: timeout fix focused by tHeWiZaRdOfDoS [SiRoB]
+FIXED  : WC: timeout fix focused by tHeWiZaRdOfDoS [SiRoB]
+
+ADDED  : Patch to Attempt to avoid the tomanyconnection freeze state [SiRoB]
+ADDED  : Some string localization [FrankyFive]
+
+CHANGED: USC: Minor change to lower even more the number of uploading slot [SiRoB]
+
+REMOVED: Don't add client in uploadinglist not accepted by trytoconnect to avoid failed upload (banned,filtered,etc) [SiRoB]
+
+TWEAKED: USC: Optimized [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.17
+--------------------------------------
+FIXED  : HOS: Properly desactivated when not welcome [SiRoB]
+FIXED  : crash in some strange circonstance (div by zero) [SiRoB]
+
+CHANGED: Updated the wecaches.cvs in the package from webcache official site [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.16
+--------------------------------------
+FIXED  : Removed a check in AcceptNewClient that could block the open of new slot [SiRoB]
+FIXED  : DownloadClientCtrl: fix that could crash emule with WebCache activated [SiRoB]
+FIXED  : DownloadClientCtrl: columns preferency [SiRoB]
+FIXED  : WebCache: timeout fix [SiRoB]
+FIXED  : GUI: Oscop Fix by apph [SiRoB]
+
+ADDED  : Ip Country for ProxyClient [SiRoB]
+
+CHANGED: Advised PowerShare for partfile [SiRoB]
+CHANGED: GUI: Better Statistic Graph display [SiRoB]
+CHANGED: A4AF: Infos are now fusionned (e.g.: complet source and partstatus are keep) [SiRoB]
+CHANGED: HOS: desactivated for imcomplet file not well spreaded [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.15
+--------------------------------------
+FIXED  : USC: use of only one class make slot open until limit [SiRoB]
+FIXED  : Small visual bug arround the tiny vertical bar of news downloadclient switch icon [FrankyFive]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.14
+--------------------------------------
+FIXED  : Possible crash in mass-rename if filename contains "%"-characters [MightyKnife]
+FIXED  : Various display bugs. [MightyKnife/SiRoB]
+FIXED  : Possible "Divide by 0"-crash. [MightyKnife]
+FIXED  : Renaming existing CRC32 to uppercase only worked for the first 4 characters in Unicode built. [MightyKnife]
+FIXED  : Improper treatment of sets of empty parameters in preferences.ini. [MightyKnife]
+FIXED  : Oscop mouse cursor fix by apph [SiRoB]
+FIXED  : USC: Friend, Powershare and Pay Back First slots are properly added by respecting setting [SiRoB]
+FIXED  : USC: Small mistake that create some extra slot open while we remove one [SiRoB]
+FIXED  : Put back completsourcecount fix in ResetFileStatusInfo() to avoid file completsourcecount mix (A4AF) [SiRoB]
+FIXED  : Renumber slot [SiRoB]
+FIXED  : Maybe the shared credit violation [SiRoB]
+
+REMOVED: Defeat zero filled part sender (use less now) [SiRoB]
+
+ADDED  : Backup of config-folder, update of fakes.dat and update of ipfilter.dat can be scheduled. [MightyKnife]
+ADDED  : localization of many text [FrankyFive]
+
+CHANGED: ImportParts: you can take temp part file without the need to copy them manualy [SiRoB]
+CHANGED: Overhead datarate calcul has been changed to 10'' instead of 40'' [SiRoB]
+
+TWEAKED: Parameters and file information will be saved before backing up config-folder, not only on program end. [MightyKnife]
+TWEAKED: Better datarate mesurement for low and high speed [SiRoB]
+TWEAKED: USC: Smoother opened slot [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.13
+--------------------------------------
+FIXED  : crash (introduced in previous version) when start resume next occur and 'prefer same category' or 'only in same categry' prefrency is not checked [SiRoB]
+FIXED  : Wrong display spreadbar disable in the hideos column [SiRoB]
+FIXED  : 2GB load bug in ImportParts code (Death Knight) [Commander]
+
+CHANGED: Revert back red and green color for QRdiff [SiRoB]
+CHANGED: Flag display in serverlist (moved to country column) [Commander]
+CHANGED: Include/exclude successful/failed WC-Download sessions in/from download session values [Commander]
+CHANGED: TextColor in DownloadClientsList no longer dark-red -> set default color [Commander]
+
+ADDED  : failed WC-Downloads (number) and percentage of all WC-Download sessions [Commander]
+ADDED  : Option to prevent EMule from removing static servers automatically in runtime [MightyKnife]
+
+TWEAKED: USC: Fully splittable upload bandwidth [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.12
+--------------------------------------
+MERGED : Some merge from emulEspana arround randomport and folder icone [SiRoB]
+
+FIXED  : some column sort have been corrected [SiRoB]
+FIXED  : Download failed since 5.8 (webcache related) [SiRoB]
+FIXED  : Refresh manual powershare state display [SiRoB]
+FIXED  : Corrected Start Next paused file (per category) when the global pref one is unchecked [SiRoB]
+FIXED  : Open Folder on FileContext Menu [Commander]
+FIXED  : Open correct Folder on SharedFilesList [Commander]
+FIXED  : ProxyClient handling in new DownloadClientsList and in general [Commander]
+
+REMOVED: Itsonlyme UDPCacheSearch [SiRoB]
+
+CHANGED: USC: Global Upload Limit are now respected [SiRoB]
+CHANGED: New Morph Version Check use Official setting now [SiRoB]
+CHANGED: Now Country Flag  can be displayed in a separated column [SiRoB]
+CHANGED: Open Folder on SharedFilesList enabled for PartFiles (TempFolder will be opened) [Commander]
+CHANGED: Activated all SNAFU test [SiRoB]
+
+ADDED  : Don't add client in uploadinglist not accepted by trytoconnect to avoid failed upload (banned,filtered,etc) [SiRoB]
+ADDED  : Intermediate temp var for file datarate to avoid 0kb/s display when GUI refresh the file item [SiRoB]
+ADDED  : Country column in download window [SiRoB]
+ADDED  : Fading window on exit (only for XP) [Commander]
+ADDED  : Ban Ghost mod (ie: mod client that don't provide modID) [SiRoB]
+
+TWEAKED: Better datarate mesurement for low and high speed [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.11
+--------------------------------------
+FIXED  : HideOS: right HotFix [SiRoB]
+FIXED  : Webcache: Avanced control are now available again [SiRoB]
+
+CHANGED: SOTN: Enforce to show more than one chunk [SiRoB]
+CHANGED: HOS: Enforce to show more than one chunk with selective chunk enable [SiRoB]
+
+ADDED  : TBH Transfer Window Buttons from EastShare [SiRoB]
+ADDED  : DownloadClientsCtrl by Slaham from EastShare + 1 Fix arround addclient ;) [SiRoB]
+ADDED  : Switch Lists Icons by Slaham form EastShare [SiRoB]
+ADDED  : Show Downloading Time by Slaham form EastShare [SiRoB]
+
+TWEAKED: ImportParts: Use a thread to keep upload and download [SiRoB]
+TWEAKED: Don't Refresh item if not needed [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.10
+--------------------------------------
+FIXED  : Fix the spreadbar default state [SiRoB]
+FIXED  : MassRename: No more crash with the cross closing button [SiRoB]
+FIXED  : MassRename: Insert text column from clipboard [SiRoB]
+
+REMOVED: Resend FilePartstatus in some circonstance from Pawcio (if you want to share with out interruption just disable SOTN and HideOS) [SiRoB]
+
+CHANGED: localize for translation [SiRoB]
+CHANGED: Equal Chance formula now push small file [AndCycle]
+
+ADDED  : Webcache localization from pawcio [SiRoB]
+
+NOTE   : About Share Only The Need (SOTN) and Hide Over Share (HOS)
+SOTN
+- best suited for multiple sharer.
+- avoid to spread allready disponible and uploaded chunk.
+- allways upload rarest chunk.
+- virtual complet file (all chunk disponible) are allways seen by other due to the mecanisme.
+HOS
+- best suited for alone sharer starting to spread a file and wanted to upload all the file first.
+- becarefull other couldn't see commplete file in some case. And might abort it.
+- might be used, if you planed a share and other know it.
+SOTN overhide HOS mecanisme to allways get all chunk available on the network
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.9
+--------------------------------------
+FIXED  : Credit file priority load has been corrected [SiRoB]
+FIXED  : GUI: Systray icone didn't display the speed bar in some case [Commander]
+FIXED  : Webserver: Official Web Template can be used now [SiRoB]
+FIXED  : Powershare: Powershared client in uploadinglist are correctly sorted when other client lose this state [SiRoB]
+FIXED  : zz Upload system: 'Successful completion of upload' were counted as failed upload [SiRoB]
+FIXED  : Found the guilty for the nasty crash arround ICS use [SiRoB]
+FIXED  : zz Upload system: Reworked  ResortUploadSlot Fix [SiRoB]
+FIXED  : zz upload system: send OP_OUTOFPARTREQS when trickle slot removed or removeormovedown occur [SiRoB]
+FIXED  : HideOS: hotfix [SiRoB]
+
+ADDED  : Show permission: default state display in sharedfile window [SiRoB]
+ADDED  : Import Parts from SR13 [SiRoB]
+ADDED  : per-File setting for spreadbar history [AndCycle/SiRoB]
+ADDED  : Put back partial SafeHash code from Slugfiller [SiRoB]
+
+CHANGED: USS: Trickle datarate is now 0.1kB/s for low speed datarate (i.e <6kB/s)[SiRoB]
+CHANGED: USC: Try to open new slot smoothly [SiRoB]
+CHANGED: New systray icone [SiRoB]
+CHANGED: SOTN: Strictly upload the rarest chunk [SiRoB]
+CHANGED: zz Upload system: No more uploadinglist prio on score [SiRoB]
+CHANGED: Reworked the feed back feature (multi file selection, added extra info) [SiRoB]
+CHANGED: Lphant can receive Webcache Infos [SiRoB]
+
+NOTE-1: For win2k user you can have 256 colors systray display by patching your explorer.exe ;)
+NOTE-2: About Import Parts
+General idea from xmrb's CKnownFile::ImportParts()
+Unlike xmrb's version which scans entire file designated for import and then tries
+to match each PARTSIZE bytes with all parts of partfile, my version assumes that
+in file you're importing all parts stay on same place as they should be in partfile
+(for example you're importing damaged version of file to recover some parts from ED2K)
+That way it works much faster and almost always it is what expected from this function.
+
+--------------------------------------
+Changelog for eMule 0.44d MorphXT v5.8
+--------------------------------------
+MERGED : Code ported to 0.44d Official version [SiRoB]
+
+FIXED  : Official -Fix-: Event on the two Chat button [SiRoB]
+FIXED  : Official -Fix-: Stat were not reseted when stopping or completed file occure [SiRoB]
+FIXED  : Reworked some zz code to avoid some possible uploadinglist disturb [SiRoB]
+FIXED  : USC: No-focused class give now the same datarate to every slot [SiRoB]
+FIXED  : PartFile download statistic are now correctly cached [SiRoB]
+FIXED  : The use of inteligent chunk selection make some possible crash [SiRoB] 
+FIXED  : SUWQT file is now correctly loaded [SiRoB]
+
+REMOVED: The eMule+ Preferency dialog have been removed temporaly [SIRoB]
+REMOVED: Keep Powershare state when client added in uploadinglist has been removed [SiRoB]
+REMOVED: Restriction on hideos for partfile have been removed [SiRoB]
+
+CHANGED: Some official icone were changed [SiRoB/Commander] 
+CHANGED: Moved 'Show Client Percentage' in Morph preferency [SiRoB]
+CHANGED: Turning back HideOS available on partfile [SiRoB]
+CHANGED: Download and Upload Datarate are now averaged on 15" [SiRoB]
+CHANGED: Download and Upload Datarate client are now averaged on 15" [SiRoB]
+
+ADDED  : Some missing icone in popup menu [SiRoB/Commander]
+ADDED  : a Flag on the clientdetail window [Commander/SiRoB]
+ADDED  : Draw date and time log in default color [SiRoB]
+ADDED  : Resend FilePartstatus in some circonstance from Pawcio [SiRoB]
+ADDED  : One Webservice link to get file comments from other user (www.jugle.net) [SiRoB]
+
+TWEAKED: USC: Reviewed to open less slot [SiRoB]
+TWEAKED: SOTN: Revelate to a client only the rarest part with the equal min availability [SiRoB]
+TWEAKED: SOTN: Allready Requested part in uploadinglist are now taken into account [SiRoB]
+TWEAKED: Reviewed auto Powershare [SIRoB]
+TWEAKED: Changed the way to refresh UploadDatarate (call once in the process) [SiRoB]
+
+NOTE-1: Be carefull the time for average datarate has been lowered. So the graph are a more realistic and reactive. This may disturb you and make you feel that there is some upload trouble.
+
+NOTE-2: For webserver user, please use the new template provided (emule_Chicane_MorphXT.tmpl)
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.7
+--------------------------------------
+FIXED  : The AutoSetResumeOrder have been corrected to work properly in all case [SiRoB]
+FIXED  : zz Upload System have been reviewed to properly remove WebCache Socket from standardOrderList [SiRoB]
+FIXED  : WebCache Fix arround the test of valide blockrequest range [SiRoB]
+FIXED  : Legend Graph are now correctly drawn in case of wide caractere language use [SiRoB]
+FIXED  : ResortUploadSlot Fix in some case socket event can disturb the uploadinglist [SiRoB]
+FIXED  : The first and last chunk download should be ok now [SiRoB]
+
+CHANGED: Now we allways use the most recent credit.met file if it's corrupted use backup one [SiRoB]
+CHANGED: Rewritten some code [SiRoB]
+CHANGED: zz Trickle slot now set @1kB/s to avoid some possible timeout [SiRoB]
+CHANGED: Right Align Upload speed column [SiRoB]
+
+ADDED  : New option in Download Morph preferency to use or not the Intelligent Chunk Selection (ICS) for next block request [SiRoB]
+
+TWEAKED: Display the new version when we manualy update a file in morph preferency [SiRoB]
+TWEAKED: Improve credit.met loading [SiRoB]
+TWEAKED: Avoid call SavePartFile when UpdateAutoUpPriority() is called, just call when m_bAutoUpPriority trigger false to true [SiRoB]
+TWEAKED: Lowering opened trickel slot [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.6
+--------------------------------------
+FIXED  : Fixed Upload Splitting Class Powershare and Friend slot don't override datarate limit anymore [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.5
+--------------------------------------
+FIXED  : Fixed Upload Splitting Class [SiRoB]
+FIXED  : First sorting when adding PS PBF FS slot in uploading list is now correcly done (bugFix arround zz code insertslot()) [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.4
+--------------------------------------
+MERGED : Mobile Mule 0.9a [SiRoB]
+
+FIXED  : Fixed Upload Splitting Class [SiRoB]
+
+CHANGED: Morph version check is done at each start [SiRoB]
+
+ADDED  : Manuel Morph version checker in the top left corner popup [SiRoB]
+
+NOTE: About WebCache from the official thread
+Quick Start:
+
+You need to configure eMule so it uses your ISPs' proxy server, go to Preferences->Webcache and hit the autodetect button (you will need to connect to a server first). If autodetection fails, you will need to enter your proxys' address and port manually. If you don't know your proxys' address, you can try typing your ISPs' name and the word 'proxy' in google and see if that gets you anything. If this too doesn't work, you'll have to call your ISPs' customer support and ask them.
+
+For cached download to occur you must have another client using your proxy and downloading the same file as you are. There's usualy a test file for new webcache releases, the current one is ed2k://|file|webcachemule.1.1.beta.testfile|1078989657|E9057ADC38054AFA24816E86BB08D270|/ but this post may become outdated, so look through the posts refering to the latest version.
+
+When downloading through a proxy you should see a 'Transferring Via Proxy' in your status column, this means that you are downloading from another client via your proxy server. If you see a client called 'HTTP Proxy @ xxx.xxx.xxx.xxx' with a strange icon on your download list, that means you are downloading a cached block from your proxy server.
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.3
+--------------------------------------
+FIXED  : Fixed Upload Splitting Class [SiRoB]
+
+CHANGED: Package include an updated Websever with StatTree and loginfailed Template from emule+ [Commander/SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.2
+--------------------------------------
+MERGED : Merged WebCache 1.2f and fixed 2 issue [Commander/SiRoB]
+
+FIXED  : Source Load Saver have been corrected [SiRoB]
+FIXED  : Patch taken from other ListCtrl to avoid crash in the FriendListCtrl (at shutdown some item were not valide) [SiRoB]
+FIXED  : Proper PowerShare display in Queuelistctrl (related to unsecure client) [SiRoB]
+FIXED  : RSS news reader (XML Parsing) [SiRoB]
+FIXED  : Put back in waitingqueue when too many upload slot occur [SiRoB]
+
+CHANGED: Intelligent Chunk Selection now use the advanced per file setting for the preview first and last chunk [SiRoB]
+CHANGED: Intelligent Chunk Selection adapted to work with WebCache [SiRoB]
+CHANGED: Web server now display a statistic tree taken from emule+ [Commander]
+
+ADDED  : "Using phpBB URL-Tags style" checkbox in FileDetail for ed2kFileLink creation [AndCycle]
+ADDED  : Options to Enable/Disable PowerShare internal File Priority [AndCycle]
+ADDED  : Upload Splitting Class in morph preferency [SiRoB]
+ADDED  : Don't Refresh item if not needed (DownloadListCtrl, uploadListCtrl, QueueListCtrl, ClientListCtrl) [SiRoB]
+ADDED  : Version checker [SiRoB]
+
+TWEAKED: Hide Over Share display info now show all value in the column [SiRoB]
+TWEAKED: The auto powershare mecanisme have been changed to wait some complet source info before triggering [SiRoB]
+TWEAKED: IP2Country have been improved (some tweak from emule+) and binairy search methode have been implemented [SiRoB]
+TWEAKED: Don't draw hidden columns (DownloadListCtrl, uploadListCtrl, QueueListCtrl, ClientListCtrl) [SiRoB]
+TWEAKED: Don't draw hidden rect (DownloadListCtrl, uploadListCtrl, QueueListCtrl, ClientListCtrl) [SiRoB]
+TWEAKED: Some Code Optimization to reduce CPU load when client on queue is growing [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.1
+--------------------------------------
+
+FIXED  : HideOS Display Info in SharedFile [SiRoB]
+FIXED  : Ed2k Friend link past crash when they have wroung format [SiRoB]
+FIXED  : Columns in SharedFile where not displayed correctly when first column is hiddeen [SiRoB]
+FIXED  : AppVersion stored correctly in preference.ini (for onlinesig) [SiRoB]
+FIXED  : The WapServer search work now (Special thanks to MoNKi) [Commander]
+FIXED  : Manual Backup causing crash have been solved [SiRoB]
+
+CHANGED: Don't remove custumization folder when we start emule [SiRoB]
+CHANGED: Removed controversal MODSTRING detection [SiRoB]
+CHANGED: Show ProgressQueueBar disable by default in preferency [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.44b MorphXT v5.0
+--------------------------------------
+MERGED : Code merged to 0.44a [SiRoB]
+MERGED : Code merged to 0.44b [SiRoB]
+MERGED : UNICODE related [AndCycle/Commander/SiRoB]
+
+FIXED  : Resource ID's several times [SiRoB]
+FIXED  : Minor gui display bug arround the category priority [SiRoB]
+FIXED  : Definitly fixed the Resume Next in the category context menu, this is not anymore a globaly Resume Next but a per-category resume [SiRoB]
+FIXED  : Temporary banned client by ip detected by the zerofilled feature are well done (resort ip binary array) [SiRoB]
+FIXED  : Localized / hardcoded IDS's [Commander]
+FIXED  : fix known.met, rehashing known file problem [AndCycle]
+
+CHANGED: Removed the "..." and changed the tree in Morph preferency to [+] [SiRoB]
+CHANGED: Make one menu for CRC32 related function [SiRoB]
+CHANGED: Anti-Leecher Mecanisme by adding the reason of detection in log [SiRoB]
+CHANGED: Percentage aspect on download progress bar [SiRoB]
+CHANGED: You can use HideOS only if you are the complete source [SiRoB]
+
+ADDED  : Recalculate CRC32. Can be used to force eMule to generate the CRC32 of a file again - i.e. to check the correctness of a file after moving it to another hard disc. [MightyKnife]
+ADDED  : CRC32 Localize [SiRoB]
+ADDED  : ClientQueueProgressBar to TransferWnd [Commander/SiRoB] (Idea by Roman2k)
+ADDED  : Blinking Tray On Message Recieve from emulEspaa [Commander]
+ADDED  : ed2k FriendLink support from emulEspaa (adapted) (ed2k://|friend|Username|Userhash|/ and ed2k://|friendlist|Url of emfriends.met|/) [Commander] 
+ADDED  : WapServer from emulEspaa (adapted) [SiRoB/Commander]
+ADDED  : Customized IncomingDir icon from emulEspaa [Commander]
+ADDED  : Preferency dialog use eMule Plus Group system [SiRoB]
+ADDED  : Intelligent Chunk Selection from stormit & pawcio by enkeyDEV [AndCycle]
+ADDED  : Option to stop removing trickle client from uploading [AndCycle]
+ADDED  : Adding UPNP,RandomPort,Inproved ICF from emulEspaa [SiRoB]
+ADDED  : Itsonlyme -modname- [SiRoB]
+ADDED  : Adding partial SNAFU code from eWombat [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.43b MorphXT v4.1
+--------------------------------------
+FIXED  : Systray exit [SiRoB]
+FIXED  : Mass-Rename: Cleanup now works correctly for every line in the "New filenames" window [MightyKnife]
+FIXED  : Code alignment [Commander]
+FIXED  : SUQWT [Commander]
+FIXED  : Ip2Country column settings saved [Commander]
+FIXED  : Serverlist->LowId column display and sort [Commander]
+FIXED  : cat->rightclick->Resume Next works now [Commander]
+FIXED  : SharedFileList -> Transfered data now saved correctly [AndCycle/Commander/SiRoB]
+FIXED  : RSS news feeds should now work for most .rss/.rdf files. Please report nonstandard feed servers/files. [MightyKnife]
+FIXED  : SmartA4AFSwaping reviewed [SiRoB]
+FIXED  : SeverList Column Sorting [SiRoB]
+FIXED  : Finaly Fixed Resume Only in the samecat [SiRoB]
+FIXED  : Reviewed MergeKnown Code [SiRoB]
+FIXED  : TimeRemainAverage Sorting in the download window [SiRoB]
+
+CHANGED: Added dots '...' behind some items in the Morph preferences tab to indicate that they can be expanded with a double click (at least in the english version) [MightyKnife]
+CHANGED: Log files are now placed in a 'logs' folder instead of the eMule folder [MightyKnife]
+CHANGED: PartFile Statistic are now saved in the .part (as well spreadBar statistic) (no more in known.met) [SiRoB/AndCycle]
+CHANGED: Draw Connections-Graph solid [Commander]
+CHANGED: Rise the file buffer to 3MBytes [SiRoB]
+
+ADDED  : CRC32-Calculation can now be used to convert existing CRC's to uppercase [MightyKnife]
+ADDED  : Mass-Rename: Insert-text-column-from-clipboard; pastes the clipboard data as a column to the current cursor position in the "New filenames" window. Should help to paste a list of episode titles into the filenames. [MightyKnife]
+ADDED  : Mass-Rename: Simple-Cleanup; only removes '.' and '_' characters [MightyKnife]
+ADDED  : MassRename in downloadlist from Dragon [Commander]
+
+ADDED  : IP2Country columns to upload,queue,client and serverlist [Commander]
+ADDED  : Country and Clientsoftware columns to the commentlist [Commander]
+ADDED  : CountryFlag to serverlist [Commander/Iberica/SiRoB]
+ADDED  : Displaying the friend's country in the chatwnd info groupbox [Commander]
+ADDED  : IP2Country.csv auto-updating [Commander]
+
+ADDED  : Show Client Percentage in the downloadlist [Commander]
+ADDED  : Enable/Disable startupsound (Preferences->General->Play startupsound) [Commander]
+ADDED  : Save known.met when clicking 'reload' [MightyKnife]
+
+ADDED  : Optimizer [ePlus] + emulespania methode [Commander/SiRoB]
+ADDED  : CPU Optimization Mode display on Splashscreen [Commander]
+
+ADDED  : Preferences Side Banner from TPT / Enable-Disable on the Fly / Banner Picture [Commander/SiRoB/iCeCream]
+ADDED  : Show version-numbers of Fakes- and IPfilter.dat and ip-to-country.csv in MorphII settings [Commander]
+
+ADDED  : Dynamic Invisible Mode from TPT [Commander]
+ADDED  : OnClick [HotKey] -> move to invisible mode, OnClick [HotKey] -> move out of invisible mode [Commander/SiRoB]
+
+ADDED  : RSS news feeds can be added/modified/deleted via a button/menu in the server window [MightyKnife]
+ADDED  : DownloadAllFeedsAtOnce [Commander/MightyKnife]
+
+TWEAKED: Mass-Rename Simple-Cleanup is now configurable. Remove '.', '_' characters, Replace "?,"`" characters, arbitrary Search and Replace, convert hexadecimal numbers '%xx' to characters, convert (german and other) umlauts to standard characters. [MightyKnife]
+TWEAKED: Mass-Rename SimpleCleanup tweaked [MightyKnife]
+TWEAKED: IP2Country Autoupdate [Commander]
+TWEAKED: Version Saving of Autoupdates [Commander]
+
+MOVED  : LowID retry dialog to Server Preferency [SiRoB]
+
+NOTE: Compiled with libpng 1.2.6 to fix security issu
+
+--------------------------------------
+Changelog for eMule 0.43b MorphXT v4.0
+--------------------------------------
+MERGED : Code merged to 0.43b [SiRoB]
+FIXED  : Various fix & optimization [SiRoB]
+CHANGED: Simplify Equal Chance for Each File to a checkbox [AndCycle]
+CHANGED: Adapt to SLUGFILLER's expired time known.met control [AndCycle]
+CHANGED: r in StatusBar to said that we will be limited when 1:3 session ratio is reach [SiRoB]
+CHANGED: R in StatusBar to said that we are actualy limited in download [SiRoB]
+ADDED  : Now we can visualise parts that we hide when we use the HideOS feature (cyan color) [SiRoB]
+ADDED  : PBF Progression to avoid some brain-storming [SiRoB]
+ADDED  : Splash Song by Commander [SiRoB]
+
+NOTE:
+About A4AF, the A4AF system from Khaos and offcial new one are fonction together.
+
+Here a simplified priority explaination:
+1: Advanced A4AF from Khaos (GetAllA4AF,Force A4AF On, Force A4AF Off)
+2: Auto Swap All (A4AF) to this file
+3: Linear Priority from Khaos fonctionnal when category is in Stacking mode
+4: Category Priority
+5: File Priority
+6: Alphabetic Order | Balancing mode
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v3.5
+--------------------------------------
+FIXED  : Sort on Sipmle UL in the Sharedfile Window [SiRoB]
+
+REMOVED: 'resume paused file only in the same category' that caused the crash after a resume (my apologize) [SiRoB]
+
+ADDED  : 'resume paused file only in the same category' per category setting [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v3.4
+--------------------------------------
+FIXED  : Download file in search window will now work properly in case you don't use selectcategory or you didn't select the category tab item [SiRoB]
+FIXED  : Statistic SlideBar [SiRoB]
+
+ADDED  : Now we can see parts hidden by the Share Only The Need feature [SiRoB]
+ADDED  : A new Select view filter option to hide seen complet file [SiRoB]
+ADDED  : Download/Upload in the transfert window [SiRoB]
+ADDED  : New option in SCC preferency to specify if we want to resume only in the same category [SiRoB]
+
+CHANGED: SUWQT merged from EastShare [SiRoB]
+CHANGED: Moved some preferency from SAC to SCC [SiRoB]
+
+TWEAKED: Equal Chance Value now involed a time quantum base on file shared time [AndCycle]
+TWEAKED: Share Only The Need [SiRoB]
+TWEAKED: Auto Power Share by checking the last seen information (partfile side) [SiRoB]
+
+NOTE: for the RSS news you can edit entry in XMLNews.dat when you click on the combo the list is updated
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v3.3
+--------------------------------------
+ADDED  : Chunk Dot display option from EastShare [SiRoB]
+ADDED  : Invisible mule application from EastShare with little tweak [SiRoB]
+ADDED  : New friend message window from TPT [SiRoB]
+ADDED  : Splitting Bar from O2 ajusted to work with the new graph style [SiRoB]
+ADDED  : RSS from O2 with a little tweak [SiRoB]
+ADDED  : Maella -Code Inprovement- in Opscop.ctrl from TPT [SiRoB]
+ADDED  : Maella -Code Fix- in Opscop.ctrl from TPT [SiRoB]
+ADDED  : BugFix in Cknownfile::setfilesize from Pichuein [SiRoB]
+
+CHANGED: Set max ping limit as default in preferency [SiRoB]
+CHANGED: Activated Powershare Limit feature [SiRoB]
+
+TWEAKED: Share Only The Need [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v3.2
+--------------------------------------
+FIXED  : Powershare Limit per file [SiRoB]
+
+CHANGED: FakeCheck & IPFilter updated to prevent people use direct link to data file and bypass the version test [SiRoB]
+CHANGED: Updated from the zz upload system 20040531-1749 [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v3.1
+--------------------------------------
+FIXED  : Variaous fixe arround Selection category support [SiRoB]
+FIXED  : Show Permission preferency saving [SiRoB]
+
+ADDED  : PowerShare Limit per file, you can now specify when you want to stop powersharing a file based on complete source [SiRoB]
+
+CHANGED: IP2Country added a new flag map [Commander]
+CHANGED: Updated to the latest zz Upload system [SiRoB]
+CHANGED: Don't use the search selection tab official way for ed2k weblink [SiRoB]
+CHANGED: Turning ShareOnlyTheNeed preferency into boolean [SiRoB]
+
+REMOVED: Boost Friends [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v3.0
+--------------------------------------
+FIXED  : Selection Category Support for weblink [SiRoB]
+FIXED  : Freeze trouble is gone :) (Congratulation to zz to identify the cause) [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v2.11
+--------------------------------------
+FIXED  : Crash when removed a file that is uploaded to an other client [SiRoB]
+FIXED  : See A4AF Partstatus staying in blue [SiRoB]
+FIXED  : Upload trouble due to client staying in unkown transfert [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v2.10
+--------------------------------------
+FIXED  : Completed files aren't well identified by the select view filter [SiRoB]
+FIXED  : The right statusbar containing some random text when no use of dynamic upload [SiRoB]
+FIXED  : Cancel selective category dialog don't abort download from search result [SiRoB]
+FIXED  : Slective Chunk used only the default setting and not the per file setting [SiRoB]
+CHANGED: Changed the way to use the selective category, when we use it but the tab in search or PastEd2kLink dialog are used we bypass it [SiRoB]
+CHANGED: Updated zz Upload system (big Thanks) [SiRoB]
+CHANGED: Some code rewrite [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42g MorphXT v2.9
+--------------------------------------
+MERGED : Code merged to 0.42g [SiRoB]
+FIXED  : Columns Preferency Saving (Sort, Size, Visibility) [SiRoB]
+ADDED  : Solid Graph Option in Statistic preferency [SiRoB]
+CHANGED: Now Canceling Selection category mean aborting [SiRoB]
+CHANGED: Review the Selection category support (if not used take the official way) [SiRoB]
+CHANGED: ZZ ratio is applicable when:
+		-incomplet file is forced to powershare
+		-friend slot is activated on one friend or more
+		-average upload under 10kB/s
+REMOVED: Group notion for downloading files have been removed (never implemented) [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42e MorphXT v2.8
+--------------------------------------
+FIXED  : Killing this ******* Invalide Parameter [SiRoB]
+FIXED  : Some translation arround some button [SiRoB]
+FIXED  : The freeze trouble should be away [SiRoB]
+
+CHANGED: Updated UploadBandwithThrottler from the latest zz version [SiRoB]
+CHANGED: zz ratio is presente when friend slot is activated on one of the friend [SiRoB]
+CHANGED: systray & application icon without white glitch on dark desktop by FrankyFive [SiRoB]
+
+TWEAKED: Improved Anti-Leecher feature avoid some case where leecher can enter in queue [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42e MorphXT v2.7
+--------------------------------------
+FIXED  : Reviewed all ed2k download methode to keep Selection category support from Khaos [SiRoB]
+FIXED  : Eradicate Invalide Parameter (:p i hope) [SiRoB]
+
+ADDED  : Friend Column on uploadlist, queuelist & knownlist to be able to sort them from EastShare [AndCycle]
+
+CHANGED: Updated SafeHash, MergeKnown, HIDEOS, Multiple sorting From Slugfiller [SiRoB]
+CHANGED: Updated SafeHash From Slugfiller [SiRoB]
+CHANGED: Turning back average on 30'' for upload and download mesure [SiRoB]
+CHANGED: Pay Back First only available for Complet file since some polemic [SiRoB]
+CHANGED: ZZ ratio is applicable when:
+		-incomplet file is forced to powershare
+		-friend slot have been used
+		-average upload should be more than 10kB/s if you expect to download up to 64kB/s (26kB/s for 128kB/s)
+
+--------------------------------------
+Changelog for eMule 0.42e MorphXT v2.6
+--------------------------------------
+FIXED  : Invalide Parameter Message [SiRoB]
+FIXED  : Abnormal Know.met file growing [SiRoB]
+
+ADDED  : aux Ports support from lugdunummaster [AndCycle]
+
+CHANGED: IpFilter and FakeCheck have been changed to avoid continuous update in case it is used with an autoupdater by other mod [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42e MorphXT v2.5
+--------------------------------------
+MERGED : Code merged to 0.42e [SiRoB]
+FIXED  : Not identified client will not get anymore PS or FS [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42d MorphXT v2.4
+--------------------------------------
+FIXED  : Systray Fix to avoid all the schedulable parameter to not correctly be saved at shutdown [SiRoB]
+FIXED  : A wroung test causing zz ratio allways activated since the 2.0 version :) [SiRoB]
+FIXED  : Some little fix [SiRoB]
+
+ADDED  : modID Statistic from Slugfiller and code improvement from TPT [SiRoB]
+
+CHANGED: The current Download, Upload Slot+Overhead, Upload Friend Slot & Upload Slot are drawn in solid in Statistic Window [SiRoB]
+CHANGED: The average speed rate are dynamicly mesured from 1'' to 30'' depending on the number of sample [SiRoB]
+CHANGED: Update Code to the latest ZZ Upload System [SiRoB]
+CHANGED: Update SUWQT code from MoonLight [AndCycle]
+CHANGED: Default Statistic Graph color [SiRoB]
+
+NOTE: About average speed mesurement change, i do this to show as much as possible the possible perturbation of the data rate.
+In the official and different mod the average speed datarate is calculated from 15'' to 40'' and are note exactly right.
+So don't be afraid to see strange data speed rate.
+
+--------------------------------------
+Changelog for eMule 0.42d MorphXT v2.3
+--------------------------------------
+FIXED  : All the schedulable parameter accessible in Morph Preferency are now correctly saved at shutdown [SiRoB]
+
+--------------------------------------
+Changelog for eMule 0.42d MorphXT v2.2
+--------------------------------------
+FIXED  : Advanced filter mask is now correctly saved [SiRoB]
+FIXED  : Missing the "safe .met/.dat file write" icon in the tweak preferency [SiRoB]
+FIXED  : Several parameter are now correctly reloaded [SiRoB]
+FIXED  : Change an old implemented calcul that could make a divide by zero (could explain some mysterious crash) [SiRoB]
+
+CHANGED: MultipleInstance from SF-IOM mod
+CHANGED: Update SafeHash and mergeKnown code from SF-IOM mod, partial changed mergeKnown code to adapt 0.42 code
+CHANGED: Take the average upload speed rate for 10kB/s limit related to ratio activation [SiRoB]
+CHANGED: Updated some part of code from latest zz upload system related to uploadBandwidthThrottler and LanCommunRouterFinder [SiRoB]
+CHANGED: Change the average download & upload speed rate calcul per client [SiRoB]
+
+--------------------------------------   
+Changelog for eMule 0.42d MorphXT v2.1
+--------------------------------------   
+MERGED : Code merged to 0.42d [SiRoB]  
+
+--------------------------------------   
+Changelog for eMule 0.42c MorphXT v2.0  
+--------------------------------------   
+MERGED : Code merged to 0.42b [SiRoB]  
+MERGED : Code merged to 0.42c [SiRoB]  
+  
+FIXED  : When adding CRC32 tag to a filename, the tag suffix could not be changed. [MightyKnife]  
+FIXED  : The prio for category is now well updated in the CAT Popup [SiRoB]  
+FIXED  : The opening slot should be right now [SiRoB]  
+ADDED  : Infinite Queue option from SlugFiller-itsonlyme  
+ADDED  : Pay Back First Tweak [SiRoB/AndCycle/Yun.SF3]  
+CHANGED: Powershare is now only applied for secured client [SiRoB]  
+CHANGED: The ratio is now activated only if the upload rate is under the 10kB/s and when PowerShare is forced on downloading file [SiRoB]  
+CHANGED: Include New Nice Flag from Commander[GER] [AndCycle] 
+  
+TWEAKED: Friend Slot Management, Show slot assignement in the message window and visual fix [SiRoB]
+
+---------------------------------------- 
+Changelog for eMule 0.41b29 MorphXT v1.5
+---------------------------------------- 
+FIXED  : Several bugfix and update (A4AF and others) [SiRoB/AndClyve]
+
+ADDED  : Mass-Rename. Rename multiple files at once in a text field or with a file mask. Select some files in the shared files list, right-click and choose 'Mass rename...'. [MightyKnife]
+ADDED  : Friend Slot Advanced Management, addon for a fast access to them inspired from KTS and Xman [SiRoB]
+
+---------------------------------------- 
+Changelog for eMule 0.41b29 MorphXT v1.4
+---------------------------------------- 
+FIXED  : Soft Limiter for Queue [Yun.SF3]
+FIXED  : The default view value (HideOS, SelectiveChunk,  Permissions & Share Only the Need) in the DownloadFile and SharedFile popup [SiRoB]
+FIXED  : When using the SmartA4AFSwapping the requested download list is not well updated [SiRoB]
+FIXED  : Popup Category causing crash when NULL is returned by GetCategory() [SiRoB]
+FIXED  : Set the minupload and not the maxupload by using the minupload's textbox in the popup systray [SiRoB]
+FIXED  : The high cpu usage should be out caused by checking every time if we need to remove (from the upload list) or not a client geting more than 10Mo [SiRoB]
+ADDED  : Patch against daylight saving bug. Prevents EMule from rehashing all known files after 6 months when daylight saving comes into effect. Can be activated in Morph Preferences. EMule needs to be restarted because it must eventually rehash all files (but only once and then no more)! [MightyKnife]
+ADDED  : Limited community support with community tags: Community icon, Columns for community affiliation in up-/client-/queuelist, Shared files visible for community. (Of course no change of client rating in upload queue) [MightyKnife]
+ADDED  : Report hashing files activities [MightyKnife]
+ADDED  : Report activities in friendlist [MightyKnife]
+ADDED  : CRC32 calculation/testing for files. Right click on a file in the shared files list lets you calculate the CRC32 for the file. Furthermore a releaser tag can be added (together with the CRC) to the filename (of course for multiple files at once, too). The calculated CRC is shown in a column on the right - together with an info whether the calculated CRC was found in the filename. (Hint: The calculated CRC32 will not be stored in known.met) [MightyKnife]
+ADDED  : searchCatch and cacheUDPsearchResults from SlugFiller-itsonlyme
+
+---------------------------------------- 
+Changelog for eMule 0.41b29 MorphXT v1.3
+---------------------------------------- 
+FIXED  : Connection trouble [SiRoB]
+CHANGED: Color code in sharedfile [SiRoB/IceCream]
+
+---------------------------------------- 
+Changelog for eMule 0.41b29 MorphXT v1.2
+---------------------------------------- 
+FIXED  : the wrong construction of the A4AF available part causing messageBox (invalide parameter) [SiRoB]
+FIXED  : Default ShareOnlyTheNeed State not saved [SiRoB]
+FIXED  : Give access to Multiple Comment Changing [SiRoB]
+FIXED  : Systray Popup doesn't disapair in some case (bond006) [SiRoB]
+FIXED  : New Download File in Auto or Disable PowerShareMode [SiRoB]
+FIXED  : The software client statistic bug, during language change, seems to be out [SiRoB]
+ADDED  : IP2Country from Superlexx, for testing purpose only, may be removed
+ADDED  : Preferency default for Show share permission [SiRoB]
+ADDED  : Boost Friend option from Yun.SF3 [SiRoB]
+CHANGED: Some reworked preferency [SiRoB]
+CHANGED: PaybackFirst now have same priority as PowerShare and 
+         need (client uploaded to you-downloaded from you)>SESSIONAMOUNT(10MB) to reach the requirement [AndCycle]
+NOTE   : IP2Country require you to download latest IP-to-Country Database from http://ip-to-country.webhosting.info/,
+         unzip the file then put the ip-to-country.csv at /config/, then you can enable IP2Country at EastShare tab(will require restart mule)
+         
+---------------------------------------- 
+Changelog for eMule 0.41b29 MorphXT 1.1
+---------------------------------------- 
+NEW    : You can now find the Morph-News with our RSS Feed at this url "http://emulemorph.sourceforge.net/backend.php" [IceCream] 
+NEW    : German dll language from cyrex2001 added to our official Website, more to come [IceCream]
+
+FIXED  : The Multiple affectation to HideOS, SelectiveChunk, and ShareOnlyTheNeed causing crash [SiRoB]
+FIXED  : TagCount Trouble causing .part corruption [SiRoB]
+FIXED  : Popup menu permission state in the Download Windows  [SiRoB]
+FIXED  : The Known.met trouble and certainly many other, Great thanks to Tharghan for his support [SiRoB]
+ADDED  : 2 Columns in SharedFIle to see the HideOS & ShareOnlyTheNeed State [SiRoB]
+CHANGED: Network status state in the statusBar [SiRoB]
+
+---------------------------------------- 
+Changelog for eMule 0.41b29 MorphXT 1.0 
+---------------------------------------- 
+NEW    : We have taken a new name, MorphXT like eXTented. There are three reasons for that -> (1) Kademlia won't be the final name of the protocol (2) The version number and alpha/beta status were not clear (3) that will celebrate the return of IceCream and the launching of our new Website :D
+NEW    : Enjoy our new website at http://emulemorph.sourceforge.net [IceCream]
+NEW    : Enjoy the return of the official Morph translation, only French for the moment but more to come [IceCream]
+
+MERGED : Code merged to 0.41b29 [SiRoB] 
+ADDED  : HideOS config per file [SiRoB] 
+ADDED: Share Only The Need in preferency, originaly inspired from lovelace and implemented by Wistily but not configurable [SiRoB]
+- Hide part already gotten by queued client 
+- Used only for complete file sharing 
+- This process is used before the HideOS feature, if all part are hidden, HideOS is used if it is activated 
+CHANGED: 1/3 ZZ Ratio is activated now when (1) Friend Slot use (2) PowerShare Use (Not Auto) on incomplete file (3) Otherwise if up <10ko [SiRoB/IceCream]
+CHANGED: PBF is disable for the moment [SiRoB]
+TWEAKED: Many little fix and update [SiRoB]
+REMOVED: Some redondant & useless functions and parameters [SiRoB]
+
+-----------------------------------------
+Changelog for eMule 0.41a10 MorphKad 0.10
+-----------------------------------------
+ADDED: Show download in bold in morph preferency [SiRoB]
+FIXED: Color interference between transfert in red and the category color [SiRoB]
+FIXED: InputBox trouble causing some feature to not work (Renaming, Scheduler...) [AndCycle]
+FIXED: Statistic for max download average stay at 0 [SiRoB]
+FIXED: Category tab masking [SiRoB]
+FIXED: Rating icons always display no rating [SiRoB]
+FIXED: Source Saver isn't correct work [SiRoB]
+FIXED: Wrong information used for the powershare limit on shared complet file [SiRoB]
+CHANGED: Morph Preferency for futur feature [SiRoB]
+
+----------------------------------------
+Changelog for eMule 0.41a10 MorphKad 0.9
+----------------------------------------
+MERGED: code merged to 0.41a10 [SiRoB]
+
+REMOVED: FPU/MMX/AMD/SSE memset FPU/MMX/SSE memcpy optimized (eMulePlus) [SiRoB]
+CHANGED: Return of the 1/3 ZZ ratio and allways forced (don't ask why, it's too logical) [SiRoB]
+FIXED: showSharePermissions coloring when the first column is hidden (xMule_MOD) [SiRoB]
+FIXED: prefere resume same category [SiRoB]
+FIXED: auto category selection for new download file (Advanced Filter is working now) [SiRoB]
+
+----------------------------------------
+Changelog for eMule 0.40f26 MorphKad 0.8
+----------------------------------------
+ADDED: name log file in date [AndCycle]
+ADDED: FPU/MMX/AMD/SSE memset FPU/MMX/SSE memcpy optimized (eMulePlus) [AndCycle]
+ADDED: Equal Chance For Each File [AndCycle]
+FIXED: correct clients.met version
+CHANGED: PartNameRecovery v2 (enkeyDEV.6b) [AndCycle]
+REMOVED: On The Fly Optimization (eWombat) [AndCycle]
+
+From SlugFiller-itsonlyme
+	ADDED: (xMule_MOD: showSharePermissions) [AndCycle]
+	ADDED: display different QR
+	FIXED: Fixed bug in operations on multiple selected files (itsonlyme: selFix) [AndCycle]
+	CHANGED: hideOS to current version [AndCycle]
+	CHANGED: SafeHash to current version [AndCycle]
+	CHANGED: mergeKnown to current version [AndCycle]
+
+----------------------------------------
+Changelog for eMule 0.40f26 MorphKad 0.7
+----------------------------------------
+ADDED: PreferShareAll option (SlugFiller) [AndCycle]
+ADDED: options to set expired time of  known files [TAHO]
+ADDED: Option to use max-ping-value instead of tolerance in USS [TAHO]
+ADDED: AutoBackup from TheBlackHand mod [Pretender]
+ADDED: Automatically backup backups in backup2 directory [linekin]
+ADDED: Add USS settings in scheduler tab [Pretender]
+ADDED: Pay Back First [AndCycle]
+ADDED: Delete Shared File (TheBlackHand) [linekin]
+ADDED: AutoClearComplete (NoamSon) [AndCycle]
+ADDED: Lowid to Highid Automatic Callback(enkeyDEV)[AndCycle]
+ADDED: Partfile Name Recovery (enkeyDEV)[AndCycle]
+ADDED: Now we can see the chunk disponibility of A4AF source (fixed and inspired from Khaos partstatuslist) [SiRoB]
+ADDED: Save Upload Queue Wait Time v2 (Moonlight) [AndCylce]
+	//Save a credits file in SUQWTv2 format along with the modified one named clients.met.SUQWTv2.met name.
+	//Original credits file format will be saved with original name.
+ADDED: On The Fly Optimization(eWombat) [AndCycle]
+FIXED: Small bug, eMule allows to open unfinished files (NoamSon) [AndCycle]
+FIXED: Double click unfinished files in SharedFile window display FileDetail [SiRoB]
+FIXED: Some change related to start crashing when a known.met file is corrupted [SiRoB]
+FIXED: FakeCheck now worked in search windows [SiRoB]
+FIXED: Client staying in the transfert for a long time without sending something [SiRoB]
+FIXED: Sorting the Fake Check column in Search Windows [AndCycle]
+CHANGED: Put the Official Percentage Display on the download progress bare with bold font [SiRoB]
+CHANGED: Adapted to use the Official A4AF Handling or the Advanced A4AF from Khaos (disable Smart A4AF & Advanced A4AF to use official one) [SiRoB]
+TWEAKED: PowerShare Limit more occurate [SiRoB]
+TWEAKED: Fake Check reviewed a little [SiRoB]
+
+----------------------------------------
+Changelog for eMule 0.40f26 MorphKad 0.6
+----------------------------------------
+ADDED: Give more credits to rare files uploaders when boost the less uploaded files selected[Yun.SF3]
+FIXED: Bug making interraction between A4AF & Category [SiRoB]
+FIXED: Complet Source Number Should be ok [SiRoB]
+FIXED: Actualisation of Progress & Obtained Part Bar shader when there is swapping of source [SiRoB]
+CHANGED: ZZ Patch Return of prio on uploading list [SiRoB]
+TWEAKED: PowerShare Limit don't depend only on the complet source (to avoid some possible wrong complet source report by other client or ours) [SiRoB]
+
+----------------------------------------
+Changelog for eMule 0.40f26 MorphKad 0.5
+----------------------------------------
+MERGED: Code merged to 0.40f26 [SiRoB]
+FIXED: Added initialisation of clientmodstring to avoid some strange client software version [SiRoB]
+UPDATED: MultiSorting from SlugFiller [Yun.SF3]
+
+----------------------------------------
+Changelog for eMule 0.40e21 MorphKad 0.4
+----------------------------------------
+REMOVED: Useless CheckDiskSpace option in Morph Preferency [SiRoB]
+CHANGED: Updated HideOS from Slugfiller to avoid exception [Wistily]
+CHANGED: Use Official assigning category in the download popup [SiRoB]
+CHANGED: SLS save now 10 sources with a life time of 1 hour for file with less than 25 sources [SiRoB]
+FIXED: Old MorphNext Modification arrond HideOS feature on rare files in some case [SiRoB]
+FIXED: Statistic Leecher counter missing [SiRoB]
+
+----------------------------------------
+Changelog for eMule 0.40e21 MorphKad 0.3
+----------------------------------------
+FIXED: HTTPDownload corrected to see download info [Yun.SF3]
+FIXED: Hello Answer fix [SiRoB]
+
+----------------------------------------
+Changelog for eMule 0.40e21 MorphKad 0.2
+----------------------------------------
+CHANGED: ZZ Patch No prio on the uploading list (order by inserted time)[SiRoB]
+CHANGED: Powershare is now limited only by complet source number [SiRoB]
+
+----------------------------------------
+Changelog for eMule 0.40e21 MorphKad 0.1
+----------------------------------------
+MERGED: Code merged to 0.40e21 [SiRoB]
+REMOVED: Smart Source Request from Khaos [SiRoB]
+REMOVED: Manual reask server for source [SiRoB]
+CHANGED: Updated SpreadBar from SLUGFILLER [SiRoB]
+CHANGED: Updated hideOS from SLUGFILLER [SiRoB]
+
+----------------------------------------
+Changelog for eMule 30a MorphNext 2b
+----------------------------------------
+ADDED: Possibility to use different URL for updating FakeList and IPFilter [Yun.SF3]
+ADDED: Sorting By PowerSharing state in SharedFileList [SiRoB]
+FIXED: Crash bug when URL of FakeCheck or IPFilter down [Yun.SF3]
+FIXED: Source Request Server File [SiRoB]
+FIXED: Sorting By Prio in SharedFileList [SiRoB]
+FIXED: Auto incremental resume order in case we don't show the selection dialog [SiRoB]
+FIXED: Temporary Patch to avoid a potential crash with reconnection to server [SiRoB]
+CHANGED: The way to limit the powersharing now based on additionnal info [SiRoB]
+CHANGED: Powershare on the download file is available when only 1 complet source is detected [SiRoB]
+CHANGED: The IPFilter.dat is now hosted at eMuleitor.com (like the fake list)
+CHANGED: Updated hideOS from SLUGFILLER and HotFix [SiRoB]
+CHANGED: Updated SpreadBar from SLUGFILLER (Thanks for his optimisation) [SiRoB]
+
+----------------------------------------
+Changelog for eMule 30a MorphNext 2a
+----------------------------------------
+MERGED: Code merged to 30a [SiRoB/Yun.SF3]
+ADDED: Automatic Dynamic Upload System switching [Yun.SF3]
+ADDED: itsonlyme: cacheUDPsearchResults [Yun.SF3]
+ADDED: hideOS from Slugfiller [SiRoB]
+FIXED: the abnormal pic on the download rate is away [SiRoB]
+FIXED: some A4AF behavior [SiRoB]
+FIXED: some Categorie behavior [SiRoB]
+FIXED: Missing translating codes [Yun.SF3]
+CHANGED: Used zz's code to avoid canceled transfer flooding messages [Yun.SF3]
+CHANGED: Updated Gray Pause code from SlugFiller [Yun.SF3]
+CHANGED: redundant md4 code removal from k-man [Yun.SF3]
+CHANGED: Upgrade to ZZ Patch 20030824-2238 & 0827-0010 FIX [SiRoB]
+CHANGED: Spread Reask is now adapted for better SUC result and more [SiRoB]
+CHANGED: Avoid misusing of PowerSharing [SiRoB]
+CHANGED: Upgrade to Complete source feature v0.07a from zegzav [SiRoB]
+CHANGED: New Icons thanks to Mike Hammer [SiRoB]
+CHANGED: Update SafeHash from  Slugfiller [SiRoB]
+CHANGED: Update CheckDiskSpace from Slugfiller [SiRoB]
+
+----------------------------------------
+Changelog for eMule 29c MorphNext 1c
+----------------------------------------
+ADDED: New anti-Credit hack function which count each change of userhash, at 2 changes or more the user is banned. Modified from xrmb function [IceCream]
+ADDED: Acurate Time Remaning in the Download Window from Khaos [SiRoB]
+ADDED: Show Compression in Uploading List by Tarod from Khoas [SiRoB]
+ADDED: Low ID Retries from SlugFiller [Yun.SF3]
+ADDED: Option to disable the Chunk Avaibility control for the upload slot, usefull in certain release case [IceCream]
+ADDED: Some change to avoid loss of source when limit of connection are reseached [SiRoB]
+ADDED: Smart Source Request from Khaos [Yun.SF3]
+ADDED: New option to copy an automatic feedback in your own langage or in english [IceCream]
+ADDED: Feature to view the requested file list is now also available for the friend list [IceCream]
+ADDED: A button to manually check disk space [Yun.SF3]
+ADDED: FakeCheck, FakeReport and auto-updating of the fake list (please report fakes!) Thanks to eMuleitor.com for mirroring [milobac]
+ADDED: Reload Shared Files is now accessible in systray [SiRoB]
+ADDED: Upload Speed Sense (USS) from ZZ Patch 20030816-2103 [SiRoB]
+FIXED: A memory leak caused the number of unsecured in stats to be shown incorrectly [IceCream]
+FIXED: Crash error can appears in some case with the socket, by Maella [IceCream]
+FIXED: Improve the readability of the percent in progress bar [IceCream]
+FIXED: Download Speed for client & file are now corrected when it was near the speed limit (Changed ZZ Patch Code) [SiRoB]
+FIXED: Now A4AF source item in downloadList should be right & counter ok [SiRoB]
+FIXED: Added the doubleLucas feature from SlugFiller, checks to startup timer so that if the controls aren't yet initialized it waits for another timer cycle [IceCream]
+FIXED: Update the Spread Bar from SlugFiller [IceCream]
+TWEAKED: Reduce CPU consumption on Spread Bar [SiRoB]
+TWEAKED: Reduce CPU consumption on Shared Status Bar [SiRoB]
+TWEAKED: Reduce CPU consumption on Progress Bar [SiRoB]
+TWEAKED: Reduce CPU consumption on percentage status, by SlugFiller [IceCream]
+CHANGED: Upgrade A4AF to Khaos v15 [SiRoB]
+CHANGED: Upgrade CATEGORIE to Khaos v15 [SiRoB]
+CHANGED: Some Fix From Latest ZZ Patch 20030807-1911 [SiRoB]
+CHANGED: No more default comment-icon to be available to check when a file have a no rating-comment [IceCream]
+CHANGED: Because of the new anti-credit hack feature implemented, we now re-count the credit for the unsecured eMule users when you active this option [IceCream]
+CHANGED: Trickle slot is based on packet of 1300 bytes like in official (Changed ZZ Patch Code) [SiRoB]
+CHANGED: We have combined the official download ratio and ZZ ratio ul:dl. So now, when you upload more than 10Ko/s you will have no download limitation 
+in all possibility (SUC/USS/NORMAL), if you upload less than 10Ko/s the ZZ ratio system will be used (so 1:4 for your ul:dl ratio). [SiRoB/IceCream]
+
+----------------------------------------
+Changelog for eMule 29c MorphNext 1b
+----------------------------------------
+ADDED: Quick add of an option to display percentage in progress bar by HoaX_69 [IceCream]
+FIXED: Some problem with the sort on the status column [IceCream]
+FIXED: Less agressive counter measure for leecher in some specific case [IceCream]
+FIXED: Preview problem on some computer [SiRoB]
+FIXED: Incorrect calculation of the Queuesize - Thx to ZZ [IceCream]
+FIXED: Counter for FilteredIP Statistic is now too those on client source exchange and server source exchange [SiRoB]
+FIXED: Credits are now counted also for valid no-emule users (no edonkey faker for exemple) [IceCream]
+FIXED: Boost friends only work now friend on eMule secured or others softwares [IceCream]
+FIXED: The Check for super-compressed block is now more safe [IceCream]
+CHANGED: The funnynick feature show now [FunnyNick] instead of [MorphNick] to avoid some question about a maybe community sharing [IceCream]
+NOTES: MorphNext 1b is more an hotfixed version of the 1a than a new release
+
+----------------------------------------
+Changelog for eMule 29c MorphNext 1a
+----------------------------------------
+FIXED: Some little fix/tweaks [IceCream/SiRoB]
+NOTES: The final version of the MorphNext Beta stage ! Thx to all of the beta-testers !
+
+----------------------------------------
+Changelog for eMule 29c MorphNext Beta15
+----------------------------------------
+ADDED: Option to Boost Friends (x1.5) [Yun.SF3]
+ADDED: Option to use official or ZZ ratio system [Yun.SF3]
+ADDED: Option to Boost the less uploaded files of the session [Yun.SF3]
+ADDED: Show complete user-hash in the my info window (near the server tab) [IceCream]
+ADDED: New management of the rating icons with 5 differents icons (eMule PLUS rating icons) [IceCream]
+ADDED: The system icons (avi, mp3, rar ...) are now shown in the download list like in the shared list [IceCream]
+TWEAKED: Second step in the preview of Music file [IceCream]
+TWEAKED: SpreadBar Optimisation [SiRoB]
+CHANGED: New Scope Statistic [SiRoB]
+ 
+----------------------------------------
+Changelog for eMule 29c MorphNext Beta14
+----------------------------------------
+ADDED: Update ipfilter.dat [Yun.SF3]
+FIXED: Some bugfix in the shared file list [IceCream/SiRoB]
+FIXED: Informations "Lost to Corruption" and "Gained by compression" in file details are now right for new file [SiRoB]
+FIXED: Correted the A4AF counter per file [SiRoB]
+FIXED: Corrected some information in the auto/quick feedback feature [IceCream]
+CHANGED: Credit system, more strong and only for secured clients [Yun.SF3]
+CHANGED: SUC Default Setting to (900/600/3000/50) [Yun.SF3/SiRoB]
+
+----------------------------------------
+Changelog for eMule 29c MorphNext Beta12
+----------------------------------------
+ADDED: Latest ZZ Patch 20030724-0336 [SiRoB]
+ADDED: Added the auto/quick feedback feature, available by a right click on a file ine the download list [IceCream]
+FIXED: Improved leecher detection with double-check, before enter in queue and before enter in upload slot [IceCream]
+FIXED: Some others little fix/tweaks [IceCream/SiRoB]
+CHANGED: Updated the Leecher/Spammer mod list [IceCream]
+
+----------------------------------------
+Changelog for eMule 29c MorphNext Beta11
+----------------------------------------
+ADDED: Boost for the less uploaded files [Yun.SF3]
+ADDED: ReAsk Server for new Sources [Yun.SF3]
+ADDED: Storing ED2K link in Save Source files, To recover corrupted met by skynetman [IceCream]
+ADDED: Added the option to change the eMule process to high priority, usefull if you use heavy softwares or games during eMule session [IceCream]
+FIXED: Added title for the new column in the server list [IceCream]
+FIXED: First try to avoid the "eMule:an invalid argument was encountered" bug [IceCream]
+FIXED: Hotfix by HoaX_69 to avoid the double hash of a file in the share list [IceCream]
+FIXED: Hotfix by Maella about Failed Upload Session Count [IceCream]
+CHANGED: Complete source count feature v0.06 to v0.06a by zegzav [Yun.SF3]
+CHANGED: Credit System always activated [SiRoB]
+CHANGED: Enchanced Systray Popup [SiRoB]
+
+----------------------------------------
+Changelog for eMule 29c MorphNext Beta10
+----------------------------------------
+ADDED: Remote Status in UploadListCtrl [Yun.SF3]
+ADDED: Total Upload/Download from LSD [Yun.SF3]
+ADDED: Requested Files From Sivka [Yun.SF3]
+ADDED: Saving of multisorting parameters [Yun.SF3]
+ADDED: A4AF counter per user, ahead of user nickname From Sivka [IceCream]
+ADDED: A4AF counter per file, in the sources column From Sivka [IceCream]
+ADDED: A4AF filenames, shown in status column From Sivka [IceCream]
+FIXED: Several bug that cause a problem during the connection to a server [IceCream]
+FIXED: Remanage the A4AF by Khaos to be compatible with the A4AF counter by Sivka [IceCream]
+FIXED: Implementation of Latest ZZ patch 20030718-2005 [SiRoB]
+FIXED: ED2K link with source Khaos v14.6 Tempory Patch [SiRoB]
+FIXED: Defeat 0-filled Part Senders log message is now more understandable [IceCream]
+CHANGED: SUC start with middle range(i.e.:[min+max]/2) [SiRoB]
+CHANGED: The min up for the SUC is now 2 in systray too [IceCream]
+CHANGED: Update of the Defeat 0-filled Part Senders From Maella [IceCream]
+
+----------------------------------------
+Changelog for eMule 29c MorphNext Beta9
+----------------------------------------
+MERGED: Code merged to 29c [SiRoB]
+ADDED: Hotfix for the friend/co-releasers slot in case the client was no more connected [IceCream/SiRoB]
+ADDED: xrmb patch for showing in a download's progress bar how much of what was downloaded was already completed and hashed. Slightly modified code [IceCream]
+ADDED: xrmb patch for seeing which chunks do sources need from you in the sources status bar [IceCream]
+ADDED: Inactive downloads(Paused, error, etc...) have gray-faded status bars, by SlugFiller [IceCream]
+ADDED: The incomplete side of the progress bar has marks for where chunks start and end, by SlugFiller [ICeCream]
+ADDED: Multi-sorting column, if you sort a list by one column, then by another, the order of the sorting will be remembered, and when the items change it will fit the same order of sorting instead of just the last, by SlugFiller [IceCream]
+ADDED: Clients on your download queue that have you on their upload queue with a credits mark now have a star on it [IceCream]
+ADDED: You can now see you own UL/DL modifier in a client details next to the client's UL/DL modifier(In brackets) [IceCream]
+ADDED: There is now a progress bar nammed "SPREAD BAR v1.2" in the shared files list showing how many times was each part of a file uploaded, by SlugFiller [IceCream]
+ADED : The SPREAD BAR uses black and blue colors, like the download progress bar. Black means never uploaded, light blue means uploaded a little, dark blue means uploaded alot, by SlugFiller [IceCream]
+ADDED: These statistics of the SPREAD BAR are now saved in the known.met file, using a similar format to the saving of gaps in a part.met file, by SlugFiller [IceCream]
+ADDED: Option than verifies all non-paused downloads have enough space to finish, by SlugFiller [IceCream]
+ADDED: You can see which files have comments set in the Shared Files with comment icons, by SlugFiller [IceCream]
+ADDED: Max Upload limit is now accessible near the min SUC upload preferency [SiRoB]
+ADDED: If multiple files are selected while entering a new comment, the new comment is applied to all of them, by SlugFiller [IceCream]
+ADDED: Hotfix by bluecow about the 2 GB file limit [IceCream]
+FIXED: Khaos patch Counter Source not decreased [SiRoB]
+FIXED: Revamped multiple aspects of downloadlist sorting, by SlugFiller [IceCream]
+FIXED: Now recheck client with "needed parts status" when known needed parts finished downloading, by Ottavio84 [IceCream]
+ADDED: Latest ZZ patch + fix [SiRoB]
+ADDED: Latest Khaos patch [IceCream]
+CHANGED: Complete source count feature v0.05 to v0.06 by zegzav [IceCream]
+CHANGED: Remanage the Morph preferences in different class to be more user-friendly [SiRoB/IceCReam]
+CHANGED: Display limit for Up/Down Y-Axis is adjusted to gain space [SiRoB]
+CHANGED: Credits are only given to secured clients now [Yun.SF3]
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta8
+----------------------------------------
+ADDED: WebServices Popup Menu Separator Intelligent Detection & Creation [SiRoB]
+ADDED: Popup Open File Folder entry [SiRoB]
+ADDED: Hotfix by bluecow to avoid some tray icon crash-problem [IceCream]
+ADDED: Hotfix by k-man to avoid middle mouse button crash [IceCream]
+ADDED: New Systray Popup from Fusion & Fixed [SiRoB]
+ADDED: Anti-leecher feature, now with option to activate/desactivate it and icons for leecher banned in queue [IceCream]
+ADDED: A First security-check for the leecher which have incorrect version number, they can't enter in the queue but are counted as leecher [IceCream]
+ADDED: Statistics for Secured users and for leechers banned [IceCream]
+ADDED: First try with the preview of Music file [IceCream]
+ADDED: The Save/Load source feature has been improved to keep best source with best Sources Exchanges [IceCream]
+ADDED: The file of the saved source are now in a separated directory to clean the "Temp" directory [IceCream]
+ADDED: New feature by Khaos which allow the merge of two category [IceCream]
+ADDED: Default nick is now the current version of the mod [IceCream]
+ADDED: FunnyNick Feature by xmrb are been added to replace the "http://emule-project.net" user-nick [IceCream]
+FIXED: Upload limit When we want to lower maxupload with SUC because SUC don't have enough packets to make is job [SiRoB]
+CHANGED: Update several Khaos features and added some tweaks [IceCream]
+MOVED: Moved Khaos Preferences in Morph Preferences [SiRoB]
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta7
+----------------------------------------
+ADDED: Hotfix by Khaos about the A4AF stacking feature which working now [IceCream]
+ADDED: Morph Preference Look like TweakPreference [SiRoB]
+ADDED: Smart Upload Control v2 [SiRoB]
+ADDED: Debug Log Option for Secured Connection [SiRoB]
+ADDED: Debug Log Option for A4AF [IceCream]
+ADDED: Option for Defeat 0-filled Part Senders from Maella [IceCream]
+CHANGED: Increase the size of the Push Small Files feature from 50KB to 150KB [IceCream]
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta6
+----------------------------------------
+FIXED: Correct the bug of the download speed shown in the systray [IceCream]
+FIXED: Correct the SystrayBarGraph Color Problem [SiRoB]
+CHANGED: Default Statistics Preference Colors [SiRoB/IceCream]
+CHANGED: Increase the ZZ upload:download ratio from 1:3 to 1:4 [IceCream]
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta5
+----------------------------------------
+FIXED: Ipfilter load and logline at startup is now fixed [IceCream]
+FIXED: Hotfix for the ZZ upload patch when an exception can be raised in some case and may crash eMule [IceCream]
+FIXED: Correct the bug in the Category Dialog choice, it work now flawlessly [IceCream]
+ADDED: No more wizard at launch if you upgrade your Morph version to an other Morph [IceCream]
+ADDED: You can launch the mod even if an others emule is already launched, usefull just to take a look [IceCream]
+ADDED: Insert missing string in stats for the zz Upload System [IceCream]
+ADDED: Hotfix by dpr about the ServerSocket cause memory leak [IceCream]
+ADDED: Hotfix by rayita about the Send of packet cause memory leak [IceCream]
+ADDED: Change Icons to the orignal Morph-mod icons [IceCream]
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta4
+----------------------------------------
+FIXED: Correct several bugs which could make some stability problem [IceCream]
+FIXED: Correct again a problem in sources exchanges count [SiRoB]
+FIXED: Finally a working fix for the Hard Limit problem [IceCream]
+ADDED: Advanced A4AF Modes per Category by Khaos [IceCream]
+ADDED: Advanced download category by mask in option edit category by Khaos [IceCream]
+NOTES: For the explanation of the Khaos features go on his homepage -> http://www.viewfromthebench.com/statsaddon/khaos_readme.html
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta3
+----------------------------------------
+FIXED: Correct a wrong test for UDPReask in a Khaos function which slow down the upload [IceCream/SiRoB]
+FIXED: Correct range and default values for the Save/load Sources [IceCream]
+FIXED: Correct a small bug about the A4AF Stacking feature [Yun.SF3/IceCream]
+FIXED: Correct a problem of udp request during full connection reached [SiRoB]
+FIXED: Correct the problem of the Hard Limit per file which was not respected [IceCream]
+ADDED: Hotfix by madium in Webserver about the priority low which was not shown [IceCream]
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta2
+----------------------------------------
+ADDED: zz Upload System [Yun.SF3]
+ADDED: Advanced Statistics by Khaos [IceCream]
+ADDED: Download Manager by Khaos [IceCream]
+	- Start Paused From Same Category
+	- Setting the Resume Order
+	- Push Small Files
+	- Select Category Dialog when a new file is added
+	- Automatically Resume Files
+	- Default to Active Category
+	- Hide Paused filter
+	- New Category Commands
+	- Show Category Names in DL
+ADDED: Smart A4AF Swapping by Khaos [IceCream]
+ADDED: Advanced A4AF Modes by Khaos [IceCream]
+	- Disabled
+	- Balancing Mode
+	- Stacking Mode
+ADDED: Dynamic Download Priority by Khaos [IceCream]
+ADDED: New Save/load Sources by enkeyDEV [Yun.SF3]
+NOTES: For the explanation of the Khaos features go on his homepage -> http://www.viewfromthebench.com/statsaddon/khaos_readme.html
+
+----------------------------------------
+Changelog for eMule 29b MorphNext Beta1
+----------------------------------------
+ADDED: Hotfix by MKThunderStorm about the source exchange compression [IceCream]
+ADDED: Hotfix by Elandal about the upload speed indicator [IceCream]
+ADDED: Patch by NoamSon about the Compare Clients [IceCream]
+ADDED: Hotfix by MightyKnife about a bug in SavePartFile [IceCream]
+ADDED: Patch by SlugFiller to allow a SafeDisconnect [IceCream]
+ADDED: Patch by k-man to make inline nstrdup() and use less cpu [IceCream]
+ADDED: Hotfix by khaos about Statistics can't be restored in 0.29b [IceCream]
+ADDED: Patch by Maella about enhanced Chunk Selection/Download Stops Prematurely v1.06 [IceCream]
+ADDED: Complete source count feature v0.05 by zegzav [IceCream]
+ADDED: Beta-patch from stobo about the download limit may stop downloads, too much slowdown causes timeout [IceCream]
+ADDED: Support for tag ET_MOD_VERSION 0x55 II- From Maella [Yun.SF3]
+ADDED: Defeat 0-filled Part Senders - From Maella [IceCream]
+CHANGED: Transfer full chunk & Secure Identification are now True by default [IceCream]

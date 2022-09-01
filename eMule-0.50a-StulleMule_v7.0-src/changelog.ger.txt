@@ -1,0 +1,249 @@
+          CHANGELOG FÜR EMULE
+        http://emule-project.net
+        ========================
+
+eMule 0.49c
+-----------------------
+- Feb, 18. 2009       -
+-----------------------
+.: Ein kleiner Bug beim Zeichnen des Transferfensters wurde behoben [dolphinX]
+.: Mehr Kad Anfragen haben nun auch einen Namen für die Darstellung auf der Oberfläche [tHeWiZaRdOfDoS]
+.: Sicherheitscheck für selten gesehendes Problem in Crashdumps beim SourceExchange-Antworten hinzugefügt
+.: Der UDP-Socket-Puffer wurde vergrößert vom Packetloss zu vermeiden
+
+eMule 0.49c BETA2
+-----------------------
+- Feb, 10. 2009       -
+-----------------------
+.: Die preferences.ini Option "FileBufferTimeLimit" ("eMule" sektion) legt die maximale Zeit bis zum leeren der Puffer für Downloads in Sekunden fest (default: 60)
+
+-----------------------
+- Feb, 9. 2009        -
+-----------------------
+.: Wenn ein anderer Benutzer eure freigegebenen Verzeichnisse sehen will (und ihr es erlaubt habt), benutzt eMule nun nur noch die Verzeichnisnamen (oder rlative Pfade) statt den vollen Pfad aus Datenschutzgründen
+
+-----------------------
+- Feb, 8. 2009        -
+-----------------------
+.: Bei einer neuen eMule-Installation sind nun standardmäßig einige weniger wichtige Spalten in Listen versteckt um ein Überladen der Oberfläche zu vermeiden
+.: Die maximale Breite der Buttons der Haupttoolbar wurde ein wenig erhöht
+
+-----------------------
+- Feb, 7. 2009        -
+-----------------------
+.: Sicherheitschecks für einige Probleme aus Crashdumps beim Senden von Antworten wurde hinzugefügt
+.: Wertecheck für die preferences.ini Option "tcp obfuscation padding länge" wurde hinzugefügt
+
+[Hinweis: Einträge die sich ausschließlich auf Korrekturen der Betaversion beziehen sind im deutschen Changelog übersprungen]
+
+eMule 0.49c BETA1
+-----------------------
+- Feb, 4. 2009        -
+-----------------------
+.: Zeitangaben in der Downloadliste haben nun ihr eigenes Format ("DateTimeFormat4Lists" in der preferences.ini), welches standardmäßig kompakter als das alte ist
+.: Eine neue Spalte in der Downlaodliste zeigt den Zeitpunkt wann der Download hinzugefügt wurde
+
+-----------------------
+- Feb, 2. 2009        -
+-----------------------
+.: Kontakte aus Kad Routingantworten werden nun zusätzlich gegen die eigene Routingtabelle geprüft
+.: Kad erlaubt nicht mehr als 2 Kontakte aus dem gleichen Subnetz bei Routingantworten (außer LANs)
+.: Ein kleine Bug im Uploadthrottler wurde behoben [tHeWiZaRdOfDoS]
+
+-----------------------
+- Jan, 27. 2009       -
+-----------------------
+.: Der Kad UDP-Firewalltest fragt nun mehrere Kontakte zum externalen Port um zu vermeiden dass bei NATs die ihren Sourceport bei jeder Antwort wechseln ein falscher "Offen"-Status festgestellt wird
+.: Kad überprüft nun eingehende Suchantworten erneut mit dem genutzten Suchfilter und verwirft alle Antworten die den Kriterien nicht entsprechen (was nur bei fehlerhaten Clients oder Spam der Fall sein sollte)
+
+-----------------------
+- Jan, 25. 2009       -
+-----------------------
+.: Wenn eine corrupte *.part.met-Datei entdeckt wird, versucht eMule nun automatisch ein Backup zu laden
+.: Einige Daten (wie das AICH-Hashset, Statistiken, Metadaten, usw) von Dateien die über einen Monat nicht mehr gesehen (freigegeben) wurden, werden nun gelöscht um Ressourcen zu sparen und ein endloses wachsen der known*.met-Dateien zu verhindern
+   (die erste Löschung wird einem Monat nach dem Update erfolgen)
+.: Falls du die teilweise Löschung von Informationen über verwaiste Dateien aus irgendeinem Grund verhindern willst, kannst du "PartiallyPurgeOldKnownFiles=0" in die "eMule" Sektion der preferences.ini eintragen
+
+-----------------------
+- Jan, 20. 2009       -
+-----------------------
+.: Beim Sortieren nach Dateitypen wird nun nachrangig nach der Endung sortiert wenn zwei Dateitypen gleich sind
+
+-----------------------
+- Jan, 11. 2009       -
+-----------------------
+.: Bei einfachen Suchanfragen ordnet Kad die Schlüsselwörter nun selbständig neu und nutzt das längste um zu bestimmen welche Node gefragt werden muss. Dies reduziert die Last für Nodes mit kurzen, beliebten Schlüsselwörtern wie "das", macht sie ein schlechteres Ziel für Angriffe und erlaubt Suchen mit kurzen Startwörten wie "An eMule"
+.: Das Umordnen von Schlüsselwörten kann mit dem Eintrag "RearrangeKadSearchKeywords=0" in die "eMule" Sektion der preferences.ini deaktiviert werden (es gibt jedoch normalerweise keinen Grund dafür)
+
+-----------------------
+- Jan, 10. 2009       -
+-----------------------
+.: Einzelne Dateien sowie Verzeichnisse können nun auch mit Drag&Drop freigegeben werden - ziehe einfach die Datei vom (z.B.) Windows Explorer in die Freigegebene Dateien-List
+.: eMule kann nun auch einzelene Dateien (statt ganze Verzeichnisse) freigegeben oder entfernen, indem sie im Dateien-Dialog im "Alle Verzeichnisse"-Baum markiert werden. Downloads und Einträge im "Fertige Dateien"-Verzeichnis können jedoch nicht entfernt werden.
+.: Kad Datei/Quellen-Suchantworten versuchen nun fragmentierte Pakete zu vermeiden um besser mit übereifrigen Firewalls/Routers zu funktionieren (Effekt wird sichtbar sobald ein Großteil der Benutzer auf diese Version updated)
+
+-----------------------
+- Jan, 5. 2009       -
+-----------------------
+.: Ein möglicher Absturz in der (minilib) UPnP-Implementation wurde behoben
+.: Der Port für das Webinterface kann nun auch von UPnP eingerichtet werden (Optionen->Webinterface)
+.: Die UPnP-Einträge werden vor einem Kad-Firewallcheck, beim Aufwachen aus dem StandBy-Modus und bei der Smart-LowID-Erkennung geprüft und ggf. aufgefrischt
+
+-----------------------
+- Jan, 3. 2009       -
+-----------------------
+.: Die maximale Länge von Kommentaren wurde auf 128 Zeichen vergrößert
+.: Ein Bug der Text in der Downloadliste in falschen Farben darstellte (am auffäligsten bei speziellen Windowsthemes) wurde behoben
+
+-----------------------
+- Dec, 22. 2008       -
+-----------------------
+.: Support für Windows-Sicherheitsfeature  'Heap Corruption Detection' hinzugefügt (Windows Vista)
+.: Support für Windows-Sicherheitsfeature 'Address Space Layout Randomization' hinzugefügt (Windows Vista)
+
+-----------------------
+- Dec, 21. 2008       -
+-----------------------
+.: Support für Previews des Inhalts von .ISO dateien hinzugefügt (liest den Inhalt von ISO9660, keine UDF-Unterstützung)
+.: Es wurde sichergestellt dass eine Kad-Routing-Antwort nicht mehr Kontakte enthält als angefordert wurden [Xin Sun]
+
+-----------------------
+- Dec, 19. 2008       -
+-----------------------
+.: Support für Windows-Sicherheitsfeature 'Data Execution Prevention' hinzugefügt (Windows XP SP2 / Windows Vista)
+.: Support für Windows-Sicherheitsfeature 'Exception Handling Protection' hinzugefügt (Windows XP SP2 / Windows Vista)
+
+-----------------------
+- Oct, 22. 2008       -
+-----------------------
+.: Crashdumps werden nun im Konfigurationsverzeichnis gespeichert [tHeWiZaRdOfDoS]
+.: Ein Bug beim erstellen eines neuen Benutzerhashs, der zu unzureichender Zufälligkeit führte, wurde behoben [godlaugh2007]
+
+-----------------------
+- Oct, 21. 2008       -
+-----------------------
+.: Hinzugefügt: Anzeigen von Wasserzeichenbildern in Listen (siehe "LvBkImg" in "Template.eMuleSkin.ini"))
+
+-----------------------
+- Oct, 18. 2008       -
+-----------------------
+.: Darstellung von multiplen ausgewählten Einträgen in allen Listenelementen vereinheitlicht
+.: Verschiedene Optimierungen beim Darstellen von Listen
+.: Cursor-Bild beim Drag&Drop im Transfer-Fenster hinzugefügt (beim ziehen in eine Kategorie)
+.: Tooltips bei multiplen ausgewählten Einträgen um Server- und Suchfenster korrigiert
+
+-----------------------
+- Oct, 11. 2008       -
+-----------------------
+.: Hinzugefügt: Automatische Größenanpassung bei Listenspalten (ein Doppelklick auf den Spaltenteiler verändert die Größe entsprechend)
+.: Hinzugefügt: Labeltips für alle teilweise verdeckten Einträge in Listen
+.: Hinzugefügt: Standardsuchreihenfolge für Listen im Transferfenster
+.: Listen können nun auch nach Untereinträge durchsucht werden
+.: Ein Sortierungsbug im Dateinamen-Dialog wurde behoben
+
+-----------------------
+- Sep, 27. 2008       -
+-----------------------
+.: Auswertung von Metadaten bei DVR-MS-Dateien zum Inhaltstab im Datei-Detailsdialog hinzugefügt.
+.: Auswertung von Metadaten bei Wav-Dateien zum Inhaltstab im Datei-Detailsdialog hinzugefügt.
+.: Veröffentlichung von ED2k-spezifischen Metadaten für WMA und WAV-Dateien hinzugefügt
+.: Spalten für Metadaten wurde in die freigegebene Dateien-List hinzugefügt
+
+-----------------------
+- Sep, 23. 2008       -
+-----------------------
+.: eMule kann nun Windows Verkünpfungen folgen (Optionen->Erweitert) und freigeben. Dadurch können z.B. auch Dateien die in nicht freigegebnen Verzeichnisse liegen durch eine Verknüpfung in ein freigegebenes Verzeichnis veröffentlicht werden.
+.: Auswertung von Metadaten bei Windows Media-Dateien zum Inhaltstab im Datei-Detailsdialog hinzugefügt.
+
+-----------------------
+- Sep, 14. 2008       -
+-----------------------
+.: Eine weitere Mehtode zum Auffinden der MediaInfo Bibliothek hinzugefügt
+.: Support für Multiuser-System unter Win0x/WinME/WinNT hinzugefügt (benötigt IE5)
+.: Support für Vorschau von Selbstextrahierenden RAR-Archiven hinzugefügt
+.: Fehlerhafte ED2K-Link Registry Funtion unter Win98/ME/NT behoben
+
+-----------------------
+- Sep, 13. 2008       -
+-----------------------
+.: Ein Bug bei der Änderung der Größe der Haupttoolbar unter Win98 wurde behoben
+.: Nachrichtenbox-Inhalte zum Download einer richtigen Version von DBGHELP.DLL unter Win9x/WinME/Win2000 wurde korrigiert
+.: Ein Absturz beim Löschen von vollständigen Downloads unter Win98 wurde behoben
+.: Heruntergeladene Dateien werden nun in der selben Weise markiert wie beim Internet Explorer, was zu einem Warnhinweis beim ausführen möglicher schädlicher Dateien führt
+.: Beim Öffnen von DRM-geschützten Dateien zeigt eMule nun eine Wanrmeldung um zu verhindern dass versehentlich eine bösartige "Lizens"-Seite im Browser geöffnet wird
+
+-----------------------
+- Sep, 11. 2008       -
+-----------------------
+.: Beim wechseln der Sprache wurde der Text in Filtern nicht aktualisiert [JvA]
+.: (Win98) Ein Bug beim Standard-Dateisuchtyp wurde behoben
+
+-----------------------
+- Sep,  4. 2008       -
+-----------------------
+.: Neue "Verzeichnisse durchsuchen"-Buttons im Optionsdialog hinzugefügt
+
+-----------------------
+- Sep,  2. 2008       -
+-----------------------
+.: Einige Akutalisierungs/Größenänderungs-Probleme wurde behoben und Flickern in einigen Fenstern reduziert
+
+-----------------------
+- Sep,  1. 2008       -
+-----------------------
+.: Ein Bug in den Tooltips unter Win98/2000 wurde behoben
+.: Ein Problem mit korrupten gespeicherten Suchergebnissen wurde behoben [George1]
+
+-----------------------
+- Aug, 30. 2008       -
+-----------------------
+.: Korrigiert: Es war möglich eMule Installationsordner freizugeben
+.: Ein Bug in den Statistiken von neuen Downloads wurde behoben
+.: Ein mögliches Kompabilitätsproblem mit Windows NT 4.0 wurde behoben
+.: Ein Problem mit fehlenden Icons unter Win98 wurde behoben
+
+-----------------------
+- Aug, 24. 2008       -
+-----------------------
+.: Korrigiert: Einige Unicodestrings wurden nicht korrekt in den Meta-Daten von Downloads gespeichert
+.: Mögliche Unicode-Probleme in Kad-Suchausdrücken wurden behoben
+.: Die Suchoption "Suche mit Unicode" wurde entfernt - alle Suchen benutzen nun Unicode
+.: Rückwärtskomptiblität mit Pre-Unicode .met-Dateien wurde entfernt
+.: Die preferences.ini-Option "SetSystemACP" wurde entfernt
+.: eMule erkennt nun ob die MediaInfo Bibliothek (http://mediainfo.sourceforge.net/) installiert ist und nutzt diese automatisch für den Inhaltsdialog von Downloads/freigegebenen Dateien
+.: Die Kad Unicode Abbildungstabelle wurde aktualisiert um den in Vista verwendeten Standard zu unterstützen
+
+-----------------------
+- Aug, 16. 2008       -
+-----------------------
+.: Korrigiert: Unicodestrings wurden nicht korrekt im Spamfilter gespeichert
+
+-----------------------
+- Aug, 15. 2008       -
+-----------------------
+.: Hinzugefügt: NT-Volumeninfo-Cache um das verarbeiten von freigebenen Verzeichnissen auf nicht-festen Laufwerken zu beschleunigen
+.: Korrigiert: Auf eingen Code-Seiten wurden Unicodezeichen nicht korrekt in den .met-Dateien gespeichert [Borschtsch]
+.: Korrigiert: Einige Unicodestrings wurden nicht korrekt in den Meta-Daten von vergegebenen Dateien gespeichert
+
+-----------------------
+- Aug, 11. 2008       -
+-----------------------
+.: Die "downloads.txt"-Datei wird nun im eMule-Knogurationsverzeichnis gespeichert
+
+-----------------------
+- Aug, 10. 2008       -
+-----------------------
+.: Sortierung für Enträge in "Alle freigegebenen Verzeichnisse" und "Fertige Dateien" im Freigegebene-Dateienfenster hinzugefügt
+.: Anzeigen für "Nicht verbundende" Verzeichnisse im Freigegebene-Dateienfenster hinzugefügt
+.: "Nicht verbundene" freigegebene Verzeichnisse werden nun beim eMule-Start nicht mehr entfernt
+.: Verzeichnisse die mindestens ein freigegebenes aber nicht verbundenes Verzeichnis haben werden durch ein Warnicon gekennzeichnet
+.: Der Verbunden-Status wird beim "Neu Laden" der freigegebenen Dateien erneut überprüft
+
+-----------------------
+- Aug, 9. 2008        -
+-----------------------
+.: Korrigiert: Aktivierung vom Start/Abbrechen Button im Suchfenster für geschlossende Kad-Suchen
+.: Korrigiert: Unsichtbares Grpper-Element im Transferfenster
+.: Korrigiert: Standard Windows-Eigenschaften-Dialog Verknüpfungen im Optionsfenster
+.: Einige unwahrscheinliche aber theoretisch Mögliche Absturzbugs wurden behoben
+.: Die Beschränkungen für freigegebene Laufwerke mit dem Buchstaben 'A:' und 'B:' wurden entfern

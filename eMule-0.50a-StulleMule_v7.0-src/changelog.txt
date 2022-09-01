@@ -1,0 +1,270 @@
+          CHANGELOG FOR EMULE
+        http://emule-project.net
+        ========================
+
+eMule 0.49c
+-----------------------
+- Feb, 18. 2009       -
+-----------------------
+.: Fixed a minor GUI drawing issue in the transfer window [dolphinX]
+.: Added GUI name references to some more Kad queries [tHeWiZaRdOfDoS]
+.: Added sanity check for rare issue seen in crashdumps concerning SourceExchange responses
+.: Increased the UDP-Socket buffer to avoid packetloss
+
+-----------------------
+- Feb, 15. 2009       -
+-----------------------
+.: Fixed the following BETA bugs:
+- Popups on the shared files list were not working
+- The shared files count in the GUI wasn't always accurate
+- Resolved shell links had some issues, preventing them from getting shared
+- The GUI wasn't always properly updated when deleting a file in the shared files window
+
+eMule 0.49c BETA2
+-----------------------
+- Feb, 11. 2009       -
+-----------------------
+.: Fixed a BETA bug in the new part.met recovery function
+
+-----------------------
+- Feb, 10. 2009       -
+-----------------------
+.: Resolve shared shell links has now its own option in the extend dialog instead beeing a preferences.ini only option
+.: Added the preferences.ini only option "FileBufferTimeLimit" ("eMule" section) which lets you set the maximum seconds before flushing the buffer of downloading files (default 60) 
+
+-----------------------
+- Feb, 9. 2009        -
+-----------------------
+.: When another client requests to view your shared files and directories (and you allow it), eMule will now attach only the directory names (or relative paths if it is a shared subdir) instead the full path for privacy reasons
+.: Fixed a BETA bug which caused eMule to not send single shared files when answering view shared files requests
+
+-----------------------
+- Feb, 8. 2009        -
+-----------------------
+.: On a fresh eMule installation, several less important list columns are now hidden by default to avoid overloading the interface
+.: Fixed some BETA bugs with creating collections
+.: Slightly increased the max. button size of the maintoolbar
+.: You can no longer share single files within unshareable directories (like your temp dir)
+
+-----------------------
+- Feb, 7. 2009        -
+-----------------------
+.: Fixed a BETA bug which made eMule ignore the longest keyword on server searches
+.: Added sanity checks for some problems seen in crashdumps when sending responses
+.: Added sanity range check for preferences.ini only option: tcp obfuscation padding length
+
+eMule 0.49c BETA1
+-----------------------
+- Feb, 4. 2009        -
+-----------------------
+.: Dates shown in the download list have their own time format setting ("DateTimeFormat4Lists" in preferences.ini) which is by default more compact than the old one
+.: Added a column to the download list which shows the date when the download was started
+
+-----------------------
+- Feb, 2. 2009        -
+-----------------------
+.: Kad routing query contacts are checked against the routing table
+.: Kad no longer allows more than 2 IPs from the same subnet within one routing query reply (except on LANs)
+.: Fixed small bug in the uploadthrottler [tHeWiZaRdOfDoS]
+
+-----------------------
+- Jan, 27. 2009       -
+-----------------------
+.: The Kad UDP firewalltest now asks several clients for its external port, avoiding to get a wrong "Open" state on NATs which change the source port on each request but behave like a Full-Cone otherwise
+.: Kad now rechecks incoming search results against the filters used for a search and drops all results which fail (which should only happen for buggy clients and spam results)
+
+-----------------------
+- Jan, 25. 2009       -
+-----------------------
+.: When corrupted part.met files are detected, eMule now automatically tries to use the part.met.bak files instead
+.: Some data (like the AICH hashset, statistics, metadata etc) from known/downloaded files which were not shared within the last month now gets purged to save ressources and avoid an unlimited growth of the known.met files
+   (the first purge will be done one month after upgrading, if you have "Remember downloaded files" disabled all unshared files are completely deleted right away so this change would have no further effect)
+.: If you want to avoid this purging for some reason you can put "PartiallyPurgeOldKnownFiles=0" in the "eMule" section of your preferences.ini
+
+-----------------------
+- Jan, 20. 2009       -
+-----------------------
+.: When sorting lists for file types, eMule now further sorts by extension when the filetype is the equal
+
+-----------------------
+- Jan, 11. 2009       -
+-----------------------
+: On simple search queries Kad now rearrenges the used keywords itself and uses the longest keyword to determine which node to ask. This reduces the search load on common used keyword nodes like "and", makes such keyword a less viable target to attackers and allows users to do a search which begina with a short keyword like "An eMule"
+.: You can deactivate this by putting "RearrangeKadSearchKeywords=0" into the "eMule" section of the preferences.in (there isn't much reason to do so for normal users however)
+
+-----------------------
+- Jan, 10. 2009       -
+-----------------------
+.: You can now also share single file and directories by Drag&Drop - simply drag them from (for example) the Windows Explorer into your Shared Files list
+.: You can now share and unshare single files in the shared files window by chking/unchecking the files in the "All directories" tree. Downloading files and files in the incoming directory cannot be unshared
+   (first one is required for the network  the second one is for consistency as the incoming dir is not handled as optional shared dir, therefore not marked in the tree as shared which again would make it pretty hard to find it to reshare any excluded files)
+.: Kad file/source search answers now try to avoid using fragmented packets, making it more compatible to zealous firewalls routers which block those (effect increases as more nodes update to this version)
+
+-----------------------
+- Jan, 5. 2009       -
+-----------------------
+.: Fixed a possible crash in the (minilib) UPnP implementation
+.: The Webinterface port can now also be forwarded by UPnP (Options->Webinterface)
+.: The UPnP mappings are checked and refreshed if needed before Kad firewallchecks, after waking up from suspend and on smart lowid detection when connecting to servers
+
+-----------------------
+- Jan, 3. 2009       -
+-----------------------
+.: The allowed comment size has been increased to 128 characters
+.: Fixed a bug which made the download list use the wrong text color in some cases, mostly noticed on special windows themes
+
+-----------------------
+- Dec, 22. 2008       -
+-----------------------
+.: Added support for Windows 'Heap Corruption Detection' security feature (Windows Vista)
+.: Added support for Windows 'Address Space Layout Randomization' security feature (Windows Vista)
+
+-----------------------
+- Dec, 21. 2008       -
+-----------------------
+.: Added support for preview the content of ISO files. (file details->content)
+   Reads the content of ISO9660 and Joliet images. (no UDF support)
+.: Made sure a received Kad routing answer doesn't contain more contacts than requested [Xin Sun]
+
+-----------------------
+- Dec, 19. 2008       -
+-----------------------
+.: Added support for Windows 'Data Execution Prevention' security feature (Windows XP SP2 / Windows Vista)
+.: Added support for Windows 'Exception Handling Protection' security feature (Windows XP SP2 / Windows Vista)
+
+-----------------------
+- Oct, 22. 2008       -
+-----------------------
+.: Added: Crash dump files are created in the 'config' directory. [thx tHeWiZaRdOfDoS]
+.: Fixed a flaw which caused too few randomness when generating a new ed2k userhash [godlaugh2007]
+
+-----------------------
+- Oct, 21. 2008       -
+-----------------------
+.: Added showing of watermark images to listviews (see "LvBkImg" entries in "Template.eMuleSkin.ini")
+
+-----------------------
+- Oct, 18. 2008       -
+-----------------------
+.: Unified drawing of multiple selected items in all listviews.
+.: Several optimizations in listview drawing.
+.: Added drag image for files in Transfers window (used when dragging selected items onto a category tab).
+.: Fixed showing of tooltips for multiple selected items in Server and Search window.
+
+-----------------------
+- Oct, 11. 2008       -
+-----------------------
+.: Added auto-sizezing of column widths to all list views (double clicking on column divider will size the column width appropriatly)
+.: Added label tips for partially visible sub items in all list views.
+.: Added default sort orders to list views in Transfers window.
+.: Added list view search functions for sub items.
+.: Fixed sorting bug in File Name dialog.
+
+-----------------------
+- Sep, 27. 2008       -
+-----------------------
+.: Added support for DVR-MS files to "Content" page of File Details dialog and published meta data.
+.: Minor change in auto-sizing controls of Search Parameters pane.
+.: Added reading of meta data for WAV files to "Content" page of File Details dialog.
+.: Added publishing of ED2K specific meta data for WAV and WMA files.
+.: Added columns for ED2K meta data to Shared Files window.
+
+-----------------------
+- Sep, 23. 2008       -
+-----------------------
+.: Added Options->Extended->Resolve shell links which lets eMule share 'linked' files (Windows Explorer shortcuts). This way one can also share single files within unshared directories.
+.: Added reading of meta data for Windows Media files to "Content" page of File Details dialog.
+
+-----------------------
+- Sep, 14. 2008       -
+-----------------------
+.: Added yet another method to determine whether the MediaInfo library is installed.
+.: Added support for multi-user configurations for Win9X/WinME/WinNT (requires at least IE5).
+.: Added support for previewing self extracting RAR archives.
+.: Fixed broken ED2K link and eMule Collection file registry functions for Win98/WinME/WinNT.
+
+-----------------------
+- Sep, 13. 2008       -
+-----------------------
+.: Fixed a resizing bug with the main toolbar under Win98.
+.: Fixed message box contents for downloading a proper version of DBGHELP.DLL for Win9x/WinME/Win2000.
+.: Fixed a crash with deleting completed or shared files under Win98.
+.: Added: Downloaded files are marked in the same way as by 'Internet Explorer' which leads to showing a warning message from 'Windows' when opening potential malicious files (for Windows XP SP2 or later).
+.: Added: Opening DRM protected files shows a warning message to prevent accidental opening of a web browser and navigating to malicious sites.
+
+-----------------------
+- Sep, 11. 2008       -
+-----------------------
+.: Fixed bug with missing update for filter text on changing the language [JvA]
+.: (Win98) Fixed bug with default search file type setting
+
+-----------------------
+- Sep,  4. 2008       -
+-----------------------
+.: Added new browse file/directory buttons to property pages in Options dialog.
+
+-----------------------
+- Sep,  2. 2008       -
+-----------------------
+.: Fixed some redrawing/resizing problems and reduced flickering in several main eMule windows.
+
+-----------------------
+- Sep,  1. 2008       -
+-----------------------
+.: Fixed bugs with file tooltips for Win98/Win2000.
+.: Fixed a problem with corrupt stored search results [George1]
+
+-----------------------
+- Aug, 30. 2008       -
+-----------------------
+.: Fixed: It was possible to add eMule installation folder(s) to the shared files list when using the directory tree control in the Shared Files window.
+.: Fixed a bug with disk space statistics for newly added downloads [fox88]
+.: Fixed some potential compatibility problems with Windows NT 4.0.
+.: Fixed problem with some missing icons under Win98.
+
+-----------------------
+- Aug, 24. 2008       -
+-----------------------
+.: Fixed: Some Unicode strings where not stored correctly in meta data for part files.
+.: Fixed some possible Unicode issues in Kad search expressions.
+.: Removed the "Search with Unicode" search option - searches are always with Unicode.
+.: Removed support for *.met file backward compatibility with non-Unicode eMule versions.
+.: Removed support for the "SetSystemACP" setting in preferences.ini.
+.: Added support for detecting if the MediaInfo library (http://mediainfo.sourceforge.net/) is installed on the system and automatically using it within the "Content" page for part/shared files.
+.: Updated Kad Unicode mapping table for supporting current Unicode standard used by Vista.
+
+-----------------------
+- Aug, 16. 2008       -
+-----------------------
+.: Fixed: Some Unicode strings where not stored correctly in search spam filter.
+
+-----------------------
+- Aug, 15. 2008       -
+-----------------------
+.: Added a NT-volume info cache to speed up handling of shared directories on non-fixed drives.
+.: Fixed: With certain code pages some Unicode characters where not stored correctly in *.met files [Borschtsch]
+.: Fixed: Some Unicode strings where not stored correctly in meta data for shared files.
+
+-----------------------
+- Aug, 11. 2008       -
+-----------------------
+.: Changed location for "downloads.txt" to eMule-config folder.
+
+-----------------------
+- Aug, 10. 2008       -
+-----------------------
+.: Added sorting of entries in "Shared Directories" and "Incoming Files" section of "Shared Files" tree view.
+.: Added showing of the parent folder for entries in "Shared Directories" and "Incoming Files" section of "Shared Files" tree view.
+.: Added showing of 'not connected' shared directories to "Shared Directories" and "Incoming Files" section of "Shared Files" tree view.
+.: Added keeping of shared directories which are 'not connected' when starting eMule.
+.: Added populating of a warning icon overlay to "Shared Directories" and "Incoming Files" section of "Shared Files" tree view to indicate that there is at least one directory in that folder which is 'not connected'.
+.: Added verifying of the 'connected' state for all shared directories when updating the "Shared Files" tree view by using the 'Reload' button.
+
+-----------------------
+- Aug, 9. 2008        -
+-----------------------
+.: Fixed enablement of Start/Cancel button in Search Window for closed Kad searches.
+.: Fixed invisible gripper control in Transfer Window.
+.: Fixed standard Windows Property Sheet shortcuts in Options dialog.
+.: Fixed several unlikely to happen but theoretically though possibles crashes.
+.: Removed restrictions for sharing drives 'A:' and 'B:'.

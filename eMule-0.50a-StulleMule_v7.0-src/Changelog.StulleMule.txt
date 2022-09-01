@@ -1,0 +1,736 @@
+CHANGELOG FOR EMULE StulleMule MOD
+
+eMule v0.49c StulleMule v6.2:
+------------------------
+- 26.04.2009 -
+-------------------------------------------------------------------------------
+based on eMule 0.49c MorphXT 11.3 compiled with vs2005 SP1
+
+Added: (Design Settings) Shareable file style for SharedFilesCtrl [Stulle]
+Added: Make NT Service strings changeable [Stulle]
+Added: Option to use ASFU for folders including single shared files [Stulle]
+Added: Option for time between automatic reloads [Stulle]
+Added: First awesome StulleMule Installer [leuk_he/MorphXT]
+Added: Turkish translation (partially) [omeringen]
+
+Changed: Only check "Control download priority" code every tenth cycle [Stulle]
+Changed: Updated Design Settings for new code (also improves implementation [Stulle]
+Changed: Min small files push size to 1 kB [Stulle]
+Changed: Small files push size slider kB based (makes keyboard input usable) [Stulle]
+Changed: Introduced pre-processor definitions for various features [Stulle]
+Changed: Global SysInfo RAM stats will support usage of more than 4GB [Stulle]
+Changed: Write FileSettings.ini sequentially (faster) [Stulle]
+Changed: Always wait 5 sec after sending save req before saving file settings [Stulle]
+Changed: Only reset ASFU when needed [Stulle]
+Changed: ASFU uses special bWatchSubtree flag for share with subdir [Stulle]
+Changed: ASFU only checks top most shared with subdir folder On Device Changed [Stulle]
+Changed: ASFU only monitors dirs that exist on reset/init [Stulle]
+
+Updated: Anti-Leecher-Lists (DLP v37) [zz_fly/more]
+Updated: Following language files: French [Nicholas_FR]; Spanish [guijarrelson];
+	Italian [v-x-vendetta]; German [Stulle]; Chinese (P.R.C.) [zz_fly]
+
+Fixed: (Design Settings) Only display if we got score remotely for DL clients [Stulle]
+Fixed: Save known and FileSettings threads were not terminated properly [Stulle]
+Fixed: Default color for source graph [Stulle]
+Fixed: Changing the small files push size reset changes in the Tree options [Stulle]
+Fixed: ASFU endlessly reloaded when monitored directory disappeared [Stulle]
+
+
+eMule v0.49b StulleMule v6.1:
+------------------------
+- 17.09.2008 -
+-------------------------------------------------------------------------------
+based on eMule 0.49b MorphXT 11.1 compiled with vs2005 SP1
+
+Added: PowerShare support for WebInterface [Stulle]
+	+not for light, use the new WebInterface files
+Added: Color selection for sub heading text (internal) [Stulle]
+
+Changed: Localize Source Graph group box [Stulle/thx pennyliu123]
+Changed: Localize Push Small Files label above slider [Stulle/thx pennyliu123]
+Changed: Localize TBH: MM group item [Stulle/thx pennyliu123]
+Changed: Localize "12h" string for Release Bonus [Stulle/thx pennyliu123]
+
+Changed: Made Compat clients stats code prettier [WiZaRd]
+Changed: Improved resizing of cats tab in SearchResultWnd [Stulle]
+Changed: Using official code for proper background of Icons with text [Officials]
+Changed: (Morph) Display NNS in UploadListCtrl [Diabolo111]
+
+Updated: Bad Nick List (DLP v33) [zz_fly/JvA/DLarge]
+
+Fixed: Anti-XS-Exploit (v2 answers) [fafner]
+Fixed: ATWL: (minor) not working split button after starting unsplitted [fafner]
+	+ ATWL = Advanced Transfer Window Layout
+Fixed: ATWL: (minor) list count for upper splitted lists did not update [fafner]
+Fixed: ATWL: (minor) non-downloads lists changed height between split/unsplit [fafner]
+	+ running with 120 dpi fonts and using odd screen sizes 
+Fixed: Readded TextToSpeech support for notifies [Stulle]
+Fixed: Anti-Uploader-Ban case 2 and 3 (horribly old...) [Stulle]
+Fixed: Wrong friendslot tag (used 0x66 like in the alpha phase) [Stulle]
+	+ importing friendslots when upgrading from v6.0
+Fixed: Missed some files when merging [Stulle]
+Fixed: (minor) Wrong check mark for A4AF in DownloadList File menu [Stulle/thx erdem444]
+Fixed: (Morph) Corrupted userhash ban [taz-me]
+
+
+eMule v0.49a StulleMule v6.0:
+------------------------
+- 20.05.2008 -
+-------------------------------------------------------------------------------
+based on eMule 0.49a MorphXT 11.0 compiled with vs2005 SP1
+
+Added: MenuXP Sub Heading [fafner/Stulle]
+Added: Advanced Transfer Window Layout [Stulle/ideas from fafner]
+Added: Threaded File Settings Saving - Stulle
+	+ keeps the GUI responsive while saving
+Added: Threaded Known Files Saving [Stulle]
+	+ keeps the GUI responsive while saving
+Added: DirectX (Preview feature) support for VS05 [eMF]
+
+Changed: Save file settings when changing FollowTheMajority setting [Stulle]
+Changed: Save file settings when new file added [Stulle]
+Changed: File settings save thread waits 5 seconds before launching [Stulle]
+Changed: Context menu Sidebars show mod version [Stulle]
+Changed: Context menu title shown as sub heading [Stulle]
+Changed: Creation of TBH: MiniMule (won't show up on startup now) [Stulle]
+Changed: Maintain splitter state on change TransferWnd toolbar settings [Stulle]
+
+Updated: Anti-Leecher-Lists (DLP v32-pre) [Xman/Myth/JvA/DLarge]
+
+Fixed: Some memleak fixes and other fixes [fafner]
+Fixed: Memleak fixes for System info [WiZaRd]
+Fixed: (minor) Permission context menu in DownloadListCtrl [Stulle]
+Fixed: (minor) On/Off button for Server design settings [Stulle]
+
+Advanced Transfer Window Layout:
++ Any two lists can be viewed at the same time
++ Downloading file list can only be viewed in the upper part
++ If list shown in the upper half is already in the lower half the lower
+	list changes to next list
++ To disable/ enable press the split button/ item
+
+
+eMule v0.48a StulleMule v5.3:
+------------------------
+- 14.09.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a MorphXT 10.3 compiled with vs2003 SP1
+
+Changed: ASFU: Moved EndCall [Stulle]
+Changed: AFSU: Reset when en-/disabled [Stulle]
+
+Fixed: ASFU: missing alteration for shareSubdir [Stulle]
+
+
+eMule v0.48a StulleMule v5.2:
+------------------------
+- 08.09.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a MorphXT 10.2 compiled with vs2003 SP1
+
+Changed: Recode of the file settings [Stulle]
+Changed: Set and save Follow the Majority per file [Stulle]
+Changed: Partly rewrote ASFU for shareSubdirs [Stulle]
+
+Fixed: Some more GDI-Leaks around the context menus [Stulle]
+Fixed: Info icon in ChatWnd for window colors [Stulle]
+Fixed: Odd word invention "constantinously" to "constantly" [LorenzC]
+Fixed: Some more mem leaks [fafner]
+
+Removed: Unused code in the Preferences [Stulle]
+
+File Settings:
++ all .sivka files will be deleted
++ all settings will be stored in the FileSettings.ini
++ supports all current settings by StulleMule and ScarAngel
++ settings are saved on taking over SivkaFileSettings and on closing eMule
+
+
+eMule v0.48a StulleMule v5.1:
+------------------------
+- 05.08.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a MorphXT 10.1 compiled with vs2003 SP1
+
+Added: AppleJuice Community Detection [Xman]
+Added: File Faker Detection [Xman]
+Added: Enforce Ratio (1:1 to 1:10) [Stulle]
+
+Changed: check mark superior to icon (MenuXP) [fafner]
+Changed: Quickstart for KAD-only connection [Stulle]
+Changed: No FunnyNick for bad guys [Stulle]
+Changed: Readded EasterEgg & removed concealment [Stulle]
+Changed: Partial revision of Reduce Score [Stulle]
+
+Updated: Anti-Leecher-Lists (DLP v30) [Xman]
+
+Fixed: Remove star from tray fix *lol* [Stulle]
+Fixed: GDI-Leaks around the context menus [Stulle]
+
+
+eMule v0.48a StulleMule v5.0:
+------------------------
+- 06.06.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.48a MorphXT 10.0 compiled with vs2003 SP1
+
+Added: Security check for loading of reduce factor [Stulle]
+Added: Inform sources after IP change via opcode [Xanatos/Spike]
+Added: Inform queue clients after IP change via opcode [Stulle]
+	+ uses the same function like for sources, credits go to the same ppl
+Added: Prevent from missing an Upload by Xtreme [Stulle/idea by Spike2]
+Added: Recognize MlDonkey XS Answer [Spike2/ideas by Wiz]
+Added: Reconnect KAD on IP-Change (triggered by Server) [Xman]
+
+Changed: Improved mod recognition for Mod Stats [Stulle]
+Changed: Min time for automatic reloads set to 2min [Stulle]
+Changed: Ensure count of completed files independant from cat for TBH:MM & tray [Stulle]
+Changed: Tray Icons [IPU]
+Changed: Program Icon [emule-web.de staff]
+
+Updated: Emulate other clients [Spike2]
+Updated: Design Settings to v2 [Stulle/MaxUpload]
+
+Fixed: Remove star from tray when cleared completed [Stulle]
+
+
+eMule v0.47c StulleMule v4.5:
+------------------------
+- 14.02.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c MorphXT 9.5 compiled with vs2003 SP1
+
+Added: High resulution speedmeter on toolbar [eFMod/Stulle]
+	+ overrides some toolbar settings
+
+Changed: Proxy cannot be a leecher [Stulle]
+Changed: Control download priority sets priority when Auto enabled [Stulle]
+
+Fixed: Nick Changer string [Stulle]
+Fixed: Spread Credits Slot string [Stulle]
+
+Removed: Improperly added Valid Sources Patch [sivka]
+	+ should fix all bugs around XS (this was hard to find...)
+Removed: Unused code of TBH: MiniMule implementation [Stulle]
+
+
+eMule v0.47c StulleMule v4.4:
+------------------------
+- 04.02.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c MorphXT 9.5 compiled with vs2003 SP1
+
+Added: Display reason for zero score [Stulle]
+Added: Automatic shared files updater [MoNKi]
+Added: Progress Hash [O2]
+Added: Control download priority [tommy_gun/iONiX]
+
+Changed: Disable PS/PBF for leechers also for push rare/ small [Stulle]
+
+Updated: Anti-XS-Exploit [Xman]
+Updated: Anti-Leecher lists [Xman]
+
+Fixed: Drop down menus in Design settings dlg on Win2k [Leuk_he]
+Fixed: TBH: MM popping up at the wrong time [Stulle]
+Fixed: Hex Check [Xman]
+Fixed: Accidently removed Ratio CS since v4.0 [Stulle]
+Fixed: Accidently changed EastShare CS to Morph Way [Stulle]
+Fixed: Sometimes client's credits are not updated though they should [Stulle]
+
+Removed: Magic Angel and Magic Angel+ CS (not well designed) [sFrQlXeRt]
+
+
+eMule v0.47c StulleMule v4.3:
+------------------------
+- 18.01.2007 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c MorphXT 9.3 compiled with vs2003 SP1
+
+Added: Design Settings [eWombat/Stulle]
+
+Changed: Notify on invalid value for PS amount limit [Stulle]
+Changed: Replaced XP-Style menus implementation with the one from Xanatos [Stulle]
+Changed: Various changes around XP-Style menus [Stulle]
+Changed: XP-Style menu background picture [emule-web.de staff]
+
+Fixed: Transferred data measurement for compatible clients [Stulle]
+Fixed: Mod Stats for Cyrex2001 and Spike2 mods [Stulle]
+
+Design Settings:
++ Only enabled styles will be applied
++ Styles sorted by importance in triggering (default excluded)
++ Combining two styles is impossible
+
+
+eMule v0.47c StulleMule v4.2:
+------------------------
+- 15.12.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c MorphXT 9.2 compiled with vs2003 SP1
+
+Added: Static IP Filter [Stulle]
+	remark: save "ipfilter_static.dat" in config dir
+Added: More creditsystems (Magic Angel, Magic Angel+, TK4, Xtreme, ZZUL) [Various]
+Added: Enhanced Client Recognition [Spike]
+Added: Compat Client Stats [Stulle]
+
+Changed: Specify min amount of mod clients for Global Mod statistics [Stulle]
+	remark: add "MinModAmount={value}" in [StulleMule] section in 
+		Preferences.ini; default = 2
+Changed: Global Mod Statistics sorted by amount [leuk_he/ Stulle]
+Changed: creditsystem settings now saved in StulleMule section [Stulle]
+Changed: No small file push for Release Bonus pushed files [Stulle]
+	remark: Otherwise the uint32 could not be enough; push is high enough
+
+Fixed: Avoid misusing of PowerShare on Partfiles [fafner]
+Fixed: Server list context menu label [Stulle]
+Fixed: Limit PS by amount of data uploaded not loaded properly [Stulle]
+
+
+eMule v0.47c StulleMule v4.1:
+------------------------
+- 10.11.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c MorphXT 9.2 compiled with vs2003 SP1
+
+Added: Global Mod statistics [Stulle/some code by SlugFiller]
+Added: Limit PS by amount of data uploaded [Stulle]
+Added: Disable PS/PBF for leechers [Stulle/idea by sfrqlxert]
+
+Changed: Do not allow bad guys to get a SCS [Stulle]
+
+Fixed: SlotLimiter settings gui [Stulle]
+
+Removed: MorphXT/ StulleMule counter (unneccessary) [Stulle]
+
+Limit PS by amount of data uploaded:
++ Set Limit by sources to 0 and PS mod to limited to use this feature
+
+
+eMule v0.47c StulleMule v4.0:
+------------------------
+- 07.10.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47c MorphXT 9.0 compiled with vs2003 SP1
+
+Added: latest CVS updates [MorphXT Team] 
+
+Changed: Complete recoded of triggering parts from Reask Sources after IP-Change [Stulle]
+Changed: Replaced CPU usage reader code [ejor]
+Changed: System Info settings resetted to default [Stulle]
+Changed: System Info updated every second instead of 2.5 seconds [Stulle]
+
+Fixed: Average Queue Rating [Xman]
+Fixed: SysInfo Memleak [WiZaRd]
+Fixed: SysInfo wasn't destroyed (pointed out by JvA) [Stulle]
+
+Removed: Disable delete dead servers [Stulle]
+
+
+eMule v0.47a StulleMule v3.6:
+------------------------
+- 30.07.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a MorphXT 8.13 compiled with vs2003 and Netfinity's fix
+
+Added: XP Style Menus (including few more icons in the context menus) [TPT]
+Added: Release Bonus (12h or up to 16 days) (not for partfiles) [sivka]
+Added: Release Score assurance [Stulle]
+Added: Connection Checker [eWombat/WiZaRd/Stulle]
+Added: Nick Changer Check [Xman]
+Added: Display ban/detection reason [Stulle]
+
+Updated: Bad Mod list and Spam message list [Xman]
+
+Changed: Redesigned Reduce Score Factor setting (avoid tiping failure) [Stulle]
+Changed: Enable/ Disable Sysinfo (complete and global) [Stulle/iONiX]
+Changed: Spread Credits Slot may be added to PS UL class optionally [Stulle]
+Changed: (SCS) reinitiate early abort clients without half a chunk threshold [Stulle]
+Changed: Mod-ID-Fakers won't be counted any longer [Stulle]
+Changed: TBH: MM shows KAD connection and both connections state [Stulle]
+Changed: reworked Anti-Leecher-System management [Stulle]
+Changed: ReAsk Sources after IP change to Cyrex style - not v2 by Xman now [Stulle]
+
+Fixed: Forgot one check around the PBF change (D'oh!) [Stulle]
+Fixed: Emulate MLDonkey, eDonkey and eDHybrid
+Fixed: Bad Nick/Mod clients didn't get score reduction after second check [Stulle]
+
+Removed: Slotlimiter by average UL value (replaced with Morph one) [Stulle]
+
+Release Score assurance:
++ clients requesting complete files with release priority will not get
+	a score lower than the default unless they are Reduce Score clients
+
+Connection Checker:
++ The Connection Checker will disconnect the Server/ KAD connection on going offline
+	and connect it again on going online.
++ Only networks set in the preferences (Connection settings) will be connected again.
+
+
+eMule v0.47a StulleMule v3.5:
+------------------------
+- 21.04.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a MorphXT 8.10 compiled with vs2003 and Netfinity's fix
+
+Note: I need new alpha/ beta tester. If you are interested please contact me
+	Requirements: speaking English/ German; good eMule knowledge; time!
+
+Added: MorphXT counter [Stulle]
+Added: CPU/ Memory usage display in TransferWnd [$ick$/Stulle]
+Added: ScarAngel Icon (already in 3.4 - kept this info hidden ;)) [Stulle]
+Added: New United Community Detection [Xman]
+Added: UDPReaskFNF-Fix against Leechers [Xman/idea by WiZaRd]
+Added: Reduce Score for leecher (on definate detection) [Stulle]
+	remark: 10-100% of the original score
+
+Updated: Bad Mod list [Xman]
+
+Changed: More leecher checks optional [Stulle]
+	new: BadType eMuleInfo-Tag, Suspect Hello-Tag, SNAFU, Extra Bytes
+Changed: Reworked Spread Credits Slot [Stulle]
+	remark: clients in PS UL class and earlyabort clients valid
+		unless they got more than half a chunk
+Changed: Update display after manual dropping immediatly [Stulle]
+Changed: PBF only on complete reqfiles (different by EastShare) [Stulle]
+
+Fixed: CPU usage display in MiniMule title line (failed here...) [Stulle]
+Fixed: eMCrypt detection (using MorphXT implementation) [leuk_he]
+
+Removed: EastShare counter [Pretender]
+Removed: # of dropped sources this session in stats [Stulle]
+Removed: Lower upload priority [Pretender]
+
+CPU/ Memory usage display in TransferWnd:
++ Display order: "CPU : CPU usage of eMule (CPU usage of the whole system)"
+	"Mem : Memory usage of eMule (currently used physical Mem/ RAM of System)"
+
+Spread Credits Slot debugging:
++ @ Spr N = usual Spread Credits Slot (0 up/ 0 down)
++ @ Spr F = removed early and got less than half a chunk
++ @ Spr O = got a SCS but was removed and didn't get reinitiated by @ Spr F
+
+
+eMule v0.47a StulleMule v3.4:
+------------------------
+- 24.03.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a MorphXT 8.9 compiled with vs2003 and Netfinity's fix
+
+Added: More Mod Icons (MAXmod, Xtreme, iONiX, Cyrex2001, NextEMF, Neo Mule) [Stulle]
+
+Changed: GHL system like in former versions (customize for files) [Stulle]
+
+Removed: Unused code in Connection Wizard [Stulle]
+
+
+eMule v0.47a StulleMule v3.3:
+------------------------
+- 09.03.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a MorphXT 8.5 compiled with vs2003 and Netfinity's fix
+
+Added: Emulate: MLDonkey, eDonkey, eDonkeyHybrid, Shareaza v2, Lphant  [WiZaRd/Spike/shadow2004]
+
+Changed: Do not add sources from Src Cache while reducing HL (GHL) [Stulle]
+Changed: Do not search sources while reducing HL (GHL) [Stulle]
+Changed: Calculate GHL default based on line speed [Stulle]
+
+Fixed: MiniMule crash on shutdown (try-catch-handler instead of mutex) [Stulle]
+Fixed: Avoid division by zero due to counter for active GHL files [Stulle]
+Fixed: Slot Limit (Max Slots = Avg UL/3kbps) string in PPgStulle.cpp [Stulle]
+
+
+eMule v0.47a StulleMule v3.2:
+------------------------
+- 24.02.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a MorphXT 8.5 compiled with vs2003 and Netfinity's fix
+
+Added: Hex Check for leecher detection [Xman]
+Added: Emcrypt detection (set GPLEvildoer) [Xman]
+
+Updated: Bad Mod list [Xman]
+
+Changed: Default nick to http://stulle.emule-web.de/ [Stulle]
+Changed: Initializing of hl for new files in GHL [Stulle]
+Changed: Stayed with former Slot limiter [Stulle]
+
+Fixed: (minor) corrected slot limiter max to 255 [Stulle]
+
+Removed: Help from StulleMule preferences (caused a crash) [leuk_he/done by Stulle]
+
+
+eMule v0.47a StulleMule v3.1:
+------------------------
+- 04.02.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a MorphXT 8.1 compiled with vs2003 and Netfinity's fix
+
+Added: Source cache (slightly modified) [Xman]
+Added: Option to use Global Hardlimit for all files [Stulle]
+
+Changed: Tweaked EastShare and StulleMule client count [Stulle]
+Changed: Minor changes around Global Hardlimit [Stulle]
+
+Fixed: Forgot to merge updated bad Nick/Mod lists [Stulle]
+Fixed: Average Download Speed display (prevent from division by zero) [Stulle]
+Fixed: Average Download Speed label display [Stulle]
+
+
+eMule v0.47a StulleMule v3.0:
+------------------------
+- 30.01.2006 -
+-------------------------------------------------------------------------------
+based on eMule 0.47a MorphXT 8.1 compiled with vs2003 and Netfinity's fix
+
+StulleMule goes SourceForge: http://sourceforge.net/projects/stullemule/
+StulleMule goes online (eng + ger): http://stulle.emule-web.de
+
+Added: Global Hardlimit [Max/Stulle]
+Added: StulleMule Version Check [Official/MorphXT/Stulle]
+
+Changed: Only print valid incoming message log lines (none from spammer/ leecher) [Xman]
+Changed: Tweaked 'Show sources on title' and 'Show in MSN7 v2' [Stulle]
+Changed: PS limitation on complete files updated to latest version [SiRoB]
+
+Fixed: DownloadHistoryList [Xman]
+Fixed: Quickstart after IP change settings in PPgStulle [Stulle]
+
+Removed: Switch off PS limitation on complete files (it was meant for small files... working now) [Stulle]
+
+
+eMule v0.46c StulleMule v2.2:
+------------------------
+- 13.12.2005 -
+-------------------------------------------------------------------------------
+based on eMule 0.46c MorphXT 7.6 compiled with vs2003 and Netfinity's fix
+
+This version still contains all EastShare v10.6 changes as it did before but since
+most changes while merging are from the MorphXT this is rather a mod based on
+MorphXT than a mod based on Eastshare
+
+Added: Display star in tray when completed files in download list [Stulle]
+Added: Slot limit by # of slots (60-256) [Stulle]
+Added: Leecher name checks (uses detect algorithms instead of list check) [Xman]
+Added: Community check [Xman]
+Added: Spammer Ban [Xman]
+Added: Anti-XS-Exploit [Xman/idea by WiZaRd]
+
+Updated: Bad Mod/ Name list [Xman]
+
+Changed: Friend display superiour to PS display in Queue and Upload list [Stulle]
+Changed: Slot limit now uses 5 mins average speed (fixes former bug, too!) [Stulle]
+
+Fixed: Connection display in MSN [Stulle]
+Fixed: Crash on shutdown in TBH: MM [leuk_he]
+Fixed: Upload Priority Sorting (hopefully) [Stulle]
+Fixed: Pay Back First for clients without SUI [Stulle]
+
+
+eMule v0.46c StulleMule v2.1:
+------------------------
+- 08.11.2005 -
+-------------------------------------------------------------------------------
+based on eMule 0.46c EastShare v10.6 compiled with vs2003 and Netfinity's fix
+merged to MorphXT 7.4
+
+Added: a small easteregg (don't tell anyone where you found it!) [Stulle]
+	remark: The way to activate this easteregg will change every release!
+Added: Slot Limit (Max Slots = Avg UL/3kbps) [Stulle]
+Added: modified Fine CS [Stulle/CiccioBastardo]
+
+Updated: the MSN features to v2 (shows KAD, Server, # of Src, ratio and speed) [Stulle]
+
+Changed: Min Queue Size to 1000 [Stulle]
+Changed: tweaked Friend Score Assurance by Pretender a bit [Stulle]
+
+Fixed: Lower Prio sorting [Stulle]
+Fixed: Source Graph calculation (stupid me) [Stulle]
+
+Removed: Allow Bandwidth Settings in <1KB Incremements [Maella] (in 2.0, too)
+Removed: modfied Fine CS [Pretender/CiccioBastardo]
+Removed: CreditSystems enabled check in GetScore (always on, anyways!)
+Removed: Friend boost [EastShare]
+
+
+Fine CS:
++ Fine CS won't kick unless the modifier of the client is equal or below the default
+	modifier of your current credit systems.
++ When Fine CS kicks in all clients that had a reduce modifier because of the data
+	calculation in the CS itself will start the Fine CS calculation with a 1 modifier
+
+
+eMule v0.46c StulleMule v2.0:
+------------------------
+- 17.10.2005 -
+-------------------------------------------------------------------------------
+based on eMule 0.46c EastShare v10.6 compiled with vs2003 and Netfinity's fix
+merged to MorphXT 7.4
+
+This release is dedicated to Mav744, my glorious  tester, helper and supporter!
+
+Added: Dropped sources stats for session [Stulle]
+Added: TBH Mini-Mule (when active it replaces the original MM) [iONiX/ TPT]
+Added: Push-small-files (boost can be configured manually) [Sivka/Stulle]
+Added: Ban clients sending empty nicks (impossible without changings) [WiZaRd]
+Added: PayBackFirst min value (5 MB) and max value (255 MB) [Stulle]
+Added: Source Graph [Stulle]
+	+Note: Graph won't resize on change download bandwith limit or hardlimit values
+Added: Average Queue Ranking [Xman]
+Added: Pay Back First for clients without SUI [Stulle]
+Added: StulleMule Icon [Stulle/ eMule-web.de ( thx) ]
+Added: Switch off PS limitation (>200 complete src) for complete files [Stulle]
+	+Note: Add "PsLimitation=0" under [StulleMule] in your preferences.ini to switch off
+Added: Average Download Speed [Stulle]
+
+Updated: Anti-Nick-Thief v2.0 to v2.3 (Till 2.2 by WiZaRd) [Stulle]
+
+Changed: # of dropped sources (per file) won't be set to 0 on pause/ stop/ complete [Stulle]
+Changed: MANY things arround TBH Mini-Mule [Stulle/leuke_he]
+Changed: Push-small-files column in QueueWnd displays if boost or not [Stulle]
+Changed: several things in and arround Anti-Nick-Thief [Stulle]
+Changed: All anti-leecher parts can be de-/activated manually [Stulle]
+Changed: Sivka-Ban messages displayed in Morph Log
+Changed: Merged Morph AntiModFaker with AntiModFaker 2.1 by WiZaRd [Stulle]
+Changed: Don't allow pushed clients to get Spread Credits Slot [Stulle]
+Changed: Splashbanner/ Sidebanner [emule-web.de (thx) ]
+Changed: Punish WC clients not using port 80 by 0.8 instead of push them by 1.2 [Stulle]
+Changed: Updated ReAsk Sources After IP Change (RASIC) to v2 [Xman/ Stulle]
+Changed: Max ReAsk time to 55min (+/-2 min due to Spread Requests) [Stulle]
+	+Note: If you set the ReAsk time too high you might loose your queue rank when
+		the sources aren't requested immediatly.
+Changed: Use official hardlimit system in SivkaFileSettings dialog instead of sivka's [Stulle]
+Changed: MANY optimizations in StulleMule code [Stulle]
+Changed: Optimized Anti Uploader Ban [Stulle]
+Changed: Anti Uploader Ban only for Leecher bans [Stulle]
+	+Note: There's no sense in giving clients banned by official systems a chance!
+Changed: Optimized Spread Credits Slot [Stulle]
+Changed: Resorted the TestLeecher funtion (might save some CPU load!) [Stulle]
+Changed: Updated Leecherlist [Stulle]
+Changed: Optimized FunnyNick Tag code [Stulle/Aireoreion]
+Changed: Roll back 7.3 code arround the PS limitation according to file src for complete files [Stulle]
+
+Fixed: NULL-pointer Bug Anti-Uploader-Ban [Stulle/WiZaRd]
+Fixed: Sivka-Ban (didn't check it on implementing) [Stulle]
+Fixed: Don't Ask This IP List/ Unknown Exceptions Bug [Stulle]
+
+Removed: Push-small-files [Tarod/ eF-Mod]
+Removed: Show exact max UL queue size in TransferWnd [Stulle] --> no further need
+Removed: some not needed icons
+Removed: Hide ZZ Ratio Activation [Stulle] --> actually it's not needed
+
+
+eMule v0.45b StulleMule v1.1:
+------------------------
+- 12.05.2005 -
+-------------------------------------------------------------------------------
+based on eMule 0.45b EastShare v9.0 compiled with vs2003
+merged to MorphXT 6.7
+
+(not a real release at all...)
+
+Added: Custom FunnyNick tag [Stulle]
+Added: # of dropped sources tab in transfer wnd (per file) [Stulle]
+Added: New option to show in your MSN7 (or above) message field your emule´s speeds [MOnKi/ikabot]
+Added: Show overhead on title [Stulle]
+Added: 20 minutes auto drop immunity [Stulle]
+       (after startup and after IP change if ReAsk Src after IP Change active)
+Added: Draw friends blue [Stulle]
+
+Changed: IDS_PW_RETRIES to IDS_PW_RETRIES_NEW due to changes in this string [Stulle]
+Changed: Display of hardlimit in "Sources" tab (transfer wnd) optional [Stulle]
+
+Fixed: hardlimit settings [Stulle]
+Fixed: two times "Enable auto drop NNS" in StulleMule pref window [Stulle]
+Fixed: Timer for ReAsk File Sources [Stulle]
+Fixed: new credit systems [Stulle]
+
+Removed: Peace credits (same as original) [Stulle]
+
+
+eMule v0.45b StulleMule v1.0:
+------------------------
+- 22.04.2005 -
+-------------------------------------------------------------------------------
+based on eMule 0.45b EastShare v9.0 compiled with vs2003
+merged to MorphXT 6.7
+
+Added: StulleMule-Preference Window [Stulle]
+Added: Sivka-Ban [Sivka/cyrex2001]
+Added: Anti-Nick-Thief v2 [WiZaRd]
+Added: Push-small-files [Tarod/ eF-Mod]
+Added: Push-rare-files [Tarod/ eF-Mod]
+Added: Timer for ReAsk File Sources 29-50mins [Stulle/ idea from sivka]
+	(for HighID users recomended 50mins and for LowID users 29mins)
+Added: Funny Nick Tag selection (None/[FN]/[FunnyNick]) [Stulle]
+Added: Anti-Friend-Ban [FRTK Evostar]
+Added: Anti Uploader Ban (0 = disabled) [Stulle]
+Added: ReAsk sourcen after IP change [cyrex2001/ Maella/ idea from Xman]
+Added: Spread Request [cyrex2001/ Maella/ idea by SlugFiller]
+Added: QuickStart by TPT [cyrex2001]
+Added: QuickStart after IP change by TPT [cyrex2001]
+Added: QuickStart return values [Stulle]
+Added: WINSOCK2 [darkwolf - eWombat]
+Added: A start TTL between 1 and 20 can be specified for USS [emulEspaña]
+Added: Allow Bandwidth Settings in <1KB Incremements [Maella]
+Added: Spread Credits Slot [Stulle]
+Added: More credit systems (Peace, Sivka, S.W.A.T.) [eF-MOD]
+Added: Manual drop sources [sivka]
+Added: Auto drop sources (NNS, FQS, HQRS) [sivka]
+Added: RemoveSourceAndDontAsk (2 - 4h; # of clients in sources tab) [sivka]
+Added: sivka file settings dialogue [sivka]
+Added: Hardlimit per file [Sivka]
+Added: Show source on title [Stulle]
+Added: Draw PS files red [Stulle]
+Added: Hide ZZ Ratio Activation [Stulle]
+Added: Show global HL (in sources tab) [Stulle]
+
+Readded: Bad Nick ban (optional; Anti-Leecher has to be enabled) [Stulle]
+
+Changed: Default Nick [Stulle]
+Changed: Improved Buffer Size maximum (7.5Mb) [Stulle]
+Changed: Morph-Version-Check for StulleMule [Stulle]
+Changed: Wizard-Check after Upgrade for StulleMule [Stulle]
+CHanged: ZZ Ratio activation cases [Stulle/cyrex2001]
+Changed: ZZ Ratio back to 1:3 [Stulle]
+Changed: Side bar banner (thx to Proctore --> original Mule edited) [Stulle]
+Changed: Splash banner (thx to Proctore --> original Mule edited) [Stulle]
+Changed: Delete dead servers can be disabled [Stulle]
+Changed: Show exact max UL queue size in TransferWnd (optional) [Stulle]
+Changed: Several setting defaults [Stulle]
+Changed: Anti-Mod-Faker ban optional (Anti-Leecher has to be enabled) [Stulle]
+
+Removed: USS-settings from Tweaks-dialog (it's in the Morph dialog) [Stulle]
+
+
+ZZ Ratio activation cases - Stulle
++ ratio activated for the whole session when:
+	- not completed file powershared
+	- friendslot & global friendslot limit > 3
+	- friend boost (after change restart neccessary to disable ratio)
++ ratio activated till case isn't fullfilled anymore:
+	- UL-limit < 10
+	- average UL < 8
+	- average UL < 10 AND UL-Maximum < 12
+
+Anti Uploader Ban - Stulle
++ Case 1 - UL >= Limit:
+	- clients who uploaded more but the limit don't get banned
++ Case 2 - UL-DL >= Limit
+	- clients with a difference between up- and download which is higher but the
+	  limit won't get banned until the difference reaches the limit
++ Case 3 - UL-DL >= Limit
+	- clients with a difference between up- and download which is higher but the
+	  limit won't get banned until the difference reaches 0 (if session ends before
+	  0 is reached the client will have to reach the limit again in the next session
+	  to have ban-prevention
+
+Spread Credits Slot - Stulle
++ every X slots a slot is given to a client that never uploaded to us, downloaded from us
+  and that is not a powershared file requesting client
+
+--> Thanks fly out to cyrex2001 who helped me coding this mod! cyrex, you are the best! :)
+--> Thanks fly out to MaxUpload who helped me solving some problems. GL with your Mod!
+--> And of course thanks to all the others, who helped me.

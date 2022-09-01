@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{09415881-d10e-4181-a739-7f1b12d8a7c4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ixml">
+      <UniqueIdentifier>{53013f17-0d3d-4db0-a00f-6b71557943a2}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\threadutil">
+      <UniqueIdentifier>{e32d78c2-cfbf-45c4-955d-4cb0e42157f2}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp">
+      <UniqueIdentifier>{d67c9f53-b7f8-42f8-a129-70182fce84e5}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\api">
+      <UniqueIdentifier>{34cbf473-fb18-4c8a-9b07-cde9f17663ea}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\gena">
+      <UniqueIdentifier>{45e71df5-148b-4c97-ae7b-5159437544ee}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib">
+      <UniqueIdentifier>{b5a46407-f6ce-488c-b741-ad7285428446}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib\client_table">
+      <UniqueIdentifier>{1e113d4e-1f14-4c06-91fe-e3208ac3b4d7}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib\miniserver">
+      <UniqueIdentifier>{d69c1db7-3945-4202-89aa-de410c3ce669}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib\net">
+      <UniqueIdentifier>{250eb1cd-8834-4ab3-a2bc-ee309a0f0aaf}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib\net\http">
+      <UniqueIdentifier>{004d80aa-a1dd-455f-b9c1-5301e19a26d9}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib\net\uri">
+      <UniqueIdentifier>{ffb4d8a8-313b-428b-ab25-afec57f7d137}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib\service_table">
+      <UniqueIdentifier>{a5e669ae-29ae-44d5-b12c-d15088606031}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\genlib\util">
+      <UniqueIdentifier>{5042b2cb-b89f-45c6-9eb5-c2ef938db7e2}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\soap">
+      <UniqueIdentifier>{bc24f8e6-1ea3-424d-ac26-890e96869d76}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\ssdp">
+      <UniqueIdentifier>{3305b013-5fe8-4f41-94ef-4d6dde43dc0a}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\urlconfig">
+      <UniqueIdentifier>{8172ff0d-4f05-4fcb-b21b-0f52cd192519}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\upnp\uuid">
+      <UniqueIdentifier>{5c7585ac-4477-4b6b-9778-135d244c21da}</UniqueIdentifier>
+      <Extensions>.c</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5e301110-73d7-402d-a6f8-6a71a818a0cf}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{2b0590df-cd62-4fcc-a633-99b82df2486e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="upnpLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\attr.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\document.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\element.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\ixml.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\ixmlmembuf.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\ixmlparser.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\namedNodeMap.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\node.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ixml\src\nodeList.c">
+      <Filter>Source Files\ixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threadutil\src\FreeList.c">
+      <Filter>Source Files\threadutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threadutil\src\iasnprintf.c">
+      <Filter>Source Files\threadutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threadutil\src\LinkedList.c">
+      <Filter>Source Files\threadutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threadutil\src\ThreadPool.c">
+      <Filter>Source Files\threadutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threadutil\src\TimerThread.c">
+      <Filter>Source Files\threadutil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\api\config.c">
+      <Filter>Source Files\upnp\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\api\upnpapi.c">
+      <Filter>Source Files\upnp\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\api\upnptools.c">
+      <Filter>Source Files\upnp\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\gena\gena_callback2.c">
+      <Filter>Source Files\upnp\gena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\gena\gena_ctrlpt.c">
+      <Filter>Source Files\upnp\gena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\gena\gena_device.c">
+      <Filter>Source Files\upnp\gena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\client_table\client_table.c">
+      <Filter>Source Files\upnp\genlib\client_table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\miniserver\miniserver.c">
+      <Filter>Source Files\upnp\genlib\miniserver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\net\sock.c">
+      <Filter>Source Files\upnp\genlib\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\net\http\httpparser.c">
+      <Filter>Source Files\upnp\genlib\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\net\http\httpreadwrite.c">
+      <Filter>Source Files\upnp\genlib\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\net\http\parsetools.c">
+      <Filter>Source Files\upnp\genlib\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\net\http\statcodes.c">
+      <Filter>Source Files\upnp\genlib\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\net\http\webserver.c">
+      <Filter>Source Files\upnp\genlib\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\net\uri\uri.c">
+      <Filter>Source Files\upnp\genlib\net\uri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\service_table\service_table.c">
+      <Filter>Source Files\upnp\genlib\service_table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\util\membuffer.c">
+      <Filter>Source Files\upnp\genlib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\util\strintmap.c">
+      <Filter>Source Files\upnp\genlib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\util\upnp_timeout.c">
+      <Filter>Source Files\upnp\genlib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\genlib\util\util.c">
+      <Filter>Source Files\upnp\genlib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\soap\soap_ctrlpt.c">
+      <Filter>Source Files\upnp\soap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\soap\soap_device.c">
+      <Filter>Source Files\upnp\soap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\ssdp\ssdp_ctrlpt.c">
+      <Filter>Source Files\upnp\ssdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\ssdp\ssdp_device.c">
+      <Filter>Source Files\upnp\ssdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\ssdp\ssdp_server.c">
+      <Filter>Source Files\upnp\ssdp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\urlconfig\urlconfig.c">
+      <Filter>Source Files\upnp\urlconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\uuid\md5.c">
+      <Filter>Source Files\upnp\uuid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\uuid\sysdep.c">
+      <Filter>Source Files\upnp\uuid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upnp\src\uuid\uuid.c">
+      <Filter>Source Files\upnp\uuid</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\upnp\src\soap\soaplib.h">
+      <Filter>Source Files\upnp\soap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\client_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\inc\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\gena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\gena_ctrlpt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\gena_device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\gmtdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\http_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\httpparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\httpreadwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\threadutil\inc\ithread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ixml\inc\ixml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\membuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\miniserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\netall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\parsetools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\readwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\service_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\soaplib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\sock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\ssdplib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\statcodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\statuscodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\strintmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\sysdep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\unixutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\inc\upnp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\upnp_timeout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\upnpapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\upnpclosesocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\inc\upnptools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\uri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\urlconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\utilall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\uuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\upnp\src\inc\webserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\License" />
+    <None Include="..\Readme" />
+  </ItemGroup>
+</Project>

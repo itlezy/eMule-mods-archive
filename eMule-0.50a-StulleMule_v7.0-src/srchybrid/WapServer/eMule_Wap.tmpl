@@ -1,0 +1,935 @@
+<-- ################################################################# -->
+<-- #################### WAP SERVER TEMPLATE ######################## -->
+<-- ################################################################# -->
+
+<--TMPL_VERSION-->
+2
+<--TMPL_VERSION_END-->
+
+<-- ################################################################# -->
+<-- ############################ LOGIN ############################## -->
+<-- ################################################################# -->
+
+<--TMPL_LOGIN-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="input" title="[Login]">
+<p align="center"><img src="/logo.png" alt="logo"/>
+<br/><small>[eMuleAppName] [version]</small></p>
+<p><br/>[EnterPassword]
+<br/><input type="password" name="p" maxlength="12" value="" />
+<br/><a href="./?p=$(p)&amp;w=password">[LoginNow]</a>
+</p>
+</card>
+</wml>
+<--TMPL_LOGIN_END-->
+
+
+<-- ################################################################# -->
+<-- ######################### MAIN SITE ############################# -->
+<-- ################################################################# -->
+
+
+<--TMPL_MAIN-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="main" title="[WapControl]">
+<p align="center"><img src="/logo.png" alt="logo"/>
+<br/><small>[eMuleAppName] [version]</small></p>
+<p><br/><a href='#basicdata'>[BasicData]</a>
+<br/><a href='./?ses=[Session]&amp;w=kad'>[Kad]</a>
+<br/><a href='./?ses=[Session]&amp;w=server'>[Server]</a>
+<br/><a href='#transfers'>[Transfer]</a>
+<br/><a href='./?ses=[Session]&amp;w=shared'>[Shared]</a>
+<br/><a href='#search'>[Search]</a>
+<br/><a href="./?ses=[Session]&amp;w=download">[Download]</a>
+<br/><a href='./?ses=[Session]&amp;w=stats'>[Stats]</a>
+<br/><a href='./?ses=[Session]&amp;w=graphs'>[Graphs]</a>
+<br/><a href='#logs'>[Log]</a>
+<br/><a href='./?ses=[Session]&amp;w=options'>[Options]</a>
+<br/><a href="./?ses=[Session]&amp;w=logout">[Logout]</a>
+</p>
+<do name="logout" type="accept" label="[Logout]">
+	<go href="./?ses=[Session]&amp;w=logout"/>
+</do>
+</card>
+<card id="basicdata" title="[BasicData]">
+<p><a href="#main">[Back]</a>
+<br/><br/>[Connected]
+<br/>[Speed]
+<br/>[KademliaInfo]
+</p>
+<do name="back" type="accept" label="[Back]">
+	<go href="#main"/>
+</do>
+</card>
+<card id="transfers" title="[Transfer]">
+<p><a href="#main">[Back]</a>
+<br/><br/><a href='./?ses=[Session]&amp;w=transferdown'>[TransferDown]</a>
+<br/><a href='./?ses=[Session]&amp;w=transferup'>[TransferUp]</a>
+<br/><a href='./?ses=[Session]&amp;w=transferqueue'>[TransferQueue]</a>
+</p>
+<do name="back" type="accept" label="[Back]">
+	<go href="#main"/>
+</do>
+</card>
+<card id="logs" title="[Log]">
+<p><a href="#main">[Back]</a>
+<br/><br/><a href='./?ses=[Session]&amp;w=sinfo'>[ServerInfo]</a>
+<br/><a href='./?ses=[Session]&amp;w=log'>[Log]</a>
+<br/><a href='./?ses=[Session]&amp;w=debuglog'>[DebugLog]</a>
+</p>
+<do name="back" type="accept" label="[Back]">
+	<go href="#main"/>
+</do>
+</card>
+<card id="search" title="[Search]">
+<p><a href="#main">[Back]</a>
+<br/><br/><a href='./?ses=[Session]&amp;w=search'>[Search]</a>
+<br/><a href='./?ses=[Session]&amp;w=search&amp;showlist=true'>[SearchResults]</a>
+</p>
+<do name="back" type="accept" label="[Back]">
+	<go href="#main"/>
+</do>
+</card>
+</wml>
+<--TMPL_MAIN_END-->
+
+<-- ################################################################# -->
+<-- ######################## SERVER LIST ############################ -->
+<-- ################################################################# -->
+
+<--TMPL_SERVER_MAIN-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="servers" title="[ServerList]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/>[ConnectedServerData]<a href='./?ses=[Session]&amp;w=server&amp;showlist=true'>[ServerList]</a>
+<br/><a href='./?ses=[Session]&amp;w=server'>[Refresh]</a>
+</p>
+<do name="back" type="prev" label="[Back]">
+	<prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+	<go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_SERVER_MAIN_END-->
+
+<--TMPL_SERVER_LIST-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="serverlist" title="[ServerList]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/>[SortBy]:<br/><select name="sortby" ivalue="[SortByVal:1,3,4,5]" title="[SortBy]">
+<!--1--><option onpick="[SortName]">[Servername]</option>
+<!--3--><option onpick="[SortIP]">[Address]</option>
+<!--4--><option onpick="[SortUsers]">[Users]</option>
+<!--5--><option onpick="[SortFiles]">[Files]</option>
+</select>
+<br/><br/>[ServersList]
+<br/>[NavigationLine]
+</p>
+<do name="back" type="prev" label="[Back]">
+	<prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+	<go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_SERVER_LIST_END-->
+
+<--TMPL_SERVER_LINE-->
+<b>[1]</b>
+<br/>[Address]: [3]
+<br/>[Users]: [4]
+<br/>[Files]: [5]
+<br/><a href="[6]">[Connect]</a> | <a href="./script.wmls#removeserver('[LinkRemove]')">[RemoveServer]</a>
+<br/><br/>
+<--TMPL_SERVER_LINE_END-->
+
+
+<--TMPL_CONNECTED_SERVER-->
+<b>[Status]: </b>[1]
+<br/><b>[Servername]: </b>[2]
+<br/><b>[Usercount]: </b>[3]
+<br/><a href="[URL_Disconnect]">[Disconnect]</a>
+<br/><a href="[URL_Connect]">[Connect]</a>
+<br/><a href="[URL_ServerOptions]">[ServerOptions]</a>
+<br/>
+<--TMPL_CONNECTED_SERVER_END-->
+
+
+<--TMPL_SERVER_OPTIONS-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<template>
+	<do name="back" type="prev" label="[Back]">
+		<prev/>
+	</do>
+	<do name="home" type="accept" label="[Home]">
+		<go href="./?ses=[Session]"/>
+	</do>
+</template>
+<card id="serverprefs" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><a href="#addserver">[AddServer]</a>
+<br/><a href="#updatefromurl">[UpdateServerMetFromURL]</a>
+</p>
+</card>
+
+<card id="addserver" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a></p>
+<p align="center"><br/><small>[AddServer]</small></p>
+<p><br/><br/>[IP]<input name="serveraddr" type="text" size="15" emptyok="false"/>
+<br/>[Port]<input name="serverport" type="text" size="6" emptyok="false"/>
+<br/>[Name]<input name="servername" type="text" size="30" emptyok="true"/>
+<br/><anchor>[Add]<go href="./?ses=[Session]" method="post">
+  <postfield name="w" value="server"/>
+  <postfield name="c" value="options"/>
+  <postfield name="addserver" value="true"/>
+  <postfield name="serveraddr" value="$(serveraddr)"/>
+  <postfield name="serverport" value="$(serverport)"/>
+  <postfield name="servername" value="$(servername)"/>
+ </go>
+</anchor>
+</p>
+</card>
+
+<card id="updatefromurl" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a></p>
+<p align="center"><br/><small>[UpdateServerMetFromURL]</small></p>
+<p><br/><br/>[URL] <input name="servermeturl" type="text" size="55" emptyok="false"/>
+<br/><anchor>[Apply]<go href="./?ses=[Session]" method="post">
+  <postfield name="w" value="server"/>
+  <postfield name="c" value="options"/>
+  <postfield name="updateservermetfromurl" value="true"/>
+  <postfield name="servermeturl" value="$(servermeturl)"/>
+ </go>
+</anchor>
+</p>
+</card>
+</wml>
+<--TMPL_SERVER_OPTIONS_END-->
+
+
+<-- ################################################################# -->
+<-- ######################### TRANSFER ############################## -->
+<-- ################################################################# -->
+
+
+<--TMPL_TRANSFER_LIST-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<template>
+	<do name="back" type="prev" label="[Back]">
+		<prev/>
+	</do>
+	<do name="home" type="accept" label="[Home]">
+		<go href="./?ses=[Session]"/>
+	</do>
+</template>
+<card id="transfersdown" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[DownloadList]</b>
+<br/><br/>[SortBy]:<br/><select name="sortby" ivalue="[SortByVal:1,2,3,4,5]" title="[SortBy]">
+<!--1--><option onpick="[SortName][CatSel]">[Filename]</option>
+<!--2--><option onpick="[SortSize][CatSel]">[Size]</option>
+<!--3--><option onpick="[SortTransferred][CatSel]">[Transferred]</option>
+<!--4--><option onpick="[SortSpeed][CatSel]">[Speed]</option>
+<!--5--><option onpick="[SortProgress][CatSel]">[Progress]</option>
+</select>
+<br/>[CATBOX]
+<br/><br/>[ClearCompletedButton][DownloadFilesListLite]
+<br/>[NavigationLine]
+</p>
+</card>
+</wml>
+<--TMPL_TRANSFER_LIST_END-->
+
+<--TMPL_TRANSFER_DOWN_LINE_LITE-->
+<a href="./?ses=[Session]&amp;w=transferdown&amp;showfile=[FileHash]">([FileNumber])-[ShortFileName]</a>
+<br/>[Transferred]: [3] - ([FileProgress])
+<br/>[Speed]: [4]
+<br/><br/>
+<--TMPL_TRANSFER_DOWN_LINE_LITE_END-->
+
+<--TMPL_TRANSFER_DOWN_LINE_LITE_GOOD-->
+<b><a href="./?ses=[Session]&amp;w=transferdown&amp;showfile=[FileHash]">([FileNumber])-[ShortFileName]</a></b>
+<br/>[Transferred]: [3] - ([FileProgress])
+<br/>[Speed]: [4]
+<br/><br/>
+<--TMPL_TRANSFER_DOWN_LINE_LITE_GOOD_END-->
+
+
+<--TMPL_TRANSFER_DOWN_FILE_DETAILS-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="filedetails" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[FileName]</b>
+<br/>[DownloadBar]
+<br/>[Speed]: [4]
+<br/>[Size]: [2]
+<br/>[Transferred]: [3] ([FileProgress])
+<br/>[Sources]: [5]
+<br/>[Prio]: [PrioVal]
+<br/>[6]
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_TRANSFER_DOWN_FILE_DETAILS_END-->
+
+
+<--TMPL_TRANSFER_UP_LIST-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="transfersup" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[UploadList]</b>
+<br/><br/>[UploadFilesList]
+<br/>[NavigationLine]
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_TRANSFER_UP_LIST_END-->
+
+<--TMPL_TRANSFER_UP_LINE-->
+<b>[1]</b>
+<br/>[Filename]: [2]
+<br/>[Transferred]: [3]
+<br/>[Speed]: [4]
+<br/><br/>
+<--TMPL_TRANSFER_UP_LINE_END-->
+
+
+<--TMPL_TRANSFER_UP_QUEUE_LIST-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="transferqueue" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[UploadQueueList]</b>
+<br/><br/>[QueueList]
+<br/>[NavigationLine]
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_TRANSFER_UP_QUEUE_LIST_END-->
+
+
+<--TMPL_TRANSFER_UP_QUEUE_LINE-->
+<b>[UserName]</b>
+<br/>[FileNameTitle]: [FileName]
+<br/>[ScoreTitle]: [Score]
+<br/>[BannedTitle]: [Banned]
+<br/><br/>
+<--TMPL_TRANSFER_UP_QUEUE_LINE_END-->
+
+
+<--TMPL_TRANSFER_DOWN_CLEARBUTTON-->
+<a href="./?ses=[Session]&amp;w=transferdown&amp;ClCompl=yes&amp;[CatSel]">[CLEARCOMPLETED]</a><br/><br/>
+<--TMPL_TRANSFER_DOWN_CLEARBUTTON_END-->
+
+
+
+
+<-- ################################################################# -->
+<-- ########################### SEARCH ############################## -->
+<-- ################################################################# -->
+
+<--TMPL_SEARCH_MAIN-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="searchmain" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[Search]</b>
+<br/><br/>[Name]:<br/>
+<input name="tosearch" type="text" size="40"/>
+<br/>[Type]:<br/>
+<select name="type" ivalue="1">
+ <option value="[Any]">[Any]</option>
+ <option value="[Audio]">[Audio]</option>
+ <option value="[Image]">[Image]</option>
+ <option value="[Video]">[Video]</option>
+ <option value="[Other]">[Other]</option>
+</select>
+<br/>[SizeMin]:<br/>
+<input name="min" type="text" size="10" emptyok="true"/>
+<br/>[SizeMax]:<br/>
+<input name="max" type="text" size="10" emptyok="true"/>
+<br/>[Availabl]:<br/>
+<input name="avail" type="text" size="10" emptyok="true"/>
+<br/>[Extention]:<br/>
+<input name="ext" type="text" size="10" emptyok="true"/>
+<br/>[METHOD]:<br/>
+<select name="method" ivalue="1">
+ <option value="server">[USESSERVER]</option>
+ <option value="global">[Global]</option>
+ <option value="kademlia">[KADEMLIA]</option>
+</select>
+<br/><anchor>[Search]<go href="./" method="post">
+ <postfield name="ses" value="[Session]"/>
+ <postfield name="w" value="search"/>
+ <postfield name="tosearch" value="$(tosearch)"/>
+ <postfield name="type" value="$(type)"/>
+ <postfield name="min" value="$(min)"/>
+ <postfield name="max" value="$(max)"/>
+ <postfield name="avail" value="$(avail)"/>
+ <postfield name="ext" value="$(ext)"/>
+ <postfield name="method" value="$(method)"/>
+ <postfield name="showlist" value="true"/>
+</go></anchor>
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_SEARCH_MAIN_END-->
+
+<--TMPL_SEARCH_LIST-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="searchlist" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[Result]</b>&nbsp;&nbsp;(<a href="./?ses=[Session]&amp;w=search&amp;showlist=true">[RefetchResults]</a>)
+<br/>[Message]
+<br/>[SortBy]:<br/><select name="sortby" ivalue="[SortByVal:1,2,3,4]" title="[SortBy]">
+<option onpick="./?ses=[Session]&amp;w=search&amp;sort=0&amp;sortAsc=[SORTASCVALUE0]&amp;showlist=true">[Filename]</option>
+<option onpick="./?ses=[Session]&amp;w=search&amp;sort=1&amp;sortAsc=[SORTASCVALUE1]&amp;showlist=true">[Filesize]</option>
+<option onpick="./?ses=[Session]&amp;w=search&amp;sort=2&amp;sortAsc=[SORTASCVALUE2]&amp;showlist=true">[Filehash]</option>
+<option onpick="./?ses=[Session]&amp;w=search&amp;sort=3&amp;sortAsc=[SORTASCVALUE3]&amp;showlist=true">[Sources]</option>
+</select>
+<br/>[CATBOX]
+<br/>[RESULTLIST]
+<br/>[NavigationLine]
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_SEARCH_LIST_END-->
+
+<--TMPL_SEARCH_RESULT_LINE-->
+<b>%s</b><br/>[Filesize]: %s<br/>[Filehash]: %s<br/>[Sources]: %u<br/><a href="./?ses=[Session]&amp;w=search&amp;downloads=%s&amp;cat=$(cat)&amp;showlist=true">[Download]</a><br/><br/>
+<--TMPL_SEARCH_RESULT_LINE_END-->
+
+
+<-- ################################################################# -->
+<-- ###################### ED2K DOWNLOAD LINK ####################### -->
+<-- ################################################################# -->
+
+
+<--TMPL_DOWNLOAD_LINK-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<card id="download" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[Download]</b>
+<br/><br/>[Ed2klink]:
+<br/><input name="c" value=""/>
+<br/>[CATBOX]
+<br/><anchor>[Start]<go href="./">
+	<postfield name="ses" value="[Session]"/>
+	<postfield name="w" value="transferdown"/>
+	<postfield name="c" value="$(c)"/>
+</go></anchor>
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_DOWNLOAD_LINK_END-->
+
+
+<-- ################################################################# -->
+<-- ###################### SHARED FILES LIST ######################## -->
+<-- ################################################################# -->
+
+
+<--TMPL_SHARED_LIST-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="sharedlist" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/>[SortBy]:<br/><select name="sortby" ivalue="[SortByVal:1,2,3,4,5,6]" title="[SortBy]">
+<!--1--><option onpick="[SortName]">[FilenameTitle]</option>
+<!--2--><option onpick="[SortSize]">[SizeTitle]</option>
+<!--3--><option onpick="[SortPriority]">[PriorityTitle]</option>
+<!--4--><option onpick="[SortTransferred]">[FileTransferredTitle]</option>
+<!--5--><option onpick="[SortRequests]">[FileRequestsTitle]</option>
+<!--6--><option onpick="[SortAccepts]">[FileAcceptsTitle]</option></select>
+<br/><br/><a href="./?ses=[Session]&amp;w=shared&amp;reload=true">[Reload]</a>
+<br/><br/>[Message][SharedFilesList]
+<br/>[NavigationLine]
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_SHARED_LIST_END-->
+
+
+<--TMPL_SHARED_LINE-->
+<b>[ShortFileName]</b>
+<br/>[FileHashTitle] [FileHash]
+<br/>[FileTransferredTitle]: [FileTransferred]([FileAllTimeTransferred])
+<br/>[FileRequestsTitle]: [FileRequests]([FileAllTimeRequests])
+<br/>[FileAcceptsTitle]: [FileAccepts]([FileAllTimeAccepts])
+<br/>[SizeTitle]: [FileSize]
+<br/>[PriorityTitle]: [Priority]
+<!-- Commented until wy implement addon feature
+<br/><a href="./?ses=[Session]&amp;w=shared&amp;[PriorityUpLink]">[PriorityUp]</a>
+<br/><a href="./?ses=[Session]&amp;w=shared&amp;[PriorityDownLink]">[PriorityDown]</a>
+-->
+<br/><br/>
+<--TMPL_SHARED_LINE_END-->
+
+
+<--TMPL_SHARED_LINE_CHANGED-->
+<b>[ShortFileName]</b>
+<br/>[FileHashTitle]: [FileHash]
+<br/>[FileTransferredTitle]: [FileTransferred]([FileAllTimeTransferred])
+<br/>[FileRequestsTitle]: [FileRequests]([FileAllTimeRequests])
+<br/>[FileAcceptsTitle]: [FileAccepts]([FileAllTimeAccepts])
+<br/>[SizeTitle]: [FileSize]
+<br/>[PriorityTitle]: [Priority]
+<!-- Commented until wy implement addon feature
+<br/><a href="./?ses=[Session]&amp;w=shared&amp;[PriorityUpLink]">[PriorityUp]</a>
+<br/><a href="./?ses=[Session]&amp;w=shared&amp;[PriorityDownLink]">[PriorityDown]</a>
+-->
+<br/><br/>
+<--TMPL_SHARED_LINE_CHANGED_END-->
+
+
+
+
+<-- ################################################################# -->
+<-- ########################## STATISTICS ########################### -->
+<-- ################################################################# -->
+
+<--TMPL_STATS-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="stats" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/>[Stats]
+</p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_STATS_END-->
+
+
+<-- ################################################################# -->
+<-- ########################### GRAPHS ############################## -->
+<-- ################################################################# -->
+
+
+<--TMPL_GRAPHS-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="graphs" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a></p>
+<p align="center"><br/><img src="./?ses=[Session]&amp;graphimage=download" alt="Grafica Descarga"/>
+<br/><small>[TxtDownload]: Max [MaxDownload] [KByteSec], [TxtTime]: [ScaleTime]</small>
+<br/><br/><img src="./?ses=[Session]&amp;graphimage=upload" alt="Grafica Subida"/>
+<br/><small>[TxtUpload]: Max [MaxUpload] [KByteSec], [TxtTime]: [ScaleTime]</small>
+<br/><br/><img src="./?ses=[Session]&amp;graphimage=connections" alt="Grafica Conexiones"/>
+<br/><small>[TxtConnections]: Max [MaxConnections], [TxtTime]: [ScaleTime]</small></p>
+<do name="back" type="prev" label="[Back]">
+ <prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+ <go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_GRAPHS_END-->
+
+<-- Colors are in hexadecimal BBGGRR -->
+<--TMPL_DOWNLOAD_GRAPHCOLOR-->
+0000FF
+<--TMPL_DOWNLOAD_GRAPHCOLOR_END-->
+
+<--TMPL_UPLOAD_GRAPHCOLOR-->
+FF0000
+<--TMPL_UPLOAD_GRAPHCOLOR_END-->
+
+<--TMPL_CONNECTIONS_GRAPHCOLOR-->
+00C000
+<--TMPL_CONNECTIONS_GRAPHCOLOR_END-->
+
+
+<-- ################################################################# -->
+<-- ######################### PREFERENCES ########################### -->
+<-- ################################################################# -->
+
+<--TMPL_PREFERENCES-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="preferences" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><b>[SpeedForm]:</b>
+<br/>[MaxDown]:
+<br/><input name="maxdown" size="5" format="*Na*N" value="[MaxDownVal]"/>&nbsp;[KBS]
+<br/>[MaxUp]:
+<br/><input name="maxup" size="5" format="*Na*N" value="[MaxUpVal]"/>&nbsp;[KBS]
+<br/><br/><b>[SpeedCapForm]</b>
+<br/>[MaxCapDown]:
+<br/><input name="maxcapdown" size="5" format="*Na*N" value="[MaxCapDownVal]"/>&nbsp;[KBS]
+<br/>[MaxCapUp]:
+<br/><input name="maxcapup" size="5" format="*Na*N" value="[MaxCapUpVal]"/>&nbsp;[KBS]
+<br/><br/><b>[LimitForm]</b>
+<br/>[MaxSources]
+<br/><input name="maxsources" size="5" format="*N" value="[MaxSourcesVal]"/>
+<br/>[MaxConnections]
+<br/><input name="maxconnections" size="5" format="*N" value="[MaxConnectionsVal]"/>
+<br/>[MaxConnectionsPer5]
+<br/><input name="maxconnectionsperfive" size="5" format="*N" value="[MaxConnectionsPer5Val]"/>
+<br/>
+<!-- emulEspaña: modified by MoNKi [Announ: -per file option for downloading preview parts-]
+<br/>[FirstAndLast]
+<br/><select name="firstandlast" ivalue="[FirstAndLastVal]">
+ <option value="on">[On]</option>
+ <option value="off">[Off]</option>
+</select>
+-->
+
+<br/><br/><b>[WapControl]</b>
+<br/>[SendImages]:
+<br/><select name="sendimages" ivalue="[SendImagesVal]">
+ <option value="on">[Yes]</option>
+ <option value="off">[No]</option>
+</select>
+<br/>[SendGraphs]:
+<br/><select name="sendgraphs" ivalue="[SendGraphsVal]">
+ <option value="on">[Yes]</option>
+ <option value="off">[No]</option>
+</select>
+<br/>[SendProgressBars]:
+<br/><select name="sendprogressbars" ivalue="[SendProgressBarsVal]">
+ <option value="on">[Yes]</option>
+ <option value="off">[No]</option>
+</select>
+<br/>[SendBWImages]:
+<br/><select name="sendbwimages" ivalue="[SendBWImagesVal]">
+ <option value="on">[Yes]</option>
+ <option value="off">[No]</option>
+</select>
+<br/>[GraphsWidth]:
+<br/><input name="graphswidth" size="5" format="*N" value="[GraphsWidthVal]"/>
+<br/>[GraphsHeight]
+<br/><input name="graphsheight" size="5" format="*N" value="[GraphsHeightVal]"/>
+<br/>[FilledGraphs]:
+<br/><select name="filledgraphs" ivalue="[WapGraphFilledVal]">
+ <option value="on">[Yes]</option>
+ <option value="off">[No]</option>
+</select>
+<br/>[LogsSize]:
+<br/><input name="logssize" size="5" format="*N" value="[LogsSizeVal]"/>&nbsp;[Bytes]
+<br/>[ItemsPerPage]:
+<br/><input name="itemsperpage" size="5" format="*N" value="[ItemsPerPageVal]"/>
+
+<br/><br/><b>[NETWORKS]</b>
+<br/>ED2k:
+<br/><select name="neted2k" ivalue="[ED2KVAL]">
+ <option value="on">[Yes]</option>
+ <option value="off">[No]</option>
+</select>
+<br/>[KADEMLIA]:
+<br/><select name="netkad" ivalue="[KADVAL]">
+ <option value="on">[Yes]</option>
+ <option value="off">[No]</option>
+</select>
+ 
+<br/><br/><anchor>[Apply]<go href="./" method="post">
+  <postfield name="ses" value="[Session]"/>
+  <postfield name="w" value="options"/>
+  <postfield name="saveprefs" value="true"/>
+  <postfield name="maxdown" value="$(maxdown)"/>
+  <postfield name="maxup" value="$(maxup)"/>
+  <postfield name="maxsources" value="$(maxsources)"/>
+  <postfield name="maxconnections" value="$(maxconnections)"/>
+  <postfield name="maxconnectionsperfive" value="$(maxconnectionsperfive)"/>
+  <postfield name="filledgraphs" value="$(filledgraphs)"/>
+  <postfield name="sendgraphs" value="$(sendgraphs)"/>
+  <postfield name="sendimages" value="$(sendimages)"/>
+  <postfield name="sendprogressbars" value="$(sendprogressbars)"/>
+  <postfield name="graphswidth" value="$(graphswidth)"/>
+  <postfield name="graphsheight" value="$(graphsheight)"/>
+  <postfield name="itemsperpage" value="$(itemsperpage)"/>
+  <postfield name="sendbwimages" value="$(sendbwimages)"/>
+  <postfield name="logssize" value="$(logssize)"/>
+  <postfield name="maxcapdown" value="$(maxcapdown)"/>
+  <postfield name="maxcapup" value="$(maxcapup)"/>
+  <postfield name="neted2k" value="$(neted2k)"/>
+  <postfield name="netkad" value="$(netkad)"/>
+
+  <!-- emulEspaña: modified by MoNKi [Announ: -per file option for downloading preview parts-]
+  <postfield name="firstandlast" value="$(firstandlast)"/>
+  -->
+  
+</go>
+</anchor>
+</p>
+<do name="back" type="prev" label="[Back]">
+	<prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+	<go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_PREFERENCES_END-->
+
+
+<-- ################################################################# -->
+<-- ######################### SERVER INFO ########################### -->
+<-- ################################################################# -->
+
+<--TMPL_SERVERINFO-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="serverinfo" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><a href="./?ses=[Session]&amp;w=sinfo&amp;clear=yes">[Clear]</a>
+<br/>[ServerInfo]
+</p>
+<do name="back" type="prev" label="[Back]">
+	<prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+	<go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_SERVERINFO_END-->
+
+
+
+
+<-- ################################################################# -->
+<-- ############################ LOGS ############################### -->
+<-- ################################################################# -->
+
+<--TMPL_LOG-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="serverinfo" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><a href="./?ses=[Session]&amp;w=sinfo&amp;clear=yes">[Clear]</a>
+<br/>[Log]
+</p>
+<do name="back" type="prev" label="[Back]">
+	<prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+	<go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_LOG_END-->
+
+
+<-- ################################################################# -->
+<-- ######################### DEBUG LOG ############################# -->
+<-- ################################################################# -->
+
+<--TMPL_DEBUGLOG-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="serverinfo" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+<br/><br/><a href="./?ses=[Session]&amp;w=sinfo&amp;clear=yes">[Clear]</a>
+<br/>[DebugLog]
+</p>
+<do name="back" type="prev" label="[Back]">
+	<prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+	<go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_DEBUGLOG_END-->
+
+<-- ################################################################# -->
+<-- ############################### KAD ############################# -->
+<-- ################################################################# -->
+
+<--TMPL_KADDLG-->
+<?xml version="1.0" encoding="[CharSet]"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+  <meta http-equiv="cache-control" content="no-cache"/>
+</head>
+<card id="kadinfo" title="[Section]">
+<p><anchor>[Back]<prev/></anchor>&nbsp;<a href='./?ses=[Session]'>[Home]</a>
+[BOOTSTRAPLINE]
+<br/><br/><b>[KADSTAT]</b>
+<br/><br/>[KADSTATSDATA]
+</p>
+<do name="back" type="prev" label="[Back]">
+	<prev/>
+</do>
+<do name="home" type="accept" label="[Home]">
+	<go href="./?ses=[Session]"/>
+</do>
+</card>
+</wml>
+<--TMPL_KADDLG_END-->
+
+<--TMPL_BOOTSTRAPLINE-->
+<br/><br/><b>[BOOTSTRAP]</b>
+<br/><br/>[BS_IP]:
+<br/><input name="bsip" size="16"/>
+<br/><br/>[BS_PORT]:
+<br/><input name="bsport" size="6"/>
+
+<br/><br/><anchor>[BOOTSTRAP]<go href="./" method="post">
+  <postfield name="ses" value="[Session]"/>
+  <postfield name="w" value="bootstrap"/>
+  <postfield name="bsip" value="$(bsip)"/>
+  <postfield name="bsport" value="$(bsport)"/>
+</go>
+</anchor>
+<--TMPL_BOOTSTRAPLINE_END-->
+
+<-- ################################################################# -->
+<-- ##################### WMLScript (script.wmls) ################### -->
+<-- ################################################################# -->
+
+<--TMPL_WMLSCRIPT-->
+extern function removeserver(question, rurl) {
+	var a = Dialogs.confirm("[ConfirmRemoveServer]","[Yes]","[No]");
+	if(a) WMLBrowser.go(rurl);
+}
+
+extern function GotoCat(cat,loc) {
+	var pos= String.find(loc,"cat=");
+
+	if (pos>1) {
+		if (String.subString(loc,pos-1,1)=="&") pos--;
+		var subs=String.subString(loc,pos+3,256);
+		var pos2=String.find(subs,"&");
+		if (pos2==-1) pos2=String.length(loc);
+ 		pos2 += pos+3;
+		var t1=String.subString(loc,0,pos);
+		var t2=String.subString(loc,pos2+1,String.length(loc));
+		loc=t1+t2;
+	}
+	WMLBrowser.go(loc+"&cat="+cat);
+}
+<--TMPL_WMLSCRIPT_END-->

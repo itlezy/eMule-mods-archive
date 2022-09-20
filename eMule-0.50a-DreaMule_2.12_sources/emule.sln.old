@@ -1,0 +1,98 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emule", "emule.vcproj", "{584EA69D-3443-4197-8994-364880FC1B9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87} = {722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3} = {F5906333-9A0A-4FE6-B7AA-AA7960C035D3}
+		{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9} = {B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}
+		{B6D79E70-4C31-455B-BE51-7B2D5F40A840} = {B6D79E70-4C31-455B-BE51-7B2D5F40A840}
+		{0D35DD7C-AD69-426D-8571-5CDCB60E1E17} = {0D35DD7C-AD69-426D-8571-5CDCB60E1E17}
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0} = {DF634DB0-B95D-471C-A1AC-D563571C5FF0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pnglib", "..\png\pnglib.vcproj", "{F5906333-9A0A-4FE6-B7AA-AA7960C035D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0} = {DF634DB0-B95D-471C-A1AC-D563571C5FF0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "..\zlib\zlib.vcproj", "{DF634DB0-B95D-471C-A1AC-D563571C5FF0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "id3lib", "..\id3lib\libprj\id3lib.vcproj", "{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0} = {DF634DB0-B95D-471C-A1AC-D563571C5FF0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ResizableLib", "..\ResizableLib\ResizableLib.vcproj", "{B6D79E70-4C31-455B-BE51-7B2D5F40A840}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptlib", "..\crypto.v52.1\cryptlib.vcproj", "{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0} = {DF634DB0-B95D-471C-A1AC-D563571C5FF0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CxImage", "CxImage\cximage.vcproj", "{0D35DD7C-AD69-426D-8571-5CDCB60E1E17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3} = {F5906333-9A0A-4FE6-B7AA-AA7960C035D3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		testversion = testversion
+		Unicode_Debug = Unicode_Debug
+		Unicode_Release = Unicode_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{584EA69D-3443-4197-8994-364880FC1B9B}.testversion.ActiveCfg = testversion|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.testversion.Build.0 = testversion|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Debug.ActiveCfg = Unicode_Debug|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Debug.Build.0 = Unicode_Debug|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Release.ActiveCfg = Unicode_Release|Win32
+		{584EA69D-3443-4197-8994-364880FC1B9B}.Unicode_Release.Build.0 = Unicode_Release|Win32
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3}.testversion.ActiveCfg = Release|Win32
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3}.testversion.Build.0 = Release|Win32
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3}.Unicode_Debug.ActiveCfg = Debug|Win32
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3}.Unicode_Debug.Build.0 = Debug|Win32
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3}.Unicode_Release.ActiveCfg = Release|Win32
+		{F5906333-9A0A-4FE6-B7AA-AA7960C035D3}.Unicode_Release.Build.0 = Release|Win32
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0}.testversion.ActiveCfg = Release|Win32
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0}.testversion.Build.0 = Release|Win32
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0}.Unicode_Debug.ActiveCfg = Debug|Win32
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0}.Unicode_Debug.Build.0 = Debug|Win32
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0}.Unicode_Release.ActiveCfg = Release|Win32
+		{DF634DB0-B95D-471C-A1AC-D563571C5FF0}.Unicode_Release.Build.0 = Release|Win32
+		{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}.testversion.ActiveCfg = Release|Win32
+		{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}.testversion.Build.0 = Release|Win32
+		{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}.Unicode_Debug.ActiveCfg = Debug|Win32
+		{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}.Unicode_Debug.Build.0 = Debug|Win32
+		{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}.Unicode_Release.ActiveCfg = Release|Win32
+		{B2B34058-78F0-4E26-A3DE-A8F774D3F6F9}.Unicode_Release.Build.0 = Release|Win32
+		{B6D79E70-4C31-455B-BE51-7B2D5F40A840}.testversion.ActiveCfg = Unicode_Release|Win32
+		{B6D79E70-4C31-455B-BE51-7B2D5F40A840}.testversion.Build.0 = Unicode_Release|Win32
+		{B6D79E70-4C31-455B-BE51-7B2D5F40A840}.Unicode_Debug.ActiveCfg = Unicode_Debug|Win32
+		{B6D79E70-4C31-455B-BE51-7B2D5F40A840}.Unicode_Debug.Build.0 = Unicode_Debug|Win32
+		{B6D79E70-4C31-455B-BE51-7B2D5F40A840}.Unicode_Release.ActiveCfg = Unicode_Release|Win32
+		{B6D79E70-4C31-455B-BE51-7B2D5F40A840}.Unicode_Release.Build.0 = Unicode_Release|Win32
+		{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}.testversion.ActiveCfg = Release|Win32
+		{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}.testversion.Build.0 = Release|Win32
+		{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}.Unicode_Debug.ActiveCfg = Debug|Win32
+		{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}.Unicode_Debug.Build.0 = Debug|Win32
+		{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}.Unicode_Release.ActiveCfg = Release|Win32
+		{722AD808-9ECA-459A-8AF5-C0E1AB3D5B87}.Unicode_Release.Build.0 = Release|Win32
+		{0D35DD7C-AD69-426D-8571-5CDCB60E1E17}.testversion.ActiveCfg = Unicode_Release|Win32
+		{0D35DD7C-AD69-426D-8571-5CDCB60E1E17}.testversion.Build.0 = Unicode_Release|Win32
+		{0D35DD7C-AD69-426D-8571-5CDCB60E1E17}.Unicode_Debug.ActiveCfg = Unicode_Debug|Win32
+		{0D35DD7C-AD69-426D-8571-5CDCB60E1E17}.Unicode_Debug.Build.0 = Unicode_Debug|Win32
+		{0D35DD7C-AD69-426D-8571-5CDCB60E1E17}.Unicode_Release.ActiveCfg = Unicode_Release|Win32
+		{0D35DD7C-AD69-426D-8571-5CDCB60E1E17}.Unicode_Release.Build.0 = Unicode_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner Solution Properties) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+EndGlobal

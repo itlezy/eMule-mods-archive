@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by emule.rc
+//
+#define HIDC_STATIC_ADDRESS             0x8fd50fd7    // IDD_WEBBROWSER [Neutral]

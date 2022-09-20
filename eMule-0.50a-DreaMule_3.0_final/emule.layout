@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Unicode_Release_Win32" />
+	<File name="Addons\SysInfo\GetCpuUsage.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="3640" topLine="117" />
+	</File>
+	<File name="BaseClient.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="72996" topLine="2203" />
+	</File>
+	<File name="ClientUDPSocket.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="25074" topLine="731" />
+	</File>
+	<File name="UDPSocket.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="3714" topLine="132" />
+	</File>
+</CodeBlocks_layout_file>

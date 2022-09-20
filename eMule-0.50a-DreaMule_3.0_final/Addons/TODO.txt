@@ -1,0 +1,60 @@
+				The DreaMule Freelancer 2
+
+Code style
+- The new code needed to be Tagged,  and deleted/modified lines need to stay
+
+TODO:
+
+- Redesing Shared Files window
+* Put a play file and add to playlist in top. The button become actives when over a audio/video file
+
+- Media Player
+* Based on Shareaza:
+  
+Features:
+- A background image
+- Volume and position seeker
+- A simple play list(Add file, saved bettewen sessions, move up/down files, remove item)
+- Using mplayer as engine
+- Add a Play, stop, next file to tray conextual button
+
+Transfer Window
+-Add a "preview in internal player" button.
+
+Wizard
+-Add a simple, "add shared folder" page
+
+
+DONE:
+- Shutdown if DL finished
+- Click on close always hide it (configurable in preferences)
+- minimize on close prefs
+- When in the tray for more than 30 minutes, the active window become the browser one(with no focus interference for the user, and refresh the page)
+- Automatic put the list classified by number of sources
+- Moved "sub"-tree items in share to the root item
+
+- MediaPlayer
+* mediaplayer wnd
+* simplevlc inclusion
+* buttons for play, stop, pause, mute
+* volume seeker
+* seek slider and duration display
+* "play in internal player" menu command added to DL and share
+* zoom slider
+
+- Search Page redesing
+* Have 2 boxes , one with normal widgets, and other with parameters.
+If you click on the box, it hides, click agin it show up
+REMOVED: * Stop button , when search stopped become clean button
+* The search panel go to the Left
+* Remove search with unicode, auto detect it
+* Search button, when finish search become the more button
+* fileID moved to last column
+* default sort per sources
+
+- Redesing Shared Files window
+* Clicking in treelist of audio, show a categorization were unite artist with the same name.
+* When in audio item, pass to a "special" mode, where the list is display the name, artist and album metadata. And the end, if the file not yet rated, show a "rate this file"
+
+ToolBar
+-Add a MediaPlayer button, and still become 800x600 compatible

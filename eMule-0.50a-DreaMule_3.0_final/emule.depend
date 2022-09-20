@@ -1,0 +1,1067 @@
+# depslib dependency file v1.0
+1136155910 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\3dpreviewcontrol.cpp
+	"stdafx.h"
+	"eMule.h"
+	"3DPreviewControl.h"
+
+1161778636 c:\documents and settings\administrador\desktop\emule\dreamulenovo\stdafx.h
+	<afxwin.h>
+	<afxext.h>
+	<afxdisp.h>
+	<afxdtctl.h>
+	<afxcmn.h>
+	<afxole.h>
+	"afxsock.h"
+	<afxdhtml.h>
+	<afxmt.h>
+	<afxdlgs.h>
+	<..\src\mfc\afximpl.h>
+	<atlcoll.h>
+	<afxcoll.h>
+	<afxtempl.h>
+	<math.h>
+	"types.h"
+
+1158966579 c:\documents and settings\administrador\desktop\emule\dreamulenovo\types.h
+	"Debug_FileSize.h"
+
+1136177412 c:\documents and settings\administrador\desktop\emule\dreamulenovo\debug_filesize.h
+
+1176575125 c:\documents and settings\administrador\desktop\emule\dreamulenovo\emule.h
+	"resource.h"
+	"ReadWriteLock.h"
+	"Version.h"
+	"UPnP.h"
+
+1176757297 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resource.h
+	"Addons/resourcexray.h"
+
+1176070358 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\resourcexray.h
+
+1122767018 c:\documents and settings\administrador\desktop\emule\dreamulenovo\readwritelock.h
+
+1158966602 c:\documents and settings\administrador\desktop\emule\dreamulenovo\version.h
+
+1161706696 c:\documents and settings\administrador\desktop\emule\dreamulenovo\upnp.h
+
+1082226446 c:\documents and settings\administrador\desktop\emule\dreamulenovo\3dpreviewcontrol.h
+	"barshader.h"
+
+1136146108 c:\documents and settings\administrador\desktop\emule\dreamulenovo\barshader.h
+
+1174170410 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\aichsyncthread.cpp
+	"StdAfx.h"
+	"aichsyncthread.h"
+	"shahashset.h"
+	"safefile.h"
+	"knownfile.h"
+	"sha.h"
+	"emule.h"
+	"emuledlg.h"
+	"sharedfilelist.h"
+	"knownfilelist.h"
+	"preferences.h"
+	"sharedfileswnd.h"
+	"Log.h"
+
+1137904310 c:\documents and settings\administrador\desktop\emule\dreamulenovo\aichsyncthread.h
+
+1161745217 c:\documents and settings\administrador\desktop\emule\dreamulenovo\shahashset.h
+
+1137532518 c:\documents and settings\administrador\desktop\emule\dreamulenovo\safefile.h
+
+1174241212 c:\documents and settings\administrador\desktop\emule\dreamulenovo\knownfile.h
+	"BarShader.h"
+	"StatisticFile.h"
+	"AbstractFile.h"
+	<list>
+
+1174169027 c:\documents and settings\administrador\desktop\emule\dreamulenovo\statisticfile.h
+
+1169328204 c:\documents and settings\administrador\desktop\emule\dreamulenovo\abstractfile.h
+	<list>
+	"opcodes.h"
+
+1176752802 c:\documents and settings\administrador\desktop\emule\dreamulenovo\opcodes.h
+
+1096141926 c:\documents and settings\administrador\desktop\emule\dreamulenovo\sha.h
+	"shahashset.h"
+
+1176133892 c:\documents and settings\administrador\desktop\emule\dreamulenovo\emuledlg.h
+	"TrayDialog.h"
+	"MeterIcon.h"
+	"TitleMenu.h"
+	"Addons/FadeWnd/FadeWnd.h"
+	"Addons/SpeedGraph/SpeedGraph.h"
+	"EnBitmap.h"
+	"Addons/SkinButtons/xSkinButton.h"
+	"./EMF/WebBrowser.h"
+	"./EMF/WebTool.h"
+
+1175702116 c:\documents and settings\administrador\desktop\emule\dreamulenovo\traydialog.h
+	"DialogMinTrayBtn.h"
+	"ResizableLib\ResizableDialog.h"
+
+1160094653 c:\documents and settings\administrador\desktop\emule\dreamulenovo\dialogmintraybtn.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\resizablelib\resizabledialog.h
+	"ResizableLayout.h"
+	"ResizableGrip.h"
+	"ResizableMinMax.h"
+	"ResizableState.h"
+
+1097285652 c:\documents and settings\administrador\desktop\emule\resizablelib\resizablelayout.h
+	<afxtempl.h>
+	"ResizableMsgSupport.h"
+
+1097285652 c:\documents and settings\administrador\desktop\emule\resizablelib\resizablemsgsupport.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\resizablelib\resizablegrip.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\resizablelib\resizableminmax.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\resizablelib\resizablestate.h
+
+1114480334 c:\documents and settings\administrador\desktop\emule\dreamulenovo\metericon.h
+
+1175871381 c:\documents and settings\administrador\desktop\emule\dreamulenovo\titlemenu.h
+
+1167945248 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\fadewnd\fadewnd.h
+
+1173031765 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\speedgraph\speedgraph.h
+
+1114480334 c:\documents and settings\administrador\desktop\emule\dreamulenovo\enbitmap.h
+
+1171409238 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\skinbuttons\xskinbutton.h
+
+1172150994 c:\documents and settings\administrador\desktop\emule\dreamulenovo\emf\webbrowser.h
+	"afxhtml.h"
+
+1176080061 c:\documents and settings\administrador\desktop\emule\dreamulenovo\emf\webtool.h
+
+1174167394 c:\documents and settings\administrador\desktop\emule\dreamulenovo\sharedfilelist.h
+	"MapKey.h"
+
+1145646722 c:\documents and settings\administrador\desktop\emule\dreamulenovo\mapkey.h
+	"otherfunctions.h"
+
+1161745266 c:\documents and settings\administrador\desktop\emule\dreamulenovo\otherfunctions.h
+
+1139351686 c:\documents and settings\administrador\desktop\emule\dreamulenovo\knownfilelist.h
+	"MapKey.h"
+
+1173043215 c:\documents and settings\administrador\desktop\emule\dreamulenovo\preferences.h
+
+1176648366 c:\documents and settings\administrador\desktop\emule\dreamulenovo\sharedfileswnd.h
+	"ResizableLib\ResizableDialog.h"
+	"SharedFilesCtrl.h"
+	"ProgressCtrlX.h"
+	"IconStatic.h"
+	"SharedDirsTreeCtrl.h"
+	"SplitterControl.h"
+	"HistoryListCtrl.h"
+
+1166992029 c:\documents and settings\administrador\desktop\emule\dreamulenovo\sharedfilesctrl.h
+	"MuleListCtrl.h"
+	"TitleMenu.h"
+	"ListCtrlItemWalk.h"
+
+1176070426 c:\documents and settings\administrador\desktop\emule\dreamulenovo\mulelistctrl.h
+	"Preferences.h"
+	"resource.h"
+
+1106505272 c:\documents and settings\administrador\desktop\emule\dreamulenovo\listctrlitemwalk.h
+
+1114480332 c:\documents and settings\administrador\desktop\emule\dreamulenovo\progressctrlx.h
+
+1101664810 c:\documents and settings\administrador\desktop\emule\dreamulenovo\iconstatic.h
+
+1162772015 c:\documents and settings\administrador\desktop\emule\dreamulenovo\shareddirstreectrl.h
+	"TitleMenu.h"
+
+1106410128 c:\documents and settings\administrador\desktop\emule\dreamulenovo\splittercontrol.h
+
+1138105346 c:\documents and settings\administrador\desktop\emule\dreamulenovo\historylistctrl.h
+	"emule.h"
+	"types.h"
+	"MuleListCtrl.h"
+	"KnownFile.h"
+	"ListCtrlItemWalk.h"
+
+1145646768 c:\documents and settings\administrador\desktop\emule\dreamulenovo\log.h
+
+1169563952 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\abstractfile.cpp
+	"stdafx.h"
+	"AbstractFile.h"
+	"OtherFunctions.h"
+	"Kademlia/Kademlia/Entry.h"
+	"ini2.h"
+	"Preferences.h"
+	"opcodes.h"
+	"Packets.h"
+	"DebugHelpers.h"
+
+1137020324 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\kademlia\entry.h
+	"./Tag.h"
+
+1161746486 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\kademlia\tag.h
+	"../routing/Maps.h"
+	"../../opcodes.h"
+	"../../otherfunctions.h"
+
+1147879744 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\routing\maps.h
+	<map>
+	<list>
+	<set>
+	"../utils/UInt128.h"
+	"../../MapKey.h"
+
+1132090138 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\utils\uint128.h
+
+1145646756 c:\documents and settings\administrador\desktop\emule\dreamulenovo\ini2.h
+
+1175868373 c:\documents and settings\administrador\desktop\emule\dreamulenovo\packets.h
+	"opcodes.h"
+	"SafeFile.h"
+
+1135894878 c:\documents and settings\administrador\desktop\emule\dreamulenovo\debughelpers.h
+
+1137532518 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addfriend.cpp
+	"stdafx.h"
+	"emule.h"
+	"AddFriend.h"
+	"Friend.h"
+	"otherfunctions.h"
+	"FriendList.h"
+	"Preferences.h"
+
+1137532522 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addfriend.h
+	"Friend.h"
+
+1137532518 c:\documents and settings\administrador\desktop\emule\dreamulenovo\friend.h
+
+1137532518 c:\documents and settings\administrador\desktop\emule\dreamulenovo\friendlist.h
+
+1176563089 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addsourcedlg.cpp
+	"stdafx.h"
+	"emule.h"
+	"AddSourceDlg.h"
+	"PartFile.h"
+	"OtherFunctions.h"
+	"UpDownClient.h"
+	"DownloadQueue.h"
+	<winsock2.h>
+	<wininet.h>
+
+1137532522 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addsourcedlg.h
+	"ResizableLib/ResizableDialog.h"
+
+1173042964 c:\documents and settings\administrador\desktop\emule\dreamulenovo\partfile.h
+	"KnownFile.h"
+	"DeadSourceList.h"
+	"CorruptionBlackBox.h"
+	"SourceSaver.h"
+
+1139226990 c:\documents and settings\administrador\desktop\emule\dreamulenovo\deadsourcelist.h
+	"otherfunctions.h"
+
+1158967345 c:\documents and settings\administrador\desktop\emule\dreamulenovo\corruptionblackbox.h
+
+1143401024 c:\documents and settings\administrador\desktop\emule\dreamulenovo\sourcesaver.h
+
+1176574853 c:\documents and settings\administrador\desktop\emule\dreamulenovo\updownclient.h
+	"otherfunctions.h"
+	<map>
+	"IP2Country.h"
+	"Preferences.h"
+
+1147818872 c:\documents and settings\administrador\desktop\emule\dreamulenovo\ip2country.h
+	<atlcoll.h>
+
+1160094647 c:\documents and settings\administrador\desktop\emule\dreamulenovo\downloadqueue.h
+
+1167945248 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\fadewnd\fadewnd.cpp
+	"stdafx.h"
+	"FadeWnd.h"
+	<mmsystem.h>
+
+1175993002 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\skinbuttons\xskinbutton.cpp
+	"stdafx.h"
+	"xSkinButton.h"
+	"preferences.h"
+
+1173031765 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\speedgraph\speedgraph.cpp
+	"stdafx.h"
+	"emule.h"
+	"SpeedGraph.h"
+	"MemDC.h"
+	<commctrl.h>
+	<intshcut.h>
+	<wininet.h>
+
+1108318210 c:\documents and settings\administrador\desktop\emule\dreamulenovo\memdc.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizabledialog.h
+	"ResizableLayout.h"
+	"ResizableGrip.h"
+	"ResizableMinMax.h"
+	"ResizableState.h"
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizablelayout.h
+	<afxtempl.h>
+	"ResizableMsgSupport.h"
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizablemsgsupport.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizablegrip.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizableminmax.h
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizablestate.h
+
+1173031765 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\sysinfo\mibaccess.cpp
+	<stdafx.h>
+	<winsock.h>
+	"MibAccess.h"
+
+1173031765 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\sysinfo\mibaccess.h
+	<snmp.h>
+
+1173570244 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\sysinfo\sysinfo.cpp
+	"stdafx.h"
+	"SysInfo.h"
+	<process.h>
+	"emule.h"
+	"GetCpuUsage.h"
+
+1173031765 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\sysinfo\sysinfo.h
+	<iphlpapi.h>
+	"mibaccess.h"
+
+1173031765 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\sysinfo\getcpuusage.h
+
+1153004404 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\adunanza.cpp
+	"stdafx.h"
+	"emule.h"
+	"OtherFunctions.h"
+	"SafeFile.h"
+	"Preferences.h"
+	"emuleDlg.h"
+	"DAMessageBox.h"
+	"AdunanzA.h"
+
+1137384640 c:\documents and settings\administrador\desktop\emule\dreamulenovo\damessagebox.h
+	"enbitmap.h"
+
+1152146654 c:\documents and settings\administrador\desktop\emule\dreamulenovo\adunanza.h
+
+1161745178 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\archivepreviewdlg.cpp
+	"stdafx.h"
+	"emule.h"
+	"ArchivePreviewDlg.h"
+	"KnownFile.h"
+	"partfile.h"
+	"preferences.h"
+	"UserMsgs.h"
+
+1157639682 c:\documents and settings\administrador\desktop\emule\dreamulenovo\archivepreviewdlg.h
+	"ResizableLib/ResizablePage.h"
+	"ListCtrlX.h"
+	"ArchiveRecovery.h"
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizablepage.h
+	"ResizableLayout.h"
+
+1135894872 c:\documents and settings\administrador\desktop\emule\dreamulenovo\listctrlx.h
+
+1159532270 c:\documents and settings\administrador\desktop\emule\dreamulenovo\archiverecovery.h
+
+1176134784 c:\documents and settings\administrador\desktop\emule\dreamulenovo\usermsgs.h
+
+1161745615 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\archiverecovery.cpp
+	"stdafx.h"
+	"emule.h"
+	"ArchiveRecovery.h"
+	"OtherFunctions.h"
+	"Preferences.h"
+	"PartFile.h"
+	<zlib/zlib.h>
+	"Log.h"
+
+1124983726 c:\documents and settings\administrador\desktop\emule\zlib\zlib.h
+	"zconf.h"
+
+1124983726 c:\documents and settings\administrador\desktop\emule\zlib\zconf.h
+	<windows.h>
+	<sys/types.h>
+	<unistd.h>
+	<unixio.h>
+
+1161745404 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\asyncproxysocketlayer.cpp
+	"stdafx.h"
+	"AsyncProxySocketLayer.h"
+	"atlconv.h"
+	"CBase64coding.hpp"
+
+1135894668 c:\documents and settings\administrador\desktop\emule\dreamulenovo\asyncproxysocketlayer.h
+	"AsyncSocketExLayer.h"
+
+1150659775 c:\documents and settings\administrador\desktop\emule\dreamulenovo\asyncsocketexlayer.h
+	"AsyncSocketEx.h"
+
+1170448604 c:\documents and settings\administrador\desktop\emule\dreamulenovo\asyncsocketex.h
+
+1070768126 c:\documents and settings\administrador\desktop\emule\dreamulenovo\cbase64coding.hpp
+
+1176565624 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\asyncsocketex.cpp
+	"stdafx.h"
+	"DebugHelpers.h"
+	"AsyncSocketEx.h"
+	"wtypes.h"
+	"oleauto.h"
+	"NatTraversal/NatThread.h"
+	"emule.h"
+	"clientlist.h"
+	"kademlia/utils/UInt128.h"
+	"AsyncSocketExLayer.h"
+
+1176138517 c:\documents and settings\administrador\desktop\emule\dreamulenovo\nattraversal\natthread.h
+	"NatSocket.h"
+	<afxtempl.h>
+	"updownclient.h"
+	"ListenSocket.h"
+	"TraverseStrategy.h"
+	<afxmt.h>
+
+1175711978 c:\documents and settings\administrador\desktop\emule\dreamulenovo\nattraversal\natsocket.h
+	"Preferences.h"
+	"Log.h"
+	"AsyncSocketEx.h"
+	"EMSocket.h"
+	"CLientUDPSocket.h"
+	"Packets.h"
+	"opcodes.h"
+	"../AsyncSocketEx.h"
+
+1160100321 c:\documents and settings\administrador\desktop\emule\dreamulenovo\emsocket.h
+	"EncryptedStreamSocket.h"
+	"OtherFunctions.h"
+	"ThrottledSocket.h"
+
+1167062128 c:\documents and settings\administrador\desktop\emule\dreamulenovo\encryptedstreamsocket.h
+	"AsyncSocketEx.h"
+	<crypto51/integer.h>
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\integer.h
+	"cryptlib.h"
+	"secblock.h"
+	<iosfwd>
+	<algorithm>
+	<malloc.h>
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\cryptlib.h
+	"config.h"
+	"stdcpp.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\config.h
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\stdcpp.h
+	<stddef.h>
+	<assert.h>
+	<limits.h>
+	<memory>
+	<string>
+	<exception>
+	<typeinfo>
+	<string.h>
+	<algorithm>
+	<map>
+	<vector>
+	<locale>
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\secblock.h
+	"config.h"
+	"misc.h"
+	<string.h>
+	<assert.h>
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\misc.h
+	"cryptlib.h"
+	"smartptr.h"
+	<stdlib.h>
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\smartptr.h
+	"config.h"
+	<algorithm>
+
+1176913207 c:\documents and settings\administrador\desktop\emule\dreamulenovo\throttledsocket.h
+
+1160100334 c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientudpsocket.h
+	"UploadBandwidthThrottler.h"
+	"EncryptedDatagramSocket.h"
+
+1174167364 c:\documents and settings\administrador\desktop\emule\dreamulenovo\uploadbandwidththrottler.h
+	"ThrottledSocket.h"
+
+1156370306 c:\documents and settings\administrador\desktop\emule\dreamulenovo\encrypteddatagramsocket.h
+
+1176575762 c:\documents and settings\administrador\desktop\emule\dreamulenovo\listensocket.h
+	"EMSocket.h"
+	"updownclient.h"
+
+1176138517 c:\documents and settings\administrador\desktop\emule\dreamulenovo\nattraversal\traversestrategy.h
+
+1176307822 c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientlist.h
+	"DeadSourceList.h"
+	<atlcoll.h>
+	"IP2Country.h"
+
+1150659769 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\asyncsocketexlayer.cpp
+	"stdafx.h"
+	"AsyncSocketExLayer.h"
+	"AsyncSocketEx.h"
+
+1159019015 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\bandwidthcontrol.cpp
+	"StdAfx.h"
+	"BandWidthControl.h"
+	"Emule.h"
+	"Log.h"
+	"Preferences.h"
+	"opcodes.h"
+
+1159019019 c:\documents and settings\administrador\desktop\emule\dreamulenovo\bandwidthcontrol.h
+	"Types.h"
+	"Log.h"
+	"opcodes.h"
+	<Iphlpapi.h>
+	<afxtempl.h>
+
+1159019026 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\barshader.cpp
+	"stdafx.h"
+	<math.h>
+	"emule.h"
+	"barshader.h"
+	"Preferences.h"
+
+1176765606 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\baseclient.cpp
+	"stdafx.h"
+	"DebugHelpers.h"
+	"emule.h"
+	"UpDownClient.h"
+	"FriendList.h"
+	"Clientlist.h"
+	"OtherFunctions.h"
+	"PartFile.h"
+	"ListenSocket.h"
+	"PeerCacheSocket.h"
+	"Friend.h"
+	<zlib/zlib.h>
+	"Packets.h"
+	"Opcodes.h"
+	"SafeFile.h"
+	"Preferences.h"
+	"Server.h"
+	"ClientCredits.h"
+	"IPFilter.h"
+	"Statistics.h"
+	"Sockets.h"
+	"DownloadQueue.h"
+	"UploadQueue.h"
+	"SearchFile.h"
+	"SearchList.h"
+	"SharedFileList.h"
+	"Kademlia/Kademlia/Kademlia.h"
+	"Kademlia/Kademlia/Search.h"
+	"Kademlia/Kademlia/SearchManager.h"
+	"Kademlia/Utils/UInt128.h"
+	"Kademlia/Net/KademliaUDPListener.h"
+	"Kademlia/Kademlia/Prefs.h"
+	"emuledlg.h"
+	"ServerWnd.h"
+	"TransferWnd.h"
+	"ChatWnd.h"
+	"CxImage/xImage.h"
+	"PreviewDlg.h"
+	"Exceptions.h"
+	"Peercachefinder.h"
+	"ClientUDPSocket.h"
+	"shahashset.h"
+	"Log.h"
+	"DLP.h"
+	"BandWidthControl.h"
+	"NatTraversal/NatThread.h"
+
+1137532826 c:\documents and settings\administrador\desktop\emule\dreamulenovo\peercachesocket.h
+	"HttpClientReqSocket.h"
+
+1158966730 c:\documents and settings\administrador\desktop\emule\dreamulenovo\httpclientreqsocket.h
+
+1160528631 c:\documents and settings\administrador\desktop\emule\dreamulenovo\server.h
+
+1167062126 c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientcredits.h
+	"MapKey.h"
+	<crypto51/rsa.h>
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\rsa.h
+	"pkcspad.h"
+	"oaep.h"
+	"integer.h"
+	"asn.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\pkcspad.h
+	"cryptlib.h"
+	"pubkey.h"
+	"sha.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\pubkey.h
+	"modarith.h"
+	"filters.h"
+	"eprecomp.h"
+	"fips140.h"
+	"argnames.h"
+	<memory>
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\modarith.h
+	"cryptlib.h"
+	"misc.h"
+	"integer.h"
+	"algebra.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\algebra.h
+	"config.h"
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\filters.h
+	"simple.h"
+	"secblock.h"
+	"misc.h"
+	"smartptr.h"
+	"queue.h"
+	"algparam.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\simple.h
+	"cryptlib.h"
+	"misc.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\queue.h
+	"simple.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\algparam.h
+	"cryptlib.h"
+	"smartptr.h"
+	"secblock.h"
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\eprecomp.h
+	"integer.h"
+	"algebra.h"
+	<vector>
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\fips140.h
+	"cryptlib.h"
+	"secblock.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\argnames.h
+	"cryptlib.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\sha.h
+	"iterhash.h"
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\iterhash.h
+	"cryptlib.h"
+	"secblock.h"
+	"misc.h"
+	"simple.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\oaep.h
+	"pubkey.h"
+	"sha.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\asn.h
+	"filters.h"
+	"queue.h"
+	<vector>
+
+1139669152 c:\documents and settings\administrador\desktop\emule\dreamulenovo\ipfilter.h
+
+1160093681 c:\documents and settings\administrador\desktop\emule\dreamulenovo\statistics.h
+	<list>
+
+1161727765 c:\documents and settings\administrador\desktop\emule\dreamulenovo\sockets.h
+
+1174167359 c:\documents and settings\administrador\desktop\emule\dreamulenovo\uploadqueue.h
+	"updownclient.h"
+
+1158966492 c:\documents and settings\administrador\desktop\emule\dreamulenovo\searchfile.h
+	"AbstractFile.h"
+
+1158966496 c:\documents and settings\administrador\desktop\emule\dreamulenovo\searchlist.h
+	"KnownFile.h"
+	"SearchFile.h"
+	"QArray.h"
+
+1114480332 c:\documents and settings\administrador\desktop\emule\dreamulenovo\qarray.h
+
+1160662938 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\kademlia\kademlia.h
+	"../routing/Maps.h"
+
+1176070615 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\kademlia\search.h
+	"../routing/Maps.h"
+
+1135894674 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\kademlia\searchmanager.h
+	"../routing/Maps.h"
+
+1158171190 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\net\kademliaudplistener.h
+	"../routing/Maps.h"
+
+1132093736 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\kademlia\prefs.h
+	"../utils/UInt128.h"
+
+1176084248 c:\documents and settings\administrador\desktop\emule\dreamulenovo\serverwnd.h
+	"ResizableLib\ResizableDialog.h"
+	"ServerListCtrl.h"
+	"IconStatic.h"
+	"RichEditCtrlX.h"
+	"ClosableTabCtrl.h"
+	"SplitterControl.h"
+	"EmuleDlg.h"
+
+1160101117 c:\documents and settings\administrador\desktop\emule\dreamulenovo\serverlistctrl.h
+	"MuleListCtrl.h"
+
+1160093861 c:\documents and settings\administrador\desktop\emule\dreamulenovo\richeditctrlx.h
+
+1160093647 c:\documents and settings\administrador\desktop\emule\dreamulenovo\closabletabctrl.h
+
+1139662866 c:\documents and settings\administrador\desktop\emule\dreamulenovo\transferwnd.h
+	"ResizableLib\ResizableDialog.h"
+	"SplitterControl.h"
+	"TabCtrl.hpp"
+	"UploadListCtrl.h"
+	"DownloadListCtrl.h"
+	"QueueListCtrl.h"
+	"ClientListCtrl.h"
+	"DownloadClientsCtrl.h"
+
+1114480334 c:\documents and settings\administrador\desktop\emule\dreamulenovo\tabctrl.hpp
+
+1137532524 c:\documents and settings\administrador\desktop\emule\dreamulenovo\uploadlistctrl.h
+	"MuleListCtrl.h"
+	"ListCtrlItemWalk.h"
+
+1153438542 c:\documents and settings\administrador\desktop\emule\dreamulenovo\downloadlistctrl.h
+	"MuleListCtrl.h"
+	"TitleMenu.h"
+	<map>
+	"ListCtrlItemWalk.h"
+
+1139511594 c:\documents and settings\administrador\desktop\emule\dreamulenovo\queuelistctrl.h
+	"MuleListCtrl.h"
+	"ListCtrlItemWalk.h"
+
+1139167604 c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientlistctrl.h
+	"MuleListCtrl.h"
+	"ListCtrlItemWalk.h"
+
+1117495780 c:\documents and settings\administrador\desktop\emule\dreamulenovo\downloadclientsctrl.h
+	"MuleListCtrl.h"
+	"ListCtrlItemWalk.h"
+
+1169293622 c:\documents and settings\administrador\desktop\emule\dreamulenovo\chatwnd.h
+	"ResizableLib\ResizableDialog.h"
+	"ChatSelector.h"
+	"FriendListCtrl.h"
+	"SplitterControl.h"
+	"IconStatic.h"
+
+1166992291 c:\documents and settings\administrador\desktop\emule\dreamulenovo\chatselector.h
+	"ClosableTabCtrl.h"
+
+1137532524 c:\documents and settings\administrador\desktop\emule\dreamulenovo\friendlistctrl.h
+	"MuleListCtrl.h"
+
+1098015960 c:\documents and settings\administrador\desktop\emule\dreamulenovo\cximage\ximage.h
+	"xfile.h"
+	"xiofile.h"
+	"xmemfile.h"
+	"ximadef.h"
+
+1088375340 c:\documents and settings\administrador\desktop\emule\dreamulenovo\cximage\xfile.h
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	"ximadef.h"
+
+1094652300 c:\documents and settings\administrador\desktop\emule\dreamulenovo\cximage\ximadef.h
+	"ximacfg.h"
+	<windows.h>
+	<tchar.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1119386208 c:\documents and settings\administrador\desktop\emule\dreamulenovo\cximage\ximacfg.h
+
+1029833460 c:\documents and settings\administrador\desktop\emule\dreamulenovo\cximage\xiofile.h
+	"xfile.h"
+
+1097272440 c:\documents and settings\administrador\desktop\emule\dreamulenovo\cximage\xmemfile.h
+	"xfile.h"
+
+1132090116 c:\documents and settings\administrador\desktop\emule\dreamulenovo\previewdlg.h
+	"ResizableLib/ResizablePage.h"
+
+1175386654 c:\documents and settings\administrador\desktop\emule\dreamulenovo\exceptions.h
+
+1137532826 c:\documents and settings\administrador\desktop\emule\dreamulenovo\peercachefinder.h
+	<afxinet.h>
+	"ClientVersionInfo.h"
+
+1137532826 c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientversioninfo.h
+	"emule.h"
+	"updownclient.h"
+
+1131486484 c:\documents and settings\administrador\desktop\emule\dreamulenovo\dlp.h
+
+1161745313 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\btnst.cpp
+	"stdafx.h"
+	"BtnST.h"
+	"emule.h"
+	<Mmsystem.h>
+
+1105666644 c:\documents and settings\administrador\desktop\emule\dreamulenovo\btnst.h
+
+1137532514 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\cbase64coding.cpp
+	"stdafx.h"
+	"CBase64Coding.hpp"
+
+1137532518 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\catdialog.cpp
+	"stdafx.h"
+	"emule.h"
+	"CustomAutoComplete.h"
+	"Preferences.h"
+	"otherfunctions.h"
+	"SharedFileList.h"
+	"emuledlg.h"
+	"TransferWnd.h"
+	"CatDialog.h"
+	"UserMsgs.h"
+
+1114480332 c:\documents and settings\administrador\desktop\emule\dreamulenovo\customautocomplete.h
+	<initguid.h>
+	<shldisp.h>
+	<shlguid.h>
+
+1105941730 c:\documents and settings\administrador\desktop\emule\dreamulenovo\catdialog.h
+	"ColorButton.h"
+
+1114480332 c:\documents and settings\administrador\desktop\emule\dreamulenovo\colorbutton.h
+	"ColourPopup.h"
+
+1160528761 c:\documents and settings\administrador\desktop\emule\dreamulenovo\colourpopup.h
+
+1176073346 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\chatselector.cpp
+	"stdafx.h"
+	"emule.h"
+	"ChatSelector.h"
+	"packets.h"
+	"HTRichEditCtrl.h"
+	"emuledlg.h"
+	"Statistics.h"
+	"OtherFunctions.h"
+	"UpDownClient.h"
+	"Preferences.h"
+	"TaskbarNotifier.h"
+	"ListenSocket.h"
+	"ChatWnd.h"
+	"SafeFile.h"
+	"Log.h"
+	"MenuCmds.h"
+	"ClientDetailDialog.h"
+	"FriendList.h"
+	"ClientList.h"
+	"DLP.h"
+
+1176071520 c:\documents and settings\administrador\desktop\emule\dreamulenovo\htricheditctrl.h
+	"TitleMenu.h"
+
+1169293406 c:\documents and settings\administrador\desktop\emule\dreamulenovo\taskbarnotifier.h
+
+1175730849 c:\documents and settings\administrador\desktop\emule\dreamulenovo\menucmds.h
+
+1138746396 c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientdetaildialog.h
+	"ResizableLib/ResizablePage.h"
+	"ResizableLib/ResizableSheet.h"
+	"ListViewWalkerPropertySheet.h"
+
+1097285652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\resizablelib\resizablesheet.h
+	"ResizableLayout.h"
+	"ResizableGrip.h"
+	"ResizableMinMax.h"
+	"ResizableState.h"
+
+1158966666 c:\documents and settings\administrador\desktop\emule\dreamulenovo\listviewwalkerpropertysheet.h
+	"ResizableLib/ResizableSheet.h"
+	"ListCtrlItemWalk.h"
+
+1175554593 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\chatwnd.cpp
+	"stdafx.h"
+	"emule.h"
+	"ChatWnd.h"
+	"HTRichEditCtrl.h"
+	"FriendList.h"
+	"emuledlg.h"
+	"UpDownClient.h"
+	"OtherFunctions.h"
+	"Opcodes.h"
+	"friend.h"
+	"ClientCredits.h"
+	"IconStatic.h"
+	"UserMsgs.h"
+	"Log.h"
+
+1167062125 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientcredits.cpp
+	"stdafx.h"
+	<math.h>
+	"emule.h"
+	"ClientCredits.h"
+	"OtherFunctions.h"
+	"Preferences.h"
+	"SafeFile.h"
+	"Opcodes.h"
+	"Sockets.h"
+	<crypto51/base64.h>
+	<crypto51/osrng.h>
+	<crypto51/files.h>
+	<crypto51/sha.h>
+	"emuledlg.h"
+	"Log.h"
+	"updownclient.h"
+	"ClientList.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\base64.h
+	"basecode.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\basecode.h
+	"filters.h"
+	"algparam.h"
+	"argnames.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\osrng.h
+	"config.h"
+	"randpool.h"
+	"rng.h"
+	"des.h"
+	"fips140.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\randpool.h
+	"cryptlib.h"
+	"filters.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\rng.h
+	"cryptlib.h"
+	"filters.h"
+
+1105508046 c:\documents and settings\administrador\desktop\emule\crypto51\des.h
+	"seckey.h"
+	"secblock.h"
+
+1105508050 c:\documents and settings\administrador\desktop\emule\crypto51\seckey.h
+	"cryptlib.h"
+	"misc.h"
+	"simple.h"
+
+1105508048 c:\documents and settings\administrador\desktop\emule\crypto51\files.h
+	"cryptlib.h"
+	"filters.h"
+	"argnames.h"
+	<iostream>
+	<fstream>
+
+1176307763 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientdetaildialog.cpp
+	"stdafx.h"
+	"emule.h"
+	"ClientDetailDialog.h"
+	"UpDownClient.h"
+	"PartFile.h"
+	"ClientCredits.h"
+	"otherfunctions.h"
+	"Server.h"
+	"ServerList.h"
+	"SharedFileList.h"
+	"HighColorTab.hpp"
+	"UserMsgs.h"
+	"ListenSocket.h"
+	"preferences.h"
+	"IP2Country.h"
+	"UploadQueue.h"
+
+1160267304 c:\documents and settings\administrador\desktop\emule\dreamulenovo\serverlist.h
+
+1137774256 c:\documents and settings\administrador\desktop\emule\dreamulenovo\highcolortab.hpp
+	<memory>
+
+1176567349 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientlist.cpp
+	"stdafx.h"
+	"emule.h"
+	"ClientList.h"
+	"otherfunctions.h"
+	"Kademlia/Kademlia/kademlia.h"
+	"Kademlia/Kademlia/prefs.h"
+	"Kademlia/Kademlia/search.h"
+	"Kademlia/Kademlia/searchmanager.h"
+	"Kademlia/routing/contact.h"
+	"Kademlia/net/kademliaudplistener.h"
+	"kademlia/utils/UInt128.h"
+	"UploadQueue.h"
+	"DownloadQueue.h"
+	"UpDownClient.h"
+	"ClientCredits.h"
+	"ListenSocket.h"
+	"Opcodes.h"
+	"Sockets.h"
+	"emuledlg.h"
+	"TransferWnd.h"
+	"serverwnd.h"
+	"Log.h"
+	"packets.h"
+	"Statistics.h"
+
+1140117652 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademlia\routing\contact.h
+	"../utils/UInt128.h"
+
+1161728599 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\clientlistctrl.cpp
+	"stdafx.h"
+	"emule.h"
+	"ClientListCtrl.h"
+	"otherfunctions.h"
+	"MenuCmds.h"
+	"ClientDetailDialog.h"
+	"KademliaWnd.h"
+	"ClientList.h"
+	"emuledlg.h"
+	"FriendList.h"
+	"TransferWnd.h"
+	"MemDC.h"
+	"UpDownClient.h"
+	"ClientCredits.h"
+	"ListenSocket.h"
+	"ChatWnd.h"
+	"Kademlia/Kademlia/Kademlia.h"
+	"Kademlia/net/KademliaUDPListener.h"
+
+1145646736 c:\documents and settings\administrador\desktop\emule\dreamulenovo\kademliawnd.h
+	"ResizableLib\ResizableDialog.h"
+	"IconStatic.h"
+	"kademlia/routing/contact.h"
+
+1177206853 source:c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\sysinfo\getcpuusage.cpp
+	"stdafx.h"
+	"otherfunctions.h"
+	"PerfCounters.h"
+
+1173031765 c:\documents and settings\administrador\desktop\emule\dreamulenovo\addons\sysinfo\perfcounters.h
+	"windows.h"
+	"comdef.h"
+	"winperf.h"
+
